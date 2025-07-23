@@ -1,13 +1,8 @@
 
-.title-blog {
-  font-family: "Shadows Into Light", cursive;
-  font-weight: 400;
-  font-style: normal;
- font-size: 1.5rem;
-}
+.title-blog{
+  font-family: "Josefin Slab";
+  font-weight: 800;
+  
 
-.navbar-links{
-  font-family: "Josefin Slab", serif;
-  font-optical-sizing: auto;
 }
 

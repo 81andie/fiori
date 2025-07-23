@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'flowbite';
+
+/* Luego ya puedes añadir tus reglas */
+*, ::before, ::after {
+  box-sizing: border-box;
+}

@@ -1,8 +1,9 @@
 
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Entry, Poem, PoeticCollection } from '../../interfaces/poem.interface';
+import { BlogData, Entrada} from '../../interfaces/poem.interface';
 import { PoemasService } from './../../services/poemas.service';
+
 
 @Component({
   selector: 'app-haikus',
@@ -16,39 +17,23 @@ export class HaikusComponent implements OnInit {
 
   constructor(private PoemsService: PoemasService) { }
 
-  public haikus: Poem[] = [];
+  //public haikus: Poem[] = [];
 
-
+  blogData: BlogData | undefined;
+  entries: Entrada[] = [];
 
   ngOnInit(): void {
-    this.gethaikus()
+  /* this.getHaikus()*/
   }
 
-  gethaikus(): void {
+ /* getHaikus(){
+    this.PoemsService.getPoems().subscribe(data =>{
+    this.blogData = data;
+    this.entries=  data.entries;
 
-    this.PoemsService.getPoems().subscribe({
-    next: (data) => {
-      console.log('Datos recibidos', data.entries);
+    })
+  }*/
 
-      let sacarPoemas: Poem[] = [];
-
-      data.entries.forEach((entry:Entry)=>{
-
-
-      })
-
-
-
-    },
-    error: (err) => {
-      console.error('Error al obtener los haikus:', err);
-    }
-  });
-
-
-
-
-}
 }
 
 
