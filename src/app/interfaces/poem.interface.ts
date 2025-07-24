@@ -1,22 +1,38 @@
-export interface Entrada {
-  title: string;
-  date?: string;
-  location?: string;
-  datetime?: string;
-  poems?: (string | PoemaCorto)[];
-  verses?: string[];
+export interface poem {
+  id: number,
+  date: string,
+  img: string,
+  jp:string,
+  jp2:string,
+  jp3:string,
+  romaji: string,
+  romaji1: string,
+  romaji2: string,
+  es: string,
+  es1: string,
+  es2: string
 }
 
-export interface PoemaCorto {
-  id: number;
-  text: string[];
-  lang?: string;
+export interface haikusMusicados{
+  id: number,
+  title:string,
+  date: string,
+  img: string,
+  jp:string,
+  jp2:string,
+  jp3:string,
+  romaji: string,
+  romaji1: string,
+  romaji2: string,
+  es: string,
+  es1: string,
+  es2: string
 }
 
-export interface BlogData {
-  date: string;
-  title: string;
-  project: string;
-  framework: string;
-  entries: Entrada[];
-}
+
+
+
+
+
+
+

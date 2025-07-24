@@ -1,6 +1,5 @@
-import { Component, Inject, PLATFORM_ID, AfterViewInit } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
-import { initFlowbite } from 'flowbite';
+import { Component } from '@angular/core';
+
 
 
 
@@ -10,16 +9,9 @@ import { initFlowbite } from 'flowbite';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent implements AfterViewInit {
+export class NavbarComponent  {
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
-  ngAfterViewInit(): void {
 
-    if (isPlatformBrowser(this.platformId)) {
-       import('flowbite').then((module) => {
-         module.initFlowbite() ;
-       });
-     }
-  }
+
 }

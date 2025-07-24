@@ -1,0 +1,40 @@
+<div class="mt-5 w-full h-10 bg-red-300">
+  <h1>Haikus Musicados</h1>
+
+</div>
+<div
+  #scrollContainer
+  class="mt-5 flex overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-none h-screen"
+
+>
+  @for (haiku of haikusMusicados; track haiku.id) {
+    <div class="relative w-full flex-shrink-0 snap-start ">
+      <!-- Imagen de fondo -->
+      <img [src]="haiku.img" class="absolute inset-0 w-[100vw] h-screen  md:h-screen lg-h-screen object-cover" />
+
+      <!-- Capa oscura encima -->
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <!-- Contenido del haiku -->
+      <div class="relative z-10 flex flex-col sm:top-0 justify-center items-center h-full text-white px-4 text-center space-y-3">
+     <p class="text-xl font-bold leading-tight">{{haiku.jp }}</p>
+      <p class="text-xl font-bold leading-tight">{{ haiku.jp2 }}</p>
+       <p class="text-xl font-bold leading-tight">{{ haiku.jp3 }}</p>
+
+
+        <div class="text-lg text-rightitalic text-white/80">
+          <p>{{ haiku.romaji }}</p>
+          <p>{{ haiku.romaji1 }}</p>
+          <p>{{ haiku.romaji2 }}</p>
+        </div>
+
+        <div class="text-2xl font-bold text-white/70">
+          <p>{{ haiku.es }}</p>
+          <p>{{ haiku.es1 }}</p>
+          <p>{{ haiku.es2 }}</p>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+

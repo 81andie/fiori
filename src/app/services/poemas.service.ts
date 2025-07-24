@@ -2,21 +2,29 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, tap } from 'rxjs';
-import { BlogData } from '../interfaces/poem.interface';
+import { Observable} from 'rxjs';
+import { poem,haikusMusicados } from '../interfaces/poem.interface';
 
 @Injectable({ providedIn: 'root' })
 
 
 export class PoemasService {
 
-
- /*private jsonUrl = 'assets/haikus.json';
   constructor(private http: HttpClient) { }
 
-  getPoems(): Observable<BlogData[]> {
-    return this.http.get<BlogData[]>(this.jsonUrl)
-  }*/
+
+
+  private jsonUrl = 'assets/haikus.json';
+  private jsonUrlHaikusMusicados = 'assets/haikusMusicados.json';
+
+
+  getPoems(): Observable<poem[]> {
+    return this.http.get<poem[]>(this.jsonUrl)
+  }
+
+  getHaikusMusicados():Observable<haikusMusicados[]>{
+    return this.http.get<haikusMusicados[]>(this.jsonUrlHaikusMusicados)
+  }
 
 }
 

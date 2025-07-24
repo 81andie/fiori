@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Luna de miel",
+    "date": "Veranos 2021-2022",
+    "img": "https://images.pexels.com/photos/10533337/pexels-photo-10533337.jpeg",
+    "jp": "花の冠 ",
+    "jp2": " 蜜と橙の香り",
+    "jp3": "命満ちる ",
+    "romaji": "Hana no kanmuri",
+    "romaji1": "Mitsu to daidai",
+    "romaji2": "no kaori Inochi michiru",
+    "es": "Corona de flores",
+    "es1": "Miel y azahar en la alcoba",
+    "es2": "Se consuma la vida"
+  },
+
+  {
+    "id": 2,
+    "title": "El templo",
+    "date": "Veranos 2021-2022",
+    "img": "https://images.pexels.com/photos/6332921/pexels-photo-6332921.jpeg",
+    "jp": "寺を掃いて",
+    "jp2": " 蜜と橙の香り",
+    "jp3": "塵が舞う",
+    "romaji": "Ima shika",
+    "romaji1": "nai Tera o",
+    "romaji2": "haite Chiri ga mau",
+    "es": "Ahora o nunca ",
+    "es1": "Barro mi templo ",
+    "es2": "El polvo se agita "
+  },
+
+  {
+    "id": 3,
+    "title": "Frío",
+    "date": "Veranos 2021-2022",
+    "img": "https://images.pexels.com/photos/31344765/pexels-photo-31344765.jpeg",
+    "jp": "風が唸る",
+    "jp2": "衣が凍え",
+    "jp3": "青き唇",
+    "romaji": "Kaze ga unaru",
+    "romaji1": "Koromo ga",
+    "romaji2": "Aoki kuchibiru",
+    "es": "Ruge el viento,",
+    "es1": "La túnica se hiela,",
+    "es2": "Labios azules."
+  }
+
+
+]

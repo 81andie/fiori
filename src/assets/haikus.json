@@ -1,247 +1,44 @@
-{
-  "date": "2025-07-04",
-  "title": "Lista de colección de Haikus y Poemas improvisados",
-  "project": "Blog poético-musical",
-  "framework": "Angular 19",
-  "entries": [
-    {
-      "title": "GIRONA 2016",
-      "date": "2016-10-19",
-      "location": "Girona",
-      "poems": [
-        "Ciutats negres",
-        "Gábies blanques",
-        "31/"
-      ]
-    },
-    {
-      "title": "CORRESPONDENCIA INESPERADA HACIA DIOS – LA IRA DE LOS DIOSES",
-      "location": "Egipto",
-      "datetime": "2016-08-13T22:44",
-      "verses": [
-        "Cae el Sol",
-        "Tiembla el Sinaí",
-        "La Golgotha reposa",
-        "Saleeh inspirado en la novela El ARQUEOLOGO de MARTI GIRONELL",
-        "Los sueños profetizan",
-        "Los pergaminos se reflejan",
-        "En el poso del café",
-        "Con humo cubierto",
-        "De mirra y incienso",
-        "Petra pinta sus ojos",
-        "De un lapiszuli verde",
-        "(Saleeh)camina,",
-        "Bajo las arenas doradas",
-        "Y en su curso",
-        "Se asoma",
-        "Un oasis en Bággora",
-        "Ruge Salomón",
-        "Tiembla tierra",
-        "Entra en la nueva vida",
-        "En los tiempos de la Cólera",
-        "Suena la tormenta",
-        "Y la ira del desierto",
-        "Tiembla Petra, Bagdad,",
-        "Y Jerusalem",
-        "La sangre que inunda el Tigris",
-        "La Ira de los Dioses",
-        "Se manifiesta en la Naturaleza"
-      ]
-    },
-    {
-      "title": "Demasiado tarde",
-      "verses": [
-        "Ya es demasiado tarde",
-        "Entrada ya en la noche",
-        "He descubierto cuanto",
-        "Están de cerca",
-        "Tus tristezas a las mías",
-        "Te sorprendería saber",
-        "Que ya no eres el único",
-        "Quien las anida y protege",
-        "La mías quisiera desecharlas",
-        "De mi mente",
-        "Para solo dejar un halo de esperanza y vida"
-      ]
-    },
-    {
-      "title": "Correspondencia sin destino en un AVE",
-      "verses": [
-        "El perfume",
-        "Mejor pagado",
-        "Es aquel que no",
-        "Se olvida nunca"
-      ]
-    },
-    {
-      "title": "Abril 2017",
-      "verses": [
-        "Mis anhelos te",
-        "Buscaban, la suerte",
-        "Me trajo a ti,",
-        "La vida me puso en tu camino",
-        "Sin saber mi rumbo ni destino",
-        "Concreto, vamos a la deriva",
-        "Sin saber hacia dónde navegamos"
-      ]
-    },
-    {
-      "title": "Poemas cortos",
-      "date": "2016-11-31",
-      "poems": [
-        {
-          "id": 1,
-          "text": [
-            "Que será del todo",
-            "Cuando yo no haya nada?"
-          ]
-        },
-        {
-          "id": 2,
-          "text": [
-            "No temo la muerte",
-            "Al igual no temo mi destino"
-          ]
-        },
-        {
-          "id": 3,
-          "text": [
-            "Qué cantarán",
-            "Los pájaros esta mañana?"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Haikus y poemas varios",
-      "poems": [
-        {
-          "id": 1,
-          "text": [
-            "Libre como la liebre",
-            "Sigo el camino",
-            "Los pies siguen volando"
-          ]
-        },
-        {
-          "id": 2,
-          "text": [
-            "Libre como el viento",
-            "Sigo el sendero",
-            "Sin prisa y sin aliento"
-          ]
-        },
-        {
-          "id": 3,
-          "text": [
-            "Ruge el viento",
-            "La túnica se hiela",
-            "La nieve cesa"
-          ]
-        },
-        {
-          "id": 4,
-          "text": [
-            "Andando entre piedras",
-            "Es fácil tropezarse",
-            "Las rodillas lloran"
-          ]
-        },
-        {
-          "id": 5,
-          "text": [
-            "Cuando las ranas cantan en riachuelo",
-            "Truenos y desgracias llevan"
-          ]
-        },
-        {
-          "id": 6,
-          "text": [
-            "Una vida pasada",
-            "La vida vivida",
-            "Y el mal presentimiento crece"
-          ]
-        },
-        {
-          "id": 7,
-          "text": [
-            "Interminable",
-            "Día largo",
-            "Y una historia internable"
-          ]
-        },
-        {
-          "id": 8,
-          "lang": "ca",
-          "text": [
-            "Nit estrellada",
-            "Bon temps d’albada"
-          ]
-        },
-        {
-          "id": 9,
-          "lang": "es",
-          "text": [
-            "Noche estrellada",
-            "Buen tiempo por la mañana"
-          ]
-        },
-        {
-          "id": 10,
-          "text": [
-            "Lluvias y truenos",
-            "Empapada la monja",
-            "Salta el sapo"
-          ]
-        },
-        {
-          "id": 11,
-          "text": [
-            "Ecos y juegos de risas",
-            "El abuelo y el niño",
-            "Manos con dientes"
-          ]
-        },
-        {
-          "id": 12,
-          "text": [
-            "Anoche en el bosque",
-            "Vuelan las luciérnagas",
-            "Veo el sendero"
-          ]
-        },
-        {
-          "id": 13,
-          "text": [
-            "No come nadie",
-            "Con silencios"
-          ]
-        },
-        {
-          "id": 14,
-          "text": [
-            "Cantan las ranas",
-            "Calado por la lluvia",
-            "Y el cesto lleno"
-          ]
-        },
-        {
-          "id": 15,
-          "text": [
-            "Pobre mi cuenco",
-            "Quiere agua del cielo",
-            "Rogó a Buda"
-          ]
-        },
-        {
-          "id": 16,
-          "text": [
-            "Ruge el viento",
-            "La túnica se hiela",
-            "Labios azules"
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "date": "Veranos 2021-2022",
+    "img": "https://images.pexels.com/photos/5385907/pexels-photo-5385907.jpeg",
+    "jp": "草のように",
+    "jp2": "道をたどって ",
+    "jp3": "足は舞うよ",
+    "romaji": "Kusa no yō ",
+    "romaji1": "ni Michi o",
+    "romaji2": "tadotte Ashi wa mau",
+    "es": "Libre como la hierba ",
+    "es1": "Sigo el camino",
+    "es2": "Los pies siguen volando "
+  },
+  {
+    "id": 2,
+    "date": "Veranos 2021-2022",
+    "img": "https://images.pexels.com/photos/158101/storks-birds-animal-storchennest-158101.jpeg",
+    "jp": "コウノトリ ",
+    "jp2": "朝にさえずり ",
+    "jp3": "涙ひとつ",
+    "romaji": "Kōnotori Asa",
+    "romaji1": "ni saezuri ",
+    "romaji2": "Namida hitotsu",
+    "es": "Vuelan cigueñas",
+    "es1": "Esta mañana cantan",
+    "es2": "Sentí un llanto."
+  },
+  {
+    "id": 3,
+    "date": "Veranos 2021-2022",
+    "img": "https://images.pexels.com/photos/8037633/pexels-photo-8037633.jpeg",
+    "jp": "歯なしでも ",
+    "jp2": "祖父と孫が ",
+    "jp3": "声で笑う",
+    "romaji": "Hanashi demo ",
+    "romaji1": "Sofu to mago",
+    "romaji2": "ga Koe de warau ,",
+    "es": "Ecos de voces y juego",
+    "es1": "El abuelo y el niño",
+    "es2": "Sonríen sin dientes ."
+  }
+]
