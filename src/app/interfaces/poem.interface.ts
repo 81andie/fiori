@@ -26,7 +26,8 @@ export interface haikusMusicados{
   romaji2: string,
   es: string,
   es1: string,
-  es2: string
+  es2: string,
+  audio:string
 }
 
 
