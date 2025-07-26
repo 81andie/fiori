@@ -27,30 +27,51 @@ export class CardComponent implements OnInit {
 
 
   ngOnInit(): void {
-
+    this.sacarAudiosyHaikus()
 
   }
 
+  sacarAudiosyHaikus() {
+    this.haikusMusicadosService.getHaikusWidthAudios().subscribe((data) => {
+      this.haikusMusicados = data;
+      this.haiku = data;
+      const randomIndex = Math.floor(Math.random() * data.length);
+      this.haikusMusicados = [data[randomIndex]];
+
+      return this.haikusMusicados && this.haiku
+
+    })
+  }
+
+
+
+
   filteredSongs(event: KeyboardEvent) {
-    console.log(this.myInput.value);
-    console.log("hello")
 
 
     if (event.key === 'Enter') {
       const searchBar = this.myInput.value.trim().toLowerCase();
-      console.log('Input:', searchBar);
+
 
       if (searchBar.length > 0) {
 
         let filtered = this.haiku.filter((haikufiltered) => {
           // Example filter: check if haikufiltered.title includes the searchBar
           // Adjust the property as needed based on haikusMusicados interface
-          return haikufiltered.title?.toLowerCase().includes(searchBar);
+          const titleLower = haikufiltered.title.toLowerCase();
+
+          let matchs = titleLower.includes(searchBar);
+          console.log('matchs:', matchs)
+          return matchs;
+
         });
-        this.haikusMusicados= filtered
+
+        this.haikusMusicados = filtered
+
+        console.log(this.haikusMusicados)
+
       }
-
-
+      //this.myInput.reset()
     }
   }
 
