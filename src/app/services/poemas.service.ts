@@ -12,8 +12,6 @@ export class PoemasService {
 
   constructor(private http: HttpClient) { }
 
-
-
   private jsonUrl = 'assets/haikus.json';
   private jsonUrlHaikusMusicados = 'assets/haikusMusicados.json';
 

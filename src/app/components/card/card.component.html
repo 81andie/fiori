@@ -1,4 +1,4 @@
-<!--<div class="h-72 w-60 bg-zinc-200 z-40  fixed top-20 right-10 rounded-lg">
+<div class="h-72 w-60 bg-zinc-200 z-40  fixed top-20 right-10 rounded-lg">
   <div class="w-full mt-1 ml-1 mr-1">
 
     <form class="max-w-md mx-auto">
@@ -8,6 +8,8 @@
           class="h-6 me-3 rounded-full" alt="Logo" />
         <span class="self-center text-xs font-semibold whitespace-nowrap dark:text-white">Fiori Poetic blog</span>
       </div>
+
+      <!--Form input Search-->
 
       <label for="default-search" class="mb-1 text-xs font-medium text-gray-900 sr-only dark:text-white">Search</label>
       <div class="relative ml-1 mr-0.5 mt-0.5">
@@ -19,8 +21,11 @@
           </svg>
         </div>
         <input type="search" id="default-search"
-          class="block w-48 p-0.5 ps-10 text-xs text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-stone-500 focus:border-stone-500 dark:bg-stone-100 dark:border-stone-300 dark:placeholder-gray-400 dark:text-white dark:focus:ring-stone-500 dark:focus:border-stone-500"
-          placeholder="Search song..." required />
+          class="block w-48 p-0.5 ps-10 text-xs text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-stone-500 focus:border-stone-500 dark:bg-stone-100 dark:border-stone-300 dark:placeholder-gray-400 dark:text-stone-900 dark:focus:ring-stone-500 dark:focus:border-stone-500"
+          placeholder="Search song..."
+          value="haikusMusicados" [formControl]="myInput" (keyup)="filteredSongs($event)"
+
+          />
         <button type="submit"
           class="text-white absolute end-3.5 bottom-0 bg-stone-600 hover:bg-stone-800 focus:ring-4 focus:outline-none focus:ring-stone-300 font-medium rounded-lg text-xs px-1.5 py-1 dark:bg-stone-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
 
@@ -35,283 +40,174 @@
 
 
 
-<div
-  *ngFor="let haiku of haikus();  let i = index"
-  class="relative w-[230px] mt-0.5 h-24"
->
-  <img
-    src="https://images.pexels.com/photos/10533337/pexels-photo-10533337.jpeg"
-    alt="Descripción"
-    class="w-[230px] mt-1 h-24 object-cover"
-  />
-  <div class="absolute w-full top-0 left-0 p-1 text-stone-800 font-bold text-xs bg-opacity-30">
-    <span
-      class="bg-stone-50 p-1 opacity-50 text-stone-800"
-      [class.active]="i === currentIndex()"
-    >
-      {{ haiku.title }}
-    </span>
-    <div class="flex flex-col p-1 opacity-50">
-      <span>Corona de flores</span>
-      <span>Miel y azahar en la alcoba</span>
-      <span>Se consuma la vida</span>
-    </div>
-  </div>
-</div>
+    <!--titulo + haiku + minutaje+ barra porcentaje-->
 
-
-
-
-
-
-
-  <div class="flex flex-col max-w-md mx-auto text-xs mt-0.5 ml-1">
-    <span>Luna de miel</span>
-    <span><strong>Andrea Hernández</strong></span>
-    <div class="w-full max-w-xl">
-
-      <div class="flex justify-between mt-1 text-xs text-gray-600 mb-1 mr-2">
-        <span>0:42</span>
-        <span>3:15</span>
-      </div>
-
-
-
-
-      <div class="relative w-[230px] h-2 bg-gray-300 rounded ">
-
-        <div class="h-full  bg-blue-600 rounded mr-1" style="width:20%;"></div>
-
-
-        <div
-          class="absolute top-1/2 left-[22%] w-4 h-4 bg-blue-600 rounded-full transform -translate-x-1/2 -translate-y-1/2 shadow-md">
-        </div>
-      </div>
-
-      <div class="h-9 p-1 w-[230px] mt-3 rounded-lg bg-stone-300 mr-0.5 ml-0.5">
-        <div class="flex justify-center justify-items-center mr-2 ml-1 gap-1">
-
-          <button class="border border-zinc-500 rounded-lg">
-            <svg class="mt-0.5 p-1 mr-1" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M18 4L21 7M21 7L18 10M21 7H7C4.79086 7 3 8.79086 3 11M6 20L3 17M3 17L6 14M3 17H17C19.2091 17 21 15.2091 21 13"
-                  stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              </g>
-            </svg>
-
-          </button>
-
-          <button class="border border-zinc-500 rounded-lg">
-            <svg class="mt-0.5 p-1 mr-0.5" width="24px" height="24px" viewBox="-0.48 -0.48 16.96 16.96" fill="000000"
-              xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)" stroke="#b8b8b8">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <path d="M1 14H3L9 8L3 2H1V14Z" fill="#000000"></path>
-                <path d="M15 2H13V14H15V2Z" fill="#000000"></path>
-                <path d="M9 2H11V14H9V2Z" fill="#000000"></path>
-              </g>
-            </svg></button>
-
-          <button class="border border-zinc-500 rounded-lg">
-            <svg class="mt-0.5 p-1 mr-0.5" fill="#000000" width="24px" height="24px" viewBox="0 0 32 32" id="icon"
-              xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: none;
-                    }
-                  </style>
-                </defs>
-                <path id="_inner-path_" data-name="<inner-path>" class="cls-1"
-                  d="M11,23a1,1,0,0,1-1-1V10a1,1,0,0,1,1.4473-.8945l12,6a1,1,0,0,1,0,1.789l-12,6A1.001,1.001,0,0,1,11,23Z">
-                </path>
-                <path
-                  d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm7.4473,14.8945-12,6A1,1,0,0,1,10,22V10a1,1,0,0,1,1.4473-.8945l12,6a1,1,0,0,1,0,1.789Z">
-                </path>
-                <rect id="_Transparent_Rectangle_" data-name="<Transparent Rectangle>" class="cls-1" width="32"
-                  height="32"></rect>
-              </g>
-            </svg>
-          </button>
-
-
-          <button class="border border-zinc-500 rounded-lg">
-
-            <svg class="mt-0.5 p-1 mr-0.5" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <path d="M11 7H8V17H11V7Z" fill="#000000"></path>
-                <path d="M13 17H16V7H13V17Z" fill="#000000"></path>
-              </g>
-            </svg>
-
-          </button>
-
-
-
-
-          <button class="border border-zinc-500 rounded-lg">
-            <svg class="mt-0.5 p-1 mr-0.5" width="24px" height="24px" viewBox="-0.48 -0.48 16.96 16.96" fill="none"
-              xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)" stroke="#ababab">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <path d="M1 14H3L9 8L3 2H1V14Z" fill="#000000"></path>
-                <path d="M15 2H13V14H15V2Z" fill="#000000"></path>
-                <path d="M9 2H11V14H9V2Z" fill="#000000"></path>
-              </g>
-            </svg>
-          </button>
-
-          <button class="border border-zinc-500 rounded-lg">
-            <svg class="mt-0.5 p-1 mr-0.5" width="24px" height="24px" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg" fill="#000000">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <title></title>
-                <g id="Complete">
-                  <g id="volume-mute">
-                    <polygon fill="none" points="8 9 12 9 17 3 17 21 12 16 7 16 7 9 8 9" stroke="#000000"
-                      stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </button>
-
-          <button class="border border-zinc-500 rounded-lg">
-            <svg class="mt-0.5 p-1 mr-0.5" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <g id="Media / Volume_Off">
-                  <path id="Vector"
-                    d="M16.1716 9.17117L21.8284 14.828M16.1716 14.828L21.8284 9.17117M7.4803 15.4065L9.15553 17.4796C10.0288 18.5603 10.4655 19.1006 10.848 19.1594C11.1792 19.2104 11.5138 19.092 11.7394 18.8443C12 18.5581 12 17.8634 12 16.4739V7.52526C12 6.13581 12 5.44109 11.7394 5.1549C11.5138 4.90715 11.1792 4.78884 10.848 4.83975C10.4655 4.89858 10.0288 5.43893 9.15553 6.51963L7.4803 8.59273C7.30388 8.81105 7.21567 8.92021 7.10652 8.99876C7.00982 9.06835 6.90147 9.1201 6.78656 9.15158C6.65687 9.1871 6.51652 9.1871 6.23583 9.1871H4.8125C4.0563 9.1871 3.6782 9.1871 3.37264 9.28804C2.77131 9.4867 2.2996 9.95841 2.10094 10.5597C2 10.8653 2 11.2434 2 11.9996C2 12.7558 2 13.1339 2.10094 13.4395C2.2996 14.0408 2.77131 14.5125 3.37264 14.7112C3.6782 14.8121 4.0563 14.8121 4.8125 14.8121H6.23583C6.51652 14.8121 6.65687 14.8121 6.78656 14.8476C6.90147 14.8791 7.00982 14.9308 7.10652 15.0004C7.21567 15.079 7.30388 15.1881 7.4803 15.4065Z"
-                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </g>
-              </g>
-            </svg>
-          </button>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
--->
-
-
-<div class="h-72 w-60 bg-zinc-200 z-40 fixed top-20 right-10 rounded-lg">
-  <div class="w-full mt-1 ml-1 mr-1">
-    <!-- HEADER -->
-    <form class="max-w-md mx-auto">
-      <div class="w-[223px] p-1 flex mt-1.5 mb-1 mr-1 ml-1 bg-stone-300 rounded-lg">
-        <img
-          src="https://tse3.mm.bing.net/th/id/OIP.9LqKtokwcvdtCraAnRTRegHaHa?r=0&pid=ImgDet&w=194&h=194&c=7&dpr=1,4&o=7&rm=3"
-          class="h-6 me-3 rounded-full" alt="Logo" />
-        <span class="self-center text-xs font-semibold whitespace-nowrap dark:text-white">Fiori Poetic blog</span>
-      </div>
-
-      <div class="relative ml-1 mr-0.5 mt-0.5 text-black">
-        <input #searchBox type="search"
-          class="block w-48 p-0.5 ps-10 text-xs text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-stone-500 focus:border-stone-500 dark:bg-stone-100 dark:border-stone-300 dark:text-black"
-          placeholder="Search song..."
-          (input)="setSearchTerm(searchBox.value)"
-          [value]="searchTerm()"  />
-        <button type="submit"
-          class="text-white absolute end-3.5 bottom-0 bg-stone-600 hover:bg-stone-800 rounded-lg text-xs px-1.5 py-1">
-          <svg class="w-3 h-3" fill="none" viewBox="0 0 20 20">
-            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-          </svg>
-        </button>
-      </div>
-    </form>
-
-    <!-- LISTA DE HAIKUS -->
-    <div *ngIf="filteredHaikus() as haikusList">
-      <div *ngFor="let haiku of haikusList; let i = index" class="relative w-[230px] mt-0.5 h-24">
-        <img [src]="haiku.img" alt="Haiku Image" class="w-[230px] mt-1 h-24 object-cover" />
-        <div class="absolute w-full top-0 left-0 p-1 text-stone-800 font-bold text-xs bg-opacity-30">
-          <span class="bg-stone-50 p-1 opacity-50 text-stone-800" [class.active]="i === currentIndex()">
-            {{ haiku.title }}
-          </span>
-          <div class="flex flex-col p-1 opacity-50">
-            <span>{{ haiku.es }}</span>
-            <span>{{ haiku.es1 }}</span>
-            <span>{{ haiku.es2 }}</span>
-          </div>
+    <div class="relative w-[230px] mt-0.5 h-24">
+      <img src="https://images.pexels.com/photos/10533337/pexels-photo-10533337.jpeg" alt="Descripción"
+        class="w-[230px] mt-1 h-24 object-cover" />
+      <div class="absolute w-full top-0 left-0 p-1 text-stone-800 font-bold text-xs bg-opacity-30">
+        <span class="bg-stone-50 p-1 opacity-50 text-stone-800">
+          bla bla bla
+        </span>
+        <div class="flex flex-col p-1 opacity-50">
+          <span>Corona de flores</span>
+          <span>Miel y azahar en la alcoba</span>
+          <span>Se consuma la vida</span>
         </div>
       </div>
     </div>
 
-    <!-- CONTROLES DEL REPRODUCTOR -->
     <div class="flex flex-col max-w-md mx-auto text-xs mt-0.5 ml-1">
       <span>Luna de miel</span>
       <span><strong>Andrea Hernández</strong></span>
-
-      <!-- Tiempo y barra de progreso -->
       <div class="w-full max-w-xl">
+
         <div class="flex justify-between mt-1 text-xs text-gray-600 mb-1 mr-2">
           <span>0:42</span>
           <span>3:15</span>
         </div>
 
-        <div class="relative w-[230px] h-2 bg-gray-300 rounded cursor-pointer" (click)="seek($event)">
-          <div class="h-full bg-blue-600 rounded" [style.width.%]="progress() * 100"></div>
+        <!--barra de porcentaje-->
+
+        <div class="relative w-[230px] h-2 bg-gray-300 rounded ">
+          <div class="h-full  bg-blue-600 rounded mr-1" style="width:20%;"></div>
           <div
-            class="absolute top-1/2 left-0 w-4 h-4 bg-blue-600 rounded-full transform -translate-x-1/2 -translate-y-1/2 shadow-md"
-            [style.left.%]="progress() * 100"></div>
+            class="absolute top-1/2 left-[22%] w-4 h-4 bg-blue-600 rounded-full transform -translate-x-1/2 -translate-y-1/2 shadow-md">
+          </div>
         </div>
 
-        <!-- BOTONES -->
+        <!--barra navegación btns audio-player-->
+
         <div class="h-9 p-1 w-[230px] mt-3 rounded-lg bg-stone-300 mr-0.5 ml-0.5">
-          <div class="flex justify-center gap-1">
-            <!-- Rewind -->
-            <button class="border border-zinc-500 rounded-lg" (click)="previous()">
-              ⏮
-            </button>
+          <div class="flex justify-center justify-items-center mr-2 ml-1 gap-1">
 
-            <!-- Play / Pause -->
-            <button class="border border-zinc-500 rounded-lg" (click)="playPause()">
-              <span *ngIf="!isPlaying()">▶️</span>
-              <span *ngIf="isPlaying()">⏸</span>
-            </button>
 
-            <!-- Forward -->
-            <button class="border border-zinc-500 rounded-lg" (click)="next()">
-              ⏭
-            </button>
-
-            <!-- Stop (opcional, sin función definida en ts) -->
+            <!--Bucle infinito btn-->
             <button class="border border-zinc-500 rounded-lg">
-              ⏹
+              <svg class="mt-0.5 ml- 0.5 p-1 mr-0.5" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M18 4L21 7M21 7L18 10M21 7H7C4.79086 7 3 8.79086 3 11M6 20L3 17M3 17L6 14M3 17H17C19.2091 17 21 15.2091 21 13"
+                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </svg>
             </button>
 
-            <!-- Mute (sin función) -->
+              <!--btn para atrás canción-->
+
             <button class="border border-zinc-500 rounded-lg">
-              🔇
+              <svg class="mt-0.5 p-1 mr-0.5 ml-0.5" width="24px" height="24px" viewBox="-0.48 -0.48 16.96 16.96" fill="000000"
+                xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)" stroke="#b8b8b8">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M1 14H3L9 8L3 2H1V14Z" fill="#000000"></path>
+                  <path d="M15 2H13V14H15V2Z" fill="#000000"></path>
+                  <path d="M9 2H11V14H9V2Z" fill="#000000"></path>
+                </g>
+              </svg>
             </button>
 
-            <!-- Volume Off (sin función) -->
+              <!--btn del play-->
             <button class="border border-zinc-500 rounded-lg">
-              🔈
+              <svg class="mt-0.5 p-1 mr-0.5 ml-0.5" fill="#000000" width="24px" height="24px" viewBox="0 0 32 32" id="icon"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                      }
+                    </style>
+                  </defs>
+                  <path id="_inner-path_" data-name="<inner-path>" class="cls-1"
+                    d="M11,23a1,1,0,0,1-1-1V10a1,1,0,0,1,1.4473-.8945l12,6a1,1,0,0,1,0,1.789l-12,6A1.001,1.001,0,0,1,11,23Z">
+                  </path>
+                  <path
+                    d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm7.4473,14.8945-12,6A1,1,0,0,1,10,22V10a1,1,0,0,1,1.4473-.8945l12,6a1,1,0,0,1,0,1.789Z">
+                  </path>
+                  <rect id="_Transparent_Rectangle_" data-name="<Transparent Rectangle>" class="cls-1" width="32"
+                    height="32"></rect>
+                </g>
+              </svg>
             </button>
+
+
+
+            <!--btn pause-->
+
+            <button class="border border-zinc-500 rounded-lg">
+
+              <svg class="mt-0.5 mr-0.5 ml-0.5" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M11 7H8V17H11V7Z" fill="#000000"></path>
+                  <path d="M13 17H16V7H13V17Z" fill="#000000"></path>
+                </g>
+              </svg>
+            </button>
+
+
+
+            <!--btn una canción más-->
+
+            <button class="border border-zinc-500 rounded-lg">
+              <svg class="mt-0.5 p-1 mr-0.5 ml-0.5" width="24px" height="24px" viewBox="-0.48 -0.48 16.96 16.96" fill="none"
+                xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)" stroke="#ababab">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M1 14H3L9 8L3 2H1V14Z" fill="#000000"></path>
+                  <path d="M15 2H13V14H15V2Z" fill="#000000"></path>
+                  <path d="M9 2H11V14H9V2Z" fill="#000000"></path>
+                </g>
+              </svg>
+            </button>
+
+            <!--Btn audio true o sea con audio-->
+
+            <button class="border border-zinc-500 rounded-lg">
+              <svg class="mt-0.5 p-1 mr-0.5 ml-0.5" width="24px" height="24px" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title></title>
+                  <g id="Complete">
+                    <g id="volume-mute">
+                      <polygon fill="none" points="8 9 12 9 17 3 17 21 12 16 7 16 7 9 8 9" stroke="#000000"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+
+            <!--btn mute-->
+
+            <button class="border border-zinc-500 rounded-lg">
+              <svg class="mt-0.5 p-1 mr-0.5" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g id="Media / Volume_Off">
+                    <path id="Vector"
+                      d="M16.1716 9.17117L21.8284 14.828M16.1716 14.828L21.8284 9.17117M7.4803 15.4065L9.15553 17.4796C10.0288 18.5603 10.4655 19.1006 10.848 19.1594C11.1792 19.2104 11.5138 19.092 11.7394 18.8443C12 18.5581 12 17.8634 12 16.4739V7.52526C12 6.13581 12 5.44109 11.7394 5.1549C11.5138 4.90715 11.1792 4.78884 10.848 4.83975C10.4655 4.89858 10.0288 5.43893 9.15553 6.51963L7.4803 8.59273C7.30388 8.81105 7.21567 8.92021 7.10652 8.99876C7.00982 9.06835 6.90147 9.1201 6.78656 9.15158C6.65687 9.1871 6.51652 9.1871 6.23583 9.1871H4.8125C4.0563 9.1871 3.6782 9.1871 3.37264 9.28804C2.77131 9.4867 2.2996 9.95841 2.10094 10.5597C2 10.8653 2 11.2434 2 11.9996C2 12.7558 2 13.1339 2.10094 13.4395C2.2996 14.0408 2.77131 14.5125 3.37264 14.7112C3.6782 14.8121 4.0563 14.8121 4.8125 14.8121H6.23583C6.51652 14.8121 6.65687 14.8121 6.78656 14.8476C6.90147 14.8791 7.00982 14.9308 7.10652 15.0004C7.21567 15.079 7.30388 15.1881 7.4803 15.4065Z"
+                      stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </g>
+                </g>
+              </svg>
+            </button>
+
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
