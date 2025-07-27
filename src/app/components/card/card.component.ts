@@ -1,96 +1,139 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PoemasService } from '../../services/poemas.service';
 import { haikusMusicados } from '../../interfaces/poem.interface';
 import { AudioPlayerService } from '../../services/AudioPlayer.service';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { PLATFORM_ID, inject, Inject } from '@angular/core';
+import WaveSurfer from 'wavesurfer.js';
 import { isPlatformBrowser } from '@angular/common';
-
+import { Inject, PLATFORM_ID } from '@angular/core';
 
 @Component({
   selector: 'app-card',
+  standalone: true,
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
-export class CardComponent implements OnInit {
+export class CardComponent implements OnInit, AfterViewInit {
+  @ViewChild('waveform', { static: false }) waveformRef!: ElementRef;
 
+  wavesurfer!: WaveSurfer;
+  playList: haikusMusicados[] = [];
+  currentTrackIndex = 0;
 
-
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
-
-  private haikusMusicadosService = inject(AudioPlayerService)
   public haikusMusicados: haikusMusicados[] = [];
   public haiku: haikusMusicados[] = [];
-  player!: HTMLAudioElement;
-  public currentIndex: number = 0;
-
   searchTerm: string = '';
   myInput: FormControl = new FormControl('');
 
+  constructor(private haikusMusicadosService: AudioPlayerService,
+
+  @Inject(PLATFORM_ID) private platformId: Object
+
+  ) {}
 
   ngOnInit(): void {
-    this.sacarAudiosyHaikus()
+    this.sacarAudiosyHaikus();
+  }
 
-
-    if (isPlatformBrowser(this.platformId)) {
-      this.player = new Audio();
-    }
-
-
-
-
+  ngAfterViewInit(): void {
+    // El waveform se inicializará en sacarAudiosyHaikus después de obtener los datos
   }
 
   sacarAudiosyHaikus() {
     this.haikusMusicadosService.getHaikusWidthAudios().subscribe((data) => {
+      const randomIndex = Math.floor(Math.random() * data.length);
       this.haikusMusicados = data;
       this.haiku = data;
-      this.currentIndex = 0;
-      const randomIndex = Math.floor(Math.random() * data.length);
-      this.haikusMusicados = [data[randomIndex]];
+      this.playList = data;
+      this.currentTrackIndex = randomIndex;
 
-      return this.haikusMusicados && this.haiku
-
-    })
+      setTimeout(() => {
+        this.initWaveSurfer();
+      }, 50); // Asegurarse de que el DOM esté listo
+    });
   }
 
+  initWaveSurfer() {
+if (!isPlatformBrowser(this.platformId)) return; // ⛔ evita ejecutarlo en el servidor
 
+  const currentUrl = this.playList[this.currentTrackIndex]?.audio;
+  if (!currentUrl || !this.waveformRef?.nativeElement) return;
 
+  // Destruir instancia anterior si ya existe
+  if (this.wavesurfer) {
+    this.wavesurfer.destroy();
+  }
+
+  this.wavesurfer = WaveSurfer.create({
+    container: this.waveformRef.nativeElement,
+    waveColor: 'rgb(200, 0, 200)',
+    progressColor: 'rgb(100, 0, 100)',
+    barWidth: 1,
+    height: 20,
+  });
+
+  this.wavesurfer.load(currentUrl);
+
+  this.wavesurfer.on('finish', () => {
+    console.log('Finished');
+  });
+
+  }
 
   filteredSongs(event: KeyboardEvent) {
-
-
     if (event.key === 'Enter') {
       const searchBar = this.myInput.value.trim().toLowerCase();
-
-
       if (searchBar.length > 0) {
+        const filtered = this.haiku.filter(haikufiltered =>
+          haikufiltered.title.toLowerCase().includes(searchBar)
+        );
 
-        let filtered = this.haiku.filter((haikufiltered) => {
-          // Example filter: check if haikufiltered.title includes the searchBar
-          // Adjust the property as needed based on haikusMusicados interface
-          const titleLower = haikufiltered.title.toLowerCase();
+        this.haikusMusicados = filtered;
+        this.playList = filtered;
+        this.currentTrackIndex = 0;
 
-          let matchs = titleLower.includes(searchBar);
-          console.log('matchs:', matchs)
-          return matchs;
-
-        });
-
-        this.haikusMusicados = filtered
-
-        console.log(this.haikusMusicados)
-
+        if (this.playList.length > 0) {
+          setTimeout(() => this.initWaveSurfer(), 20);
+        } else {
+          this.wavesurfer?.destroy();
+        }
       }
-      // this.myInput.reset()
     }
-
   }
 
+  togglePlay() {
+    this.wavesurfer?.playPause();
+  }
 
-  playSong(audioUrl: any) {
+  nextTrack() {
+    if (this.currentTrackIndex < this.playList.length - 1) {
+      this.currentTrackIndex++;
+      this.initWaveSurfer();
+    }
+  }
+
+  previousTrack() {
+    if (this.currentTrackIndex > 0) {
+      this.currentTrackIndex--;
+      this.initWaveSurfer();
+    }
+  }
+
+  playTrack(index: number) {
+    this.currentTrackIndex = index;
+    this.initWaveSurfer();
+  }
+}
+
+
+
+
+
+
+
+/* playSong(audioUrl: any) {
 
     if (this.player) {
       this.player.src = audioUrl;
@@ -151,6 +194,9 @@ nextSong() {
     }
   });
 }
+*/
 
 
-}
+
+
+
