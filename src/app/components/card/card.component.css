@@ -16,14 +16,14 @@
 
 }
 
-canvas {
-  height: 100px;
+
+.sidenav{
+  transition: transform 0.5s ease-in-out;
+  bottom: 0;
+  transform: translateY(2%);
+  visibility: visible;
+
+
 }
 
-#waveform ::part(wrapper) {
-  --box-size: 10px;
-  background-image:
-    linear-gradient(transparent calc(var(--box-size) - 1px), blue var(--box-size), transparent var(--box-size)),
-    linear-gradient(90deg, transparent calc(var(--box-size) - 1px), blue var(--box-size), transparent var(--box-size));
-  background-size: 100% var(--box-size), var(--box-size) 100%;
-}
+

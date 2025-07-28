@@ -16,16 +16,19 @@ import { Inject, PLATFORM_ID } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent implements OnInit, AfterViewInit {
+
   @ViewChild('waveform', { static: false }) waveformRef!: ElementRef;
 
   wavesurfer!: WaveSurfer;
   playList: haikusMusicados[] = [];
   currentTrackIndex = 0;
 
+  public isAudioVisible: boolean = false;
   public haikusMusicados: haikusMusicados[] = [];
   public haiku: haikusMusicados[] = [];
   searchTerm: string = '';
   myInput: FormControl = new FormControl('');
+
 
   constructor(private haikusMusicadosService: AudioPlayerService,
 
@@ -35,6 +38,7 @@ export class CardComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.sacarAudiosyHaikus();
+    this.toggleAudio()
   }
 
   ngAfterViewInit(): void {
@@ -125,6 +129,16 @@ if (!isPlatformBrowser(this.platformId)) return; // ⛔ evita ejecutarlo en el s
     this.currentTrackIndex = index;
     this.initWaveSurfer();
   }
+
+
+
+
+  toggleAudio(): void {
+
+   console.log("hello")
+    this.isAudioVisible = !this.isAudioVisible;
+  }
+
 }
 
 

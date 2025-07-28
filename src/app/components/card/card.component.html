@@ -1,4 +1,8 @@
-<div class="h-80 w-60 bg-zinc-200 z-40 fixed top-20 right-10 rounded-lg" *ngIf="playList.length > 0">
+
+<div class="h-80 w-60 bg-zinc-200 z-40 fixed top-20 right-10 rounded-lg" *ngIf="playList.length > 0"
+
+
+  >
   <div class="w-full mt-1 ml-1 mr-1">
     <form class="max-w-md mx-auto">
       <div class="w-[223px] p-1 flex mt-1.5 mb-1 mr-1 ml-1 bg-stone-300 rounded-lg">
@@ -23,8 +27,13 @@
       </div>
     </form>
 
-    <!-- Muestra solo el haiku actual -->
-    <div class="relative w-[230px] mt-0.5 h-24">
+    <hr class="h-1 w-[230px] mt-2 mb-2 bg-fuchsia-600" >
+
+    <div class= >
+
+       <!-- Muestra solo el haiku actual -->
+    <div class="relative w-[230px] mt-0.5 h-24 "
+    >
       <img [src]="playList[currentTrackIndex].img" alt="Descripción" class="w-[230px] mt-0.5 h-24 object-cover" />
       <div class="absolute top-1 left-0 text-stone-600 font-bold text-xs bg-opacity-30">
         <span class="bg-pink-950 p-1 ml-2 text-md text-fuchsia-50 text-right bg-opacity-25">
@@ -67,4 +76,11 @@
 
       </div>
     </div>
+
+    </div>
+
+
+
   </div>
+
+
