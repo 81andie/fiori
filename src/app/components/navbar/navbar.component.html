@@ -25,28 +25,32 @@
         <ul
           class="flex flex-col p-5 md:p-0 mt-4 font-medium border  md:space-x-6 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  ">
           <li>
-            <a href="#"
+            <a [routerLink]="['/inicio']" routerLinkActive="router-link-active"
               class="ml-1 sm:mb-1 border p-1 rounded-xl border-gray-800 text-sm/9 hover:transition duration-300 ease-in-out  text-sm/12 hover:scale-y-125 hover:scale-x-125 text-zinc-600 font-semibold  navbar-links">Inicio</a>
           </li>
           <li>
-             <a href="#"
+             <a
+             [routerLink]="['/poemas']"
           class="border p-1 rounded-xl border-gray-800 text-sm/9 mr-6 text-zinc-600 font-semibold  navbar-linkshover:tracking-tight  transition duration-300 ease-in-out  text-sm/12 hover:scale-y-125 hover:scale-x-125 ">Poemas</a>
-            <a href="#"
+            <a [routerLink]="['/haikus musicados']"
               class="border p-1.5 rounded-xl border-gray-800 mr-8 text-sm/9 text-zinc-600 font-semibold  navbar-links hover:tracking-tight  transition duration-300 ease-in-out  text-sm/12 hover:scale-y-105 ">Haikus
               Musicales</a>
-            <a href="#"
+            <a [routerLink]="['/poemas']"
               class="border p-1.5 rounded-xl border-gray-800 text-sm/9 text-zinc-600 font-semibold  navbar-links hover:tracking-tight  transition duration-300 ease-in-out  text-sm/12 hover:scale-y-125 hover:scale-x-125">Haikus</a>
           </li>
           <li>
- <a href="#"
+ <a [routerLink]="['/poemas musicados']"
           class="border mt-3 p-1.5 rounded-xl border-gray-800 text-sm/9  text-zinc-600 font-semibold  navbar-links hover:tracking-tight  transition duration-300 ease-in-out  text-sm/12 hover:scale-y-125 hover:scale-x-125">Cuentos
           musicales</a>
           </li>
           <li>
-<a href="#"
+<a [routerLink]="['/cuentos']"
           class="border p-1.5 rounded-xl border-gray-800 text-sm/9  text-zinc-600 font-semibold  navbar-links hover:tracking-tight  transition duration-300 ease-in-out  text-sm/12 hover:scale-y-125 hover:scale-x-125">Sobre
           mi</a>
           </li>
+
+           <li>
+
         </ul>
       </div>
     </div>

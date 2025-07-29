@@ -8,10 +8,11 @@ import { CabeceraComponent } from "./components/cabecera/cabecera.component";
 import { HaikusMusicadosComponent } from "./components/haikus-musicados/haikus-musicados.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { CardComponent } from './components/card/card.component';
+import { InicioComponent } from "./components/inicio/inicio.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, HeroComponent, HaikusComponent, SobreMiComponent, CabeceraComponent, HaikusMusicadosComponent, FooterComponent, CardComponent],
+  imports: [RouterOutlet, NavbarComponent, HeroComponent, HaikusComponent, SobreMiComponent, CabeceraComponent, HaikusMusicadosComponent, FooterComponent, CardComponent, InicioComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
