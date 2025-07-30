@@ -1,6 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PoemasService } from '../../services/poemas.service';
+import { HaikusService } from '../../services/haikus.service';
 import { haikusMusicados } from '../../interfaces/poem.interface';
 import { AudioPlayerService } from '../../services/AudioPlayer.service';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';

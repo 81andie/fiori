@@ -31,6 +31,15 @@ export interface haikusMusicados{
 }
 
 
+export interface poemsVerses {
+  id:number,
+  title: string;
+  author: string;
+  verses: string[];
+  image:string
+  ilus:string
+}
+
 
 
 

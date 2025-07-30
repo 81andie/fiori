@@ -1,7 +1,7 @@
 
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, ViewChild,AfterViewInit, inject} from '@angular/core';
-import { PoemasService } from '../../services/poemas.service';
+import { HaikusService } from '../../services/haikus.service';
 import { poem } from '../../interfaces/poem.interface';
 
 
@@ -20,12 +20,12 @@ export class HaikusComponent implements AfterViewInit {
   }
 
    haikus: poem[] = [];
-   private haikusService = inject(PoemasService)
+   private haikusService = inject(HaikusService)
 
   private isScrolling = false;
     @ViewChild('scrollContainer', { static: true }) scrollContainer!: ElementRef<HTMLElement>;
 
- 
+
 
   ngAfterViewInit() {
     const container = this.scrollContainer.nativeElement;

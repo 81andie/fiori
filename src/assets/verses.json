@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "SOPLA",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Bajo un ciprés",
+      "la copa en la velada",
+      "huelo...",
+      "el paladar de la tierra",
+      "el perfume de la sal",
+      "el pelo se me despiena...",
+      "bajo el viento de la camarga"
+    ],
+    "image": "flor.png",
+    "ilus": "AHH"
+  },
+  {
+    "id": 2,
+    "title": "Heaven",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "En tu mirada",
+      "comprendí",
+      "en tus ojos morí",
+      "y en tus manos renací"
+    ],
+    "image": "flor.png",
+    "ilus": "AHH"
+  },
+  {
+    "id": 3,
+    "title": "La vida no es más",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "La vida no es más que una película que dura demasiado poco.",
+      "Un fotograma de vivencias,",
+      "que pasa más deprisa en cuanto,",
+      "por infortunios extraños,",
+      "vemos peligrar nuestra existencia..."
+    ],
+    "image": "flor.png",
+    "ilus": "AHH"
+  },
+  {
+    "id": 4,
+    "title": "Del amor y otras seriedades",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Poco tiempo es el que nos queda,",
+      "La vida pasa sin piedad,",
+      "No hay sólo muros por la calle,",
+      "Crecen por todos los lados,",
+      "Y se edifican seriamente en corazones ciegos",
+      "Mudos y sordos,",
+      "Así es el amor en la ciudad,",
+      "Paredes serias en el cuerpo,",
+      "Yeso, cal y piedra...",
+      "El alma y las piernas saben el camino",
+      "Pero los segundos son más rápidos",
+      "Y el amor se volvió más duro que el diamante..."
+    ],
+    "image": "flor.png",
+    "ilus": "AHH"
+  }
+]

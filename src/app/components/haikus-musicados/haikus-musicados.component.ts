@@ -1,7 +1,7 @@
 
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, AfterViewInit, inject, ViewChild} from '@angular/core';
-import { PoemasService } from '../../services/poemas.service';
+import { HaikusService } from '../../services/haikus.service';
 import { haikusMusicados } from '../../interfaces/poem.interface';
 import { CardComponent } from "../card/card.component";
 
@@ -18,7 +18,7 @@ export class HaikusMusicadosComponent implements AfterViewInit{
     this.sacarPoemasMusicados()
   }
 
-    private haikusMusicadosService = inject(PoemasService)
+    private haikusMusicadosService = inject(HaikusService)
      haikusMusicados: haikusMusicados[] = [];
 
 
