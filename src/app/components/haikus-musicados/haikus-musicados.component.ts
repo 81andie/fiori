@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Component, ElementRef, AfterViewInit, inject, ViewChild} from '@angular/core';
 import { PoemasService } from '../../services/poemas.service';
 import { haikusMusicados } from '../../interfaces/poem.interface';
+import { CardComponent } from "../card/card.component";
 
 
 @Component({
   selector: 'app-haikus-musicados',
-  imports: [CommonModule],
+  imports: [CommonModule, CardComponent],
   templateUrl: './haikus-musicados.component.html',
   styleUrl: './haikus-musicados.component.css'
 })

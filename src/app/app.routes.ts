@@ -5,15 +5,18 @@ import { HaikusMusicadosComponent } from './components/haikus-musicados/haikus-m
 import { CuentosMusicalesComponent } from './components/cuentos-musicales/cuentos-musicales.component';
 import { PoemasComponent } from './components/poemas/poemas.component';
 import { PoemasMusicadosComponent } from './components/poemas-musicados/poemas-musicados.component';
+import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 
 export const routes: Routes = [
 
-  { path: 'inicio', component: InicioComponent },
-  { path: 'haikus', component: HaikusComponent },
-  { path: 'haikus musicados', component: HaikusMusicadosComponent },
-  { path: 'poemas', component: PoemasComponent },
+  { path: 'Inicio', component: InicioComponent },
+  { path: 'Poemas', component: PoemasComponent },
+  { path: 'Haikus', component: HaikusComponent },
+  { path: 'Haikus con musica', component: HaikusMusicadosComponent },
+
    { path: 'poemas musicados', component: PoemasMusicadosComponent },
-  { path: 'cuentos', component: CuentosMusicalesComponent },
+  { path: 'Cuentos', component: CuentosMusicalesComponent },
+    { path: 'Sobre mi', component: SobreMiComponent},
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
 
 ];
