@@ -1,4 +1,8 @@
-<div #scrollContainer class="mt-5 flex overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-none h-screen">
+<div #scrollContainer class="mt-5 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth scrollbar-none h-screen">
+
+  @for (poem of poemasYVersos; track $index) {
+
+
 
 
   <div class="relative w-full flex-shrink-0 snap-start ">
@@ -10,22 +14,19 @@
 
     <!-- Contenido del haiku -->
     <div
-      class="relative z-10 flex flex-row sm:top-0 justify-center items-center h-full text-white px-4 text-center space-y-0.5">
-<div class="flex flex-col">
-<p class="text-black font-extrabold">SOPLA</p>
-      <p class="text-black">Bajo un ciprés</p>
-       <p class="text-black">la copa en  la velada</p>
-        <p class="text-black">huelo</p>
-         <p class="text-black">el paladar de la tierra</p>
-         <p class="text-black">el perfume de la sal</p>
-          <p class="text-black">y el pelo se despiena</p>
-           <p class="text-black">bajo el viento de la Camarga</p>
-</div>
+      class="relative z-10 flex flex-row sm:top-0 justify-center items-center h-full text-white px-5 text-center space-y-1.5">
+      <div class="flex flex-col">
+        <p class="text-black font-extrabold">{{poem.title}}</p>
+        @for (verse of poem.verses; track $index) {
+        <p class="text-black">{{ verse }}</p>
+        }
+
+      </div>
 
 
 
-      <img src="flor.png" class="h-56 w-24 transition duration-700 ease-in-out skew-x-2 hover:scale-150"/>
-       <p class="text-xs font-bold leading-tight text-black">ilustraciones de AHH</p>
+      <img [src]="poem.image" class="h-56 w-auto transition duration-700 ease-in-out skew-x-2 hover:scale-150" />
+      <p class="text-xs font-bold leading-tight text-black">ilustraciones de AHH</p>
 
 
     </div>
@@ -35,7 +36,7 @@
 
 
 
-
+  }
 
 
 </div>

@@ -9,6 +9,7 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 
 export const routes: Routes = [
 
+   { path: '', component: InicioComponent },
   { path: 'Inicio', component: InicioComponent },
   { path: 'Poemas', component: PoemasComponent },
   { path: 'Haikus', component: HaikusComponent },

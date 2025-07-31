@@ -9,10 +9,12 @@ import { HeroComponent } from "../hero/hero.component";
 import { FooterComponent } from "../footer/footer.component";
 import { HaikusComponent } from "../haikus/haikus.component";
 import { HaikusMusicadosComponent } from "../haikus-musicados/haikus-musicados.component";
+import { PoemasComponent } from "../poemas/poemas.component";
+import { CuentosMusicalesComponent } from "../cuentos-musicales/cuentos-musicales.component";
 
 @Component({
   selector: 'app-inicio',
-  imports: [RouterModule, CabeceraComponent, SobreMiComponent, NavbarComponent, HeroComponent, FooterComponent, HaikusComponent, HaikusMusicadosComponent],
+  imports: [RouterModule, CabeceraComponent, SobreMiComponent, NavbarComponent, HeroComponent, FooterComponent, HaikusComponent, HaikusMusicadosComponent, PoemasComponent, CuentosMusicalesComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
