@@ -32,11 +32,13 @@ export interface haikusMusicados{
 
 
 export interface poemsVerses {
+transform: any;
   id:number,
   title: string;
   author: string;
   verses: string[];
   image:string
+  background:string
   ilus:string
 }
 

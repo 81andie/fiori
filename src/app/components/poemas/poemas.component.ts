@@ -1,32 +1,46 @@
-import { AfterViewInit, Component, inject } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
 import { PoemasyVersosService } from '../../services/PoemasyVersos.service';
 import { poemsVerses } from '../../interfaces/poem.interface';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-poemas',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './poemas.component.html',
   styleUrl: './poemas.component.css'
 })
-export class PoemasComponent implements AfterViewInit {
+export class PoemasComponent implements AfterViewInit, OnInit {
 
-  constructor() { }
+  @ViewChild('scrollContainer', { static: true }) scrollContainer!: ElementRef<HTMLElement>;
 
-  private poemasService = inject(PoemasyVersosService)
+ 
+
+  private poemasService = inject(PoemasyVersosService);
   public poemasYVersos: poemsVerses[] = [];
 
+  ngOnInit(): void {}
 
   ngAfterViewInit(): void {
-  this.sacarPoemasYVersos()
+    this.sacarPoemasYVersos();
   }
-
 
   sacarPoemasYVersos() {
-    this.poemasService.getPoemsAndVerses().subscribe((data)=>{
-     console.log(data)
-      this.poemasYVersos = data
-    })
-
+    this.poemasService.getPoemsAndVerses().subscribe((data) => {
+      this.poemasYVersos = data;
+    });
   }
+
+
+
+
+
+
+
 }
+
+
+
+
+
+

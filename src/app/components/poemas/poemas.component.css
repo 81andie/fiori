@@ -1,0 +1,47 @@
+.scroll-container {
+  -webkit-overflow-scrolling: touch; /* suaviza el scroll táctil */
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+
+
+
+}
+
+
+
+
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.parallax,
+.absolute-inset-capa-oscura {
+  pointer-events: none;
+}
+
+.parallax {
+
+  height: 100vh;
+  margin: 52px;
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+transform: translateZ(-1px) scale(1.5); /* truco de profundidad */
+  z-index: -1;
+
+
+
+}
+
+
+
+.cursor-grab {
+  cursor: grab;
+}
+
+.cursor-grabbing {
+  cursor: grabbing;
+}

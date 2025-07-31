@@ -12,8 +12,9 @@
       "el pelo se me despiena...",
       "bajo el viento de la camarga"
     ],
-    "background":
+    "background": "textura.jpg",
     "image": "flor.png",
+   
     "ilus": "AHH"
   },
   {
@@ -26,8 +27,9 @@
       "en tus ojos morí",
       "y en tus manos renací"
     ],
+    "background": "textura1.jpg",
+    "image": "flor5.png",
 
-    "image": "flor4.png",
     "ilus": "AHH"
   },
   {
@@ -41,7 +43,9 @@
       "por infortunios extraños,",
       "vemos peligrar nuestra existencia..."
     ],
+    "background": "textura2.jpg",
     "image": "flor2.png",
+
     "ilus": "AHH"
   },
   {
@@ -62,7 +66,9 @@
       "Pero los segundos son más rápidos",
       "Y el amor se volvió más duro que el diamante..."
     ],
-    "image": "flor2.png",
+    "background": "textura3.jpg",
+    "image": "flor4.png",
+
     "ilus": "AHH"
   }
 ]
