@@ -13,7 +13,6 @@ export const routes: Routes = [
   { path: 'Poemas', component: PoemasComponent },
   { path: 'Haikus', component: HaikusComponent },
   { path: 'Haikus con musica', component: HaikusMusicadosComponent },
-
    { path: 'poemas musicados', component: PoemasMusicadosComponent },
   { path: 'Cuentos', component: CuentosMusicalesComponent },
     { path: 'Sobre mi', component: SobreMiComponent},
