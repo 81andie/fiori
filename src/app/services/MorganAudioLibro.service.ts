@@ -1,24 +1,35 @@
-import { Story } from './../interfaces/story.interface';
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { Story } from '../interfaces/story.interface';
 
-
-
-@Injectable({ providedIn: 'root' })
+@Injectable({
+  providedIn: 'root'
+})
 export class MorganAudioLibroService {
+  private storyUrl = 'assets/morgan.json';
 
   constructor(private http: HttpClient) { }
 
-
-  private jsonUrlStory = 'assets/morgan.json';
-
-
-  getStory(): Observable<Story[]> {
-    return this.http.get<[]>(this.jsonUrlStory);
+  getStory(): Observable<Story> {
+    return this.http.get<Story>(this.storyUrl).pipe(
+      catchError(() => {
+        return of(this.getEmptyStory());
+      })
+    );
   }
 
-
-
+  private getEmptyStory(): Story {
+    return {
+      title: 'Error al cargar',
+      author: '',
+      collection: '',
+      pages: [{
+        title: 'Contenido no disponible',
+        content: ['No se pudo cargar el libro'],
+        image: undefined
+      }]
+    };
+  }
 }

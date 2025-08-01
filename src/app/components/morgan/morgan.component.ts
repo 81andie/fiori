@@ -1,94 +1,62 @@
-import { Story, Page } from './../../interfaces/story.interface';
-import { ViewChildren, QueryList, ElementRef } from '@angular/core';
-
 import { Component, OnInit } from '@angular/core';
 import { MorganAudioLibroService } from '../../services/MorganAudioLibro.service';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-
+import { Story, Page } from '../../interfaces/story.interface';
 
 @Component({
   selector: 'app-morgan',
-  imports: [RouterModule, CommonModule],
   templateUrl: './morgan.component.html',
-  styleUrl: './morgan.component.css'
+  styleUrls: ['./morgan.component.css']
 })
 export class MorganComponent implements OnInit {
+  bookData: Story = {
+    title: '',
+    author: '',
+    collection: '',
+    pages: []
+  };
+  currentPageIndex = 0;
+  isLoading = true;
+  loadError = false;
 
-    @ViewChildren('leaf') leaves!: QueryList<ElementRef>;
- constructor(private storyService: MorganAudioLibroService) {}
-
-
- stories: Story[]=[];
-
-  currentPage = 0;
+  constructor(private morganService: MorganAudioLibroService) {}
 
   ngOnInit(): void {
-   this.storyService.getStory().subscribe(data => {
-      this.stories = data;
-      // Inicializa flipbook o lo que necesites tras cargar datos
-      this.updateLeaves();
-    });
-
+    this.loadBookData();
   }
 
-  ngAfterViewInit() {
-    // Asegúrate que leaves esté listo y actualiza estilos si quieres
-    this.updateLeaves();
-  }
+  // Cambiado de private a public para acceso desde el template
+  public loadBookData(): void {
+    this.isLoading = true;
+    this.loadError = false;
 
-  updateLeaves() {
-    if (!this.leaves) return;
-
-    const leavesArray = this.leaves.toArray();
-
-    leavesArray.forEach((leaf: { nativeElement: { querySelector: (arg0: string) => { (): any; new(): any; classList: { (): any; new(): any; add: { (arg0: string): void; new(): any; }; remove: { (arg0: string): void; new(): any; }; }; }; style: { transform: string; }; }; }, index: number) => {
-      const position = index - this.currentPage;
-      let transform = `translate3d(0,0,${(position < 0 ? 1 : -1) * Math.abs(index)}px)`;
-      if (position < 0) {
-        transform += ' rotate3d(0,1,0,-180deg)';
-        leaf.nativeElement.querySelector('.page').classList.add('turned');
-      } else {
-        leaf.nativeElement.querySelector('.page').classList.remove('turned');
+    this.morganService.getStory().subscribe({
+      next: (data: Story) => {
+        this.bookData = data;
+        this.isLoading = false;
+      },
+      error: (err) => {
+        console.error('Error loading story:', err);
+        this.isLoading = false;
+        this.loadError = true;
+        this.bookData = this.getDefaultBookData();
       }
-      leaf.nativeElement.style.transform = transform;
     });
   }
 
-  nextPage() {
-    if(this.currentPage < this.stories.length - 1) {
-      this.currentPage++;
-      this.updateLeaves();
-    }
+  private getDefaultBookData(): Story {
+    return {
+      title: 'Libro no disponible',
+      author: '',
+      collection: '',
+      pages: [{
+        title: 'Error al cargar',
+        content: ['No se pudo cargar el contenido del libro'],
+        image: undefined
+      }]
+    };
   }
-
-  prevPage() {
-    if(this.currentPage > 0) {
-      this.currentPage--;
-      this.updateLeaves();
-    }
-  }
-
-
-
-
-
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

@@ -11,11 +11,12 @@ import { HaikusComponent } from "../haikus/haikus.component";
 import { HaikusMusicadosComponent } from "../haikus-musicados/haikus-musicados.component";
 import { PoemasComponent } from "../poemas/poemas.component";
 import { CuentosMusicalesComponent } from "../cuentos-musicales/cuentos-musicales.component";
-import { MorganComponent } from "../morgan/morgan.component";
+ import { MorganComponent } from '../morgan/morgan.component';
+ 
 
 @Component({
   selector: 'app-inicio',
-  imports: [RouterModule, CabeceraComponent, SobreMiComponent, NavbarComponent, HeroComponent, FooterComponent, HaikusComponent, HaikusMusicadosComponent, PoemasComponent, CuentosMusicalesComponent, MorganComponent],
+  imports: [RouterModule, CabeceraComponent, SobreMiComponent, NavbarComponent, HeroComponent, FooterComponent, HaikusComponent, HaikusMusicadosComponent, PoemasComponent, MorganComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
