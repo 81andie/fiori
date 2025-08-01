@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { HeroComponent } from "../hero/hero.component";
 import { CabeceraComponent } from "../cabecera/cabecera.component";
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-sobre-mi',
-  imports: [HeroComponent, CabeceraComponent],
+  imports: [HeroComponent, CabeceraComponent, FooterComponent],
   templateUrl: './sobre-mi.component.html',
   styleUrl: './sobre-mi.component.css'
 })

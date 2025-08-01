@@ -1,5 +1,3 @@
-
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable} from 'rxjs';
@@ -23,6 +21,4 @@ export class HaikusService {
   getHaikusMusicados():Observable<haikusMusicados[]>{
     return this.http.get<haikusMusicados[]>(this.jsonUrlHaikusMusicados)
   }
-
 }
-
