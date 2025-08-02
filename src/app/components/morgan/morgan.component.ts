@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { MorganAudioLibroService } from '../../services/MorganAudioLibro.service';
 import { Story, Page } from '../../interfaces/story.interface';
+import { CommonModule, NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-morgan',
   templateUrl: './morgan.component.html',
-  styleUrls: ['./morgan.component.css']
+  styleUrls: ['./morgan.component.css'],
+  imports: [NgStyle, CommonModule]
 })
 export class MorganComponent implements OnInit {
   bookData: Story = {
@@ -14,14 +16,18 @@ export class MorganComponent implements OnInit {
     collection: '',
     pages: []
   };
-  currentPageIndex = 0;
+  currentPage = 0;
   isLoading = true;
   loadError = false;
+  isfliping = false;
+  rotatedPages = new Set<number>();
+  isFlipped: boolean | undefined;
 
-  constructor(private morganService: MorganAudioLibroService) {}
+  constructor(private morganService: MorganAudioLibroService) { }
 
   ngOnInit(): void {
     this.loadBookData();
+
   }
 
   // Cambiado de private a public para acceso desde el template
@@ -56,7 +62,39 @@ export class MorganComponent implements OnInit {
     };
   }
 
+  onAnimationDone() {
+  if (this.isfliping) {
+    this.currentPage++;
+    this.isfliping = false;
+  }
+}
+toggleFlip() {
+  this.isFlipped = !this.isFlipped;
+}
+
+  nextPage() {
+  if (this.currentPage < this.bookData.pages.length - 1 && !this.isfliping) {
+    this.isfliping = true;
+
+    setTimeout(() => {
+      this.currentPage++;
+      this.isfliping = false;
+    }, 700); // dura lo mismo que la animación CSS
+  }
+}
+
+prevPage() {
+  if (this.currentPage > 0 && !this.isfliping) {
+    this.isfliping = true;
+
+    setTimeout(() => {
+      this.currentPage--;
+      this.isfliping = false;
+    }, 700);
+  }
+
 
 }
 
 
+}
