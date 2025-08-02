@@ -14,7 +14,7 @@
     ],
     "background": "textura.jpg",
     "image": "flor.png",
-   
+
     "ilus": "AHH"
   },
   {
@@ -69,6 +69,60 @@
     "background": "textura3.jpg",
     "image": "flor4.png",
 
+    "ilus": "AHH"
+  },
+
+  {
+    "id": 4,
+    "title": "Perdóname, maestro...",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+    "Entiendo, maestro, lo que callas.",
+    "Las lecciones las aprendo como puedo,",
+    "con o sin tu voz que guíe el camino.",
+
+    "Comprendo la verdad,",
+    "la incómoda,",
+    "y la que otros nos entregan con disfraz de certeza.",
+
+    "Pero perdóname...",
+    "hay castigos peores que el hielo,",
+    "y otros, todavía más crueles,",
+    "que desgarran el alma.",
+    "Al menos, la mía.",
+
+    "Y aún así, maestro, callo.",
+    "Nos queda otra lección,",
+    "una que ninguno de los dos",
+    "habíamos previsto.",
+
+    "De las lecciones del querer",
+    "siempre fuimos extranjeros:",
+    "forasteros con derecho a miradas furtivas,",
+    "a templar los sentidos",
+    "entre razón y rezo,",
+    "con lecciones muertas",
+    "como escudo para la esperanza.",
+
+    "Perdóname, maestro.",
+    "En el arte de querer",
+    "siempre fuimos torpes por naturaleza.",
+
+    "Perdona, maestro,",
+    "pero esto aún requiere perfección.",
+    "Es una lección en lengua antigua,",
+    "de mariposas que arden en el estómago,",
+    "de riñas que parecen juegos de niños,",
+    "de jeroglíficos tercos,",
+    "sellados con fuego.",
+
+    "Perdóname que te diga, maestro,",
+    "pero debo decirte...",
+    "que fracasamos en esta lección."
+
+    ],
+    "background": "marron.jpg",
+    "image": "flornegra.png",
     "ilus": "AHH"
   }
 ]

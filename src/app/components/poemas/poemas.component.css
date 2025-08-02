@@ -14,10 +14,7 @@
   display: none; /* Chrome, Safari, Opera */
 }
 
-.parallax,
-.absolute-inset-capa-oscura {
-  pointer-events: none;
-}
+
 
 .parallax {
 

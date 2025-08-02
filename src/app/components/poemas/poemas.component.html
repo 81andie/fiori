@@ -5,7 +5,7 @@
 
   @for (poem of poemasYVersos; track $index) {
 
-  <div class="relative w-screen h-[100vh] flex-shrink-0 snap-start scrollbar-none ">
+  <div class="relative w-screen h-[120vh] flex-shrink-0 snap-start scrollbar-none ">
     <!-- Imagen de fondo -->
 
 
@@ -26,11 +26,11 @@
 
     <!-- Contenido del haiku -->
     <div
-      class=" relative z-10 flex flex-col md:flex-row  sm:top-1 justify-center items-center h-full text-white px-5 text-center space-y-1.5">
+      class=" relative z-10 flex flex-col md:flex-row  sm:top-0 justify-center items-center h-full text-white px-5 text-center space-y-1.5">
       <div class="flex flex-col">
         <p class="text-black font-extrabold text-xl ">{{poem.title}}</p>
         @for (verse of poem.verses; track $index) {
-        <p class=" motion-duration-2000 text-black text-xs/4 md:text-xl/6 lg:text-xl/6">{{ verse }}</p>
+        <p class=" motion-duration-2000 text-black text-xs/4 md:text-xl/5 lg:text-xs/4">{{ verse }}</p>
         }
 
       </div>
