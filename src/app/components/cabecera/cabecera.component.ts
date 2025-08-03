@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-cabecera',
@@ -6,6 +6,15 @@ import { Component } from '@angular/core';
   templateUrl: './cabecera.component.html',
   styleUrl: './cabecera.component.css'
 })
-export class CabeceraComponent {
+export class CabeceraComponent  {
 
-}
+  }
+
+
+
+
+
+
+
+
+

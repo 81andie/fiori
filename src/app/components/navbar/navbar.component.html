@@ -1,66 +1,121 @@
-<nav class="mb-1 z-50 bg-zinc-200 fixed w-full top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img
-        src="https://tse3.mm.bing.net/th/id/OIP.9LqKtokwcvdtCraAnRTRegHaHa?r=0&pid=ImgDet&w=194&h=194&c=7&dpr=1,4&o=7&rm=3"
-        class="h-8 rounded-full" alt="Flowbite Logo">
-      <span class="text-zinc-400 font-thin title-blog md:text-4xl lg:text-4.5xl sm:text-2xl">Fiori Poetic Blog</span>
+<nav class="bg-white z-40 text-xs border-gray-200 dark:bg-stone-300 dark:border-gray-700">
+  <div id="navbar-dropdown" class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
+
+
+    <a href="/Inicio" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="logo.jpg" class="h-12 w-12 object-cover bg-center rounded-full backdrop-brightness-50" alt="Logo" />
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">Fiori Poetic Blog</span>
     </a>
-    <div class="flex  md:order-2 space-x-2 md:space-x-0 rtl:space-x-reverse z-0">
-
-      <button data-collapse-toggle="navbar-sticky" type="button"
-        class="inline-flex items-center p-2 w-18 h-12 border border-slate-400 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15" />
-        </svg>
-      </button>
-    </div>
 
 
-    <div class=" z-40 ml-1  hidden   md:flex md:w-auto md:order-1"
-      id="navbar-sticky">
-
-      <div class="flex">
-        <ul
-          class="flex flex-col p-2  md:p-0 mt-2 font-medium border sm:space-x-3  md:space-x-6 rtl:space-x-reverse md:flex-row sm:flex-col md:mt-0 md:border-0  ">
-          <li>
-            <a [routerLink]="['/Inicio']" routerLinkActive="router-link-active"
-              class="ml-1 mr-1 sm:mb-1 border p-1 rounded-xl border-gray-800 text-xs/4 hover:transition duration-300 ease-in-out  text-sm/12 hover:scale-y-125 hover:scale-x-125 text-zinc-600 font-semibold  navbar-links">Inicio</a>
-          </li>
-          <li>
-            <a href='/Poemas'
-              class="border p-1 rounded-xl border-gray-800 text-xs/4 mr-2 text-zinc-600 font-semibold  navbar-linkshover:tracking-tight  transition duration-300 ease-in-out  text-sm/12 hover:scale-y-125 hover:scale-x-125 ">Poemas</a>
-            <a href='/Haikus'
-              class="border p-1 rounded-xl border-gray-800 mr-8 text-xs/4 text-zinc-600 font-semibold  navbar-links hover:tracking-tight  transition duration-300 ease-in-out  text-sm/12 hover:scale-y-105 ">Haikus</a>
-            <a href='/Haikus con musica'
-              class="border p-1 rounded-xl border-gray-800 text-xs/4 text-zinc-600 font-semibold  navbar-links hover:tracking-tight  transition duration-300 ease-in-out  text-sm/12 hover:scale-y-125 hover:scale-x-125">Haikus
-              Musicados</a>
-          </li>
-          <li>
-            <a href='/Cuentos'
-              class="border mt-3 p-1 rounded-xl border-gray-800 text-xs/4 text-zinc-600 font-semibold  navbar-links hover:tracking-tight  transition duration-300 ease-in-out  text-sm/12 hover:scale-y-125 hover:scale-x-125">Cuentos
-            </a>
-          </li>
-
-          <li>
-            <a href='/Morgan'
-              class="border mt-3 p-1 rounded-xl border-gray-800 text-xs/4 text-zinc-600 font-semibold  navbar-links hover:tracking-tight  transition duration-300 ease-in-out  text-sm/12 hover:scale-y-125 hover:scale-x-125">Morgan
-            </a>
-          </li>
-          <li>
-            <a href='/Sobre mi'
-              class="border p-1 rounded-xl border-gray-800 text-xs/4  text-zinc-600 font-semibold  navbar-links hover:tracking-tight  transition duration-300 ease-in-out  text-sm/12 hover:scale-y-125 hover:scale-x-125">Sobre
-              mi</a>
-          </li>
+    <button data-collapse-toggle="navbar-dropdown" type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      aria-controls="navbar-dropdown" aria-expanded="false">
+      <span class="sr-only">Abrir menú</span>
+      <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+      </svg>
+    </button>
 
 
 
-        </ul>
-      </div>
 
+    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown ">
+
+      <ul
+        class="flex flex-col font-medium p-4 md:p-3 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-stone-600 md:dark:bg-stone-500 dark:border-gray-700">
+
+        <li class="relative">
+
+
+          <a [routerLink]="['/Inicio']"
+            class="block py-3 px-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-1 dark:text-white md:dark:hover:text-blue-500">
+            Inicio
+          </a>
+
+
+
+          <button id="dropdownHaikusButton" data-dropdown-toggle="dropdownHaikus"
+            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-1 dark:text-white md:dark:hover:text-blue-500">
+            Haikus
+            <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-width="2" d="M1 1l4 4 4-4" />
+            </svg>
+          </button>
+          <div id="dropdownHaikus"
+            class="z-10 hidden absolute mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-48 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+              <li><a [routerLink]="['/Haikus']"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Haikus</a></li>
+              <li><a [routerLink]="['/HaikusMusicados']"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Haikus Musicados</a></li>
+              <li><a [routerLink]="['/Haikus']"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Haikus Geishas</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- POEMAS -->
+        <li class="relative">
+          <button id="dropdownPoemasButton" data-dropdown-toggle="dropdownPoemas"
+            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-blue-500">
+            Poemas
+            <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-width="2" d="M1 1l4 4 4-4" />
+            </svg>
+          </button>
+          <div id="dropdownPoemas"
+            class="z-10 hidden absolute mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-52 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+              <li><a [routerLink]="['/Poemas']"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Poemas Cortos</a></li>
+              <li><a [routerLink]="['/PoemasMusicados']"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Poemas Musicados</a></li>
+              <li><a [routerLink]="['/PoemasLargos']"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Poemas Largos</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- CUENTOS -->
+        <li class="relative">
+
+          <button id="dropdownCuentosButton" data-dropdown-toggle="dropdownCuentos"
+            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-blue-500">
+            Cuentos
+            <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-width="2" d="M1 1l4 4 4-4" />
+            </svg>
+          </button>
+          <div id="dropdownCuentos"
+            class="z-10 hidden absolute mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-72 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+              <li><a [routerLink]="['/Morgan']"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Morgan</a></li>
+
+              <li><a [routerLink]="['/Tiamat']" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Tiamat,
+                  la reina dels dracs invisibles</a></li>
+            </ul>
+          </div>
+        </li>
+
+
+        <li>
+          <a [routerLink]="['/MilfullnessPoems']"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-blue-500">
+            Milfullness Poems
+          </a>
+        </li>
+
+        <!-- SOBRE MÍ -->
+        <li>
+          <a [routerLink]="['/Sobremi']"
+            class=" py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-blue-500">
+            Sobre mí
+          </a>
+        </li>
+
+      </ul>
     </div>
   </div>
 </nav>

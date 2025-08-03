@@ -1,13 +1,13 @@
 <app-card></app-card>
 <div
   #scrollContainer
-  class="mt-5 flex overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-none h-screen"
+  class="mt-5 flex overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-none h-[calc(100vh-97.99px)]"
 
 >
   @for (haiku of haikusMusicados; track haiku.id) {
     <div class="relative w-full flex-shrink-0 snap-start ">
       <!-- Imagen de fondo -->
-      <img [src]="haiku.img" class="absolute inset-0 w-[100vw] h-screen  md:h-screen lg-h-screen object-cover" />
+      <img [src]="haiku.img" class="absolute inset-0 w-[100vw] h-[calc(100vh-97.99px)] md:h-[calc(100vh-97.99px)] lg:h-[calc(100vh-97.99px)] object-cover" />
 
       <!-- Capa oscura encima -->
       <div class="absolute inset-0 bg-black/40"></div>

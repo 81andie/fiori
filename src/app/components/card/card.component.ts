@@ -28,6 +28,7 @@ export class CardComponent implements OnInit, AfterViewInit {
   public haiku: haikusMusicados[] = [];
   searchTerm: string = '';
   myInput: FormControl = new FormControl('');
+  isVisible: boolean = true;
 
 
   constructor(private haikusMusicadosService: AudioPlayerService,
@@ -38,7 +39,7 @@ export class CardComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.sacarAudiosyHaikus();
-    this.toggleAudio()
+
   }
 
   ngAfterViewInit(): void {
@@ -53,6 +54,7 @@ export class CardComponent implements OnInit, AfterViewInit {
       this.playList = data;
       this.currentTrackIndex = randomIndex;
 
+
       setTimeout(() => {
         this.initWaveSurfer();
       }, 50); // Asegurarse de que el DOM esté listo
@@ -60,7 +62,7 @@ export class CardComponent implements OnInit, AfterViewInit {
   }
 
   initWaveSurfer() {
-if (!isPlatformBrowser(this.platformId)) return; // ⛔ evita ejecutarlo en el servidor
+if (!isPlatformBrowser(this.platformId)) return; //
 
   const currentUrl = this.playList[this.currentTrackIndex]?.audio;
   if (!currentUrl || !this.waveformRef?.nativeElement) return;
@@ -136,79 +138,15 @@ if (!isPlatformBrowser(this.platformId)) return; // ⛔ evita ejecutarlo en el s
   toggleAudio(): void {
 
    console.log("hello")
-    this.isAudioVisible = !this.isAudioVisible;
+    this.isVisible = !this.isVisible;
   }
+
+
+
 
 }
 
 
-
-
-
-
-
-/* playSong(audioUrl: any) {
-
-    if (this.player) {
-      this.player.src = audioUrl;
-      this.player.play();
-    }
-
-  }
-
-  stopPlaySong(audioUrl: any) {
-    if (this.player) {
-      this.player.src = audioUrl;
-      this.player.pause()
-    }
-
-  }
-
-
-muteAudio() {
-  if (this.player) {
-    this.player.muted = true;
-    console.log('Audio muteado');
-  }
-}
-
-unmuteAudio() {
-  if (this.player) {
-    this.player.muted = false;
-    console.log('Audio activado');
-  }
-}
-
-nextSong() {
-  if (this.currentIndex < this.haikusMusicados.length - 0) {
-    this.currentIndex++;
-  } else {
-    this.currentIndex = 0; // vuelve a la primera si estás al final
-  }
-  this.haikusMusicadosService.getHaikusWidthAudios().subscribe((data) => {
-    if (data && data.length > 0) {
-      this.haikusMusicados = [data[this.currentIndex]];
-      this.playSong(this.haikusMusicados[0].audio);
-    }
-  });
-
-
-}
-
-  prevSong() {
-  if (this.currentIndex > 0) {
-    this.currentIndex--;
-  } else {
-    this.currentIndex = this.haikusMusicados.length - 0; // vuelve a la última si estás en la primera
-  }
-  this.haikusMusicadosService.getHaikusWidthAudios().subscribe((data) => {
-    if (data && data.length > 0) {
-      this.haikusMusicados = [data[this.currentIndex]];
-      this.playSong(this.haikusMusicados[2].audio);
-    }
-  });
-}
-*/
 
 
 
