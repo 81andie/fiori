@@ -6,12 +6,12 @@ import { CuentosMusicalesComponent } from './components/cuentos-musicales/cuento
 import { PoemasComponent } from './components/poemas/poemas.component';
 import { PoemasMusicadosComponent } from './components/poemas-musicados/poemas-musicados.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
-import { MorganComponent } from './components/morgan/morgan.component';
+
 
 export const routes: Routes = [
 
   { path: '', component: InicioComponent },
-   { path: 'Morgan', component: MorganComponent },
+
   { path: 'Inicio', component: InicioComponent },
   { path: 'Poemas', component: PoemasComponent },
   { path: 'Haikus', component: HaikusComponent },
