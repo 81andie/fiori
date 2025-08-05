@@ -1,1 +1,27 @@
-<p>haikus-geishas works!</p>
+<!-- Contenedor del efecto scroll horizontal - solo en navegador -->
+@if (isBrowser) {
+  <div class="scroll_container flex overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-none h-[calc(100vh-97.99px)">
+    <div class="sticky_wrap">
+      <div class="horizontal_scroll ">
+        @for (item of scrollItems; track $index) {
+          <div class="scroll_contents" [ngClass]="item.color">
+            @if (item.title) {
+              <h2 [class.left]="item.position === 'left'"
+                  [class.right]="item.position === 'right'">
+                {{ item.title }}
+              </h2>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+}
+
+<!-- Sección final -->
+<section class="outro-section">
+  <div class="container">
+    <h1>The End</h1>
+    <p>Dummy text dummy text dummy text dummy text dummy text.</p>
+  </div>
+</section>
