@@ -18,7 +18,7 @@ export class HaikusMusicadosComponent implements AfterViewInit{
     this.sacarPoemasMusicados()
   }
 
-    private haikusMusicadosService = inject(HaikusService)
+  private haikusMusicadosService = inject(HaikusService)
      haikusMusicados: haikusMusicados[] = [];
 
 
