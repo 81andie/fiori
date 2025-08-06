@@ -64,14 +64,6 @@ export class HaikusMusicadosComponent implements AfterViewInit{
     });
 
   }
-
-
-
-
-
-
-
-
 }
 
 
