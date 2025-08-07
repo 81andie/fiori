@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HaikusService } from '../../services/haikus.service';
 import { haikusMusicados } from '../../interfaces/poem.interface';
@@ -7,6 +7,8 @@ import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import WaveSurfer from 'wavesurfer.js';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-card',
@@ -15,7 +17,7 @@ import { Inject, PLATFORM_ID } from '@angular/core';
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
-export class CardComponent implements OnInit, AfterViewInit {
+export class CardComponent implements OnInit, AfterViewInit, OnDestroy {
 
   @ViewChild('waveform', { static: false }) waveformRef!: ElementRef;
 
@@ -30,12 +32,15 @@ export class CardComponent implements OnInit, AfterViewInit {
   myInput: FormControl = new FormControl('');
   isVisible: boolean = true;
 
+  private destroy$ = new Subject<void>();
+
+
 
   constructor(private haikusMusicadosService: AudioPlayerService,
 
-  @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: Object
 
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.sacarAudiosyHaikus();
@@ -46,45 +51,56 @@ export class CardComponent implements OnInit, AfterViewInit {
     // El waveform se inicializará en sacarAudiosyHaikus después de obtener los datos
   }
 
+  ngOnDestroy(): void {
+    this.wavesurfer?.destroy();       // ✅ Destruye WaveSurfer si existe
+    this.destroy$.next();             // ✅ Cierra el observable
+    this.destroy$.complete();
+
+  }
+
+
   sacarAudiosyHaikus() {
-    this.haikusMusicadosService.getHaikusWidthAudios().subscribe((data) => {
-      const randomIndex = Math.floor(Math.random() * data.length);
-      this.haikusMusicados = data;
-      this.haiku = data;
-      this.playList = data;
-      this.currentTrackIndex = randomIndex;
+    this.haikusMusicadosService.getHaikusWidthAudios()
+      .pipe(takeUntil(this.destroy$))
+
+      .subscribe((data) => {
+        const randomIndex = Math.floor(Math.random() * data.length);
+        this.haikusMusicados = data;
+        this.haiku = data;
+        this.playList = data;
+        this.currentTrackIndex = randomIndex;
 
 
-      setTimeout(() => {
-        this.initWaveSurfer();
-      }, 50); // Asegurarse de que el DOM esté listo
-    });
+        setTimeout(() => {
+          this.initWaveSurfer();
+        }, 50); // Asegurarse de que el DOM esté listo
+      });
   }
 
   initWaveSurfer() {
-if (!isPlatformBrowser(this.platformId)) return; //
+    if (!isPlatformBrowser(this.platformId)) return; //
 
-  const currentUrl = this.playList[this.currentTrackIndex]?.audio;
-  if (!currentUrl || !this.waveformRef?.nativeElement) return;
+    const currentUrl = this.playList[this.currentTrackIndex]?.audio;
+    if (!currentUrl || !this.waveformRef?.nativeElement) return;
 
-  // Destruir instancia anterior si ya existe
-  if (this.wavesurfer) {
-    this.wavesurfer.destroy();
-  }
+    // Destruir instancia anterior si ya existe
+    if (this.wavesurfer) {
+      this.wavesurfer.destroy();
+    }
 
-  this.wavesurfer = WaveSurfer.create({
-    container: this.waveformRef.nativeElement,
-    waveColor: 'rgb(200, 0, 200)',
-    progressColor: 'rgb(100, 0, 100)',
-    barWidth: 1,
-    height: 20,
-  });
+    this.wavesurfer = WaveSurfer.create({
+      container: this.waveformRef.nativeElement,
+      waveColor: 'rgb(200, 0, 200)',
+      progressColor: 'rgb(100, 0, 100)',
+      barWidth: 1,
+      height: 20,
+    });
 
-  this.wavesurfer.load(currentUrl);
+    this.wavesurfer.load(currentUrl);
 
-  this.wavesurfer.on('finish', () => {
-    console.log('Finished');
-  });
+    this.wavesurfer.on('finish', () => {
+      console.log('Finished');
+    });
 
   }
 
@@ -137,7 +153,7 @@ if (!isPlatformBrowser(this.platformId)) return; //
 
   toggleAudio(): void {
 
-   console.log("hello")
+    console.log("hello")
     this.isVisible = !this.isVisible;
   }
 
