@@ -1,5 +1,5 @@
 import { isPlatformBrowser, CommonModule } from '@angular/common';
-import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { Component, HostListener, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 
 interface ScrollItem {
   color: string;
@@ -24,7 +24,7 @@ export class HaikusGeishasComponent implements OnInit {
   ];
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
-    this.hybridScroll()
+
   }
 
   ngOnInit(): void {
@@ -53,20 +53,13 @@ export class HaikusGeishasComponent implements OnInit {
 
   }
 
-
-
+  @HostListener('scroll', ['$event'])
   hybridScroll() {
-
+    console.log("hola");
     const stickySections = [...document.querySelectorAll('.sticky_wrap')]
-
-    window.addEventListener('scroll', (e) => {
       for (let i = 0; i < stickySections.length; i++) {
         this.transform(stickySections[i])
       }
-    })
-
-
-
   }
 
 
