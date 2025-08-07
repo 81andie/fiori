@@ -1,5 +1,5 @@
 import { isPlatformBrowser, CommonModule } from '@angular/common';
-import { Component, Inject, OnInit, PLATFORM_ID} from '@angular/core';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 
 interface ScrollItem {
   color: string;
@@ -23,7 +23,9 @@ export class HaikusGeishasComponent implements OnInit {
     { color: 'blue', title: 'Goodbye', position: 'right' }
   ];
 
-constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    this.hybridScroll()
+  }
 
   ngOnInit(): void {
     this.isBrowser = isPlatformBrowser(this.platformId);
@@ -38,32 +40,48 @@ constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
   private initScrollEffect(): void {
     const stickySections = Array.from(document.querySelectorAll('.sticky_wrap'));
 
-    this.scrollListener = () => {
-      stickySections.forEach(section => this.transform(section));
-    };
 
-    window.addEventListener('scroll', this.scrollListener);
+
+
   }
 
-  private transform(section: Element): void {
-    const offsetTop = section.parentElement?.offsetTop || 0;
-    const scrollSection = section.querySelector('.horizontal_scroll') as HTMLElement;
 
-    if (!scrollSection) return;
 
-    let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
-    percentage = Math.max(0, Math.min(100, percentage));
 
-    scrollSection.style.transform = `translate3d(${-percentage}vw, 0, 0)`;
-  }
 
   ngOnDestroy(): void {
-    if (this.isBrowser && this.scrollListener) {
-      window.removeEventListener('scroll', this.scrollListener);
-    }
+
   }
 
 
+
+  hybridScroll() {
+
+    const stickySections = [...document.querySelectorAll('.sticky_wrap')]
+
+    window.addEventListener('scroll', (e) => {
+      for (let i = 0; i < stickySections.length; i++) {
+        this.transform(stickySections[i])
+      }
+    })
+
+
+
+  }
+
+
+ transform(section:any) {
+
+      const offsetTop = section.parentElement.offsetTop;
+
+      const scrollSection = section.querySelector('.horizontal_scroll')
+
+      let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
+
+      percentage = percentage < 0 ? 0 : percentage > 300 ? 300 : percentage;
+
+      scrollSection.style.transform = `translate3d(${-(percentage)}vw, 0, 0)`
+    }
 
 
 

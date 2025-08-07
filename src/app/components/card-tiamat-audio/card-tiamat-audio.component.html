@@ -29,8 +29,9 @@
           </svg>
         </div>
         <input type="search" id="default-search"
+          #waveform
           class="block w-56 p-0.5 ps-10 text-xs text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-stone-500 focus:border-stone-500 dark:bg-stone-100 dark:border-stone-300 dark:placeholder-gray-400 dark:text-stone-900 dark:focus:ring-stone-500 dark:focus:border-stone-500"
-          placeholder="Search song..." [formControl]="myInput" (keyup)="filteredSongs($event)" />
+          placeholder="Search song..." [formControl]="myInput" (keyup) ="filteredSongs($event)"  />
       </div>
     </form>
 
@@ -61,7 +62,7 @@
       <span><strong>{{ playList[currentTrackIndex].fontSong }}</strong></span>
 
       <div class="relative w-[230px] h-8 bg-gray-300 rounded max-w-xl">
-        <div #waveform class="w-full absolute bg-red-50 bg-opacity-55 top-2 flex flex-col mb-1">
+        <div  class="w-full absolute bg-red-50 bg-opacity-55 top-2 flex flex-col mb-1">
         </div>
 
         <div class="w-full flex justify-center absolute mt-10 ">

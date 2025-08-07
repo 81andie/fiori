@@ -6,11 +6,13 @@ import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import WaveSurfer from 'wavesurfer.js';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 
 @Component({
   selector: 'app-card-tiamat-audio',
-imports: [CommonModule, FormsModule, ReactiveFormsModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   templateUrl: './card-tiamat-audio.component.html',
   styleUrl: './card-tiamat-audio.component.css'
 })
@@ -87,7 +89,7 @@ if (!isPlatformBrowser(this.platformId)) return; //
 
   }
 
-  filteredSongs(event: KeyboardEvent) {
+  filteredSongs(event:any) {
     if (event.key === 'Enter') {
       const searchBar = this.myInput.value.trim().toLowerCase();
       if (searchBar.length > 0) {
