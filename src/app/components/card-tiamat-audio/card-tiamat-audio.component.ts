@@ -24,7 +24,7 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
   public allAudios: T[] = [];
   public tiamatAudios: T[] = [];
   currentTrack?: T;
-    public currentTrackIndex: number = 0; // Añade esto
+  public currentTrackIndex: number = 0; // Añade esto
   public playList: T[] = []; // Añade esto
 
   searchTerm: string = '';
@@ -43,7 +43,7 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
       this.tiamatAudios = [...this.audios];
       this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
       this.updateCurrentTrack();
-       this.sacarAudiosyHaikus();
+      this.sacarAudiosyHaikus();
     } else {
       this.sacarAudiosyHaikus();
     }
@@ -105,7 +105,7 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
         return;
       }
 
-     let audios = this.allAudios;
+      let audios = this.allAudios;
       this.tiamatAudios = this.allAudios.filter(a => a.audio.toLowerCase().includes(searchTerm));
 
       this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
@@ -140,11 +140,11 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
 
   updateCurrentTrack() {
     this.currentTrack = this.AudioService.getCurrentTrack<T>('tiamat');
-      this.currentTrackIndex = this.tiamatAudios.findIndex(track => track === this.currentTrack);
+    this.currentTrackIndex = this.tiamatAudios.findIndex(track => track === this.currentTrack);
     this.playList = this.tiamatAudios; // Actualiza la lista
   }
 
-  toggleAudio(){
+  toggleAudio() {
     this.isVisible = !this.isVisible;
   }
 
