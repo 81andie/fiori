@@ -106,7 +106,13 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
       }
 
       let audios = this.allAudios;
-      this.tiamatAudios = this.allAudios.filter(a => a.audio.toLowerCase().includes(searchTerm));
+
+this.tiamatAudios = this.allAudios.filter(a =>
+  Object.values(a).some(val =>
+    typeof val === 'string' && val.toLowerCase().includes(searchTerm)
+  )
+);
+
 
       this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
 

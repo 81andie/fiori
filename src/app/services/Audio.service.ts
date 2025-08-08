@@ -9,6 +9,7 @@ interface PlayerInstance<T> {
 
 @Injectable({ providedIn: 'root' })
 export class AudioService {
+
   private players = new Map<string, PlayerInstance<any>>();
 
   // Nuevo: Método para verificar si está reproduciendo
