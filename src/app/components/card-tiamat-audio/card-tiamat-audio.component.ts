@@ -1,13 +1,12 @@
+
+import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, Input, OnChanges, SimpleChanges, Inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { tiamatAudioPlayer } from './../../interfaces/tiamat.interface';
 import { TiamatAudioPlayerService } from './../../services/Tiamat.service';
-import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import WaveSurfer from 'wavesurfer.js';
-import { isPlatformBrowser } from '@angular/common';
-import { Inject, PLATFORM_ID } from '@angular/core';
-import { Subject } from 'rxjs';
-import { takeUntil } from 'rxjs/operators';
+import { AudioService } from '../../services/Audio.service';
+import { TiamatComponent } from '../tiamat/tiamat.component';
+import { map, Observable } from 'rxjs';
 
 
 @Component({
@@ -16,128 +15,140 @@ import { takeUntil } from 'rxjs/operators';
   templateUrl: './card-tiamat-audio.component.html',
   styleUrl: './card-tiamat-audio.component.css'
 })
-export class CardTiamatAudioComponent implements OnInit, AfterViewInit {
+export class CardTiamatAudioComponent<T extends { audio: string }> implements OnInit, AfterViewInit, OnChanges {
 
- @ViewChild('waveform', { static: false }) waveformRef!: ElementRef;
 
-  wavesurfer!: WaveSurfer;
-  playList: tiamatAudioPlayer[] = [];
-  currentTrackIndex = 0;
+  @Input() audios: T[] = [];
+  @ViewChild('waveform', { static: false }) waveformRef?: ElementRef;
 
-  public isAudioVisible: boolean = false;
-  public tiamatAudios: tiamatAudioPlayer[] = [];
-  public tiamatAudio: tiamatAudioPlayer[] = [];
+  public allAudios: T[] = [];
+  public tiamatAudios: T[] = [];
+  currentTrack?: T;
+    public currentTrackIndex: number = 0; // Añade esto
+  public playList: T[] = []; // Añade esto
+
   searchTerm: string = '';
   myInput: FormControl = new FormControl('');
   isVisible: boolean = true;
 
-
-  constructor(private TiamatAudioPlayerService: TiamatAudioPlayerService,
-
-  @Inject(PLATFORM_ID) private platformId: Object
-
-  ) {}
+  constructor(
+    private TiamatAudioPlayerService: TiamatAudioPlayerService,
+    private AudioService: AudioService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) { }
 
   ngOnInit(): void {
-    this.sacarAudiosyHaikus();
-
+    if (this.audios?.length) {
+      this.allAudios = [...this.audios];
+      this.tiamatAudios = [...this.audios];
+      this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
+      this.updateCurrentTrack();
+       this.sacarAudiosyHaikus();
+    } else {
+      this.sacarAudiosyHaikus();
+    }
   }
 
   ngAfterViewInit(): void {
-    // El waveform se inicializará en sacarAudiosyHaikus después de obtener los datos
+    if (this.waveformRef?.nativeElement) {
+      this.AudioService.initWaveSurfer('tiamat', this.waveformRef.nativeElement);
+      this.updateCurrentTrack();
+
+    }
   }
 
-  sacarAudiosyHaikus() {
-    this.TiamatAudioPlayerService.getAudioPlayerTiamat().subscribe((data) => {
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['audios'] && this.audios?.length) {
+      this.allAudios = [...this.audios];
+      this.tiamatAudios = [...this.audios];
+      this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
+
+      if (this.waveformRef?.nativeElement) {
+        this.AudioService.initWaveSurfer('tiamat', this.waveformRef.nativeElement);
+      }
+      this.updateCurrentTrack();
+    }
+  }
+
+  sacarAudiosyHaikus(): void {
+    this.TiamatAudioPlayerService.getAudioPlayerTiamat().subscribe((data: tiamatAudioPlayer[]) => {
+      const typedData = data as unknown as T[];
+      if (!typedData) return;
+
+      if (!data) return;
+
       const randomIndex = Math.floor(Math.random() * data.length);
-      this.tiamatAudios = data;
-      this.tiamatAudio = data;
-      this.playList = data;
-      this.currentTrackIndex = randomIndex;
 
+      this.allAudios = [...typedData];
+      this.tiamatAudios = [...typedData];
+      console.log(this.tiamatAudios)
 
-      setTimeout(() => {
-        this.initWaveSurfer();
-      }, 50); // Asegurarse de que el DOM esté listo
+      this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
+
+      if (this.waveformRef?.nativeElement) {
+        this.AudioService.initWaveSurfer('tiamat', this.waveformRef.nativeElement);
+      }
+
+      this.updateCurrentTrack();
     });
   }
 
-  initWaveSurfer() {
-if (!isPlatformBrowser(this.platformId)) return; //
-
-  const currentUrl = this.playList[this.currentTrackIndex]?.audio;
-  if (!currentUrl || !this.waveformRef?.nativeElement) return;
-
-  // Destruir instancia anterior si ya existe
-  if (this.wavesurfer) {
-    this.wavesurfer.destroy();
-  }
-
-  this.wavesurfer = WaveSurfer.create({
-    container: this.waveformRef.nativeElement,
-    waveColor: 'rgb(200, 0, 200)',
-    progressColor: 'rgb(100, 0, 100)',
-    barWidth: 1,
-    height: 20,
-  });
-
-  this.wavesurfer.load(currentUrl);
-
-  this.wavesurfer.on('finish', () => {
-    console.log('Finished');
-  });
-
-  }
-
-  filteredSongs(event:any) {
+  filteredSongs(event: KeyboardEvent) {
     if (event.key === 'Enter') {
-      const searchBar = this.myInput.value.trim().toLowerCase();
-      if (searchBar.length > 0) {
-        const filtered = this.tiamatAudio.filter(filtered =>
-          filtered.title.toLowerCase().includes(searchBar)
-        );
+      const searchTerm = (this.myInput.value ?? '').toString().trim().toLowerCase();
 
-        this.tiamatAudios = filtered;
-        this.playList = filtered;
-        this.currentTrackIndex = 0;
-
-        if (this.playList.length > 0) {
-          setTimeout(() => this.initWaveSurfer(), 20);
-        } else {
-          this.wavesurfer?.destroy();
-        }
+      if (!searchTerm) {
+        this.tiamatAudios = [...this.allAudios];
+        this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
+        console.log(searchTerm)
+        this.updateCurrentTrack();
+        return;
       }
+
+     let audios = this.allAudios;
+      this.tiamatAudios = this.allAudios.filter(a => a.audio.toLowerCase().includes(searchTerm));
+
+      this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
+
+      if (this.waveformRef?.nativeElement) {
+        this.AudioService.initWaveSurfer('tiamat', this.waveformRef.nativeElement);
+      }
+
+      this.updateCurrentTrack();
     }
   }
 
-  togglePlay() {
-    this.wavesurfer?.playPause();
+  play() {
+    this.AudioService.playPause('tiamat');
+    this.updateCurrentTrack();
+
   }
 
-  nextTrack() {
-    if (this.currentTrackIndex < this.playList.length - 1) {
-      this.currentTrackIndex++;
-      this.initWaveSurfer();
-    }
+  next() {
+    this.AudioService.nextTrack('tiamat');
+    this.updateCurrentTrack();
   }
 
-  previousTrack() {
-    if (this.currentTrackIndex > 0) {
-      this.currentTrackIndex--;
-      this.initWaveSurfer();
-    }
+  prev() {
+    console.log("hello")
+    this.AudioService.previousTrack('tiamat');
+    this.updateCurrentTrack();
   }
 
-  playTrack(index: number) {
-    this.currentTrackIndex = index;
-    this.initWaveSurfer();
+
+
+
+  updateCurrentTrack() {
+    this.currentTrack = this.AudioService.getCurrentTrack<T>('tiamat');
+      this.currentTrackIndex = this.tiamatAudios.findIndex(track => track === this.currentTrack);
+    this.playList = this.tiamatAudios; // Actualiza la lista
   }
 
-  toggleAudio(): void {
-
-   console.log("hello")
+  toggleAudio(){
     this.isVisible = !this.isVisible;
   }
+
+
 
 
 }
