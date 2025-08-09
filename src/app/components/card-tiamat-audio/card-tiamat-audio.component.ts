@@ -155,8 +155,4 @@ this.tiamatAudios = this.allAudios.filter(a =>
   toggleAudio() {
     this.isVisible = !this.isVisible;
   }
-
-
-
-
 }
