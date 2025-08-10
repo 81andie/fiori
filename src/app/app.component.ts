@@ -10,7 +10,7 @@ import { InicioComponent } from "./components/inicio/inicio.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterModule, NavbarComponent],
+  imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
