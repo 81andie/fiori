@@ -1,6 +1,6 @@
 
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, ViewChild,AfterViewInit, inject} from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit, inject } from '@angular/core';
 import { HaikusService } from '../../services/haikus.service';
 import { poem } from '../../interfaces/poem.interface';
 
@@ -19,11 +19,13 @@ export class HaikusComponent implements AfterViewInit {
     this.sacarPoemas()
   }
 
-   haikus: poem[] = [];
-   private haikusService = inject(HaikusService)
+
+
+  haikus: poem[] = [];
+  private haikusService = inject(HaikusService)
 
   private isScrolling = false;
-    @ViewChild('scrollContainer', { static: true }) scrollContainer!: ElementRef<HTMLElement>;
+  @ViewChild('scrollContainer', { static: true }) scrollContainer!: ElementRef<HTMLElement>;
 
 
 
@@ -34,7 +36,7 @@ export class HaikusComponent implements AfterViewInit {
     container.addEventListener('wheel', (event) => this.onWheel(event), { passive: false });
   }
 
-onWheel(event: WheelEvent) {
+  onWheel(event: WheelEvent) {
     event.preventDefault();
 
     if (this.isScrolling) return;
@@ -56,7 +58,7 @@ onWheel(event: WheelEvent) {
     }, 600);
   }
 
-  sacarPoemas(){
+  sacarPoemas() {
     this.haikusService.getPoems().subscribe((data) => {
       console.log(data)
       this.haikus = data;
@@ -68,6 +70,3 @@ onWheel(event: WheelEvent) {
 
 
 }
-
-
-

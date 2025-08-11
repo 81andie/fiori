@@ -9,24 +9,13 @@
 
 
 
-
-
 .scroll-container::-webkit-scrollbar {
   display: none;
-  /* Chrome, Safari, Opera */
+
 }
 
 
-
 .parallax {
-
-  height: 100vh;
-  margin: 52px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translateZ(-1px) scale(1.5);
-  /* truco de profundidad */
+ margin:30px;
 
 }

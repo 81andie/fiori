@@ -5,3 +5,13 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+
+.parallax {
+ margin:60px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

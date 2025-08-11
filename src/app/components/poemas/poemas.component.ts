@@ -12,9 +12,8 @@ import { CommonModule } from '@angular/common';
 })
 export class PoemasComponent implements AfterViewInit, OnInit {
 
-  @ViewChild('scrollContainer', { static: true }) scrollContainer!: ElementRef<HTMLElement>;
-
  
+
 
   private poemasService = inject(PoemasyVersosService);
   public poemasYVersos: poemsVerses[] = [];
