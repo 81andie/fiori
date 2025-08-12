@@ -1,5 +1,6 @@
 import { isPlatformBrowser, CommonModule } from '@angular/common';
 import { Component, HostListener, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import scrollama from "scrollama";
 
 interface ScrollItem {
   color: string;
@@ -28,54 +29,22 @@ export class HaikusGeishasComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.isBrowser = isPlatformBrowser(this.platformId);
+    // instantiate the scrollama
+    // const scroller = scrollama();
 
-    if (this.isBrowser) {
-      this.initScrollEffect();
-    }
-  }
-
-  private scrollListener!: () => void;
-
-  private initScrollEffect(): void {
-    const stickySections = Array.from(document.querySelectorAll('.sticky_wrap'));
-
-
-
-
-  }
-
-
-
-
-
-  ngOnDestroy(): void {
+    // // setup the instance, pass callback functions
+    // scroller
+    //   .setup({
+    //     step: ".step",
+    //   })
+    //   .onStepEnter((response: any) => {
+    //     // { element, index, direction }
+    //   })
+    //   .onStepExit((response: any) => {
+    //     // { element, index, direction }
+    //   });
 
   }
-
-  @HostListener('scroll', ['$event'])
-  hybridScroll() {
-    console.log("hola");
-    const stickySections = [...document.querySelectorAll('.sticky_wrap')]
-      for (let i = 0; i < stickySections.length; i++) {
-        this.transform(stickySections[i])
-      }
-  }
-
-
- transform(section:any) {
-
-      const offsetTop = section.parentElement.offsetTop;
-
-      const scrollSection = section.querySelector('.horizontal_scroll')
-
-      let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
-
-      percentage = percentage < 0 ? 0 : percentage > 300 ? 300 : percentage;
-
-      scrollSection.style.transform = `translate3d(${-(percentage)}vw, 0, 0)`
-    }
-
 
 
 }

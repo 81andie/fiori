@@ -1,27 +1,5 @@
-<!-- Contenedor del efecto scroll horizontal - solo en navegador -->
-@if (isBrowser) {
-  <div class="scroll_container ">
-    <div class="sticky_wrap">
-      <div class="horizontal_scroll ">
-        @for (item of scrollItems; track $index) {
-          <div class="scroll_contents" [ngClass]="item.color">
-            @if (item.title) {
-              <h2 [class.left]="item.position === 'left'"
-                  [class.right]="item.position === 'right'">
-                {{ item.title }}
-              </h2>
-            }
-          </div>
-        }
-      </div>
-    </div>
-  </div>
-}
-
-<!-- Sección final -->
-<section class="outro-section">
-  <div class="container">
-    <h1>The End</h1>
-    <p>Dummy text dummy text dummy text dummy text dummy text.</p>
-  </div>
-</section>
+<div class="horizontal-container flex overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-none">
+  <div class="step bg-red-400" data-step="a">Hola</div>
+  <div class="step bg-blue-400" data-step="b"> hola 2</div>
+  <div class="step bg-yellow-400" data-step="c">Hola 3</div>
+</div>
