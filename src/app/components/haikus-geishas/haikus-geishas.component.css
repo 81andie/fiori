@@ -1,23 +1,4 @@
-.horizontal-container{
-
-    display: flex;
-    width: 2000px;
-}
 
 
-.scrollbar-none::-webkit-scrollbar {
-  display: none;
-}
-.scrollbar-none {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.step{
-
-  height: calc(100vh - 30px);
-  width: 100vw;
- 
 
 
-}
