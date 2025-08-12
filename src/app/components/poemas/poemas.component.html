@@ -1,19 +1,19 @@
-<h1 class="text-7xl m-14  mt-9 mb-5 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100  bg-gradient-to-right  hover:to-red-300 ">POEMAS CORTOS</h1>
+<h1 class=" text-6xl md:text-7xl lg:text-7xlm-14 mt-9 m-14 mb-5 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100  bg-gradient-to-right  hover:to-red-300 ">POEMAS CORTOS</h1>
 
-<div #scrollContainer class=" w-[92vw] scroll-container overflow-y-scroll h-[calc(120vh-95.99px)] snap-y snap-mandatory scrollbar-hide cursor-grab parallax
+<div #scrollContainer class=" w-[100.5vw] scroll-container overflow-y-scroll h-[calc(120vh-95.99px)] snap-y snap-mandatory scrollbar-hide cursor-grab parallax
 "
 
 >
 
   @for (poem of poemasYVersos; track $index) {
 
-  <div class="relative w-screen h-screen flex-shrink-0 snap-start scrollbar-none ">
+  <div class="relative w-[92.5vw] md:w-[93.5vw] lg:w-[93.5vw] h-screen flex-shrink-0 snap-start scrollbar-none ">
     <!-- Imagen de fondo -->
 
 
 <!-- Fondo parallax -->
     <div
-      class="absolute h-[calc(h-screen-48px)] inset-0 top-0 bg-cover bg-center transition-transform duration-300 parallax"
+      class="absolute h-[100vh] w-[88.5vw] inset-0 top-0 bg-cover bg-center transition-transform duration-300 parallax"
 
       [style.backgroundImage]="'url(' + poem.background + ')'"
 
@@ -28,7 +28,7 @@
 
     <!-- Contenido del haiku -->
     <div
-      class=" relative z-10 flex flex-col md:flex-row  sm:top-0 justify-center items-center h-full text-white px-4 text-center space-y-0.5">
+      class=" relative z-10 flex flex-col md:flex-row  sm:top-0 justify-center items-center h-full text-white  text-center ">
       <div class="flex flex-col">
         <p class="text-black font-extrabold text-xl ">{{poem.title}}</p>
         @for (verse of poem.verses; track $index) {
@@ -54,4 +54,4 @@
 
 
 </div>
-<div class="h-9 w-full bg-white"></div>
+

@@ -1,21 +1,18 @@
 .scroll-container {
 
-  overflow-y: scroll;
   scrollbar-width: none;
   /* Firefox */
   -ms-overflow-style: none;
-
 }
 
 
 
 .scroll-container::-webkit-scrollbar {
   display: none;
-
 }
 
 
 .parallax {
- margin:30px;
+ margin:25px;
 
 }
