@@ -4,41 +4,42 @@
 }
 
 .scroll__text {
-  width: 30%;
-  position: sticky;
+  width: 5.5vw;
+  left: 6%;
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 1rem;
+  justify-content: space-evenly;
+
 }
 
 .step {
-  margin: 2rem 0;
+ 
+  margin: 1rem 0;
   padding: 1rem;
-  background: rgba(0,0,0,0.05);
+  background: rgba(227, 225, 225, 0.691);
   border-radius: 0.5rem;
   cursor: pointer;
 }
 
 .scroll__graphic {
-  width: 70%;
+  width: 100vw;
   overflow: hidden;
-  position: relative;
+
 }
 
 .horizontal-container {
   display: flex;
+  justify-content:left;
   flex-direction: row;
   transition: transform 0.4s ease-out;
-  height: 100%;
+  height: 100vh;
 }
 
 .panel {
-  min-width: 100%;
-  height: 100%;
+
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+
   font-size: 2rem;
 }

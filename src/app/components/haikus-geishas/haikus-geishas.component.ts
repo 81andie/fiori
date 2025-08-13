@@ -1,6 +1,8 @@
-import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild, NgZone, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild, NgZone, Inject, PLATFORM_ID, OnInit, inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import scrollama from 'scrollama';
+import { HaikusService } from '../../services/haikus.service';
+import { haikusMusicados } from '../../interfaces/poem.interface';
 
 
 
@@ -10,21 +12,46 @@ import scrollama from 'scrollama';
   templateUrl: './haikus-geishas.component.html',
   styleUrls: ['./haikus-geishas.component.css']
 })
-export class HaikusGeishasComponent implements AfterViewInit, OnDestroy {
+export class HaikusGeishasComponent implements AfterViewInit, OnInit, OnDestroy {
 
   private scroller = scrollama();
   private isBrowser: boolean;
+  public haiku: haikusMusicados[] = [];
+  private haikusMusicadosService = inject(HaikusService)
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
- this.isBrowser = isPlatformBrowser(platformId);
+  constructor(
+
+    @Inject(PLATFORM_ID) private platformId: Object) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
+  ngOnInit(): void {
+    this.initScrolling();
+    this.initHaikus();
   }
 
- ngAfterViewInit(): void {
-  if (!this.isBrowser) return;
+  ngAfterViewInit(): void {
+    this.initScrolling()
+    this.initHaikus()
+  }
+
+
+  handleResize = () => {
+    if (!this.isBrowser) return;
+    this.scroller.resize();
+  };
+
+  ngOnDestroy(): void {
+    if (!this.isBrowser) return;
+    window.removeEventListener('resize', this.handleResize);
+  }
+
+
+  initScrolling() {
+    if (!this.isBrowser) return;
     this.scroller
       .setup({
         step: '.step',
-        offset: 0.5,
+        offset: 0.3,
         debug: false
       })
       .onStepEnter((response) => {
@@ -38,16 +65,13 @@ export class HaikusGeishasComponent implements AfterViewInit, OnDestroy {
     window.addEventListener('resize', this.handleResize);
   }
 
-  handleResize = () => {
-     if (!this.isBrowser) return;
-    this.scroller.resize();
-  };
-
-  ngOnDestroy(): void {
-     if (!this.isBrowser) return;
-    window.removeEventListener('resize', this.handleResize);
+  initHaikus() {
+    this.haikusMusicadosService.getHaikusMusicados().subscribe((data) => {
+      console.log(data)
+      this.haiku = data
+      this.initScrolling();
+    })
   }
-
 
 
 

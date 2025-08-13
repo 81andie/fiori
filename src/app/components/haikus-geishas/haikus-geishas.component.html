@@ -1,17 +1,50 @@
+<section id="scrolly" >
+  <div class="scroll__text relative z-50" >
+    <div class="step text-xs w-20" data-step="1">Luna de miel</div>
+    <div class="step text-xs w-20" data-step="2">El templo</div>
+    <div class="step text-xs w-20" data-step="3">Frio</div>
 
-<section id="scrolly">
-  <div class="scroll__text">
-    <div class="step" data-step="1">Sección 1</div>
-    <div class="step" data-step="2">Sección 2</div>
-    <div class="step" data-step="3">Sección 3</div>
   </div>
 
   <div class="scroll__graphic">
     <div class="horizontal-container">
-      <div class="panel" style="background: lightcoral;">Panel 1</div>
-      <div class="panel" style="background: lightblue;">Panel 2</div>
-      <div class="panel" style="background: lightgreen;">Panel 3</div>
+
+      @for (item of haiku;track item.id; let idx= $index) {
+      <div class="panel top-0 w-[100vw] md:w-screen" >
+
+
+        <div class="relative w-[100vw] md:w-screen flex-shrink-0 snap-start ">
+
+          <img [src]="item.img" class="absolute inset-0 lg:w-[100vw] h-screen w-screen md:w-screen object-cover" />
+
+
+
+
+          <div
+            class="relative z-10 flex flex-col sm:top-0 justify-center items-center h-full text-white px-4 text-center space-y-3">
+            <span>Item #{{ idx }}: {{ item.title }}</span>
+
+
+            <div class="text-lg text-right italic text-white/80">
+              <p>{{ item.es}}</p>
+              <p>{{ item.es1 }}</p>
+              <p>{{ item.es2 }}</p>
+            </div>
+
+            <div class="text-2xl font-bold text-white/70">
+              <p>{{ item.jp }}</p>
+              <p>{{ haiku.jp1 }}</p>
+              <p>{{ haiku.jp2 }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      }
+
     </div>
   </div>
 </section>
+
 
