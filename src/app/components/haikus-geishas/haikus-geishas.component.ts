@@ -5,9 +5,6 @@ import scrollama from 'scrollama';
 
 
 
-
-
-
 @Component({
   selector: 'app-haikus-geishas',
   templateUrl: './haikus-geishas.component.html',
@@ -16,7 +13,7 @@ import scrollama from 'scrollama';
 export class HaikusGeishasComponent implements AfterViewInit, OnDestroy {
 
   private scroller = scrollama();
- private isBrowser: boolean;
+  private isBrowser: boolean;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
  this.isBrowser = isPlatformBrowser(platformId);

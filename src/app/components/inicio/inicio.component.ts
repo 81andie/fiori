@@ -12,6 +12,7 @@ import { HaikusGeishasComponent } from "../haikus-geishas/haikus-geishas.compone
 
 
 
+
 @Component({
   selector: 'app-inicio',
   imports: [RouterModule, PoemasComponent, HeroComponent, HaikusComponent, HaikusMusicadosComponent, SobreMiComponent, FooterComponent, HaikusGeishasComponent],
