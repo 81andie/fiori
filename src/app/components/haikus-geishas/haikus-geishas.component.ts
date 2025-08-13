@@ -1,55 +1,60 @@
-import { isPlatformBrowser, CommonModule } from '@angular/common';
-import { Component, HostListener, Inject, OnInit, PLATFORM_ID } from '@angular/core';
-import scrollama from "scrollama";
+import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild, NgZone, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import scrollama from 'scrollama';
 
-interface ScrollItem {
-  color: string;
-  title?: string;
-  position?: 'left' | 'right';
-}
+
+
+
+
+
 
 @Component({
   selector: 'app-haikus-geishas',
-  imports: [CommonModule],
   templateUrl: './haikus-geishas.component.html',
-  styleUrl: './haikus-geishas.component.css'
+  styleUrls: ['./haikus-geishas.component.css']
 })
-export class HaikusGeishasComponent implements OnInit {
+export class HaikusGeishasComponent implements AfterViewInit, OnDestroy {
 
-  isBrowser: boolean = false;
-  scrollItems: ScrollItem[] = [
-    { color: 'red', title: 'Hello', position: 'left' },
-    { color: 'yellow' },
-    { color: 'green' },
-    { color: 'blue', title: 'Goodbye', position: 'right' }
-  ];
+  private scroller = scrollama();
+ private isBrowser: boolean;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
-
+ this.isBrowser = isPlatformBrowser(platformId);
   }
 
-  ngOnInit(): void {
-    // instantiate the scrollama
-    // const scroller = scrollama();
+ ngAfterViewInit(): void {
+  if (!this.isBrowser) return;
+    this.scroller
+      .setup({
+        step: '.step',
+        offset: 0.5,
+        debug: false
+      })
+      .onStepEnter((response) => {
+        const stepIndex = response.index;
+        const horizontalContainer = document.querySelector<HTMLElement>('.horizontal-container');
+        if (horizontalContainer) {
+          horizontalContainer.style.transform = `translateX(-${stepIndex * 100}%)`;
+        }
+      });
 
-    // // setup the instance, pass callback functions
-    // scroller
-    //   .setup({
-    //     step: ".step",
-    //   })
-    //   .onStepEnter((response: any) => {
-    //     // { element, index, direction }
-    //   })
-    //   .onStepExit((response: any) => {
-    //     // { element, index, direction }
-    //   });
-
+    window.addEventListener('resize', this.handleResize);
   }
+
+  handleResize = () => {
+     if (!this.isBrowser) return;
+    this.scroller.resize();
+  };
+
+  ngOnDestroy(): void {
+     if (!this.isBrowser) return;
+    window.removeEventListener('resize', this.handleResize);
+  }
+
+
 
 
 }
-
-
 
 
 
