@@ -85,4 +85,18 @@
     "image": "flor.png",
     "ilus": "AHH"
   }
+  {
+    "id": 5,
+    "title": "Poema innacabado",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      " Poema innacabado,",
+      " La musa de la inspiración, ",
+      "Se fué",
+     
+    ],
+    "background": "colecciono.jpg",
+    "image": "flor.png",
+    "ilus": "AHH"
+  }
 ]
