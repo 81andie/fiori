@@ -34,7 +34,7 @@ export class StoryTellingService {
   };
 
 
-  initScrolling(offset: number = 0.3) {
+  initScrolling(offset: number = 0.1) {
 
     if (!this.isBrowser) return;
 
