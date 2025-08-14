@@ -1,35 +1,41 @@
+<h1
+  class="text-5xl m-12  mt-9 mb-5 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100  bg-gradient-to-right  hover:to-red-300 ">
+  Mifullness Poems</h1>
 
-
-<section id="scrolly" >
-  <div class="scroll__text relative z-50" >
-    <div class="step text-xs w-20" data-step="1">Luna de miel</div>
-    <div class="step text-xs w-20" data-step="2">El templo</div>
-    <div class="step text-xs w-20" data-step="3">Frio</div>
+<section id="scrolly">
+  <div class="scroll__text relative z-50">
+    <div class="step text-xs w-24" data-step="1">En pefume</div>
+    <div class="step text-xs w-24" data-step="2">No</div>
+    <div class="step text-xs w-24" data-step="3">Colecciono</div>
+    <div class="step text-xs w-24" data-step="4">En la soledad</div>
+    <div class="step text-xs w-24" data-step="5">Poema innacabado</div>
 
   </div>
 
   <div class="scroll__graphic">
     <div class="horizontal-container">
 
-
-      <div class="panel top-0 w-[100vw] md:w-screen" >
+      @for (item of versesMilfulness;track item.id; let idx= $index) {
+      <div class="panel top-0 w-[100vw] md:w-screen">
 
 
         <div class="relative w-[100vw] md:w-screen flex-shrink-0 snap-start ">
 
-          <img src="./chanel.jpg" class="absolute inset-0 lg:w-[100vw] h-screen w-screen md:w-screen object-cover" />
+          <img [src]="item.background"
+            class="absolute inset-0 lg:w-[100vw] h-screen w-screen md:w-screen object-cover" />
+
+
 
 
           <div
-            class="relative z-10 flex flex-col sm:top-0 justify-center items-center h-full text-white px-4 text-center space-y-3">
-            <span><strong>El perfume</strong></span>
+            class=" bg-cyan-900 bg-opacity-65 relative z-10 flex flex-col sm:top-0 justify-center items-center h-full text-white px-4 text-center space-y-3">
 
 
-            <div class="text-lg text-right italic text-white/90 bg-cyan-900 bg-opacity-50 p-2">
-              <p> El perfume </p>
-              <p> mejor pagado </p>
-              <p> es el que no se olvida nunca</p><br>
-              <p><strong>Abril 2017</strong></p>
+            <span>Item #{{ idx }}: {{ item.title }}</span>
+
+
+            <div class=" flex flex-coltext-lg text-right italic text-white/80 ">
+              <pre class="text-center">{{item.verses}}</pre>
             </div>
 
 
@@ -38,9 +44,8 @@
       </div>
 
 
-
+      }
 
     </div>
   </div>
 </section>
-

@@ -33,7 +33,7 @@ export interface haikusMusicados{
 
 export interface poemsVerses {
 transform: any;
-  id:number,
+  id:number;
   title: string;
   author: string;
   verses: string[];

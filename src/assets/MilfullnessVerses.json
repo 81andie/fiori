@@ -3,99 +3,44 @@
     "id": 1,
     "title": "EL PERFUME",
     "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-      "El perfume",
-      "mejor pagado",
-      "es aquel",
-      "que nunca",
-      "se olvida"
-    ],
+    "verses": "El perfume\nmejor pagado\nes aquel\nque nunca\nse olvida",
     "background": "chanel.jpg",
     "image": "flor.png",
     "ilus": "AHH"
   },
   {
     "id": 2,
-    "title": "EL PERFUME",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-      "El perfume",
-      "mejor pagado",
-      "es aquel",
-      "que nunca",
-      "se olvida"
-    ],
-    "background": "chanel.jpg",
-    "image": "flor.png",
-    "ilus": "AHH"
-  },
-  {
-    "id": 3,
     "title": "No",
     "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-      "No vas",
-      "a poder conmigo"
-    ],
+    "verses": "No vas\na poder conmigo",
     "background": "nopuedes.jpg",
     "image": "flor.png",
     "ilus": "AHH"
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "COLECCIONO",
     "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-      "Colecciono momentos pasados",
-      "vivo los presentes",
-      "y improviso",
-      "todos mis futuros"
-    ],
-    "background": "colecciono.jpg",
+    "verses": "Colecciono momentos pasados\nvivo los presentes\ny improviso\ntodos mis futuros",
+    "background": "amistad.jpg",
     "image": "flor.png",
     "ilus": "AHH"
   },
-
-   {
+  {
     "id": 4,
-    "title": "COLECCIONO",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-      "Colecciono momentos pasados",
-      "vivo los presentes",
-      "y improviso",
-      "todos mis futuros"
-    ],
-    "background": "colecciono.jpg",
-    "image": "flor.png",
-    "ilus": "AHH"
-  },
-
-   {
-    "id": 5,
     "title": "EN LA SOLEDAD",
     "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-      "En la soledad, dulce niña",
-      "La noche nos enseña",
-      "Ámate tanto",
-      "Que te deseen hasta las sombras..."
-    ],
+    "verses": "En la soledad, dulce niña\nLa noche nos enseña\nÁmate tanto\nQue te deseen hasta las sombras...",
     "background": "colecciono.jpg",
     "image": "flor.png",
     "ilus": "AHH"
-  }
+  },
   {
     "id": 5,
     "title": "Poema innacabado",
     "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-      " Poema innacabado,",
-      " La musa de la inspiración, ",
-      "Se fué a la fuga",
-
-    ],
-    "background": "colecciono.jpg",
+    "verses": "Poema innacabado,\nLa musa de la inspiración,\nSe fué a la fuga",
+    "background": "musa.jpg",
     "image": "flor.png",
     "ilus": "AHH"
   }

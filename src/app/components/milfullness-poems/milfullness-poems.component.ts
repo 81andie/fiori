@@ -2,6 +2,7 @@ import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild, NgZone, Inj
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import scrollama from 'scrollama';
 import { StoryTellingService } from '../../services/StoryTelling.service';
+import { MilfullnessVerses } from '../../interfaces/versesMilfuss.interface';
 
 
 @Component({
@@ -11,35 +12,46 @@ import { StoryTellingService } from '../../services/StoryTelling.service';
   styleUrl: './milfullness-poems.component.css'
 })
 
-export class MilfullnessPoemsComponent implements  OnInit{
+export class MilfullnessPoemsComponent implements OnInit {
 
-  private isBrowser: boolean | undefined;
-  private StoryTellingService= inject(StoryTellingService)
 
-  constructor(
+  private StoryTellingService = inject(StoryTellingService)
 
-    @Inject(PLATFORM_ID) private platformId: Object) {
-    this.isBrowser = isPlatformBrowser(platformId);
-  }
+  public versesMilfulness: MilfullnessVerses[] = [];
 
-  ngAfterViewInit(): void {
-    throw new Error('Method not implemented.');
-  }
+
+  constructor() { }
+
+
+
 
   ngOnInit(): void {
-    this.handleResizes()
+    this.initScrolling();
+    this.getVersesMilfulness()
   }
 
 
 
-
-  handleResizes (){
-     if (!this.isBrowser) return;
-    this.StoryTellingService.handleResize();
-
+  initScrolling() {
+    this.StoryTellingService.initScrolling(0.3);
+    this.getRandlesize()
   }
 
+  getVersesMilfulness() {
+    this.StoryTellingService.getVersesMilfullness().subscribe((data) => {
+      console.log(data)
+      this.versesMilfulness = data
+    })
+  }
 
+  getRandlesize(){
+    this.StoryTellingService.handleResize()
+  }
 
 
 }
+
+
+
+
+
