@@ -4,8 +4,8 @@
     "title": "EL PERFUME",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "El perfume\nmejor pagado\nes aquel\nque nunca\nse olvida",
-    "background": "chanel.jpg",
-    "image": "flor.png",
+    "background": "textura1.jpg",
+    "image": "chanel.png",
     "ilus": "AHH"
   },
   {
@@ -13,17 +13,17 @@
     "title": "No",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "No vas\na poder conmigo",
-    "background": "nopuedes.jpg",
-    "image": "flor.png",
+    "background": "textura1.jpg",
+    "image": "no.png",
     "ilus": "AHH"
   },
   {
     "id": 3,
     "title": "COLECCIONO",
     "author": "ANDREA HERNÁNDEZ",
-    "verses": "Colecciono momentos pasados\nvivo los presentes\ny improviso\ntodos mis futuros",
-    "background": "amistad.jpg",
-    "image": "flor.png",
+    "verses": "Colecciono vivencias pasadas\nvivo los hechos presentes\ny improviso\ntodos mis futuros",
+    "background": "textura1.jpg",
+    "image": "friends.png",
     "ilus": "AHH"
   },
   {
@@ -31,8 +31,8 @@
     "title": "EN LA SOLEDAD",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "En la soledad, dulce niña\nLa noche nos enseña\nÁmate tanto\nQue te deseen hasta las sombras...",
-    "background": "colecciono.jpg",
-    "image": "flor.png",
+    "background": "textura1.jpg",
+    "image": "loveme.png",
     "ilus": "AHH"
   },
   {
@@ -40,8 +40,8 @@
     "title": "Poema innacabado",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "Poema innacabado,\nLa musa de la inspiración,\nSe fué a la fuga",
-    "background": "musa.jpg",
-    "image": "flor.png",
+    "background": "textura1.jpg",
+    "image": "luna.png",
     "ilus": "AHH"
   }
 ]

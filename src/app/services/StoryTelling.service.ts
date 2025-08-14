@@ -46,9 +46,16 @@ export class StoryTellingService {
       })
       .onStepEnter((response: ScrollamaStepResponse) => {
         const horizontalContainer = document.querySelector<HTMLElement>('.horizontal-container');
+
+
         if (horizontalContainer) {
           horizontalContainer.style.transform = `translateX(-${response.index * 100}%)`;
         }
+
+
+
+
+
       });
 
     window.addEventListener('resize', this.handleResize);

@@ -2,7 +2,7 @@
   display: flex;
   height: 100vh;
   margin-top: 10px;
- 
+
 }
 
 .scroll__text {
@@ -11,14 +11,14 @@
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
 }
 
 .step {
 
   margin: 1rem 0;
-  padding: 1rem;
+  padding: 0.6rem;
   background: rgba(227, 225, 225, 0.691);
   border-radius: 0.5rem;
   cursor: pointer;
@@ -41,6 +41,11 @@
 .panel {
 
   height: 100vh;
+  width: 90vw;
   display: flex;
   font-size: 2rem;
+
+
 }
+
+
