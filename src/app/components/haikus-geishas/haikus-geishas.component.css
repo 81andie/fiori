@@ -14,7 +14,7 @@
 }
 
 .step {
- 
+
   margin: 1rem 0;
   padding: 1rem;
   background: rgba(227, 225, 225, 0.691);
@@ -40,6 +40,5 @@
 
   height: 100vh;
   display: flex;
-
   font-size: 2rem;
 }

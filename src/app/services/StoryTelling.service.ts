@@ -54,8 +54,14 @@ export class StoryTellingService {
 
         if (horizontalContainer) {
           horizontalContainer.style.transform = `translateX(-${response.index * 100}%)`;
+          
         }
 
+        const body = document.querySelector<HTMLElement>('body');
+
+        if(body){
+          body.className= 'disableScroll';
+        }
 
 
 

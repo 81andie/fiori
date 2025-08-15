@@ -1,57 +1,43 @@
-<h1 class=" text-6xl md:text-7xl lg:text-7xlm-14 mt-9 m-14 mb-5 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100  bg-gradient-to-right  hover:to-red-300 ">POEMAS CORTOS</h1>
-
-<div #scrollContainer class=" w-[110.5vw]  scroll-container overflow-y-scroll h-[calc(120vh-95.99px)] snap-y snap-mandatory scrollbar-hide cursor-grab parallax
-"
-
->
-
-  @for (poem of poemasYVersos; track $index) {
-
-  <div class="relative m-2  w-[92.5vw] md:w-[89.5vw] lg:w-[100.5vw] h-screen flex-shrink-0 snap-start scrollbar-none ">
-    <!-- Imagen de fondo -->
+<h1
+  class="text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100 hover:to-red-300">
+  MindFullness
+</h1>
 
 
-<!-- Fondo parallax -->
-    <div
-      class="absolute h-[100vh] w-[92.5vw] md:w-[89.5vw] lg:w-[100.5vw] inset-0 top-0 bg-cover bg-center transition-transform duration-300 parallax"
+<div class="space-y-0">
+  @for (item of poemasYVersos; track item.id) {
+  <section
+    class="relative z-10 mx-10 h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
+    [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
 
-      [style.backgroundImage]="'url(' + poem.background + ')'"
-
-    >
-
-
-
-  </div>
-
-    <!-- Capa oscura encima -->
+    <!-- Capa oscura -->
+    <div class="absolute  ">
+      <p class="text-xl mb-5 font-bold text-black">{{item.title}}</p>
+      <!-- Contenido -->
+      <div class="relative flex flex-col justify-center justify-items-center z-10 ">
 
 
-    <!-- Contenido del haiku -->
-    <div
-      class=" relative z-10 flex flex-col md:flex-row  sm:top-0 justify-center items-center h-full text-white  text-center ">
-      <div class="flex flex-col">
-        <p class="text-black font-extrabold text-xl ">{{poem.title}}</p>
-        @for (verse of poem.verses; track $index) {
-        <p class=" motion-duration-2000 text-black text-xs/4 md:text-xl/5 lg:text-xs/4">{{ verse }}</p>
-        }
+        <div class="text-sm text-black" *ngIf="poemasYVersos.length">
+
+          @for (verso of item.verses; track verso) {
+          <pre>{{ verso }}</pre>
+          }
+          
+        </div>
+
+
+
+        <div class="text-2xl w-full flex justify-center font-bold text-black">
+          <img [src]="item.image" class="w-32 h-42">
+        </div>
+
+        <div class="text-2xl font-bold text-black">
+          <p>{{item.ilus}}</p>
+
+        </div>
 
       </div>
-
-
-
-      <img [src]="poem.image" class="h-44 motion-preset-fade motion-duration-2000  w-auto transition duration-700 ease-in-out skew-x-2 hover:scale-125" />
-      <p class="text-xs font-bold leading-tight text-black  ">ilustraciones de AHH</p>
-
-
     </div>
-
-
-  </div>
-
-
-
+  </section>
   }
-
-
 </div>
-

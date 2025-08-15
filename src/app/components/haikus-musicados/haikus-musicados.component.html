@@ -1,31 +1,25 @@
-<h1 class="text-5xl m-12  mt-9 mb-5 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100  bg-gradient-to-right  hover:to-red-300  ">HAIKUS MUSICADOS</h1>
-
+<h1 class="text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100 hover:to-red-300">
+  HAIKUS MUSICADOS
+</h1>
 <app-card></app-card>
-<div
-  #scrollContainer
-    (wheel)="onWheel($event)"
 
-  class=" parallax w-[83.5vw] md:w-[90.5vw] lg:w-[88.5vw] mt-5 flex overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-none h-[calc(100vh-97.99px)]"
-
->
+<div class="space-y-0">
   @for (haiku of haikusMusicados; track haiku.id) {
-     <div #sentinelStart class="w-1"></div>
-    <div class="relative w-full flex-shrink-0 snap-start ">
-      <!-- Imagen de fondo -->
-      <img [src]="haiku.img" class="absolute inset-0 w-[100vw] h-[calc(100vh-97.99px)] md:h-[calc(100vh-97.99px)] lg:h-[calc(100vh-97.99px)] object-cover" />
+    <section
+      class="parallax relative mx-10 h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
+      [ngStyle]="{'background-image': 'url(' + haiku.img + ')'}">
 
-      <!-- Capa oscura encima -->
+      <!-- Capa oscura -->
+      <div class="absolute inset-0 bg-black/40"></div>
 
+      <!-- Contenido -->
+      <div class="relative z-10 space-y-3">
+        <p class="text-xl font-bold">{{haiku.title}}</p>
+        <p class="text-xl font-bold">{{haiku.jp}}</p>
+        <p class="text-xl font-bold">{{haiku.jp2}}</p>
+        <p class="text-xl font-bold">{{haiku.jp3}}</p>
 
-      <!-- Contenido del haiku -->
-      <div class="relative z-10 flex flex-col sm:top-0 justify-center items-center h-full text-white px-4 text-center space-y-3">
-<p class="text-xl font-bold leading-tight">{{haiku.title }}</p>
-        <p class="text-xl font-bold leading-tight">{{haiku.jp }}</p>
-      <p class="text-xl font-bold leading-tight">{{ haiku.jp2 }}</p>
-       <p class="text-xl font-bold leading-tight">{{ haiku.jp3 }}</p>
-
-
-        <div class="text-lg text-rightitalic text-white/80">
+        <div class="text-lg text-white/80">
           <p>{{ haiku.romaji }}</p>
           <p>{{ haiku.romaji1 }}</p>
           <p>{{ haiku.romaji2 }}</p>
@@ -37,8 +31,7 @@
           <p>{{ haiku.es2 }}</p>
         </div>
       </div>
-    </div>
+    </section>
   }
-    <div #sentinelEnd class="w-1"></div>
 </div>
-
+>

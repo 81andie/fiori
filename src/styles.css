@@ -18,8 +18,12 @@ html, body {
 
 body{
   font-family: "Special Elite", system-ui;
- 
 
+}
+
+.disableScroll, .disableScroll > *{
+      overflow-y:hidden !important;
+      overflow-x:hidden !important;
 }
 
 

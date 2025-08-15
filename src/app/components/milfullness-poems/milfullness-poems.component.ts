@@ -4,12 +4,13 @@ import scrollama from 'scrollama';
 import { StoryTellingService } from '../../services/StoryTelling.service';
 import { MilfullnessVerses } from '../../interfaces/versesMilfuss.interface';
 import { Subscription } from 'rxjs';
+import { CardComponent } from "../card/card.component";
 
 
 
 @Component({
   selector: 'app-milfullness-poems',
-  imports: [CommonModule],
+  imports: [CommonModule, CardComponent],
   templateUrl: './milfullness-poems.component.html',
   styleUrl: './milfullness-poems.component.css'
 })
@@ -23,7 +24,7 @@ export class MilfullnessPoemsComponent implements OnInit {
 
   private sub?: Subscription;
 
-//  @ViewChildren('stepEl') stepElements!: QueryList<ElementRef<HTMLElement>>;
+
 
 
 
@@ -40,22 +41,14 @@ export class MilfullnessPoemsComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.initScrolling();
+
     this.getVersesMilfulness()
   }
-  ngAfterViewInit() {
-    // Espera a que Angular pinte los steps
-    setTimeout(() => {
-      this.StoryTellingService.initScrolling();
-    });
-  }
 
 
 
-  initScrolling() {
-    this.StoryTellingService.initScrolling(0.2);
-    this.getRandlesize()
-  }
+
+
 
   getVersesMilfulness() {
     this.sub= this.StoryTellingService.getVersesMilfullness().subscribe((data) => {
@@ -66,9 +59,7 @@ export class MilfullnessPoemsComponent implements OnInit {
     })
   }
 
-  getRandlesize() {
-    this.StoryTellingService.handleResize()
-  }
+
 
 
 
