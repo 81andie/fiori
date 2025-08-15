@@ -6,16 +6,16 @@
 <div class="space-y-0">
   @for (item of versesMilfulness; track item.id) {
     <section
-      class="relative z-10 mx-10 h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
+      class=" relative z-10 mx-10 h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
       [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
 
       <!-- Capa oscura -->
-      <div class="absolute  ">
-  <p class="text-xl mb-5 font-bold text-black">{{item.title}}</p>
+      <div class="absolute">
+    <p class="text-xl mb-5 font-bold text-black bg-white bg-opacity-5">{{item.title}}</p>
       <!-- Contenido -->
-      <div class="relative flex flex-col justify-center justify-items-center z-10 ">
+      <div class=" relative flex flex-col justify-center justify-items-center z-10 bg-white bg-opacity-5 ">
 
-        <div class="text-sm text-black">
+        <div class="text-xl text-black">
           <pre>{{item.verses}}</pre>
         </div>
 

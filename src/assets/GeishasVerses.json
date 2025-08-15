@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "MAEKO",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "Fuiste hija de la verdad\n de joven un rostro jugoso de ciruela\nmarchita y arrugada con los años\nsavia e independiente\ntu pelo huele al musgo\ny al Uneboshi\nque tomas al pie\nde cada atardecer",
+    "background": "celebracion-del-dia-mundial-del-teatro.jpg"
+
+  },
+
+  {
+    "id": 2,
+    "title": "AKARI",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "Duerme Akari\nsemilla en mano\ncrece el peral\nla piel de porcelana...\nlos labios morados\nflorece la Geisha",
+    "background": "pexels-midory-niwa-12168994-13223688.jpg"
+
+  },
+    {
+    "id": 3,
+    "title": "NIKO",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "En tus cumbres\npeñascos dónde el Sol naciente\nrenace cada mañana\ndos lagos Niko",
+    "background": "pexels-noe-garde-2150865147-31370379.jpg"
+
+  }
+
+]

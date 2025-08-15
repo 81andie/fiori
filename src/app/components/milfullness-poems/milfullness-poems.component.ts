@@ -1,8 +1,8 @@
 import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild, NgZone, Inject, PLATFORM_ID, OnInit, inject, ViewChildren, QueryList } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import scrollama from 'scrollama';
-import { StoryTellingService } from '../../services/StoryTelling.service';
-import { MilfullnessVerses } from '../../interfaces/versesMilfuss.interface';
+
+import { MindFullnessService } from '../../services/MindFullness.service';
+import { MindfullnessVerses } from '../../interfaces/versesMindFullness.interface';
 import { Subscription } from 'rxjs';
 import { CardComponent } from "../card/card.component";
 
@@ -10,7 +10,7 @@ import { CardComponent } from "../card/card.component";
 
 @Component({
   selector: 'app-milfullness-poems',
-  imports: [CommonModule, CardComponent],
+  imports: [CommonModule],
   templateUrl: './milfullness-poems.component.html',
   styleUrl: './milfullness-poems.component.css'
 })
@@ -18,9 +18,9 @@ import { CardComponent } from "../card/card.component";
 export class MilfullnessPoemsComponent implements OnInit {
 
 
-  private StoryTellingService = inject(StoryTellingService)
+  private mindFullnessService = inject(MindFullnessService)
 
-  public versesMilfulness: MilfullnessVerses[] = [];
+  public versesMilfulness: MindfullnessVerses[] = [];
 
   private sub?: Subscription;
 
@@ -28,10 +28,7 @@ export class MilfullnessPoemsComponent implements OnInit {
 
 
 
-  constructor(
-
-    @Inject(PLATFORM_ID) platformId: Object
-  ) {
+  constructor(@Inject(PLATFORM_ID) platformId: Object) {
     this.isBrowser = isPlatformBrowser(platformId);
   }
 
@@ -46,12 +43,8 @@ export class MilfullnessPoemsComponent implements OnInit {
   }
 
 
-
-
-
-
   getVersesMilfulness() {
-    this.sub= this.StoryTellingService.getVersesMilfullness().subscribe((data) => {
+    this.sub= this.mindFullnessService.getVersesMilfullness().subscribe((data) => {
       console.log(data)
       this.versesMilfulness = data
 
@@ -68,7 +61,7 @@ export class MilfullnessPoemsComponent implements OnInit {
 
   ngOnDestroy() {
     this.sub?.unsubscribe();
-    this.StoryTellingService.destroyScrolling();
+
   }
 
 

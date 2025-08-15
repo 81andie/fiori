@@ -2,11 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, ElementRef, AfterViewInit, inject, ViewChild, Renderer2 } from '@angular/core';
 import { HaikusService } from '../../services/haikus.service';
 import { haikusMusicados } from '../../interfaces/poem.interface';
-import { CardComponent } from "../card/card.component";
+
 
 @Component({
   selector: 'app-haikus-musicados',
-  imports: [CommonModule, CardComponent],
+  imports: [CommonModule, ],
   templateUrl: './haikus-musicados.component.html',
   styleUrl: './haikus-musicados.component.css'
 })
@@ -28,7 +28,7 @@ export class HaikusMusicadosComponent implements AfterViewInit {
 
   }
 
-  
+
 
 
 

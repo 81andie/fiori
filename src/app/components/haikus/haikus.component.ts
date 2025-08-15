@@ -1,6 +1,6 @@
 
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, ViewChild, AfterViewInit, inject } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit, inject, OnInit } from '@angular/core';
 import { HaikusService } from '../../services/haikus.service';
 import { poem } from '../../interfaces/poem.interface';
 
@@ -13,10 +13,13 @@ import { poem } from '../../interfaces/poem.interface';
 
 })
 
-export class HaikusComponent implements AfterViewInit {
+export class HaikusComponent implements OnInit {
 
   constructor() {
-    this.sacarPoemas()
+
+  }
+  ngOnInit(): void {
+  this.sacarPoemas()
   }
 
 
@@ -24,39 +27,12 @@ export class HaikusComponent implements AfterViewInit {
   haikus: poem[] = [];
   private haikusService = inject(HaikusService)
 
-  private isScrolling = false;
-  @ViewChild('scrollContainer', { static: true }) scrollContainer!: ElementRef<HTMLElement>;
 
 
 
-  ngAfterViewInit() {
-    const container = this.scrollContainer.nativeElement;
 
-    // Añadir listener manual con passive: false
-    container.addEventListener('wheel', (event) => this.onWheel(event), { passive: false });
-  }
 
-  onWheel(event: WheelEvent) {
-    event.preventDefault();
 
-    if (this.isScrolling) return;
-    this.isScrolling = true;
-
-    const direction = event.deltaY > 0 ? 1 : -1;
-    const scrollWidth = window.innerWidth;
-
-    const currentScroll = this.scrollContainer.nativeElement.scrollLeft;
-    const nextScroll = Math.round((currentScroll + direction * scrollWidth) / scrollWidth) * scrollWidth;
-
-    this.scrollContainer.nativeElement.scrollTo({
-      left: nextScroll,
-      behavior: 'smooth'
-    });
-
-    setTimeout(() => {
-      this.isScrolling = false;
-    }, 600);
-  }
 
   sacarPoemas() {
     this.haikusService.getPoems().subscribe((data) => {

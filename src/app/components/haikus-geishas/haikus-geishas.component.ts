@@ -1,75 +1,40 @@
 import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild, NgZone, Inject, PLATFORM_ID, OnInit, inject } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
-import scrollama from 'scrollama';
-import { HaikusService } from '../../services/haikus.service';
-import { haikusMusicados } from '../../interfaces/poem.interface';
-
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { GeishesVerses } from '../../interfaces/geishas.interface';
+import { GeishasVersesService } from '../../services/geishas.service';
+import { CardComponent } from "../card/card.component";
 
 
 
 @Component({
   selector: 'app-haikus-geishas',
   templateUrl: './haikus-geishas.component.html',
-  styleUrls: ['./haikus-geishas.component.css']
+  styleUrls: ['./haikus-geishas.component.css'],
+  imports: [CardComponent, CommonModule]
 })
-export class HaikusGeishasComponent implements AfterViewInit, OnInit, OnDestroy {
+export class HaikusGeishasComponent implements  OnInit {
 
-  private scroller = scrollama();
-  private isBrowser: boolean;
-  public haiku: haikusMusicados[] = [];
-  private haikusMusicadosService = inject(HaikusService)
 
-  constructor(
+  public versesGeishas:GeishesVerses[]=[]
 
-    @Inject(PLATFORM_ID) private platformId: Object) {
+  constructor(@Inject(PLATFORM_ID) platformId: Object) {
     this.isBrowser = isPlatformBrowser(platformId);
   }
+
+
+  private isBrowser: boolean | undefined;
+  private geishasVersesService= inject(GeishasVersesService)
+
+
   ngOnInit(): void {
-    this.initScrolling();
-    this.initHaikus();
-  }
-
-  ngAfterViewInit(): void {
-    this.initScrolling()
-    this.initHaikus()
+this.getVersesGeishas()
   }
 
 
-  handleResize = () => {
-    if (!this.isBrowser) return;
-    this.scroller.resize();
-  };
 
-  ngOnDestroy(): void {
-    if (!this.isBrowser) return;
-    window.removeEventListener('resize', this.handleResize);
-  }
-
-
-  initScrolling() {
-    if (!this.isBrowser) return;
-    this.scroller
-      .setup({
-        step: '.step',
-        offset: 0.3,
-        debug: false
-      })
-      .onStepEnter((response) => {
-        const stepIndex = response.index;
-        const horizontalContainer = document.querySelector<HTMLElement>('.horizontal-container');
-        if (horizontalContainer) {
-          horizontalContainer.style.transform = `translateX(-${stepIndex * 100}%)`;
-        }
-      });
-
-    window.addEventListener('resize', this.handleResize);
-  }
-
-  initHaikus() {
-    this.haikusMusicadosService.getHaikusMusicados().subscribe((data) => {
-      console.log(data)
-      this.haiku = data
-      this.initScrolling();
+  getVersesGeishas(){
+    this.geishasVersesService.getVersesGeishas().subscribe((data)=>{
+      this.versesGeishas=data;
     })
   }
 
