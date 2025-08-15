@@ -1,8 +1,10 @@
-import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild, NgZone, Inject, PLATFORM_ID, OnInit, inject } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild, NgZone, Inject, PLATFORM_ID, OnInit, inject, ViewChildren, QueryList } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import scrollama from 'scrollama';
 import { StoryTellingService } from '../../services/StoryTelling.service';
 import { MilfullnessVerses } from '../../interfaces/versesMilfuss.interface';
+import { Subscription } from 'rxjs';
+
 
 
 @Component({
@@ -19,9 +21,21 @@ export class MilfullnessPoemsComponent implements OnInit {
 
   public versesMilfulness: MilfullnessVerses[] = [];
 
+  private sub?: Subscription;
 
-  constructor() { }
+//  @ViewChildren('stepEl') stepElements!: QueryList<ElementRef<HTMLElement>>;
 
+
+
+  constructor(
+
+    @Inject(PLATFORM_ID) platformId: Object
+  ) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
+
+
+  private isBrowser: boolean | undefined;
 
 
 
@@ -29,27 +43,48 @@ export class MilfullnessPoemsComponent implements OnInit {
     this.initScrolling();
     this.getVersesMilfulness()
   }
+  ngAfterViewInit() {
+    // Espera a que Angular pinte los steps
+    setTimeout(() => {
+      this.StoryTellingService.initScrolling();
+    });
+  }
 
 
 
   initScrolling() {
-    this.StoryTellingService.initScrolling(0.3);
+    this.StoryTellingService.initScrolling(0.2);
     this.getRandlesize()
   }
 
   getVersesMilfulness() {
-    this.StoryTellingService.getVersesMilfullness().subscribe((data) => {
+    this.sub= this.StoryTellingService.getVersesMilfullness().subscribe((data) => {
       console.log(data)
       this.versesMilfulness = data
+
+
     })
   }
 
-  getRandlesize(){
+  getRandlesize() {
     this.StoryTellingService.handleResize()
   }
 
 
+
+
+
+
+  ngOnDestroy() {
+    this.sub?.unsubscribe();
+    this.StoryTellingService.destroyScrolling();
+  }
+
+
 }
+
+
+
 
 
 

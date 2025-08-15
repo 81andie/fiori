@@ -3,7 +3,7 @@ import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import scrollama from 'scrollama';
 import { HttpClient } from '@angular/common/http';
-import {MilfullnessVerses} from '../interfaces/versesMilfuss.interface'
+import { MilfullnessVerses } from '../interfaces/versesMilfuss.interface'
 
 // Definimos el tipo de la respuesta de scrollama
 interface ScrollamaStepResponse {
@@ -16,16 +16,18 @@ interface ScrollamaStepResponse {
   providedIn: 'root'
 })
 export class StoryTellingService {
+
   private scroller = scrollama();
   private isBrowser: boolean;
 
+
+
   constructor(@Inject(PLATFORM_ID) private platformId: Object,
-              private http: HttpClient) {
+    private http: HttpClient) {
     this.isBrowser = isPlatformBrowser(platformId);
   }
 
-   private jsonUrl = 'assets/MilfullnessVerses.json';
-
+  private jsonUrl = 'assets/MilfullnessVerses.json';
 
 
   handleResize = () => {
@@ -45,6 +47,8 @@ export class StoryTellingService {
         debug: false
       })
       .onStepEnter((response: ScrollamaStepResponse) => {
+
+           console.log('Step activo:', response.index);
         const horizontalContainer = document.querySelector<HTMLElement>('.horizontal-container');
 
 
@@ -69,7 +73,9 @@ export class StoryTellingService {
   }
 
 
-  getVersesMilfullness(){
+
+
+  getVersesMilfullness() {
     return this.http.get<MilfullnessVerses[]>(this.jsonUrl)
   }
 

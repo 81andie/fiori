@@ -8,16 +8,18 @@
     "image": "chanel.png",
     "ilus": "AHH"
   },
+
+
   {
     "id": 2,
-    "title": "No",
+    "title": "EN LA SOLEDAD",
     "author": "ANDREA HERNÁNDEZ",
-    "verses": "No vas\na poder conmigo",
+    "verses": "En la soledad, dulce niña\nLa noche nos enseña\nÁmate tanto\nQue te deseen hasta las sombras...",
     "background": "textura1.jpg",
-    "image": "no.png",
+    "image": "loveme.png",
     "ilus": "AHH"
   },
-  {
+    {
     "id": 3,
     "title": "COLECCIONO",
     "author": "ANDREA HERNÁNDEZ",
@@ -28,20 +30,21 @@
   },
   {
     "id": 4,
-    "title": "EN LA SOLEDAD",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "En la soledad, dulce niña\nLa noche nos enseña\nÁmate tanto\nQue te deseen hasta las sombras...",
-    "background": "textura1.jpg",
-    "image": "loveme.png",
-    "ilus": "AHH"
-  },
-  {
-    "id": 5,
     "title": "Poema innacabado",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "Poema innacabado,\nLa musa de la inspiración,\nSe fué a la fuga",
     "background": "textura1.jpg",
     "image": "luna.png",
+    "ilus": "AHH"
+  },
+
+    {
+    "id": 5,
+    "title": "No",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "No vas\na poder conmigo",
+    "background": "textura1.jpg",
+    "image": "no.png",
     "ilus": "AHH"
   }
 ]
