@@ -13,8 +13,8 @@
       "la copa vacía,",
       "florecen los desengaños."
     ],
-    "background": "textura3.jpg",
-    "image": "flor4.png",
+    "background": "textura-de-pared-con-detalles-blancos.jpg",
+    "image": "copa.png",
     "ilus": "AHH"
   },
   {
@@ -26,8 +26,8 @@
       "y la envidia",
       "son la peor de las compañías."
     ],
-    "background": "marron.jpg",
-    "image": "flornegra.png",
+    "background": "papelmarronantiguo.jpg",
+    "image": "lasoberbia.png",
     "ilus": "AHH"
   },
   {
@@ -46,8 +46,8 @@
       "ni el fondo del espejo",
       "ni sus oscuros secretos."
     ],
-    "background": "marron.jpg",
-    "image": "flornegra.png",
+    "background": "textura-de-pared-con-detalles-blancos.jpg",
+    "image": "espejo.png",
     "ilus": "AHH"
   },
   {
@@ -57,12 +57,12 @@
     "verses": [
       "Borrada la pena,",
       "tristezas antiguas,",
-      "el aroma de las hojas mustías,",
+      "el aroma de las hojarascas,",
       "caravanas llevan",
       "almas que sueñan."
     ],
-    "background": "marron.jpg",
-    "image": "flornegra.png",
+    "background": "viejo-fondo-de-la-textura-del-papel.jpg",
+    "image": "hoja.png",
     "ilus": "AHH"
   },
   {
@@ -76,8 +76,8 @@
       "el mañana,",
       "camino por un sendero viejo."
     ],
-    "background": "marron.jpg",
-    "image": "flornegra.png",
+    "background": "papelmarronantiguo.jpg",
+    "image": "elagua.jpg",
     "ilus": "AHH"
   },
   {
@@ -93,13 +93,14 @@
       "ecos de infancia,",
       "cadencias en los labios de los niños;",
       "confusa mañana gris;",
-      "el hilo de agua de la fuente",
-      "emana con alegría,",
+      "el hilo del sendero se pierde",
+      "entre olivos",
+      "infinito,",
       "y en boca de las viejas",
       "moralejas antiguas."
     ],
-    "background": "marron.jpg",
-    "image": "flornegra.png",
+    "background": "fondo-de-textura-de-pintura-de-aceite-naranja.jpg",
+    "image": "paisaje.png",
     "ilus": "AHH"
   }
 ]

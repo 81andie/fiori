@@ -1,1 +1,48 @@
-<p>improvisaciones works!</p>
+
+<h1 class="text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100 hover:to-red-300">
+  Improvisaciones poéticas sobre Machado
+</h1>
+
+
+<div class="space-y-0 ">
+  @for (item of improvisations ; track item.id) {
+    <section
+      class="parallax relative mx-9 h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
+      [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
+
+      <!-- Capa oscura -->
+      <div class="absolute  inset-0 bg-white bg-opacity-35"></div>
+
+      <!-- Contenido -->
+      <div class="relative z-10 space-y-1 ">
+        <p class=" font-bold text-amber-950">{{item.title}}</p>
+
+          <div class="text-md md:text-xl lg:text-xl text-amber-950" *ngIf="improvisations.length">
+
+          @for (verso of item.verses; track verso.id) {
+          <pre>{{ verso }}</pre>
+          }
+
+        </div>
+
+         <div class="text-2xl w-full flex justify-center font-bold text-black">
+          <img [src]="item.image" class="w-32 h-22">
+        </div>
+
+
+
+
+
+
+        <div class="p-2 text-xs font-bold text-amber-950 mb-5">
+          <p><strong>{{ item.author }}</strong></p>
+
+        </div>
+      </div>
+    </section>
+  }
+</div>
+>
+
+
+

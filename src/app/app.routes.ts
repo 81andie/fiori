@@ -11,6 +11,7 @@ import { PoemasLargosComponent } from './components/poemas-largos/poemas-largos.
 import { MorganComponent } from './components/morgan/morgan.component';
 import { TiamatComponent } from './components/tiamat/tiamat.component';
 import { MilfullnessPoemsComponent } from './components/milfullness-poems/milfullness-poems.component';
+import { ImprovisacionesComponent } from './components/improvisaciones/improvisaciones.component';
 
 
 export const routes: Routes = [
@@ -23,7 +24,8 @@ export const routes: Routes = [
   { path: 'Poemas', component: PoemasComponent },
   { path: 'Poemasmusicados', component: PoemasMusicadosComponent },
   { path: 'PoemasLargos', component: PoemasLargosComponent },
-  
+  { path: 'ImprovisacionesSobreMachado', component: ImprovisacionesComponent },
+
   { path: 'Morgan', component: MorganComponent },
   { path: 'Tiamat', component: TiamatComponent },
    { path: 'MilfullnessPoems', component: MilfullnessPoemsComponent },

@@ -10,7 +10,7 @@ import { CardComponent } from "../card/card.component";
   selector: 'app-haikus-geishas',
   templateUrl: './haikus-geishas.component.html',
   styleUrls: ['./haikus-geishas.component.css'],
-  imports: [CardComponent, CommonModule]
+  imports: [ CommonModule]
 })
 export class HaikusGeishasComponent implements  OnInit {
 
