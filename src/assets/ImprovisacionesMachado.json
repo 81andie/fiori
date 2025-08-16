@@ -1,72 +1,105 @@
-[{
+[
+  {
     "id": 1,
     "title": "1",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
       "Parques de eucalipto,",
-      "Hojas color de la avellana,",
+      "hojas color de la avellana,",
       "en el fondo del camino,",
       "un sol de oro,",
-      "sueños infantiles",
-      "Mudos y sordos,",
+      "sueños infantiles,",
+      "mudos y sordos,",
       "la copa vacía,",
-      "florecen los desengaños"
-
+      "florecen los desengaños."
     ],
     "background": "textura3.jpg",
     "image": "flor4.png",
     "ilus": "AHH"
   },
-
   {
     "id": 2,
     "title": "2",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
-    "La soberbia",
-    "y la envidia",
-    "es la peor de las compañías"
+      "La soberbia",
+      "y la envidia",
+      "son la peor de las compañías."
     ],
     "background": "marron.jpg",
     "image": "flornegra.png",
     "ilus": "AHH"
   },
-
-   {
+  {
     "id": 3,
     "title": "3",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
-    "Fria inquietud",
-    "de la ausencia otoñal",
-    "el aroma de las hojas mustías",
-    "el eucalipto murió",
-    "junto al rosal",
-    "el gris mechón",
-    "se hunde en el tiempo",
-    "el reloj no muere",
-    "ni el fondo del espejo",
-    "ni sus oscuros secretos"
+      "Fría inquietud",
+      "de la ausencia otoñal,",
+      "el aroma de las hojas mustías,",
+      "el eucalipto murió",
+      "junto al rosal,",
+      "el gris mechón",
+      "se hunde en el tiempo,",
+      "el reloj no muere,",
+      "ni el fondo del espejo",
+      "ni sus oscuros secretos."
     ],
     "background": "marron.jpg",
     "image": "flornegra.png",
     "ilus": "AHH"
   },
-
-    {
+  {
     "id": 4,
     "title": "4",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
-    "Borrada la pena",
-    "tristezas antiguas",
-    "el aroma de las hojas mustías",
-    "caravanas llevan",
-    "almas que sueñan"
+      "Borrada la pena,",
+      "tristezas antiguas,",
+      "el aroma de las hojas mustías,",
+      "caravanas llevan",
+      "almas que sueñan."
+    ],
+    "background": "marron.jpg",
+    "image": "flornegra.png",
+    "ilus": "AHH"
+  },
+  {
+    "id": 5,
+    "title": "5",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "El agua mana",
+      "por canales rotos,",
+      "el presente,",
+      "el mañana,",
+      "camino por un sendero viejo."
+    ],
+    "background": "marron.jpg",
+    "image": "flornegra.png",
+    "ilus": "AHH"
+  },
+  {
+    "id": 6,
+    "title": "6",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Cuán amargas",
+      "son las tristezas de amores.",
+      "No se borra la pena,",
+      "la ingenuidad de la inocencia",
+      "se asoma por la plaza,",
+      "ecos de infancia,",
+      "cadencias en los labios de los niños;",
+      "confusa mañana gris;",
+      "el hilo de agua de la fuente",
+      "emana con alegría,",
+      "y en boca de las viejas",
+      "moralejas antiguas."
     ],
     "background": "marron.jpg",
     "image": "flornegra.png",
     "ilus": "AHH"
   }
-
 ]
