@@ -1,35 +1,44 @@
+<h1
 
-<h1 class="text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100 hover:to-red-300">
+
+class="text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100 hover:to-red-300"
+data-aos="zoom-in-right"
+data-aos="fade-up"
+  data-aos-easing="linear"
+  data-aos-duration="400">
+
   HAIKUS GEISHAS
 </h1>
 
 
 <div class="space-y-0">
   @for (item of versesGeishas ; track item.id) {
-    <section
-      class="parallax relative mx-9 h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
-      [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
+  <section
+    class="brightness-125 transition duration-700 ease-in-out relative  h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
+    [ngStyle]="{'background-image': 'url(' + item.background + ')'}" data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="1000"
 
-      <!-- Capa oscura -->
-      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    >
 
-      <!-- Contenido -->
-      <div class="relative z-10 space-y-3">
-        <p class="text-3xl font-bold">{{item.title}}</p>
+    <!-- Capa oscura -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+    <!-- Contenido -->
+    <div class="relative z-10 space-y-3">
+      <p class="text-3xl font-bold">{{item.title}}</p>
 
 
-        <div class="sm:text-sm md:text-2xl lg:text-3xl text-white/80">
-          <pre>{{ item.verses }}</pre>
+      <div class="sm:text-sm md:text-2xl lg:text-3xl text-white/80">
+        <pre>{{ item.verses }}</pre>
 
-        </div>
-
-        <div class="p-2 text-xs font-bold text-white">
-          <p><strong>{{ item.author }}</strong></p>
-
-        </div>
       </div>
-    </section>
+
+      <div class="p-2 text-xs font-bold text-white">
+        <p><strong>{{ item.author }}</strong></p>
+
+      </div>
+    </div>
+  </section>
   }
 </div>
 >
-

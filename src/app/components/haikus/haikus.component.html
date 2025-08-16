@@ -1,13 +1,13 @@
-<h1
+<h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
   class="text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100 hover:to-red-300">
   HAIKUS
 </h1>
 
 
-<div class="space-y-1">
+<div class="space-y-0">
   @for (item of haikus; track item.id) {
-  <section
-    class="parallax relative mx-9 h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
+  <section data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
+    class="parallax relative h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
     [ngStyle]="{'background-image': 'url(' + item.img + ')'}">
 
     <!-- Capa oscura -->
@@ -32,7 +32,7 @@
         <pre>{{ item.romaji2}}</pre>
 
       </div>
-       <div class="sm:text-sm md:text-xl lg:text-xl text-white/80">
+      <div class="sm:text-sm md:text-xl lg:text-xl text-white/80">
         <pre>{{ item.es}}</pre>
         <pre>{{ item.es1}}</pre>
         <pre>{{ item.es2}}</pre>
@@ -48,8 +48,3 @@
   }
 </div>
 >
-
-
-
-
-

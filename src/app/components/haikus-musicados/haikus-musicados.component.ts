@@ -7,7 +7,7 @@ import { CardComponent } from "../card/card.component";
 
 @Component({
   selector: 'app-haikus-musicados',
-  imports: [CommonModule, CardComponent],
+  imports: [CommonModule],
   templateUrl: './haikus-musicados.component.html',
   styleUrl: './haikus-musicados.component.css'
 })

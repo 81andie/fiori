@@ -1,4 +1,7 @@
 <h1
+data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="1000"
+
   class="text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100 hover:to-red-300">
 Poemas cortos
 </h1>
@@ -7,7 +10,10 @@ Poemas cortos
 <div class="space-y-0">
   @for (item of poemasYVersos; track item.id) {
   <section
-    class="relative z-10 mx-10 h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
+  data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="1000"
+
+    class="relative z-10  h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
     [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
 
     <!-- Capa oscura -->
