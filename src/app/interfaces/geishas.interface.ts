@@ -1,8 +1,8 @@
 export interface GeishesVerses {
-  id: string;
+  id: number;
   title: string;
   author: string;
   verses: string[];
   background: string;
-  
+
 }

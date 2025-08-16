@@ -1,5 +1,5 @@
 export interface MindfullnessVerses {
-  id: string;
+  id: number;
   title: string;
   author: string;
   verses: string[];
