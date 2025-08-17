@@ -9,6 +9,7 @@ import { HaikusMusicadosComponent } from "../haikus-musicados/haikus-musicados.c
 import { HaikusGeishasComponent } from "../haikus-geishas/haikus-geishas.component";
 import { MilfullnessPoemsComponent } from "../milfullness-poems/milfullness-poems.component";
 import { ImprovisacionesComponent } from "../improvisaciones/improvisaciones.component";
+import { PoemasLargosComponent } from "../poemas-largos/poemas-largos.component";
 
 
 
@@ -17,7 +18,7 @@ import { ImprovisacionesComponent } from "../improvisaciones/improvisaciones.com
 
 @Component({
   selector: 'app-inicio',
-  imports: [RouterModule, PoemasComponent, HeroComponent, HaikusComponent, HaikusMusicadosComponent, SobreMiComponent, FooterComponent, HaikusGeishasComponent, MilfullnessPoemsComponent, ImprovisacionesComponent],
+  imports: [RouterModule, PoemasComponent, HeroComponent, HaikusComponent, HaikusMusicadosComponent, SobreMiComponent, FooterComponent, HaikusGeishasComponent, MilfullnessPoemsComponent, ImprovisacionesComponent, PoemasLargosComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
