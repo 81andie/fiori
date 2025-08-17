@@ -9,7 +9,7 @@ class="text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-r f
 
 
 <div class="space-y-0 ml-1">
-  @for (item of improvisations ; track item.id) {
+  @for (item of improvisations; track item.title +'-' + $index) {
     <section
 
     data-aos="fade-up" data-aos-easing="linear"
@@ -27,7 +27,7 @@ class="text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-r f
 
           <div class="text-md md:text-xl lg:text-xl text-amber-950" *ngIf="improvisations.length">
 
-          @for (verso of item.verses; track verso.id) {
+          @for (verso of item.verses; track verso.id +'-' + $index) {
           <pre>{{ verso }}</pre>
           }
 

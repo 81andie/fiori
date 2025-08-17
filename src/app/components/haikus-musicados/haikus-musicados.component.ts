@@ -1,8 +1,9 @@
-import { CommonModule } from '@angular/common';
-import { Component, ElementRef, AfterViewInit, inject, ViewChild, Renderer2 } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, AfterViewInit, inject, OnDestroy, Inject, PLATFORM_ID, } from '@angular/core';
 import { HaikusService } from '../../services/haikus.service';
 import { haikusMusicados } from '../../interfaces/poem.interface';
 import { CardComponent } from "../card/card.component";
+import { Subscription } from 'rxjs';
 
 
 @Component({
@@ -11,30 +12,28 @@ import { CardComponent } from "../card/card.component";
   templateUrl: './haikus-musicados.component.html',
   styleUrl: './haikus-musicados.component.css'
 })
-export class HaikusMusicadosComponent implements AfterViewInit {
+export class HaikusMusicadosComponent implements AfterViewInit, OnDestroy {
 
   private haikusMusicadosService = inject(HaikusService)
   haikusMusicados: haikusMusicados[] = [];
+  private getsacarPoemasMusicados!: Subscription;
 
+  private isBrowser: boolean | undefined;
 
+  constructor(@Inject(PLATFORM_ID) platformId: Object) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
 
-
-  constructor(private renderer: Renderer2) {
-    this.sacarPoemasMusicados();
+  ngOnDestroy(): void {
+  this.getsacarPoemasMusicados?.unsubscribe();
   }
 
   ngAfterViewInit(): void {
-
-
-
+   this.sacarPoemasMusicados();
   }
 
-
-
-
-
   sacarPoemasMusicados(){
-    this.haikusMusicadosService.getHaikusMusicados().subscribe((data) => {
+   this.getsacarPoemasMusicados=this.haikusMusicadosService.getHaikusMusicados().subscribe((data) => {
       this.haikusMusicados = data;
     });
   }

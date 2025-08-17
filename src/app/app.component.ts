@@ -16,4 +16,10 @@ import { InicioComponent } from "./components/inicio/inicio.component";
 })
 export class AppComponent {
   title = 'fiori';
+
+
+  scrollTop(){
+  document.documentElement.scrollTop = 0;
+
+ }
 }

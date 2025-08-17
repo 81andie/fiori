@@ -7,7 +7,7 @@ import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import WaveSurfer from 'wavesurfer.js';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Subject, Subscription } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 @Component({
@@ -33,6 +33,7 @@ export class CardComponent implements OnInit, AfterViewInit, OnDestroy {
   isVisible: boolean = true;
 
   private destroy$ = new Subject<void>();
+  private sacarAudiosyHaikuDestroy!: Subscription;
 
 
 
@@ -55,12 +56,12 @@ export class CardComponent implements OnInit, AfterViewInit, OnDestroy {
     this.wavesurfer?.destroy();       // ✅ Destruye WaveSurfer si existe
     this.destroy$.next();             // ✅ Cierra el observable
     this.destroy$.complete();
-
+    this.sacarAudiosyHaikuDestroy?.unsubscribe();
   }
 
 
   sacarAudiosyHaikus() {
-    this.haikusMusicadosService.getHaikusWidthAudios()
+   this.sacarAudiosyHaikuDestroy= this.haikusMusicadosService.getHaikusWidthAudios()
       .pipe(takeUntil(this.destroy$))
 
       .subscribe((data) => {

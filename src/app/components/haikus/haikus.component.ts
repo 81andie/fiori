@@ -27,13 +27,6 @@ export class HaikusComponent implements OnInit {
   haikus: poem[] = [];
   private haikusService = inject(HaikusService)
 
-
-
-
-
-
-
-
   sacarPoemas() {
     this.haikusService.getPoems().subscribe((data) => {
       console.log(data)

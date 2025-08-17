@@ -2,6 +2,7 @@ import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild, NgZone, Inj
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Improvisaciones } from '../../interfaces/improvisaciones.interface';
 import { ImprovisacionesService } from '../../services/Improvisaciones.service';
+import { Subscription } from 'rxjs';
 
 
 
@@ -11,7 +12,7 @@ import { ImprovisacionesService } from '../../services/Improvisaciones.service';
   templateUrl: './improvisaciones.component.html',
   styleUrl: './improvisaciones.component.css'
 })
-export class ImprovisacionesComponent implements OnInit {
+export class ImprovisacionesComponent implements OnInit, OnDestroy {
 
 
   constructor(@Inject(PLATFORM_ID) platformId: Object) {
@@ -21,19 +22,21 @@ export class ImprovisacionesComponent implements OnInit {
   private isBrowser: boolean | undefined;
   public improvisations: Improvisaciones[] = [];
   private improvisationsService = inject(ImprovisacionesService)
+  private sub?: Subscription;
 
   ngOnInit(): void {
-  
     this.getImprovisations()
   }
 
 
-   getImprovisations(){
-    this.improvisationsService.getImprovisacionesMachado().subscribe((data)=>{
-      this.improvisations=data;
+  getImprovisations() {
+    this.sub = this.improvisationsService.getImprovisacionesMachado().subscribe((data) => {
+      this.improvisations = data;
     })
-   }
+  }
 
-
+ ngOnDestroy() {
+    this.sub?.unsubscribe();
+  }
 
 }

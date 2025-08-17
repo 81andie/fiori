@@ -24,21 +24,13 @@ export class MilfullnessPoemsComponent implements OnInit {
 
   private sub?: Subscription;
 
-
-
-
+  private isBrowser: boolean | undefined;
 
   constructor(@Inject(PLATFORM_ID) platformId: Object) {
     this.isBrowser = isPlatformBrowser(platformId);
   }
 
-
-  private isBrowser: boolean | undefined;
-
-
-
   ngOnInit(): void {
-
     this.getVersesMilfulness()
   }
 
@@ -47,23 +39,12 @@ export class MilfullnessPoemsComponent implements OnInit {
     this.sub= this.mindFullnessService.getVersesMilfullness().subscribe((data) => {
       console.log(data)
       this.versesMilfulness = data
-
-
     })
   }
 
-
-
-
-
-
-
-
   ngOnDestroy() {
     this.sub?.unsubscribe();
-
   }
-
 
 }
 
