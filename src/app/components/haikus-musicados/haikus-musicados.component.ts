@@ -8,13 +8,13 @@ import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-haikus-musicados',
-  imports: [CommonModule],
+  imports: [CommonModule, CardComponent],
   templateUrl: './haikus-musicados.component.html',
   styleUrl: './haikus-musicados.component.css'
 })
 export class HaikusMusicadosComponent implements AfterViewInit, OnDestroy {
 
-  private haikusMusicadosService = inject(HaikusService)
+  haikusMusicadosService = inject(HaikusService)
   haikusMusicados: haikusMusicados[] = [];
   private getsacarPoemasMusicados!: Subscription;
 
@@ -41,5 +41,7 @@ export class HaikusMusicadosComponent implements AfterViewInit, OnDestroy {
   trackById(index: number, item: haikusMusicados) {
     return item.id;
   }
+
+
 }
 

@@ -1,16 +1,2 @@
 
-.scrollbar-none::-webkit-scrollbar {
-  display: none;
-}
-.scrollbar-none {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
 
-.parallax{
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}

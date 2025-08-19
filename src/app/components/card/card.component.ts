@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, OnDestroy, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HaikusService } from '../../services/haikus.service';
 import { haikusMusicados } from '../../interfaces/poem.interface';
@@ -7,7 +7,7 @@ import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import WaveSurfer from 'wavesurfer.js';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
-import { Subject, Subscription } from 'rxjs';
+import { Observable, Subject, Subscription } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 @Component({
@@ -20,6 +20,8 @@ import { takeUntil } from 'rxjs/operators';
 export class CardComponent implements OnInit, AfterViewInit, OnDestroy {
 
   @ViewChild('waveform', { static: false }) waveformRef!: ElementRef;
+
+@Input() playList$!: Observable<haikusMusicados[]>;
 
   wavesurfer!: WaveSurfer;
   playList: haikusMusicados[] = [];

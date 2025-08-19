@@ -22,6 +22,7 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
 
   @Input() audios: T[] = [];
   @ViewChild('waveform', { static: false }) waveformRef?: ElementRef;
+  
 
   public allAudios: T[] = [];
   public tiamatAudios: T[] = [];

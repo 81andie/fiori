@@ -27,7 +27,7 @@ export class HeroComponent implements OnInit, OnDestroy {
   public text: string = "Aquí encontraréis poemas y cuentos infantiles musicados, especialmente pensados para la sensibilización musical de niños y niñas de entre 3 y 5 años (P3 a P5), así como para la iniciación musical (de 5 a 7 años).Dentro de la temática de la cultura japonesa, he dedicado varias secciones a diferentes aspectos y modalidades. También encontraréis poemas tanto escritos como musicados. ";
   public displayedText: string = '';
   private i: number = 0;
-  private speed: number = 190;
+  private speed: number = 150;
   private timeoutId: any;
 
   typewriter() {

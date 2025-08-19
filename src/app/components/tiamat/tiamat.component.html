@@ -2,71 +2,79 @@
 
 <app-card-tiamat-audio [audios]="AudioTiamat"></app-card-tiamat-audio>
 
-<div class="parallax m-12">
+<div >
   <h1 class="text-7xl mb-9 mt-5 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100  bg-gradient-to-right  hover:to-red-300  ">CUENTOS INFANTILES</h1>
 </div>
-<div class=" m-12 flex flex-col md:flex-col lg:flex-row w-[100vw] z-10 justify-center items-center
+<div class=" flex flex-col md:flex-col lg:flex-row z-10 justify-center items-center
 
 gap-5 mt-3 md:h-[calc(100vh-95.99px)] mb-20/">
 
 
 
-  <iframe src="https://publuu.com/flip-book/941992/2067171/page/1?embed" width="60%" height="380" scrolling="no"
+  <iframe src="https://publuu.com/flip-book/941992/2067171/page/1?embed" width="100%" height="480" scrolling="no"
     frameborder="0" allow="clipboard-write; autoplay; fullscreen" allowfullscreen="allowfullscreen"
     class="publuuflip"></iframe>
 
+</div>
 
 
-<div class=" mt-4 flex justify-center flex-col z-10 ">
-  <div class="flex flex-col gap-2">
-    <span>Catalá</span>
-    <iframe src="https://publuu.com/flip-book/941992/2067171/page/1?embed" width="70%" height="170" scrolling="no"
+<div class=" mt-4  h-screen flex justify-center flex-wrap z-10 ">
+  <div class="flex justify-center items-center  gap-2">
+    <span class="bg-orange-400 text-center p-1">Catalá</span>
+    <iframe src="https://publuu.com/flip-book/941992/2067171/page/1?embed" width="100%" height="280" scrolling="no"
       frameborder="0" allow="clipboard-write; autoplay; fullscreen" allowfullscreen="allowfullscreen"
       class="publuuflip"></iframe>
-
-    <span>English</span>
-    <iframe src="https://publuu.com/flip-book/941992/2067171/page/1?embed" width="70%" height="170" scrolling="no"
+<span class="bg-violet-400 text-center p-1">Anglés</span>
+    <iframe src="https://publuu.com/flip-book/941992/2067171/page/1?embed" width="100%" height="280" scrolling="no"
       frameborder="0" allow="clipboard-write; autoplay; fullscreen" allowfullscreen="allowfullscreen"
       class="publuuflip"></iframe>
   </div>
 </div>
 
-</div>
+
+
+<h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
+  class="text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100 hover:to-red-300">
+
+</h1>
 
 
 
+<div class="space-y-1">
+  @for (item of AudioTiamat; track item.id; let idx = $index) {
+  <section data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+    class="parallax relative  h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
+    [ngStyle]="{'background-image': 'url(' + item.img + ')'}">
 
-<div #scrollContainerTiamat
-  class=" m-12  mt-5 z-40 flex overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-none h-[calc(110vh-97.99px)]">
-  @for (audio of AudioTiamat; track audio.id;let idx = $index) {
+    <!-- Capa oscura -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
-
-  <div class="relative w-full flex-shrink-0 snap-start ">
-    <!-- Imagen de fondo -->
-    <img [src]="audio.img"
-      class="absolute inset-0 w-[100vw] h-[calc(100vh-97.99px)] md:h-[calc(100vh-97.99px)] lg:h-[calc(100vh-97.99px)] object-cover" />
-
-    <!-- Capa oscura encima -->
-    <div class="absolute inset-0 "></div>
-
-    <!-- Contenido del haiku -->
-    <div
-      class="relative z-10 flex flex-col sm:top-0 justify-center items-center h-full text-white px-4 text-center space-y-3">
-      <p class="text-xl font-bold leading-tight">GUIA AUDICIONS RECOMANADES</p>
-      <p class="text-xl font-bold leading-tight">{{audio.title }}</p>
+    <!-- Contenido -->
+    <div class="relative z-10 space-y-3">
+      <p class="text-3xl font-bold">{{item.title}}</p>
+      <p class="text-xs font-bold">{{item.date}}</p>
 
 
+      <div class="sm:text-sm md:text-xl lg:text-xl text-white/80">
+        <pre>{{ item.artist }}</pre>
+         <pre>{{ item.subtitle }}</pre>
+        <pre>{{ item.font}}</pre>
+        <pre>{{ item.song }}</pre>
 
-      <div class="text-lg text-rightitalic text-white/80">
-        <p>{{ audio.subtitle}}</p>
+      </div>
+
+      <div class="sm:text-sm md:text-xl lg:text-xl text-white/80">
+        <pre>{{ item.fontSong}}</pre>
+        <pre>{{ item.licenciaPain}}</pre>
 
       </div>
 
-      <div class="text-2xl font-bold text-white/70">
-        <p>{{ audio.font }}</p>
 
-      </div>
+
     </div>
-  </div>
+  </section>
   }
 </div>
+
+
+

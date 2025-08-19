@@ -10,5 +10,4 @@ export interface tiamatAudioPlayer{
   fontSong:"string",
   licenciaPaint:string,
   audio:string
-
 }
