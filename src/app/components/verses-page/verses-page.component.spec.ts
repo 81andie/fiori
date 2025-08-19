@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PoemasLargosComponent } from './poemas-largos.component';
+import { VersesPageComponent } from './verses-page.component';
 
-describe('PoemasLargosComponent', () => {
-  let component: PoemasLargosComponent;
-  let fixture: ComponentFixture<PoemasLargosComponent>;
+describe('VersesPageComponent', () => {
+  let component: VersesPageComponent;
+  let fixture: ComponentFixture<VersesPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PoemasLargosComponent]
+      imports: [VersesPageComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PoemasLargosComponent);
+    fixture = TestBed.createComponent(VersesPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

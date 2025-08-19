@@ -1,0 +1,53 @@
+<h1
+  data-aos="fade-up"
+  data-aos-easing="linear"
+  data-aos-duration="1000"
+  class="text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100 hover:to-red-300">
+  {{ title }}
+</h1>
+
+<div class="space-y-0">
+  @for (item of verses; track item.id) {
+    <section
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="500"
+      class="relative z-10 h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
+      [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
+
+      <!-- capa oscura -->
+      <div class="absolute">
+        <p class="text-xl mb-5 font-bold text-black bg-white bg-opacity-5">
+          {{ item.title }}
+        </p>
+
+        <!-- contenido -->
+        <div class="relative flex flex-col justify-center justify-items-center z-10 bg-white bg-opacity-5">
+
+          <!-- versos -->
+
+           <div class="text-md md:text-xl lg:text-xl text-amber-950" *ngIf="verses.length">
+
+          @for (verso of item.verses; track verso.id +'-' + $index) {
+          <pre>{{ verso }}</pre>
+          }
+
+        </div>
+
+
+          <!-- imagen -->
+          <div class="w-full flex justify-center font-bold text-black">
+            <img [src]="item.image" class="w-24 h-auto object-cover">
+          </div>
+
+          <!-- ilustración / autor -->
+          <div class="text-xl font-bold text-black">
+            <p>{{ item.ilus }}</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  }
+</div>
+
