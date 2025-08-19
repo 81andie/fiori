@@ -7,6 +7,7 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { HaikusGeishasComponent } from './components/haikus-geishas/haikus-geishas.component';
 import { MorganComponent } from './components/morgan/morgan.component';
 import { TiamatComponent } from './components/tiamat/tiamat.component';
+import { VersesPageComponent } from './components/verses-page/verses-page.component';
 
 
 export const routes: Routes = [
@@ -17,7 +18,8 @@ export const routes: Routes = [
   { path: 'poemas-musicados', component: PoemasMusicadosComponent },
   { path: 'morgan', component: MorganComponent },
   { path: 'tiamat', component: TiamatComponent },
- 
+  { path: 'verses', component: VersesPageComponent },
+
   { path: 'sobremi', component: SobreMiComponent },
 
 
