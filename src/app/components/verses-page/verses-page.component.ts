@@ -18,4 +18,5 @@ export class VersesPageComponent {
  poemsService = inject(PoemasyVersosService);
  PoemasLargos= inject(PoemasLargosService);
  Improvisaciones= inject(ImprovisacionesService)
+ Poemas= inject(PoemasyVersosService)
 }

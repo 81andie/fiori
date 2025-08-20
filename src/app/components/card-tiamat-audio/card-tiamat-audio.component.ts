@@ -1,7 +1,7 @@
 
 import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, Input, OnChanges, SimpleChanges, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { tiamatAudioPlayer } from './../../interfaces/tiamat.interface';
 import { TiamatAudioPlayerService } from './../../services/Tiamat.service';
 import { AudioService } from '../../services/Audio.service';
@@ -13,7 +13,7 @@ import { map, Observable, take } from 'rxjs';
 
 @Component({
   selector: 'app-card-tiamat-audio',
-  imports: [CommonModule, FormsModule, ReactiveFormsModule],
+  imports: [CommonModule],
   templateUrl: './card-tiamat-audio.component.html',
   styleUrl: './card-tiamat-audio.component.css'
 })
@@ -30,8 +30,7 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
   public currentTrackIndex: number = 0; // Añade esto
   public playList: T[] = []; // Añade esto
 
-  searchTerm: string = '';
-  myInput: FormControl = new FormControl('');
+
   isVisible: boolean = true;
 
   constructor(
@@ -95,7 +94,7 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
   }
 
 
-  
+
 
   play() {
     this.AudioService.playPause('tiamat');
