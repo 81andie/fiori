@@ -46,14 +46,14 @@
 </button>
 
 
-<div class="border-2 border-stone-800 bg-slate-300 brightness-100 filter  bg-cover bg-center bg-no-repeat bg-opacity-75 lg:h-[74vh] md:h-[40vh] sm:h-[30vh] w-60 z-40 fixed  left-16 bottom-1 rounded-lg "
+<div class= "bg-gradient-to-b from-slate-400 to-green-100 border-2 border-stone-100 bg-cover  bg-center bg-no-repeat bg-opacity-75 lg:h-[74vh] md:h-[40vh] sm:h-[30vh] w-60 z-40 fixed  left-16 bottom-1 rounded-lg "
   *ngIf="currentTrack > 0 || isVisible "
-[ngStyle]="{'background-image': 'url(' + currentTrack.img + ')'}"
+
 
   >
-  <div class="mt-1 ml-0.5 mr-0.5">
+  <div class="mt-1 p-1">
     <form class="max-w-md mx-auto">
-      <div class="w-[223px] flex mt-1.5 mb-1 mr-0.5 ml-0.5 bg-stone-300 bg-opacity-50 rounded-lg">
+      <div class="w-[223px] flex mt-1.5 mb-1 mr-0.5 ml-0.5  rounded-lg">
       <img
           src="https://tse3.mm.bing.net/th/id/OIP.9LqKtokwcvdtCraAnRTRegHaHa?r=0&pid=ImgDet&w=194&h=194&c=7&dpr=1,4&o=7&rm=3"
           class="h-6 me-3 rounded-full" alt="Logo" />
@@ -73,16 +73,16 @@
       </div>
     </form>
 
-    <hr class="h-1 w-[230px] mt-2 mb-2 bg-fuchsia-600">
+    <hr class="h-1 w-[230px] mt-2 mb-2 bg-slate-600">
 
 
-    <div class="h-20 mt-2 relative ">
+    <div class="h-20 mt-2 relative mr-1 ">
 
 
 
       <!-- Muestra solo el haiku actual -->
-      <div class="relative w-[230px] mt-0.5 h-24 " *ngIf="currentTrack?.img">
-        <!--<img [src]="currentTrack.img" alt="Imagen audio" class="w-[230px] mt-0.5 h-24 object-cover" />-->
+      <div class="relative w-[232px] mt-0.5 h-24 " *ngIf="currentTrack?.img">
+        <img [src]="currentTrack.img" alt="Imagen audio" class="w-[230px] mt-0.5 h-24 object-cover" />
 
         <div class="absolute top-1 left-0 text-stone-800 font-bold text-xs bg-opacity-70">
           <span class="bg-slate-700 p-1 ml-2 text-md text-fuchsia-50 text-right bg-opacity-55">
@@ -90,7 +90,7 @@
           </span>
 
 
-          <div class="flex p-1 h-14 ml-2 mt-2 w-auto versos flex-col bg-slate-700 text-violet-50 bg-opacity-50">
+          <div class="flex p-1 h-14 ml-1 mt-2 w-auto versos flex-col bg-slate-700 text-violet-50 bg-opacity-50">
 
             <span>{{currentTrack.subtitle}}</span>
             <span>{{currentTrack.date}}</span>
@@ -110,11 +110,11 @@
 
         <div class="relative w-[230px] h-8 bg-gray-200  rounded max-w-xl">
           <div class="w-full absolute bg-red-50  top-2 flex flex-col mb-1">
-            <div #waveform class=" waveform w-full absolute bg-red-50 bg-opacity-25 top-2 flex flex-col mb-1"></div>
+            <div #waveform class=" waveform w-full absolute bg-red-50 bg-opacity-25 top-0 flex flex-col "></div>
 
           </div>
 
-          <div class="w-full flex justify-center absolute gap-2 mt-12 ">
+          <div class="w-full flex justify-center absolute gap-2 mt-10 ">
             <button (click)="prev()" class="bg-blue-200 text-white px-1 py-1 rounded mr-3 ">⏮️ </button>
             <button (click)="play()" class="bg-green-200 text-white px-1 py-1 rounded mr-3">▶️ / ⏸️</button>
             <button (click)="next()" class="bg-blue-200 text-white px-1 py-1 rounded">⏭️</button>
@@ -123,7 +123,7 @@
 
           <div class="flex">
             <div class="songs text-gray-800 mt-2 h-35 ">
-              <div class="songs flex flex-col text-gray-800 gap-1 mt-20 h-35">
+              <div class="songs flex flex-col text-gray-800 gap-1 mt-16 h-35">
                 <span *ngFor="let audio of tiamatAudios; let i = index" (click)="selectTrack(i)"
                   class="text-stone-200 font-extrabold cursor-pointer bg-slate-700 bg-opacity-35 p-1 hover:bg-violet-100 hover:text-stone-800 rounded"
                   [class.font-bold]="currentTrack?.audio === audio.audio">
