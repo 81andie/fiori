@@ -6,7 +6,7 @@ import { tiamatAudioPlayer } from './../../interfaces/tiamat.interface';
 import { TiamatAudioPlayerService } from './../../services/Tiamat.service';
 import { AudioService } from '../../services/Audio.service';
 import { TiamatComponent } from '../tiamat/tiamat.component';
-import { map, Observable } from 'rxjs';
+import { map, Observable, take } from 'rxjs';
 
 
 
@@ -22,7 +22,7 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
 
   @Input() audios: T[] = [];
   @ViewChild('waveform', { static: false }) waveformRef?: ElementRef;
-  
+
 
   public allAudios: T[] = [];
   public tiamatAudios: T[] = [];
@@ -74,58 +74,28 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
   }
 
   sacarAudiosyHaikus(): void {
-    this.TiamatAudioPlayerService.getAudioPlayerTiamat().subscribe((data: tiamatAudioPlayer[]) => {
-      const typedData = data as unknown as T[];
-      if (!typedData) return;
+    this.TiamatAudioPlayerService.getAudioPlayerTiamat()
+      .pipe(take(1))
+      .subscribe((data: tiamatAudioPlayer[]) => {
+        const typedData = data as unknown as T[];
+        if (!typedData?.length) return;
 
-      if (!data) return;
+        this.allAudios = [...typedData];
+        this.tiamatAudios = [...typedData];
 
-      const randomIndex = Math.floor(Math.random() * data.length);
-
-      this.allAudios = [...typedData];
-      this.tiamatAudios = [...typedData];
-      console.log(this.tiamatAudios)
-
-      this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
-
-      if (this.waveformRef?.nativeElement) {
-        this.AudioService.initWaveSurfer('tiamat', this.waveformRef.nativeElement);
-      }
-
-      this.updateCurrentTrack();
-    });
-  }
-
-  filteredSongs(event: KeyboardEvent) {
-    if (event.key === 'Enter') {
-      const searchTerm = (this.myInput.value ?? '').toString().trim().toLowerCase();
-
-      if (!searchTerm) {
-        this.tiamatAudios = [...this.allAudios];
         this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
-        console.log(searchTerm)
+
+        // 👉 si quieres empezar en aleatorio
+        const randomIndex = Math.floor(Math.random() * typedData.length);
+        this.AudioService.playTrack('tiamat', randomIndex);
+
         this.updateCurrentTrack();
-        return;
-      }
+      });
 
-      let audios = this.allAudios;
-
-this.tiamatAudios = this.allAudios.filter(a =>
-  Object.values(a).some(val =>
-    typeof val === 'string' && val.toLowerCase().includes(searchTerm)
-  )
-);
-
-
-      this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
-
-      if (this.waveformRef?.nativeElement) {
-        this.AudioService.initWaveSurfer('tiamat', this.waveformRef.nativeElement);
-      }
-
-      this.updateCurrentTrack();
-    }
   }
+
+
+  
 
   play() {
     this.AudioService.playPause('tiamat');
@@ -156,4 +126,19 @@ this.tiamatAudios = this.allAudios.filter(a =>
   toggleAudio() {
     this.isVisible = !this.isVisible;
   }
+
+
+selectTrack(index: number) {
+ this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
+
+  // Usa el método que ya tienes en el servicio
+  this.AudioService.playTrack('tiamat', index);
+
+  // Refresca el estado local para marcar en la UI
+  this.currentTrackIndex = index;
+  this.currentTrack = this.tiamatAudios[index];
+}
+
+
+
 }

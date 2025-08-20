@@ -46,11 +46,15 @@
 </button>
 
 
-<div class="lg:h-[74vh] md:h-[40vh] sm:h-[30vh] w-60 bg-zinc-200 z-40 fixed  left-16 bottom-1 rounded-lg " *ngIf="currentTrack > 0 || isVisible ">
-  <div class="w-full mt-1 ml-1 mr-1">
+<div class="border-2 border-stone-800 bg-slate-300 brightness-100 filter  bg-cover bg-center bg-no-repeat bg-opacity-75 lg:h-[74vh] md:h-[40vh] sm:h-[30vh] w-60 z-40 fixed  left-16 bottom-1 rounded-lg "
+  *ngIf="currentTrack > 0 || isVisible "
+[ngStyle]="{'background-image': 'url(' + currentTrack.img + ')'}"
+
+  >
+  <div class="mt-1 ml-0.5 mr-0.5">
     <form class="max-w-md mx-auto">
-      <div class="w-[223px] p-1 flex mt-1.5 mb-1 mr-1 ml-1 bg-stone-300 rounded-lg">
-        <img
+      <div class="w-[223px] flex mt-1.5 mb-1 mr-0.5 ml-0.5 bg-stone-300 bg-opacity-50 rounded-lg">
+      <img
           src="https://tse3.mm.bing.net/th/id/OIP.9LqKtokwcvdtCraAnRTRegHaHa?r=0&pid=ImgDet&w=194&h=194&c=7&dpr=1,4&o=7&rm=3"
           class="h-6 me-3 rounded-full" alt="Logo" />
         <span class="self-center text-xs font-semibold whitespace-nowrap dark:text-white">Fiori Poetic blog</span>
@@ -65,9 +69,7 @@
               d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
           </svg>
         </div>
-        <input type="search" id="default-search"
-          class="block w-56 p-0.5 ps-10 text-xs text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-stone-500 focus:border-stone-500 dark:bg-stone-100 dark:border-stone-300 dark:placeholder-gray-400 dark:text-stone-900 dark:focus:ring-stone-500 dark:focus:border-stone-500"
-          placeholder="Search song..." [formControl]="myInput" (keyup)="filteredSongs($event)" />
+
       </div>
     </form>
 
@@ -80,15 +82,15 @@
 
       <!-- Muestra solo el haiku actual -->
       <div class="relative w-[230px] mt-0.5 h-24 " *ngIf="currentTrack?.img">
-        <img [src]="currentTrack.img" alt="Imagen audio" class="w-[230px] mt-0.5 h-24 object-cover" />
+        <!--<img [src]="currentTrack.img" alt="Imagen audio" class="w-[230px] mt-0.5 h-24 object-cover" />-->
 
-        <div class="absolute top-1 left-0 text-stone-600 font-bold text-xs bg-opacity-30">
-          <span class="bg-pink-950 p-1 ml-2 text-md text-fuchsia-50 text-right bg-opacity-25">
+        <div class="absolute top-1 left-0 text-stone-800 font-bold text-xs bg-opacity-70">
+          <span class="bg-slate-700 p-1 ml-2 text-md text-fuchsia-50 text-right bg-opacity-55">
             <strong>{{currentTrack.title}}</strong>
           </span>
 
 
-          <div class="flex p-1 h-14 ml-2 mt-2 w-auto versos flex-col bg-pink-800 text-violet-50 bg-opacity-15">
+          <div class="flex p-1 h-14 ml-2 mt-2 w-auto versos flex-col bg-slate-700 text-violet-50 bg-opacity-50">
 
             <span>{{currentTrack.subtitle}}</span>
             <span>{{currentTrack.date}}</span>
@@ -99,20 +101,20 @@
 
 
       <div class="flex flex-col max-w-md mx-auto text-xs mt-0.5">
-        <span class="text-fuchsia-500 bg-pink-900 w-[230px]  title_reproductor bg-opacity-15 p-1">
+        <span class="text-white bg-slate-700 w-[230px]  title_reproductor bg-opacity-45 p-1">
           <strong>{{ currentTrack.title }}</strong>, reproduciendo...
         </span>
-        <span><strong>{{ currentTrack.fontSong }}</strong></span>
+        <span class="text-white p-1"><strong>{{ currentTrack.fontSong }}</strong></span>
 
 
 
-        <div class="relative w-[230px] h-8 bg-gray-300  rounded max-w-xl">
+        <div class="relative w-[230px] h-8 bg-gray-200  rounded max-w-xl">
           <div class="w-full absolute bg-red-50  top-2 flex flex-col mb-1">
-            <div #waveform class=" waveform w-full absolute bg-red-50 bg-opacity-55 top-2 flex flex-col mb-1"></div>
+            <div #waveform class=" waveform w-full absolute bg-red-50 bg-opacity-25 top-2 flex flex-col mb-1"></div>
 
           </div>
 
-          <div class="w-full flex justify-center absolute mt-12 ">
+          <div class="w-full flex justify-center absolute gap-2 mt-12 ">
             <button (click)="prev()" class="bg-blue-200 text-white px-1 py-1 rounded mr-3 ">⏮️ </button>
             <button (click)="play()" class="bg-green-200 text-white px-1 py-1 rounded mr-3">▶️ / ⏸️</button>
             <button (click)="next()" class="bg-blue-200 text-white px-1 py-1 rounded">⏭️</button>
@@ -120,12 +122,14 @@
           </div>
 
           <div class="flex">
-            <div class="songs text-gray-800 mt-20 h-35">
-              <span *ngFor="let audio of tiamatAudios"
-                (click)="currentTrack = audio.audio; AudioService.setPlaylist('tiamat', tiamatAudios); updateCurrentTrack();"
-                class="cursor-pointer p-2 hover:bg-violet-100 rounded" [class.font-bold]="currentTrack === audio.audio">
-                {{ audio.song}}
-              </span>
+            <div class="songs text-gray-800 mt-2 h-35 ">
+              <div class="songs flex flex-col text-gray-800 gap-1 mt-20 h-35">
+                <span *ngFor="let audio of tiamatAudios; let i = index" (click)="selectTrack(i)"
+                  class="text-stone-200 font-extrabold cursor-pointer bg-slate-700 bg-opacity-35 p-1 hover:bg-violet-100 hover:text-stone-800 rounded"
+                  [class.font-bold]="currentTrack?.audio === audio.audio">
+                  {{ audio.song }}
+                </span>
+              </div>
             </div>
           </div>
           <!-- Lista de canciones -->
