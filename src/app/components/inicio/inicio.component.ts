@@ -24,6 +24,9 @@ import { VersesPageComponent } from "../verses-page/verses-page.component";
 
 
 
+
+
+
 @Component({
   selector: 'app-inicio',
   imports: [RouterModule, HeroComponent, HaikusComponent, SobreMiComponent, FooterComponent, HaikusGeishasComponent, HaikusMusicadosComponent, CommonModule, VersesPageComponent, MilfullnessPoemsComponent],

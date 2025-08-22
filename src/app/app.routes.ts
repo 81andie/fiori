@@ -10,6 +10,7 @@ import { TiamatComponent } from './components/tiamat/tiamat.component';
 import { VersesPageComponent } from './components/verses-page/verses-page.component';
 
 
+
 export const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'haikus', component: HaikusComponent },
@@ -21,6 +22,7 @@ export const routes: Routes = [
   { path: 'verses', component: VersesPageComponent },
 
   { path: 'sobremi', component: SobreMiComponent },
+
 
 
 
