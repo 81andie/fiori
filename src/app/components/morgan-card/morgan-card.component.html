@@ -53,7 +53,7 @@
   >
   <div class="mt-1 p-1">
     <form class="max-w-md mx-auto">
-      <div class="w-[223px] flex mt-1.5 mb-1 mr-0.5 ml-0.5  rounded-lg">
+      <div class="w-[223px] flex mt-1.5 mb-0.5 mr-0.5 ml-0.5  rounded-lg">
       <img
           src="https://tse3.mm.bing.net/th/id/OIP.9LqKtokwcvdtCraAnRTRegHaHa?r=0&pid=ImgDet&w=194&h=194&c=7&dpr=1,4&o=7&rm=3"
           class="h-6 me-3 rounded-full" alt="Logo" />
@@ -78,22 +78,19 @@
 
     <div class="h-20 mt-2 relative mr-1 ">
 
-
-
       <!-- Muestra solo el haiku actual -->
       <div class="relative w-[232px] mt-0.5 h-24 " *ngIf="currentTrack?.img">
-        <img [src]="currentTrack.img" alt="Imagen audio" class="w-[230px] mt-0.5 h-24 object-cover" />
+        <img [src]="currentTrack?.img" alt="Imagen audio" class="w-[230px] mt-0.5 h-24 object-cover" />
 
         <div class="absolute top-1 left-0 text-stone-800 font-bold text-xs bg-opacity-70">
           <span class="bg-slate-700 p-1 ml-2 text-md text-fuchsia-50 text-right bg-opacity-55">
-            <strong>{{currentTrack.title}}</strong>
+            <strong>{{currentTrack?.title}}</strong>
           </span>
 
 
           <div class="flex p-1 h-14 ml-1 mt-2 w-auto versos flex-col bg-slate-700 text-violet-50 bg-opacity-50">
+  <strong>Morgan el gat avorrit</strong>
 
-            <span>{{currentTrack.subtitle}}</span>
-            <span>{{currentTrack.date}}</span>
           </div>
         </div>
       </div>
@@ -102,9 +99,9 @@
 
       <div class="flex flex-col max-w-md mx-auto text-xs mt-0.5">
         <span class="text-white bg-slate-700 w-[230px]  title_reproductor bg-opacity-45 p-1">
-          <strong>{{ currentTrack.title }}</strong>, reproduciendo...
+          <strong>{{ currentTrack?.title }}</strong>, reproduciendo...
         </span>
-        <span class="text-white p-1"><strong>{{ currentTrack.fontSong }}</strong></span>
+        <span class="text-white p-1"><strong></strong></span>
 
 
 
@@ -121,13 +118,14 @@
 
           </div>
 
-          <div class="flex">
-            <div class="songs text-gray-800 mt-2 h-35 ">
-              <div class="songs flex flex-col text-gray-800 gap-1 mt-16 h-35">
+          <div class="">
+            <div class=" text-gray-800 mt-1 h-44">
+              <div class="  text-gray-800 mt-20 h-44">
                 <span *ngFor="let audio of MorganAudios; let i = index" (click)="selectTrack(i)"
-                  class="text-stone-200 font-extrabold cursor-pointer bg-slate-700 bg-opacity-35 p-1 hover:bg-violet-100 hover:text-stone-800 rounded"
+                  class="text-stone-400  mx-2
+                  font-extrabold cursor-pointer  bg-opacity-35  hover:text-stone-800 rounded"
                   [class.font-bold]="currentTrack?.audio === audio.audio">
-                  {{ audio.song }}
+                  {{ audio.title }}
                 </span>
               </div>
             </div>

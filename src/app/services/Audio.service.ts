@@ -71,13 +71,19 @@ export class AudioService {
 
   playPause(id: string) {
     const player = this.players.get(id);
-    if (!player?.wavesurfer) return;
+  if (!player?.wavesurfer) return;
 
-    if (player.wavesurfer.isPlaying()) {
-      player.wavesurfer.pause();
-    } else {
-      player.wavesurfer.play();
-    }
+  if (player.wavesurfer.isPlaying()) {
+    player.wavesurfer.pause();
+  } else {
+    player.wavesurfer.play().catch(err => {
+      if (err.name === 'NotAllowedError') {
+        console.warn("El navegador bloqueó autoplay: necesita interacción del usuario.");
+      } else {
+        console.error("Error al reproducir:", err);
+      }
+    });
+  }
   }
 
   nextTrack(id: string) {

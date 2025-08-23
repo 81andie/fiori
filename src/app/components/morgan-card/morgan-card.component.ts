@@ -69,23 +69,23 @@ export class MorganCardComponent<T extends { audio: string }> implements OnInit,
 
 sacarNarraciones(): void {
     this.MorganAudioPlayerService.getAudioPlayerTiamat()
-      .pipe(take(1))
-      .subscribe((data: MorganAudioPlayer[]) => {
-        const typedData = data as unknown as T[];
-        if (!typedData?.length) return;
+    .pipe(take(1))
+    .subscribe((data: MorganAudioPlayer[]) => {
+      const typedData = data as unknown as T[];
+      if (!typedData?.length) return;
 
-        this.allAudios = [...typedData];
-        this.MorganAudios= [...typedData];
+      this.allAudios = [...typedData];
+      this.MorganAudios= [...typedData];
 
-        this.AudioService.setPlaylist<T>('morgan', this.MorganAudios);
+      this.AudioService.setPlaylist<T>('morgan', this.MorganAudios);
 
-        // 👉 si quieres empezar en aleatorio
-        const randomIndex = Math.floor(Math.random() * typedData.length);
-        this.AudioService.playTrack('morgan', randomIndex);
+      // 👉 Solo elegir el actual, NO reproducir todavía
+      const randomIndex = Math.floor(Math.random() * typedData.length);
+      this.currentTrack = this.MorganAudios[randomIndex];
+      this.currentTrackIndex = randomIndex;
 
-        this.updateCurrentTrack();
-      });
-
+      this.updateCurrentTrack();
+    });
   }
 
 
