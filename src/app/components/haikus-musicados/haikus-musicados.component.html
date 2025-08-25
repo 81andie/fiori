@@ -1,11 +1,18 @@
-<h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
-  class="text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-r from-black to-stone-100 hover:to-red-300">
-  HAIKUS MUSICADOS
+<div class="bg-[url(/pexels-karolina-grabowska-6634136.jpg)]  bg-cover w-full bg-no-repeat  h-56 p-1">
+<h1
+  class="bg-transparent bg-opacity-15 text-4xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-b from-red-400 to-stone-900 hover:to-slate-400
+  "
+  data-aos="zoom-in-right" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
+
+<strong>HAIKUS MUSICADOS</strong>
 </h1>
+
+
+</div>
 <app-card [playList$]="haikusMusicadosService.getHaikusMusicados()"></app-card>
 
 
-<div class="space-y-1">
+<div class="space-y-0">
   @for (item of haikusMusicados; track item.id; let idx = $index) {
   <section data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
     class="parallax relative  h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
