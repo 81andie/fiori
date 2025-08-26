@@ -31,6 +31,8 @@ body {
   top: 0px !important;
 }
 
+
+
 Ocultar el texto “Powered by Google Translate”
 .goog-logo-link, .goog-te-gadget span {
  display: none !important;
