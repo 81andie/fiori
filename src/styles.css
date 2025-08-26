@@ -31,13 +31,16 @@ body {
   top: 0px !important;
 }
 
-/* Ocultar el texto “Powered by Google Translate” */
- .goog-te-gadget span {
-  display: none !important;
+/*Ocultar el texto “Powered by Google Translate”
+.goog-logo-link, .goog-te-gadget span {
+ display: none !important;
+
 }
+ */
 
 /* Ajustar el selector */
 #google_translate_element select {
   font-size: 0.6rem;
-  @apply px-0.5 py-0.5 mr-2 rounded-sm bg-violet-800 text-white border border-gray-600 shadow-md cursor-pointer  ;
+  @apply px-0.5 py-0.5 mr-2 rounded-sm bg-violet-800 text-white border border-gray-600 shadow-md cursor-pointer flex flex-col mt-12 fixed ;
 }
+
