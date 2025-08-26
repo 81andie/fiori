@@ -7,7 +7,6 @@
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/1morgan.mp3"
   },
-
   {
     "id": 2,
     "title": "Narració 2",
@@ -16,9 +15,7 @@
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/Morgan_2.mp3"
   },
-
-
-    {
+  {
     "id": 3,
     "title": "Narració 3",
     "img": "morgan4.jpeg",
@@ -34,21 +31,18 @@
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/morgan_4.mp3"
   },
-
-
   {
     "id": 5,
     "title": "Narració 5",
     "img": "morgan6.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
-    "audio": "/MorganElquefalta.mp3"
+    "audio": "/Morgan5elquefalta.mp3"
   },
-
-   {
+  {
     "id": 6,
     "title": "Narració 6",
-    "img": "morgan6.jpeg",
+    "img": "morgan7.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/Morgan_5.mp3"
@@ -59,18 +53,16 @@
     "img": "morgan7.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
-    "audio": "/6morgan.mp3"
+    "audio": "/Morgan_6modificado.mp3"
   },
-
   {
     "id": 8,
     "title": "Narració 8",
-    "img": "morgan8.jpeg",
+    "img": "morgan9.jpeg",
     "artist": "Andrea Hernández",
-    "fontSong": "The Witcher",
-    "audio": "/TossACoinToAWitcher.mp3"
+    "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
+    "audio": "/Morgan_7modificado.mp3"
   },
-
   {
     "id": 9,
     "title": "Narració 9",
@@ -79,7 +71,6 @@
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/TossACoinToAWitcher.mp3"
   },
-
   {
     "id": 10,
     "title": "Narració 10",
@@ -112,7 +103,6 @@
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/TossACoinToAWitcher.mp3"
   },
-
   {
     "id": 14,
     "title": "Narració 14",
@@ -121,8 +111,7 @@
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/TossACoinToAWitcher.mp3"
   },
-
-    {
+  {
     "id": 15,
     "title": "Narració 15",
     "img": "morgan14.jpeg",
@@ -130,8 +119,7 @@
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/TossACoinToAWitcher.mp3"
   },
-
-   {
+  {
     "id": 16,
     "title": "Narració 16",
     "img": "morgan15.jpeg",
@@ -139,8 +127,7 @@
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/TossACoinToAWitcher.mp3"
   },
-
-   {
+  {
     "id": 17,
     "title": "Narració 17",
     "img": "morgan16.jpeg",
@@ -148,5 +135,4 @@
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/TossACoinToAWitcher.mp3"
   }
-
 ]

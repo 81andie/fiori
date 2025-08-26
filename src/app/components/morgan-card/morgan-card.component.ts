@@ -39,7 +39,7 @@ export class MorganCardComponent<T extends { audio: string }> implements OnInit,
     if (this.audios?.length) {
          this.allAudios = [...this.audios];
          this.MorganAudios = [...this.audios];
-         this.AudioService.setPlaylist<T>('tiamat', this.MorganAudios);
+         this.AudioService.setPlaylist<T>('morgan', this.MorganAudios);
          this.updateCurrentTrack();
          this.sacarNarraciones();
        } else {
@@ -68,7 +68,7 @@ export class MorganCardComponent<T extends { audio: string }> implements OnInit,
 
 
 sacarNarraciones(): void {
-    this.MorganAudioPlayerService.getAudioPlayerTiamat()
+    this.MorganAudioPlayerService.getAudioPlayerMorgan()
     .pipe(take(1))
     .subscribe((data: MorganAudioPlayer[]) => {
       const typedData = data as unknown as T[];
@@ -121,17 +121,14 @@ sacarNarraciones(): void {
 
 
 selectTrack(index: number) {
- this.AudioService.setPlaylist<T>('tiamat', this.MorganAudios);
 
   // Usa el método que ya tienes en el servicio
-  this.AudioService.playTrack('tiamat', index);
+  this.AudioService.playTrack('morgan', index);
 
   // Refresca el estado local para marcar en la UI
   this.currentTrackIndex = index;
   this.currentTrack = this.MorganAudios[index];
 }
-
-
 
 
 }

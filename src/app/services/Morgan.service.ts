@@ -12,7 +12,7 @@ export class MorganAudioPlayerService {
 
 private jsonUrlAudioPlayerMorgan = 'assets/morganNarration.json';
 
-getAudioPlayerTiamat(){
+getAudioPlayerMorgan(){
   return this.http.get<[MorganAudioPlayer]>(this.jsonUrlAudioPlayerMorgan)
 }
 

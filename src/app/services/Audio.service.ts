@@ -42,7 +42,7 @@ export class AudioService {
 
     player.wavesurfer = WaveSurfer.create({
       container,
-      waveColor: 'rgb(153, 255, 204)',
+      waveColor: 'rgb(13, 255, 45)',
       progressColor: 'rgb(100, 0, 100)',
       barWidth: 1,
       height: 20,

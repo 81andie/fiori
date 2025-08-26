@@ -29,7 +29,7 @@ export class MorganComponent {
 
 
   getMorganNarrations() {
-    this.MorganAudioPlayer.getAudioPlayerTiamat().subscribe((data) => {
+    this.MorganAudioPlayer.getAudioPlayerMorgan().subscribe((data) => {
       console.log(data)
       this.MorganNarrations = data;
     });
