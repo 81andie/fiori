@@ -1,20 +1,23 @@
-<div class="w-full bg-transparent  h-56 p-1">
+<div data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="500" >
+<hr class="h-2 w-full bg-cover bg-[url(/newspaper.jpg)] ">
 <h1
-  class="bg-transparent bg-opacity-15 text-5xl m-12 mt-9 mb-12 bg-clip-text text-transparent bg-gradient-to-b from-red-400 to-stone-900 hover:to-slate-400
+  class="text-xl m-1 bg-clip-text text-transparent bg-gradient-to-b from-stone-400 to-stone-900 hover:to-slate-400
   600"
   data-aos="zoom-in-right" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
 
   <strong>POEMAS GEISHAS</strong>
 </h1>
-
-
+<hr class="h-1 w-full bg-cover bg-bottom bg-[url(/newspaper.jpg)] ">
 </div>
+
 
 <div class="space-y-0">
   @for (item of versesGeishas ; track item.id) {
   <section
     class="brightness-125 transition duration-700 ease-in-out relative  h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
-    [ngStyle]="{'background-image': 'url(' + item.background + ')'}" data-aos="fade-up" data-aos-easing="linear"
+    [ngStyle]="{'background-image': 'url(' + item.background + ')'}"
+    data-aos="fade-up" data-aos-easing="linear"
     data-aos-duration="500">
 
     <!-- Capa oscura -->

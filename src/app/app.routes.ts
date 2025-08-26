@@ -8,6 +8,7 @@ import { HaikusGeishasComponent } from './components/haikus-geishas/haikus-geish
 import { MorganComponent } from './components/morgan/morgan.component';
 import { TiamatComponent } from './components/tiamat/tiamat.component';
 import { VersesPageComponent } from './components/verses-page/verses-page.component';
+import { MilfullnessPoemsComponent } from './components/milfullness-poems/milfullness-poems.component';
 
 
 
@@ -18,9 +19,9 @@ export const routes: Routes = [
   { path: 'haikus-geishas', component: HaikusGeishasComponent },
   { path: 'poemas-musicados', component: PoemasMusicadosComponent },
   { path: 'morgan', component: MorganComponent },
+  {path: 'mindfullness', component:MilfullnessPoemsComponent},
   { path: 'tiamat', component: TiamatComponent },
   { path: 'verses', component: VersesPageComponent },
-
   { path: 'sobremi', component: SobreMiComponent },
 
 
