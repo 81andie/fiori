@@ -1,0 +1,54 @@
+<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+  <hr class="h-2 w-full bg-cover bg-[url(/textil.jpg)] ">
+  <h1 class="text-xl m-1 bg-clip-text text-transparent bg-gradient-to-b from-stone-400 to-stone-900 hover:to-slate-400
+  600" data-aos="zoom-in-right" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
+
+    <span><strong>Morgan el gat avorrit</strong></span> <br>
+    <strong>El joc de l'Ukelele</strong>
+  </h1>
+  <hr class="h-1 w-full bg-cover bg-left-bottom bg-[url(/textil.jpg)]  ">
+</div>
+
+<h2 class="text-xl mt-12 font-bold text-center mb-4">🎶 Parts de l'Ukelele 🎶</h2>
+<p class="text-center mb-6">Arrossega cada nom fins a la part correcta</p>
+
+<div class=" mt-12  mb-12 w-full flex  ">
+  <!-- Llista de noms -->
+  <div class=" p-2 border rounded bg-rose-400">
+    <h3 class="font-semibold ">Noms</h3>
+    <div *ngFor="let part of parts" cdkDrag [cdkDragData]="part"
+      class="sm:p-0.5 md:p-2 lg:p-2 sm:text-xs md:text-sm mb-2 bg-[url(/pexelscorazones.jpg)] text-white bg-cover border rounded cursor-grab text-center">
+      {{ part.name }}
+    </div>
+
+
+
+  </div>
+
+  <img src="fondo ukelele.png" class="w-96 object-contain ">
+
+
+  <div>
+
+    @if (!isVisible) {
+    <img (click)=" isVisibleImage()" src="/3dicons-music-dynamic-color.png" class="w-20 h-20 p-2 bg-lime-500 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]
+
+       />
+
+from-[#fef08a]
+via-[#84cc16]
+to-[#16a34a]">
+
+    } @else {
+    <img (click)="isnotVisible()" src="Captura de pantalla 2025-08-26 213016.png" class="w-52 h-52">
+    }
+
+
+
+
+
+
+
+  </div>
+
+</div>

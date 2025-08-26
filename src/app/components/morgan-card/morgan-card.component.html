@@ -46,14 +46,14 @@
 </button>
 
 
-<div class= "bg-gradient-to-b from-stone-700 to-rose-300 border-2 border-stone-100 bg-cover  bg-center bg-no-repeat h-[75vh] bg-opacity-75  w-60 z-40 fixed  left-16 bottom-16 rounded-lg "
+<div class= "bg-gradient-to-b from-stone-700 to-rose-300 border-2 border-stone-100 bg-cover  bg-center bg-no-repeat  h-[63vh] md:h-[45vh] lg:h-[76vh] bg-opacity-75  w-60 z-40 fixed  left-16 bottom-16 rounded-lg "
   *ngIf="currentTrack > 0 || isVisible "
 
 
   >
   <div class="mt-1 p-1">
     <form class="max-w-md mx-auto">
-      <div class="w-[223px] flex mt-1.5 mb-0.5 mr-0.5 ml-0.5  rounded-lg">
+      <div class="w-[223px] h-auto flex mt-1.5 mb-0.5 mr-0.5 ml-0.5  rounded-lg">
       <img
           src="https://tse3.mm.bing.net/th/id/OIP.9LqKtokwcvdtCraAnRTRegHaHa?r=0&pid=ImgDet&w=194&h=194&c=7&dpr=1,4&o=7&rm=3"
           class="h-6 me-3 rounded-full" alt="Logo" />
@@ -119,8 +119,8 @@
           </div>
 
 
-            <div class=" text-gray-800 mt-1 h-44">
-              <div class=" text-gray-800 mt-20 h-44">
+            <div class=" text-gray-800 mt-1 h-24">
+              <div class=" text-gray-800 mt-20 h-24">
                 <span *ngFor="let audio of MorganAudios; let i = index" (click)="selectTrack(i)"
                   class="text-stone-700  mx-2
                   font-extrabold cursor-pointer  bg-opacity-35  hover:text-stone-800 rounded"

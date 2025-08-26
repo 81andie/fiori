@@ -50,7 +50,7 @@
   {
     "id": 7,
     "title": "Narració 7",
-    "img": "morgan7.jpeg",
+    "img": "morgan8.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/Morgan_6modificado.mp3"
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "title": "Narració 8",
-    "img": "morgan9.jpeg",
+    "img": "morgan3.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/Morgan_7modificado.mp3"
@@ -66,55 +66,55 @@
   {
     "id": 9,
     "title": "Narració 9",
-    "img": "morgan3.jpeg",
+    "img": "morgan9.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
-    "audio": "/TossACoinToAWitcher.mp3"
+    "audio": "/Morgan_8.mp3"
   },
   {
     "id": 10,
     "title": "Narració 10",
-    "img": "morgan9.jpeg",
+    "img": "morgan10.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
-    "audio": "/TossACoinToAWitcher.mp3"
+    "audio": "/Morgan_9.mp3"
   },
   {
     "id": 11,
     "title": "Narració 11",
-    "img": "morgan10.jpeg",
+    "img": "morgan11.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
-    "audio": "/TossACoinToAWitcher.mp3"
+    "audio": "/Morgan_10.mp3"
   },
   {
     "id": 12,
     "title": "Narració 12",
-    "img": "morgan11.jpeg",
+    "img": "morgan17.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
-    "audio": "/TossACoinToAWitcher.mp3"
+    "audio": "/Morgan_11.mp3"
   },
   {
     "id": 13,
     "title": "Narració 13",
-    "img": "morgan15.jpeg",
+    "img": "morgan13.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
-    "audio": "/TossACoinToAWitcher.mp3"
+    "audio": "/morgan13.mp3"
   },
   {
     "id": 14,
     "title": "Narració 14",
-    "img": "morgan13.jpeg",
+    "img": "morgan14.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
-    "audio": "/TossACoinToAWitcher.mp3"
+    "audio": "/Morgan14.mp3"
   },
   {
     "id": 15,
     "title": "Narració 15",
-    "img": "morgan14.jpeg",
+    "img": "morgan15.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/TossACoinToAWitcher.mp3"

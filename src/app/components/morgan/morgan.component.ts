@@ -4,13 +4,14 @@ import { Component, ElementRef, AfterViewInit, inject, ViewChild, OnInit } from 
 import { MorganAudioPlayer } from '../../interfaces/MorganAudioPlayer.interface';
 import { MorganAudioPlayerService } from '../../services/Morgan.service';
 import { CommonModule } from '@angular/common';
+import { JuegoUkeleleComponent } from "../juego-ukelele/juego-ukelele.component";
 
 
 
 
 @Component({
   selector: 'app-morgan',
-  imports: [CommonModule,MorganCardComponent],
+  imports: [CommonModule, MorganCardComponent, JuegoUkeleleComponent],
   templateUrl: './morgan.component.html',
   styleUrl: './morgan.component.css'
 })
