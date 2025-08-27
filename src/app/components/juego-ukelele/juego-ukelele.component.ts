@@ -27,8 +27,6 @@ export class JuegoUkeleleComponent {
     { name: 'Boca'  },
      { name: 'trasts'  },
       { name: 'mastil'  },
-
-
   ];
 
 

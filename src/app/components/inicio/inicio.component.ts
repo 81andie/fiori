@@ -17,6 +17,7 @@ import { PoemasLargosService } from '../../services/poemasLargos.service';
 import { ImprovisacionesService } from '../../services/Improvisaciones.service';
 import { CommonModule } from '@angular/common';
 import { VersesPageComponent } from "../verses-page/verses-page.component";
+import { CaligramaComponent } from "../caligrama/caligrama.component";
 
 
 
@@ -29,7 +30,7 @@ import { VersesPageComponent } from "../verses-page/verses-page.component";
 
 @Component({
   selector: 'app-inicio',
-  imports: [RouterModule, HeroComponent, HaikusComponent, SobreMiComponent, FooterComponent, HaikusGeishasComponent, HaikusMusicadosComponent, CommonModule, VersesPageComponent, MilfullnessPoemsComponent],
+  imports: [RouterModule, HeroComponent, HaikusComponent, SobreMiComponent, FooterComponent, HaikusGeishasComponent, HaikusMusicadosComponent, CommonModule, VersesPageComponent, MilfullnessPoemsComponent, CaligramaComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })

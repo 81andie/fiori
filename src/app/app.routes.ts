@@ -9,6 +9,7 @@ import { MorganComponent } from './components/morgan/morgan.component';
 import { TiamatComponent } from './components/tiamat/tiamat.component';
 import { VersesPageComponent } from './components/verses-page/verses-page.component';
 import { MilfullnessPoemsComponent } from './components/milfullness-poems/milfullness-poems.component';
+import { CaligramaComponent } from './components/caligrama/caligrama.component';
 
 
 
@@ -22,6 +23,7 @@ export const routes: Routes = [
   {path: 'mindfullness', component:MilfullnessPoemsComponent},
   { path: 'tiamat', component: TiamatComponent },
   { path: 'verses', component: VersesPageComponent },
+   { path: 'caligrama', component: CaligramaComponent },
   { path: 'sobremi', component: SobreMiComponent },
 
 
