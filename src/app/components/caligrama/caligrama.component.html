@@ -3,25 +3,33 @@
   <h1 class="text-xl m-1 bg-clip-text text-transparent bg-gradient-to-b from-stone-400 to-stone-900 hover:to-slate-400
   600" data-aos="zoom-in-right" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
 
-    <strong>Caligrama</strong>
+    <span><strong>Caligrama</strong></span><br>
+    <span><strong>Un vent de tarda</strong></span>
+
   </h1>
   <hr class="h-1 w-full bg-cover bg-bottom bg-[url(/textil.jpg)] grayscale ">
 </div>
 
-<div class=" w-full bg-cover">
+<div class=" w-full bg-cover ">
+
 
   <div
-    class=" bg-[url(/estartit.jpg)] mt-12 bg-cover object-fit bg-bottom mb-12 w-full flex flex-row   ">
+    class=" bg-[url(/estartitTamariu.png)]   mt-1 bg-no-repeat object-cover bg-center mb-12 w-full flex flex-col lg:flex-row md:flex-row ">
     <!-- Llista de noms -->
-    <div class="w-full h-[90vh] flex flex-row justify-center">
-      <h3 class="font-semibold text-xl mt-12 text-blue-200">Un vent de tarda</h3>
+
+    <div class="w-full  h-[90vh] flex flex-row justify-center justify-items-start place-items-start">
+
 
       <div  *ngFor="let part of parts" cdkDrag
         [cdkDragData]="part"
-        class=" verse mt-1  p-2 flex flex-row sm:flex-wrap justify-start gap-2 animate-fade  md:text-sm mb-2  text-blue-950 rounded cursor-grab text-center ">
-        <strong class="text-xs md:text-xl lg:text-xl  mt-1  p-0.5 bg-slate-50 bg-opacity-35">{{ part.name }}</strong>
+        class=" verse mt-44 md:mt-80 lg:mt-44 md:p-0.5 lg:p-0.5 flex flex-row sm:flex-wrap  gap-0.5 animate-fade  md:text-sm mb-1  text-blue-50  cursor-grab text-center ">
+        <strong class="bg-clip-text text-transparent bg-gradient-to-b from-blue-200 to-blue-300 hover:to-slate-400 border-1 bg-left border-t-orange-400 verso p-0.5  text-xs md:text-base lg:text-base  mt-1 ">{{ part.name }}</strong>
       </div>
+
+
     </div>
   </div>
 
 </div>
+
+
