@@ -4,34 +4,34 @@
   600" data-aos="zoom-in-right" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
 
     <span><strong>Morgan el gat avorrit</strong></span> <br>
-    <strong>El joc de l'Ukelele</strong>
+    <strong>El joc de l'Ukelele (Fitxa interactiva)</strong>
   </h1>
   <hr class="h-1 w-full bg-cover bg-left-bottom bg-[url(/textil.jpg)]  ">
 </div>
 
+<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+
 <h2 class="text-xl mt-12 font-bold text-center mb-4">🎶 Parts de l'Ukelele 🎶</h2>
 <p class="text-center mb-6">Arrossega cada nom fins a la part correcta</p>
 
-<div class=" mt-12  mb-12 w-full flex  ">
+<div
+  class=" mt-12  mb-12 w-full flex-row md:flex md:justify-center lg:flex lg:justify-center justify-items-center md:gap-14 lg:gap-12">
   <!-- Llista de noms -->
-  <div class=" p-2 border rounded bg-rose-400">
+  <div class="sm:w-26 p-2 border rounded bg-rose-400">
     <h3 class="font-semibold ">Noms</h3>
     <div *ngFor="let part of parts" cdkDrag [cdkDragData]="part"
-      class="sm:p-0.5 md:p-2 lg:p-2 sm:text-xs md:text-sm mb-2 bg-[url(/pexelscorazones.jpg)] text-white bg-cover border rounded cursor-grab text-center">
+      class="animate-fade sm:p-0.5 md:p-2 lg:p-2 sm:text-xs md:text-sm mb-2 bg-[url(/pexelscorazones.jpg)] text-white bg-cover border rounded cursor-grab text-center">
       {{ part.name }}
     </div>
-
-
-
   </div>
 
-  <img src="fondo ukelele.png" class="w-96 object-contain ">
+  <img src="ukelelepartes.png" class="w-96 object-contain animate-pulse animate-infinite">
 
 
   <div>
 
     @if (!isVisible) {
-    <img (click)=" isVisibleImage()" src="/3dicons-music-dynamic-color.png" class="w-20 h-20 p-2 bg-lime-500 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]
+    <img (click)=" isVisibleImage()" src="/3dicons-music-dynamic-color.png" class="w-14 h-14 mt-10 sm:mb-4 p-2 bg-lime-500 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]
 
        />
 
@@ -47,7 +47,7 @@ to-[#16a34a]">
 
 
 
-
+</div>
 
   </div>
 
