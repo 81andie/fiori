@@ -122,17 +122,10 @@
   {
     "id": 16,
     "title": "Narració 16",
-    "img": "morgan15.jpeg",
-    "artist": "Andrea Hernández",
-    "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
-    "audio": "/morgan_16.mp3"
-  },
-  {
-    "id": 17,
-    "title": "Narració 17",
     "img": "morgan16.jpeg",
     "artist": "Andrea Hernández",
     "licenciaPaint": "FreePik, Microsoft CoPilot,AI Designer Microsoft",
     "audio": "/morgan_16.mp3"
   }
+
 ]

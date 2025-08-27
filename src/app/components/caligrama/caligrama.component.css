@@ -3,6 +3,7 @@
 
 }
 
-.verso{
-  border-radius: 52px 20px 15px 50px;
+.verse:hover{
+  writing-mode: horizontal-tb;
+  padding: 1rem;
 }

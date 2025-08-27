@@ -46,15 +46,13 @@
 </button>
 
 
-<div class= "bg-gradient-to-b from-stone-700 to-rose-300 border-2 border-stone-100 bg-cover  bg-center bg-no-repeat  h-[63vh] md:h-[45vh] lg:h-[76vh] bg-opacity-75  w-60 z-40 fixed  left-16 bottom-16 rounded-lg "
-  *ngIf="currentTrack > 0 || isVisible "
-
-
-  >
+<div
+  class="bg-gradient-to-b from-stone-700 to-rose-300 border-2 border-stone-100 bg-cover  bg-center bg-no-repeat  h-[62vh] md:h-[45.9vh] lg:h-[87vh] bg-opacity-75  w-60 z-40 fixed  left-16 bottom-16 rounded-lg "
+  *ngIf="currentTrack > 0 || isVisible ">
   <div class="mt-1 p-1">
     <form class="max-w-md mx-auto">
       <div class="w-[223px] h-auto flex mt-1.5 mb-0.5 mr-0.5 ml-0.5  rounded-lg">
-      <img
+        <img
           src="https://tse3.mm.bing.net/th/id/OIP.9LqKtokwcvdtCraAnRTRegHaHa?r=0&pid=ImgDet&w=194&h=194&c=7&dpr=1,4&o=7&rm=3"
           class="h-6 me-3 rounded-full" alt="Logo" />
         <span class="self-center text-xs font-semibold whitespace-nowrap dark:text-white">Fiori Poetic blog</span>
@@ -89,7 +87,7 @@
 
 
           <div class="flex p-1 h-14 ml-1 mt-2 w-auto versos flex-col bg-slate-700 text-violet-50 bg-opacity-50">
-  <strong>Morgan el gat avorrit</strong>
+            <strong>Morgan el gat avorrit</strong>
 
           </div>
         </div>
@@ -119,14 +117,13 @@
           </div>
 
 
-            <div class=" text-gray-800 mt-1 h-24">
-              <div class=" text-gray-800 mt-20 h-24">
-                <span *ngFor="let audio of MorganAudios; let i = index" (click)="selectTrack(i)"
-                  class="text-stone-700  mx-2
-                  font-extrabold cursor-pointer  bg-opacity-35  hover:text-stone-800 rounded"
-                  [class.font-bold]="currentTrack?.audio === audio.audio">
-                  {{ audio.title }}
-                </span>
+          <div class=" text-gray-800 mt-0.5 ">
+            <div class=" text-gray-800 mt-20 grid grid-cols-3 gap-1">
+              <span *ngFor="let audio of MorganAudios; let i = index" (click)="selectTrack(i)" class="text-stone-700  mx-2 text_narration
+                  font-extrabold cursor-pointer p-1 bg-rose-100  bg-opacity-35  hover:text-stone-100 rounded"
+                [class.font-bold]="currentTrack?.audio === audio.audio">
+                {{ audio.title }}
+              </span>
 
             </div>
           </div>
@@ -137,4 +134,3 @@
     </div>
   </div>
 </div>
-

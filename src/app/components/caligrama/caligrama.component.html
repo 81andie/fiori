@@ -4,6 +4,7 @@
   600" data-aos="zoom-in-right" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
 
     <span><strong>Caligrama</strong></span><br>
+    <span><strong>Estiu 2025</strong></span><br>
     <span><strong>Un vent de tarda</strong></span>
 
   </h1>
@@ -20,10 +21,11 @@
     <div class="w-full  h-[90vh] flex flex-row justify-center justify-items-start place-items-start">
 
 
-      <div  *ngFor="let part of parts" cdkDrag
-        [cdkDragData]="part"
-        class=" verse mt-44 md:mt-80 lg:mt-24 md:p-0.5 lg:p-0.5 flex flex-row sm:flex-wrap  gap-0.5 animate-fade  md:text-sm mb-1  text-blue-50  cursor-grab text-center ">
-        <strong class="bg-clip-text text-transparent bg-gradient-to-b from-blue-200 to-blue-300 hover:to-slate-400 border-1 bg-left border-t-orange-400 verso p-0.5  text-xs md:text-base lg:text-base  mt-1 ">{{ part.name }}</strong>
+      <div *ngFor="let part of parts" cdkDrag [cdkDragData]="part"
+        class=" verse mt-40 md:mt-80 lg:mt-16 md:p-0.5 lg:p-0.5 flex flex-row sm:flex-wrap    text-blue-50  cursor-grab text-center gap-5">
+        <strong
+          class="text-xs bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 to-blue-400 hover:text-blue-50  hover:font-extrabold hover:skew-x-1 hover:scale-150 border-1 bg-left border-t-orange-400 verso p-0.5   md:text-xs lg:text-base  mt-1 ">{{
+          part.name }}</strong>
       </div>
 
 
@@ -31,5 +33,3 @@
   </div>
 
 </div>
-
-
