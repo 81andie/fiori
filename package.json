@@ -6,7 +6,6 @@
     "start": "ng serve",
     "watch": "ng build --watch --configuration development",
     "build": "ng build --base-href /fiori/",
-    "deploy": "npx angular-cli-ghpages --dir=docs/browser",
     "test": "ng test",
     "serve:ssr:fiori": "node dist/fiori/server/server.mjs"
   },

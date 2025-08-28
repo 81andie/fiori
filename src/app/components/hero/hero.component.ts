@@ -12,9 +12,9 @@ import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 export class HeroComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
-     if (typeof window !== 'undefined') {
+
     this.typewriter();
-  }
+  
   }
 
   private sounds: string[] = [
@@ -25,7 +25,7 @@ export class HeroComponent implements OnInit, OnDestroy {
   ];
 
 
-  public text: string = "Aquí encontraréis poemas y cuentos infantiles musicados, especialmente pensados para la sensibilización musical de niños y niñas de entre 3 y 5 años (P3 a P5), así como para la iniciación musical (de 5 a 7 años).Dentro de la temática de la cultura japonesa, he dedicado varias secciones a diferentes aspectos y modalidades. También encontraréis poemas tanto escritos como musicados. ";
+  public text: string = "Conoce mi blog ";
   public displayedText: string = '';
   private i: number = 0;
   private speed: number = 150;
@@ -45,7 +45,7 @@ export class HeroComponent implements OnInit, OnDestroy {
     if(typeof window !== 'undefined'){
       const soundFile = this.sounds[Math.floor(Math.random() * this.sounds.length)];
     const audio = new Audio(soundFile);
-    audio.play().catch(() => { }); 
+    audio.play().catch(() => { });
     }
   }
 

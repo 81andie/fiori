@@ -6,6 +6,7 @@
 
 .verse:hover{
   writing-mode: horizontal-tb;
-  padding: 1.5rem;
+  padding: 1.7rem;
   color:whitesmoke;
+  perspective: 1000px;
 }

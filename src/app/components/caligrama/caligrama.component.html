@@ -20,12 +20,11 @@
 
     <div class="w-full  h-[90vh] flex flex-row justify-center justify-items-start place-items-start">
 
-
-      <div *ngFor="let part of parts" 
-        class=" verse mt-40 md:mt-80 lg:mt-16 md:p-0.5 lg:p-0.5 flex flex-row sm:flex-wrap cursor-grab text-center gap-5">
-        <strong
-          class="text-xs bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 to-blue-400  hover:to-yellow-200 hover:font-extrabold hover:skew-x-1 hover:scale-125 border-1 bg-left border-t-orange-400 verso p-0.5   md:text-xs lg:text-base  mt-1 ">{{
-          part.name }}</strong>
+      <div *ngFor="let part of parts"
+        class=" verse mt-40 md:mt-80 lg:mt-16 md:p-0.5 lg:p-0.5 flex flex-row sm:flex-wrap cursor-grab text-center gap-6">
+        <span><strong
+          class="text-xs bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 to-blue-400  hover:to-yellow-200 hover:font-extrabold  hover:scale-125 border-1 bg-left border-t-orange-400 verso p-0.5   md:text-xs lg:text-base  mt-1 ">{{
+          part.name }}</strong></span>
       </div>
 
 

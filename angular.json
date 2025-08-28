@@ -13,13 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": {
-              "base": "docs",
-              "browser": "browser",
-               "server": "server"
-
-            },
-
+            "outputPath": "docs",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -31,13 +25,16 @@
               "src/assets",
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                 "output": "/"
               }
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": ["node_modules/flowbite/dist/flowbite.js"],
+            "scripts": [
+              "node_modules/flowbite/dist/flowbite.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
