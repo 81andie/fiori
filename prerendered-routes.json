@@ -1,0 +1,16 @@
+{
+  "routes": {
+    "/": {},
+    "/caligrama": {},
+    "/haikus": {},
+    "/haikus-geishas": {},
+    "/haikus-musicados": {},
+    "/inicio": {},
+    "/mindfullness": {},
+    "/morgan": {},
+    "/poemas-musicados": {},
+    "/sobremi": {},
+    "/tiamat": {},
+    "/verses": {}
+  }
+}

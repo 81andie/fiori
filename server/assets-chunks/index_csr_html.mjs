@@ -1,4 +1,4 @@
-<!doctype html>
+export default `<!doctype html>
 <html lang="en" data-beasties-container="">
 
 <head>
@@ -11,7 +11,7 @@
   <!-- Desactiva acceso a APIs-->
   <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=()">
 
-  <base href="/fiori/">
+  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="favicon" href="favicon.ico">
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
@@ -50,3 +50,4 @@
 <link rel="modulepreload" href="chunk-6OK7FI3B.js"><script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="scripts-2TS5KZFG.js" defer=""></script><script src="main-G444MF5P.js" type="module"></script></body>
 
 </html>
+`;
