@@ -15,7 +15,8 @@
           "options": {
             "outputPath": {
               "base": "docs",
-              "browser": ""
+              "browser": "browser",
+               "server": "server"
 
             },
 

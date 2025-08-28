@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "title": "MEDIEVAL SONGS SERIES",
+    "subtitle": "Drawing of Two Medieval Swords",
+    "date": "19th century",
+    "img": "espada.jpg",
+    "artist": "Mariano Fortuny Marsal (Spanish, Reus 1838–1874 Rome)",
+    "song": "Toss a Coin to a Witcher",
+    "fontSong": "The Witcher",
+    "font": "The Metropolitan Museum of Art, Open Access.",
+    "licenciaPaint": "Licencia: Dominio público (CC0)",
+    "audio": "/TossACoinToAWitcher.mp3"
+  },
+  {
+    "id": 2,
+    "title": "The Musicians",
+    "subtitle": "Lute instrument",
+    "date": "1597",
+    "img": "themusiciaans.jpg",
+    "artist": "Caravaggio (Michelangelo Merisi)",
+    "song": "he Knight and the Flame",
+    "fontSong": "pixabay(kaazzoom)",
+    "font": "The Metropolitan Museum of Art, Open Access.",
+    "licenciaPaint": "Licencia: Dominio público (CC0)",
+    "audio": "/theknightandtheflame.mp3"
+  },
+  {
+    "id": 3,
+    "title": "Five Figures in Medieval Dress",
+    "subtitle": "Mediaval Dresses",
+    "date": "1827–29",
+    "img": "vestimenta.jpg",
+    "artist": "Eugène Delacroix (French, Charenton-Saint-Maurice 1798–1863 ",
+    "song": "the Ballad of My Sweet Fair Maiden",
+    "fontSong": "pixabay, Kaazoom",
+    "font": "The Metropolitan Museum of Art, Open Access.",
+    "licenciaPaint": "Licencia: Dominio público (CC0)",
+    "audio": "/sweetfair.mp3"
+  },
+  {
+    "id": 4,
+    "title": "PERDIGON 'TROUBADORS'",
+    "subtitle": "Ilustración del trovador Perdigon (siglo XIII).",
+    "date": "Veranos 2021-2022",
+    "img": "perdigon.jpg",
+    "artist": "Kaazoom",
+    "song": "The mistrel's lament",
+    "fontSong": "pixabay",
+    "font": "Gallica Digital Library / Bibliothèque nationale de France.",
+    "LicenciaPaint": "Imagen vía Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Perdigon.jpg",
+    "audio": "/the-minstrels-lament-medieval-tavern-song-377751.mp3"
+  }
+]

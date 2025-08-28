@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "SOPLA",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Bajo un ciprés",
+      "la copa en la velada",
+      "huelo...",
+      "el paladar de la tierra",
+      "el perfume de la sal",
+      "el pelo se me despiena...",
+      "bajo el viento de la camarga"
+    ],
+    "background": "textura.jpg",
+    "image": "flor.png",
+
+    "ilus": "AHH"
+  },
+  {
+    "id": 2,
+    "title": "Heaven",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "En tu mirada",
+      "comprendí",
+      "en tus ojos morí",
+      "y en tus manos renací"
+    ],
+    "background": "textura1.jpg",
+    "image": "flor5.png",
+
+    "ilus": "AHH"
+  },
+  {
+    "id": 3,
+    "title": "La vida no es más",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "La vida no es más que una película",
+       "que dura demasiado poco.",
+      "Un fotograma de vivencias,",
+      "que pasa más deprisa en cuanto,",
+      "por infortunios extraños,",
+      "vemos peligrar nuestra existencia..."
+    ],
+    "background": "textura2.jpg",
+    "image": "flor2.png",
+
+    "ilus": "AHH"
+  }
+
+]

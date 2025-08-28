@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Ciudades grises",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Poco tiempo es el que nos queda,",
+      "La vida pasa sin piedad,",
+      "No hay sólo muros por la calle,",
+      "Crecen por todos los lados,",
+      "Y se edifican seriamente en corazones ciegos",
+      "Mudos y sordos,",
+      "Así es el amor en la ciudad,",
+      "Paredes serias en el cuerpo,",
+      "Yeso, cal y piedra...",
+      "El alma y las piernas saben el camino",
+      "Pero los segundos son más rápidos",
+      "Y el amor se volvió más duro que el diamante..."
+    ],
+    "background": "textura1.jpg",
+    "image": "20250817_194355-removebg-preview.png",
+    "ilus": "AHH"
+  },
+  {
+    "id": 2,
+    "title": "Perdida en NYC",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Caminando entre rascacielos",
+      "como titanes,",
+      "se me inclina el cuello,",
+      "Crecen por todos los lados,",
+      "El vértigo se me instala en mis sandalias...",
+      "Entre el bullicio",
+      "¡Taxis y perritos calientes!",
+      "El frío se apodera de mí",
+      "Camino y miro...",
+      "En Central Park, observo a los niños...",
+      "Aquí hoy y siempre",
+      "Soy una extranjera",
+      "que añora su tierra..."
+    ],
+    "background": "textura1.jpg",
+    "image": "20250817_194457-removebg-preview.png",
+    "ilus": "AHH"
+  },
+  {
+    "id": 3,
+    "title": "Libélula",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Se siente",
+      "el zumbido de tus alas",
+      "Eres tan hermosa",
+      "Colores irisados",
+      "Bañan tu pequeño cuerpo",
+      "Vuelas sin descanso...",
+      "Hacia tierras lejanas",
+      "Posas tus ninfas",
+      "Escondidas en el regazo",
+      "En un riachuelo...",
+      "de plata sesgada...",
+      "Hermosa criatura",
+      "Eres bella como ninguna",
+      "Quién pudiera ser como tú",
+      "Y nacer del agua"
+    ],
+    "background": "textura1.jpg",
+    "image": "libelula.png",
+    "ilus": "AHH"
+  }
+]
