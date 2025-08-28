@@ -13,10 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-           "outputPath": {
-              "base": "docs",
-              "browser": ""
-            },
+            "outputPath": "dist/fiori",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
