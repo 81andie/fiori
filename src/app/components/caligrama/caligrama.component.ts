@@ -1,4 +1,4 @@
-import { DragDropModule, CdkDragDrop } from '@angular/cdk/drag-drop';
+
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
@@ -9,7 +9,7 @@ interface Part {
 
 @Component({
   selector: 'app-caligrama',
-  imports: [CommonModule,DragDropModule],
+  imports: [CommonModule],
   templateUrl: './caligrama.component.html',
   styleUrl: './caligrama.component.css'
 })
@@ -36,9 +36,6 @@ parts: Part[] = [
 
   ];
 
-  dropped(event: CdkDragDrop<Part[]>, boxId: string) {
-    const draggedPart = event.item.data as Part;
 
-  }
 
 }
