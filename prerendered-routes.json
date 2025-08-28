@@ -1,16 +1,16 @@
 {
   "routes": {
-    "/": {},
-    "/caligrama": {},
-    "/haikus": {},
-    "/haikus-geishas": {},
-    "/haikus-musicados": {},
-    "/inicio": {},
-    "/mindfullness": {},
-    "/morgan": {},
-    "/poemas-musicados": {},
-    "/sobremi": {},
-    "/tiamat": {},
-    "/verses": {}
+    "/fiori": {},
+    "/fiori/caligrama": {},
+    "/fiori/haikus": {},
+    "/fiori/haikus-geishas": {},
+    "/fiori/haikus-musicados": {},
+    "/fiori/inicio": {},
+    "/fiori/mindfullness": {},
+    "/fiori/morgan": {},
+    "/fiori/poemas-musicados": {},
+    "/fiori/sobremi": {},
+    "/fiori/tiamat": {},
+    "/fiori/verses": {}
   }
 }

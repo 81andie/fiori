@@ -5,13 +5,7 @@ export default `<!doctype html>
   <meta charset="utf-8">
   <title>Fiori Poetic Blog</title>
 
-  <!-- Control datos de referencia se envían a otros sitios -->
-  <meta name="referrer" content="no-referrer">
-
-  <!-- Desactiva acceso a APIs-->
-  <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=()">
-
-  <base href="/">
+  <base href="/fiori/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="favicon" href="favicon.ico">
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
@@ -33,7 +27,7 @@ export default `<!doctype html>
   <div class="relative z-50">
     <div id="google_translate_element" class="bg-violet-100 bg-opacity-45  m-1 flex float-end fixed"></div>
 
-  
+
     <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(

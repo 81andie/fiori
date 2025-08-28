@@ -2,7 +2,7 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/',
+  baseHref: '/fiori/',
   locale: undefined,
   routes: undefined,
   entryPointToBrowserMapping: {
@@ -14,8 +14,8 @@ export default {
   ]
 },
   assets: {
-    'index.csr.html': {size: 9234, hash: '1af0efe3df218603eaa47233d523aa1663c99ca7f21408cf94ad5beb6571abf4', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 7895, hash: '4b5478808f55bf5060c642f796fd1762409ab18e8f201da46c17fd3ac29b185d', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 8998, hash: '32157ce971d30f7fa3cb0390ba8fb917d5b728580a5be6b1aacae93a87e4dc6c', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 7659, hash: '1d3130894324e295381831290b6770acb650705b95b6acfd82b4aab1beae76e3', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
     'styles-ZFIMHRCX.css': {size: 62321, hash: 'L0OmKYCwDjc', text: () => import('./assets-chunks/styles-ZFIMHRCX_css.mjs').then(m => m.default)}
   },
 };
