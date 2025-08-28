@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "MAEKO",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "Duerme Akari\nsemilla en mano\ncrece el peral\nla piel de porcelana...\nlos labios morados\nflorece la Geisha",
+    "background": "1.png"
+  },
+  {
+    "id": 2,
+    "title": "AKARI",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "Fuiste hija de la verdad\n de joven un rostro jugoso de ciruela\nmarchita y arrugada con los años\nsavia e independiente\ntu pelo huele al musgo\ny al Uneboshi\nque tomas al pie\nde cada atardecer",
+    "background": "2.png"
+  },
+  {
+    "id": 3,
+    "title": "NIKO",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "En tus ojos\n dónde se refleja el Sol naciente\nrenacen cada mañana\ndos lagos Niko",
+    "background": "3.png"
+  }
+]
