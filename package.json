@@ -5,7 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "watch": "ng build --watch --configuration development",
-    "build": "ng build --base-href /fiori/",
+    "build": "ng build --prod --base-href /fiori/",
+    "deploy": "ng deploy --base-href=/fiori/",
     "test": "ng test",
     "serve:ssr:fiori": "node dist/fiori/server/server.mjs"
   },
