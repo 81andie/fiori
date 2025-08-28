@@ -45,12 +45,12 @@ export class HeroComponent implements OnInit, OnDestroy {
     if(typeof window !== 'undefined'){
       const soundFile = this.sounds[Math.floor(Math.random() * this.sounds.length)];
     const audio = new Audio(soundFile);
-    audio.play().catch(() => { }); // evita errores si no se puede reproducir
+    audio.play().catch(() => { }); 
     }
   }
 
   ngOnDestroy(): void {
-    // Limpiar el temporizador al destruir el componente
+
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
     }
