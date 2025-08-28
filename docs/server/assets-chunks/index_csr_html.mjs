@@ -5,7 +5,7 @@ export default `<!doctype html>
   <meta charset="utf-8">
   <title>Fiori Poetic Blog</title>
 
-  <base href="/">
+  <base href="/fiori/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="favicon" href="favicon.ico">
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">

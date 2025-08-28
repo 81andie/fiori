@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: '/fiori',
   supportedLocales: {
   "en-US": ""
 },
