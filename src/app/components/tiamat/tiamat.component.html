@@ -12,9 +12,13 @@
   </div>
 
 
- <iframe src="https://www.flipbookpdf.net/web/site/bd8bed0ae5dc0788750c4f249cc0e73b862810cf202508.pdf.html
-" width="200" height="400" frameborder="0" scrolling="yes">
+  <div class="ml-2 mr-2 flex justify-center mt-10 ">
+     <iframe src="https://www.flipbookpdf.net/web/site/bd8bed0ae5dc0788750c4f249cc0e73b862810cf202508.pdf.html
+" width="420" height="300" frameborder="0" scrolling="no">
     </iframe>
+  </div>
+
+
 
 
 
@@ -30,12 +34,12 @@
       <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
       <!-- Contenido -->
-      <div class="relative z-10 space-y-1">
-        <p class="text-base font-bold">{{item.title}}</p>
+      <div class="relative z-10 space-y-0">
+        <p class="text-xs font-bold">{{item.title}}</p>
         <p class="text-xs font-bold">{{item.date}}</p>
 
 
-        <div class="sm:text-xs md:text-xl lg:text-xl text-white/80">
+        <div class="text-xs md:text-xl lg:text-xl text-white/80">
           <pre>{{ item.artist }}</pre>
 
 
@@ -43,7 +47,7 @@
 
         </div>
 
-        <div class="sm:text-xs md:text-xl lg:text-xl text-white/80">
+        <div class="text-xs md:text-xl lg:text-xl text-white/80">
           <pre>{{ item.fontSong}}</pre>
           <pre>{{ item.licenciaPain}}</pre>
 
