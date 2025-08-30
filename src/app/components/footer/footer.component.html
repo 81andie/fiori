@@ -11,23 +11,22 @@
 
 
 
-    <div class="flex flex-col md:flex-row lg:flex-row  w-full gap-2 ">
-      <ul>
-        <li>Inicio</li>
-        <li>Sobre mi</li>
-        <li>Poemas Cortos</li>
-        <li>Poemas Musicados</li>
-        <li>Poemas Largos</li>
-        <li>Morgan</li>
+    <div class="flex flex-col md:flex-row lg:flex-row  w-full gap-2  ">
+      <ul class="underline cursor-pointer" >
+        <li [routerLink]="['/inicio']">Inicio</li>
+        <li [routerLink]="['/sobremi']" >Sobre mi</li>
+        <li [routerLink]="['/verses']" >Verses</li>
+        <li [routerLink]="['/caligrama']" >Caligrama</li>
+        <li [routerLink]="['/morgan']">Morgan</li>
 
       </ul>
 
-      <ul>
-        <li>Milfullness poems</li>
-        <li>Haikus</li>
-        <li>Haikus Musicados</li>
-        <li>Haikus Geishas</li>
-        <li>Tiamat, la reina dels dragons...</li>
+      <ul class="underline">
+        <li [routerLink]="['/mindfullness']">Milfullness poems</li>
+        <li [routerLink]="['/haikus']">Haikus</li>
+        <li [routerLink]="['/haikus-musicados']">Haikus Musicados</li>
+        <li [routerLink]="['/haikus-geishas']">Haikus Geishas</li>
+        <li [routerLink]="['/tiamat']" >Tiamat, la reina dels dragons...</li>
       </ul>
     </div>
 
