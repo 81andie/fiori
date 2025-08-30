@@ -25,24 +25,12 @@
     "licenciaPaint": "Licencia: Dominio público (CC0)",
     "audio": "/theknightandtheflame.mp3"
   },
+
   {
     "id": 3,
-    "title": "Five Figures in Medieval Dress",
-    "subtitle": "Mediaval Dresses",
-    "date": "1827–29",
-    "img": "vestimenta.jpg",
-    "artist": "Eugène Delacroix",
-    "song": "the Ballad of My Sweet Fair Maiden",
-    "fontSong": "pixabay, Kaazoom",
-    "font": "The Metropolitan Museum of Art, Open Access.",
-    "licenciaPaint": "Licencia: Dominio público (CC0)",
-    "audio": "/sweetfair.mp3"
-  },
-  {
-    "id": 4,
     "title": "PERDIGON 'TROUBADORS'",
-    "subtitle": "Ilustración del trovador Perdigon (siglo XIII).",
-    "date": "Veranos 2021-2022",
+    "subtitle": " Perdigon (siglo XIII).",
+    "date": "XIII",
     "img": "perdigon.jpg",
     "artist": "Kaazoom",
     "song": "The mistrel's lament",

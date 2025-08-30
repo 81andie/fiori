@@ -6,7 +6,7 @@ import { HeroComponent } from "../hero/hero.component";
 import { FooterComponent } from "../footer/footer.component";
 
 import { HaikusComponent } from "../haikus/haikus.component";
-import { HaikusMusicadosComponent } from "../haikus-musicados/haikus-musicados.component";
+
 import { HaikusGeishasComponent } from "../haikus-geishas/haikus-geishas.component";
 import { MilfullnessPoemsComponent } from "../milfullness-poems/milfullness-poems.component";
 
@@ -30,7 +30,7 @@ import { CaligramaComponent } from "../caligrama/caligrama.component";
 
 @Component({
   selector: 'app-inicio',
-  imports: [RouterModule, HeroComponent, HaikusComponent, SobreMiComponent, FooterComponent, HaikusGeishasComponent, HaikusMusicadosComponent, CommonModule, VersesPageComponent, MilfullnessPoemsComponent, CaligramaComponent],
+  imports: [RouterModule, HeroComponent, HaikusComponent, SobreMiComponent, FooterComponent, HaikusGeishasComponent, CommonModule, VersesPageComponent, MilfullnessPoemsComponent, CaligramaComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })

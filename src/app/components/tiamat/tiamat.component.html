@@ -11,12 +11,25 @@
     <hr class="h-1  bg-cover bg-bottom bg-[url(/textil.jpg)] grayscale">
   </div>
 
-
+<!--
   <div class="ml-2 mr-2 flex justify-center mt-10 ">
-     <iframe src="https://www.flipbookpdf.net/web/site/bd8bed0ae5dc0788750c4f249cc0e73b862810cf202508.pdf.html
+    <iframe src="https://www.flipbookpdf.net/web/site/bd8bed0ae5dc0788750c4f249cc0e73b862810cf202508.pdf.html
 " width="420" height="300" frameborder="0" scrolling="no">
     </iframe>
   </div>
+
+-->
+<div class="ml-2 mr-2 flex justify-center mt-10">
+  <div class="w-full max-w-4xl aspect-video">
+    <iframe
+      src="https://www.flipbookpdf.net/web/site/bd8bed0ae5dc0788750c4f249cc0e73b862810cf202508.pdf.html"
+      class="w-full h-full rounded-lg shadow"
+      frameborder="0"
+      scrolling="no">
+    </iframe>
+  </div>
+</div>
+
 
 
 
@@ -35,8 +48,9 @@
 
       <!-- Contenido -->
       <div class="relative z-10 space-y-0">
-        <p class="text-xs font-bold">{{item.title}}</p>
-        <p class="text-xs font-bold">{{item.date}}</p>
+        <p class="text-xl font-bold">{{item.title}}</p>
+        <p class="text-xl font-bold">{{item.date}}</p>
+
 
 
         <div class="text-xs md:text-xl lg:text-xl text-white/80">

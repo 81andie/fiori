@@ -32,7 +32,6 @@ export class TiamatComponent implements OnInit {
       console.log(data)
       this.AudioTiamat = data;
     });
-
   }
 
 
