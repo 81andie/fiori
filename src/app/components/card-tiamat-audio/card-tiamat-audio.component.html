@@ -47,7 +47,7 @@
 </button>
 
 <div
-  class="bg-gradient-to-b from-stone-700 to-cyan-200 border-2 border-stone-100 bg-cover  bg-center bg-no-repeat bg-opacity-75 lg:h-[75vh] md:h-[38vh] h-[61vh] w-60 z-40 fixed  left-16  rounded-lg "
+  class="bg-gradient-to-b from-stone-700 to-cyan-200 border-2 border-stone-100 bg-cover  bg-center bg-no-repeat bg-opacity-75 lg:h-[75vh] md:h-[38vh] h-[57vh] w-60 z-40 fixed  left-16  rounded-lg "
   *ngIf="currentTrack > 0 || isVisible ">
   <div class="mt-1 p-1">
     <form class="max-w-md mx-auto">
@@ -80,14 +80,14 @@
 
         <div class="absolute top-1 left-0 text-stone-800 font-bold text-xs bg-opacity-70">
           <span class="bg-slate-700 p-1 ml-2 text-md text-fuchsia-50 text-right bg-opacity-55">
-            <strong>{{currentTrack.title}}</strong>
+            <strong>{{currentTrack?.title}}</strong>
           </span>
 
 
           <div class="flex p-1 h-14 ml-1 mt-2 w-auto versos flex-col bg-slate-700 text-violet-50 bg-opacity-50">
 
-            <span>{{currentTrack.subtitle}}</span>
-            <span>{{currentTrack.date}}</span>
+            <span>{{currentTrack?.subtitle}}</span>
+            <span>{{currentTrack?.date}}</span>
           </div>
         </div>
       </div>
@@ -96,9 +96,9 @@
 
       <div class="flex flex-col max-w-md mx-auto text-xs mt-0.5">
         <span class="text-white bg-slate-700 w-[230px]  title_reproductor bg-opacity-45 p-1">
-          <strong>{{ currentTrack.title }}</strong>, reproduciendo...
+          <strong>{{ currentTrack?.title }}</strong>, reproduciendo...
         </span>
-        <span class="text-white p-1"><strong>{{ currentTrack.fontSong }}</strong></span>
+        <span class="text-white p-1"><strong>{{ currentTrack?.fontSong }}</strong></span>
 
 
 

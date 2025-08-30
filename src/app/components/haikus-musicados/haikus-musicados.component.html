@@ -1,5 +1,5 @@
 
-<app-card-haikus-musicados [audios]="Audiohaikus"></app-card-haikus-musicados>
+<app-card-haikus-musicados [audios]="audiohaikus"></app-card-haikus-musicados>
 
 
 <div data-aos="fade-up" data-aos-easing="linear"
@@ -17,7 +17,7 @@
 
 
 <div class="space-y-0">
-  @for (item of Audiohaikus; track item.id; let idx = $index) {
+  @for (item of audiohaikus; track item.id; let idx = $index) {
   <section data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
     class="parallax relative  h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
     [ngStyle]="{'background-image': 'url(' + item.img + ')'}">

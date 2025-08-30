@@ -1,11 +1,10 @@
 
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Component, AfterViewInit, inject, OnDestroy, Inject, PLATFORM_ID, OnInit, } from '@angular/core';
-import { HaikusService } from '../../services/haikus.service';
 import { haikusMusicados } from '../../interfaces/poem.interface';
 
-import { Subscription } from 'rxjs';
 import { CardHaikusMusicadosComponent } from '../card-haikus-musicados/card-haikus-musicados.component';
+import { AudioPlayerService } from '../../services/AudioPlayer.service';
 
 
 
@@ -15,28 +14,27 @@ import { CardHaikusMusicadosComponent } from '../card-haikus-musicados/card-haik
   templateUrl: './haikus-musicados.component.html',
   styleUrl: './haikus-musicados.component.css'
 })
-export class HaikusMusicadosComponent implements OnInit{
+export class HaikusMusicadosComponent implements OnInit {
 
- constructor() {
+  constructor() {
 
-   }
+  }
 
-   ngOnInit(): void {
-     this.getHaikusMusicadosSongs();
-   }
+  ngOnInit(): void {
+    this.getHaikusMusicadosSongs();
+  }
+  public audioPlayerService = inject(AudioPlayerService)
+  public audiohaikus: haikusMusicados[] = [];
 
-   private AudioPlayerService = inject(HaikusService)
-   public Audiohaikus: haikusMusicados[] = [];
 
+  getHaikusMusicadosSongs() {
+    this.audioPlayerService.getHaikusWidthAudios().subscribe((data) => {
+      console.log(data)
+      this.audiohaikus = data;
+      console.log(data)
+    });
 
-   getHaikusMusicadosSongs() {
-     this.AudioPlayerService.getHaikusMusicados().subscribe((data) => {
-       console.log(data)
-       this.Audiohaikus = data;
-       console.log(data)
-     });
-
-   }
+  }
 
 
 }

@@ -86,6 +86,7 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
 
         // 👉 si quieres empezar en aleatorio
         const randomIndex = Math.floor(Math.random() * typedData.length);
+        this.AudioService.setPlaylist<T>('tiamat', this.tiamatAudios);
         this.AudioService.playTrack('tiamat', randomIndex);
 
         this.updateCurrentTrack();
