@@ -1,12 +1,30 @@
 .verse{
    writing-mode: vertical-rl;
-   transition: ease-in 0.5s;
+   transition: ease-in 1s;
+   line-height: 12px;
+   font-size: 0.5rem;
+ filter:brightness(100%)
 
 }
 
 .verse:hover{
-  writing-mode: horizontal-tb;
-  padding: 1.7rem;
-  color:whitesmoke;
-  perspective: 1000px;
+ font-size:1.2rem;
+ line-height: 20px;
 }
+
+
+.verse{
+   writing-mode: vertical-rl;
+   transition: ease-in 1s;
+   line-height: 12px;
+   font-size: 0.5rem;
+ filter:brightness(100%)
+
+}
+
+.verse1{
+  line-height: 10px;
+  font-size: 1rem;
+  margin-top: 12 px;
+}
+
