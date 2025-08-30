@@ -1,26 +1,21 @@
-.verse{
-   writing-mode: vertical-rl;
-   transition: ease-in 1s;
-   line-height: 12px;
-   font-size: 0.5rem;
- filter:brightness(100%)
-
+.verse {
+  writing-mode: vertical-rl;
+  transition: ease-in 1s;
+  line-height: 12px;
+  font-size: 0.5rem;
+  filter: brightness(100%)
 }
 
-.verse:hover{
- font-size:1.2rem;
- line-height: 20px;
-}
-
-
-.verse{
-   writing-mode: vertical-rl;
-   transition: ease-in 1s;
-   line-height: 16px;
-   font-size: 0.8rem;
- filter:brightness(100%)
-
+.verse:hover {
+  font-size: 1.2rem;
+  line-height: 20px;
 }
 
 
-
+.verse {
+  writing-mode: vertical-rl;
+  transition: ease-in 1s;
+  line-height: 16px;
+  font-size: 0.8rem;
+  filter: brightness(100%)
+}
