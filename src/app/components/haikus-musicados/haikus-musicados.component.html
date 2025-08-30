@@ -1,3 +1,7 @@
+
+<app-card-haikus-musicados [audios]="Audiohaikus"></app-card-haikus-musicados>
+
+
 <div data-aos="fade-up" data-aos-easing="linear"
     data-aos-duration="500" >
 <hr class="h-2 w-full bg-cover bg-[url(/textil.jpg)] grayscale">
@@ -12,14 +16,8 @@
 </div>
 
 
-
-
-
-<app-card [playList$]="haikusMusicadosService.getHaikusMusicados()"></app-card>
-
-
 <div class="space-y-0">
-  @for (item of haikusMusicados; track item.id; let idx = $index) {
+  @for (item of Audiohaikus; track item.id; let idx = $index) {
   <section data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
     class="parallax relative  h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
     [ngStyle]="{'background-image': 'url(' + item.img + ')'}">

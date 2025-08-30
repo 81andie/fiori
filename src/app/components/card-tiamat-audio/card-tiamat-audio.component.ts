@@ -94,8 +94,6 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
   }
 
 
-
-
   play() {
     this.AudioService.playPause('tiamat');
     this.updateCurrentTrack();
@@ -136,7 +134,9 @@ selectTrack(index: number) {
   // Refresca el estado local para marcar en la UI
   this.currentTrackIndex = index;
   this.currentTrack = this.tiamatAudios[index];
+
 }
+
 
 
 

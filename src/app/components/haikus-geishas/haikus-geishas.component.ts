@@ -2,7 +2,7 @@ import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild, NgZone, Inj
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { GeishesVerses } from '../../interfaces/geishas.interface';
 import { GeishasVersesService } from '../../services/geishas.service';
-import { CardComponent } from "../card/card.component";
+
 
 
 

@@ -1,47 +1,42 @@
+
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { Component, AfterViewInit, inject, OnDestroy, Inject, PLATFORM_ID, } from '@angular/core';
+import { Component, AfterViewInit, inject, OnDestroy, Inject, PLATFORM_ID, OnInit, } from '@angular/core';
 import { HaikusService } from '../../services/haikus.service';
 import { haikusMusicados } from '../../interfaces/poem.interface';
-import { CardComponent } from "../card/card.component";
+
 import { Subscription } from 'rxjs';
+import { CardHaikusMusicadosComponent } from '../card-haikus-musicados/card-haikus-musicados.component';
+
 
 
 @Component({
   selector: 'app-haikus-musicados',
-  imports: [CommonModule, CardComponent],
+  imports: [CommonModule, CardHaikusMusicadosComponent],
   templateUrl: './haikus-musicados.component.html',
   styleUrl: './haikus-musicados.component.css'
 })
-export class HaikusMusicadosComponent implements AfterViewInit, OnDestroy {
+export class HaikusMusicadosComponent implements OnInit{
 
-  haikusMusicadosService = inject(HaikusService)
-  haikusMusicados: haikusMusicados[] = [];
-  private getsacarPoemasMusicados!: Subscription;
+ constructor() {
 
-  private isBrowser: boolean | undefined;
+   }
 
-  constructor(@Inject(PLATFORM_ID) platformId: Object) {
-    this.isBrowser = isPlatformBrowser(platformId);
-  }
+   ngOnInit(): void {
+     this.getHaikusMusicadosSongs();
+   }
 
-  ngOnDestroy(): void {
-  this.getsacarPoemasMusicados?.unsubscribe();
-  }
+   private AudioPlayerService = inject(HaikusService)
+   public Audiohaikus: haikusMusicados[] = [];
 
-  ngAfterViewInit(): void {
-   this.sacarPoemasMusicados();
-  }
 
-  sacarPoemasMusicados(){
-   this.getsacarPoemasMusicados=this.haikusMusicadosService.getHaikusMusicados().subscribe((data) => {
-      this.haikusMusicados = data;
-    });
-  }
+   getHaikusMusicadosSongs() {
+     this.AudioPlayerService.getHaikusMusicados().subscribe((data) => {
+       console.log(data)
+       this.Audiohaikus = data;
+       console.log(data)
+     });
 
-  trackById(index: number, item: haikusMusicados) {
-    return item.id;
-  }
+   }
 
 
 }
-

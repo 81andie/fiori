@@ -86,7 +86,6 @@
 
           <div class="flex p-1 h-14 ml-1 mt-2 w-auto versos flex-col bg-slate-700 text-violet-50 bg-opacity-50">
 
-            <span>{{currentTrack.subtitle}}</span>
             <span>{{currentTrack.date}}</span>
           </div>
         </div>
@@ -98,7 +97,7 @@
         <span class="text-white bg-slate-700 w-[230px]  title_reproductor bg-opacity-45 p-1">
           <strong>{{ currentTrack.title }}</strong>, reproduciendo...
         </span>
-        <span class="text-white p-1"><strong>{{ currentTrack.fontSong }}</strong></span>
+        <span class="text-white p-1"><strong>{{ currentTrack.title }}</strong></span>
 
 
 
@@ -183,7 +182,7 @@
         <div class="songs text-gray-800 mt-2 ">
           <div class="songs  text-gray-800 mt-10  grid grid-cols-2 gap-2">
 
-            <span *ngFor="let audio of tiamatAudios; let i = index" (click)="selectTrack(i)" class="text-stone-700  mx-2 text_narration
+            <span *ngFor="let audio of haikusAudios; let i = index" (click)="selectTrack(i)" class="text-stone-700  mx-2 text_narration
                   font-extrabold cursor-pointer p-1 bg-stone-800  bg-opacity-35  hover:text-green-200 rounded"
               [class.font-bold]="currentTrack?.audio === audio.audio">
               {{ audio.title }}
@@ -198,3 +197,4 @@
     </div>
   </div>
 </div>
+

@@ -14,20 +14,20 @@ import { CommonModule } from '@angular/common';
   templateUrl: './tiamat.component.html',
   styleUrl: './tiamat.component.css'
 })
-export class TiamatComponent implements  OnInit{
+export class TiamatComponent implements OnInit {
 
   constructor() {
 
   }
   ngOnInit(): void {
-this.getTiamatSongs();
+    this.getTiamatSongs();
   }
 
   private TiamatAudioPlayer = inject(TiamatAudioPlayerService)
   public AudioTiamat: tiamatAudioPlayer[] = [];
 
 
-    getTiamatSongs() {
+  getTiamatSongs() {
     this.TiamatAudioPlayer.getAudioPlayerTiamat().subscribe((data) => {
       console.log(data)
       this.AudioTiamat = data;

@@ -4,7 +4,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { MindFullnessService } from '../../services/MindFullness.service';
 import { MindfullnessVerses } from '../../interfaces/versesMindFullness.interface';
 import { Subscription } from 'rxjs';
-import { CardComponent } from "../card/card.component";
+
 
 
 
