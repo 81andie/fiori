@@ -4,5 +4,6 @@ export interface GeishesVerses {
   author: string;
   verses: string[];
   background: string;
+  audio: string;
 
 }
