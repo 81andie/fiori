@@ -4,31 +4,35 @@
     "title": "MAEKO",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "Duerme Maeki\nsemilla en mano\ncrece el peral\nla piel de porcelana...\nlos labios morados\nflorece la Geisha",
+    "songTitle": "Improvisaciones espontáneas,\n'haikus y geishas': MAEKO ",
     "background": "1.png",
-    "audio":"geishas2.mp3"
+    "audio": "geishas2.mp3"
   },
   {
     "id": 2,
     "title": "AKARI",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "Fuiste hija de la verdad\n de joven un rostro jugoso de ciruela\nmarchita y arrugada con los años\nsavia e independiente\ntu pelo huele al musgo\ny al Uneboshi\nque tomas al pie\nde cada atardecer",
+    "songTitle": "Improvisaciones espontáneas,\n'haikus y geishas': AKARI ",
     "background": "2.png",
-     "audio":"Akari_Improvisaciones_puras_haikus_y_geishas.mp3"
+    "audio": "Akari_Improvisaciones_puras_haikus_y_geishas.mp3"
   },
   {
     "id": 3,
     "title": "NIKO",
     "author": "ANDREA HERNÁNDEZ",
-    "verses": "En tus ojos\n dónde se refleja el Sol naciente\nrenacen cada mañana\ndos lagos Niko",
+    "verses": "En tus ojos\n dónde se refleja el Sol naciente\nrenacen cada mañana\ndos lagos Niko\n",
+    "songTitle": "Improvisaciones espontáneas,\n'haikus y geishas': NIKO ",
     "background": "3.png",
-     "audio":"Niko_Improvisaciones_puras_haikus_y_geishas.mp3"
+    "audio": "Niko_Improvisaciones_puras_haikus_y_geishas.mp3"
   },
-    {
+  {
     "id": 4,
     "title": "SAKURA",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "Sakura suspira\n los cerezos en flor\nnieva en Fuji",
+    "songTitle": "Improvisaciones espontáneas,\n'haikus y geishas': SAKURA",
     "background": "pexels-yi-ren-57040649-16022119.jpg",
-     "audio":"Geisha3.mp3"
+    "audio": "Geisha3.mp3"
   }
 ]
