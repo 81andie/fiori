@@ -8,4 +8,5 @@ export interface Improvisaciones {
   background:string
   image:string
   ilus:string
+  audio: string
 }

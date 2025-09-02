@@ -15,11 +15,12 @@
     ],
     "background": "pexels-pixabay-235985.jpg",
     "image": "copa.png",
-    "ilus": "Andrea Hernández"
+    "ilus": "Andrea Hernández",
+    "audio": "TurinaDanzasGitanasop.55.mp3"
   },
   {
     "id": 2,
-    "title": "2",
+    "title":"2",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
       "La soberbia",
@@ -28,7 +29,8 @@
     ],
     "background": "pexels-pixabay-235985.jpg",
     "image": "lasoberbia.png",
-   "ilus": "Andrea Hernández"
+   "ilus": "Andrea Hernández",
+   "audio": null
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
     ],
     "background": "pexels-pixabay-235985.jpg",
     "image": "espejo.png",
-    "ilus": "AHH"
+    "ilus": "AHH",
+    "audio": null
   },
   {
     "id": 4,
@@ -63,7 +66,8 @@
     ],
     "background": "pexels-pixabay-235985.jpg",
     "image": "hoja.png",
-    "ilus": "Andrea Hernández"
+    "ilus": "Andrea Hernández",
+    "audio": null
   },
   {
     "id": 5,
@@ -78,7 +82,8 @@
     ],
     "background": "pexels-pixabay-235985.jpg",
     "image": "elagua.jpg",
-    "ilus": "Andrea Hernández"
+    "ilus": "Andrea Hernández",
+    "audio": null
   },
   {
     "id": 6,
@@ -101,7 +106,8 @@
     ],
     "background": "pexels-pixabay-235985.jpg",
     "image": "paisaje.png",
-"ilus": "Andrea Hernández"
+    "ilus": "Andrea Hernández",
+    "audio": null
   }
 ]
 
