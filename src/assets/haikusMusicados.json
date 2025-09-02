@@ -14,6 +14,7 @@
     "es1": "Miel y azahar en la alcoba",
     "es2": "Se colma la vida",
     "audio":"/Lunademiel.mp3",
+    "fontImage": "Pixabay + Pexels",
     "author": "ANDREA HERNÁNDEZ"
   },
 
@@ -32,6 +33,7 @@
     "es1": "Barro mi templo ",
     "es2": "El polvo se agita ",
     "audio": "/naiku2.mp3",
+    "fontImage": "Pixabay + Pexels",
     "author": "ANDREA HERNÁNDEZ"
   },
 
@@ -50,6 +52,7 @@
     "es1": "La túnica se hiela,",
     "es2": "Labios azules.",
     "audio":"/Frio.mp3",
+    "fontImage": "Pixabay + Pexels",
     "author": "ANDREA HERNÁNDEZ"
   }
 
