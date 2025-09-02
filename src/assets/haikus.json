@@ -12,7 +12,9 @@
     "romaji2": "Namida hitotsu",
     "es": "Vuelan cigueñas",
     "es1": "Esta mañana cantan",
-    "es2": "Sentí un llanto."
+    "es2": "Sentí un llanto.",
+    "fontImage": "Pixabay + Pexels",
+    "author": "ANDREA HERNÁNDEZ"
   },
   {
     "id": 2,
@@ -26,7 +28,9 @@
     "romaji2": "ga Koe de warau ,",
     "es": "Ecos de voces y juego",
     "es1": "El abuelo y el niño",
-    "es2": "Sonríen sin dientes ."
+    "es2": "Sonríen sin dientes .",
+    "fontImage": "Pixabay + Pexels",
+    "author": "ANDREA HERNÁNDEZ"
   },
 
   {
@@ -41,6 +45,8 @@
     "romaji2": "tadotte Ashi wa mau",
     "es": "Libre como la hierba ",
     "es1": "Sigo el camino",
-    "es2": "Los pies siguen volando"
+    "es2": "Los pies siguen volando",
+    "fontImage": "Pixabay + Pexels",
+    "author": "ANDREA HERNÁNDEZ"
   }
 ]

@@ -11,6 +11,8 @@ export interface poem {
   es: string,
   es1: string,
   es2: string
+  author:string
+  fontImage:string
 }
 
 export interface haikusMusicados{
