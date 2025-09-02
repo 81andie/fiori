@@ -5,6 +5,7 @@ export interface tiamatAudioPlayer{
   date:string,
   img:string,
   artist:string,
+  artistTale:string,
   font: string,
   song: string,
   fontSong:"string",
