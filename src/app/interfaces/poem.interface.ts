@@ -28,6 +28,7 @@ export interface haikusMusicados{
   es1: string,
   es2: string,
   audio:string
+  author:string
 }
 
 

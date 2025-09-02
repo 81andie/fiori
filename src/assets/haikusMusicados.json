@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Luna de miel",
-    "date": "Veranos 2021-2022",
+    "date": "Veranos 2021-2023",
     "img": "https://images.pexels.com/photos/10533337/pexels-photo-10533337.jpeg",
     "jp": "花の冠 ",
     "jp2": " 蜜と橙の香り",
@@ -13,13 +13,14 @@
     "es": "Corona de flores",
     "es1": "Miel y azahar en la alcoba",
     "es2": "Se colma la vida",
-    "audio":"/Lunademiel.mp3"
+    "audio":"/Lunademiel.mp3",
+    "author": "ANDREA HERNÁNDEZ"
   },
 
   {
     "id": 2,
     "title": "El templo",
-    "date": "Veranos 2021-2022",
+    "date": "Veranos 2021-2023",
     "img": "https://images.pexels.com/photos/6332921/pexels-photo-6332921.jpeg",
     "jp": "寺を掃いて",
     "jp2": " 蜜と橙の香り",
@@ -30,13 +31,14 @@
     "es": "Ahora o nunca ",
     "es1": "Barro mi templo ",
     "es2": "El polvo se agita ",
-    "audio": "/naiku2.mp3"
+    "audio": "/naiku2.mp3",
+    "author": "ANDREA HERNÁNDEZ"
   },
 
   {
     "id": 3,
     "title": "Frío",
-    "date": "Veranos 2021-2022",
+    "date": "Veranos 2021-2023",
     "img": "https://images.pexels.com/photos/31344765/pexels-photo-31344765.jpeg",
     "jp": "風が唸る",
     "jp2": "衣が凍え",
@@ -47,7 +49,8 @@
     "es": "Ruge el viento,",
     "es1": "La túnica se hiela,",
     "es2": "Labios azules.",
-    "audio":"/Frio.mp3"
+    "audio":"/Frio.mp3",
+    "author": "ANDREA HERNÁNDEZ"
   }
 
 
