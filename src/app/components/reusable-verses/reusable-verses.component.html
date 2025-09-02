@@ -14,27 +14,30 @@
 </div>
 
 
-<div class="space-y-0 ">
+
+
+<div class="space-y-0" >
   @for (item of verses; track item.id) {
     <section
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-duration="500"
-      class="relative  z-10 h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
+      class="relative z-10 h-screen flex flex-col items-center justify-center justify-items-center text-center text-white bg-center bg-cover bg-fixed"
       [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
 
       <!-- capa oscura -->
-      <div class="absolute">
-        <p class="text-xl mt-5  font-bold text-black bg-white bg-opacity-0">
+      <div class="absolute ">
+        <p class="text-xl font-bold text-black bg-white bg-opacity-0">
           {{ item.title }}
         </p>
+
 
         <!-- contenido -->
         <div class="relative flex flex-col justify-center justify-items-center z-10 bg-white bg-opacity-0">
 
           <!-- versos -->
 
-           <div class="text-xs md:text-xl lg:text-sm text-amber-950" *ngIf="verses.length">
+           <div class="mt-2 md:text-xl lg:text-sm text-stone-950" *ngIf="verses.length">
 
           @for (verso of item.verses; track verso.id +'-' + $index) {
           <pre>{{ verso }}</pre>
@@ -45,12 +48,12 @@
 
           <!-- imagen -->
           <div class="w-full flex justify-center font-bold text-black">
-            <img [src]="item.image" class="w-38 h-28 object-contain">
+            <img [src]="item.image" class="w-32 h-28 object-contain">
           </div>
 
           <!-- ilustración / autor -->
-          <div class="text-xs font-bold text-black mb-12 mt-4">
-            <p>{{ item.ilus }}</p>
+          <div class="text-xs font-bold text-black mb-5 ilus-word">
+            <p>Ilustraciones<br> + poemas <br> y música: <br>{{ item.ilus }}</p>
           </div>
 
         </div>
@@ -58,4 +61,6 @@
     </section>
   }
 </div>
+
+
 

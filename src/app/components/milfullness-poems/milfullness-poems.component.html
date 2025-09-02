@@ -1,31 +1,24 @@
-<div data-aos="fade-up" data-aos-easing="linear"
-    data-aos-duration="500" >
-<hr class="h-2 w-full bg-cover bg-center bg-[url(/pexels-apasaric1.jpg)] ">
-<h1
-  class="text-xl m-1 bg-clip-text text-transparent bg-gradient-to-b from-stone-400 to-stone-900 hover:to-slate-400
-  600"
-  data-aos="zoom-in-right" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
+<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+  <hr class="h-2 w-full bg-cover bg-center bg-[url(/pexels-apasaric1.jpg)] ">
+  <h1 class="text-xl m-1 bg-clip-text text-transparent bg-gradient-to-b from-stone-400 to-stone-900 hover:to-slate-400
+  600" data-aos="zoom-in-right" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
 
-  <strong>Mindfullness</strong>
-</h1>
-<hr class="h-1 w-full bg-cover bg-left-top bg-[url(/pexels-apasaric1.jpg)] grayscale ">
+    <strong>Mindfullness</strong>
+  </h1>
+  <hr class="h-1 w-full bg-cover bg-left-top bg-[url(/pexels-apasaric1.jpg)] grayscale ">
 </div>
 
 
 
 <div class="space-y-0">
   @for (item of versesMilfulness; track item.id) {
-    <section
+  <section data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+    class=" relative z-10  h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
+    [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
 
-    data-aos="fade-up" data-aos-easing="linear"
-    data-aos-duration="500"
-
-      class=" relative z-10  h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
-      [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
-
-      <!-- Capa oscura -->
-      <div class="absolute">
-    <p class="text-xl mb-5 font-bold text-black bg-white bg-opacity-5">{{item.title}}</p>
+    <!-- Capa oscura -->
+    <div class="absolute">
+      <p class="text-xl mb-5 font-bold text-black bg-white bg-opacity-5">{{item.title}}</p>
       <!-- Contenido -->
       <div class="gap-1  relative flex flex-col justify-center justify-items-center z-10 bg-white bg-opacity-5 ">
 
@@ -34,16 +27,15 @@
         </div>
 
         <div class=" w-full flex justify-center font-bold text-black">
-           <img [src]="item.image" class="w-32 h-42">
-          </div>
+          <img [src]="item.image" class="w-32 h-42">
+        </div>
 
-           <div class="text-xl font-bold text-black">
-         <p>{{item.ilus}}</p>
-
-          </div>
-
+        <div class="text-xl font-bold text-black">
+          <p class="text-xs">Ilustraciones <br>  + poesia :<br>{{item.ilus}}</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   }
 </div>
+
