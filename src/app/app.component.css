@@ -2,4 +2,6 @@
   font-size: 0.3rem;
 }
 
-
+.btn_scroll{
+   box-shadow: inset  1px 1px 7px 1px #150617;
+}

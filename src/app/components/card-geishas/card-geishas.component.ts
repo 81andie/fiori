@@ -126,8 +126,6 @@ export class CardGeishasComponent <T extends { audio: string }> implements OnIni
     this.playList = this.geishasAudios; // Actualiza la lista
   }
 
-
-
   selectTrack(index: number) {
     this.audioService.setPlaylist<T>('geishas', this.geishasAudios);
 
@@ -142,5 +140,7 @@ export class CardGeishasComponent <T extends { audio: string }> implements OnIni
  toggleAudio() {
     this.isVisible = !this.isVisible;
   }
+
+  
 
 }

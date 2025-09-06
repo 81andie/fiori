@@ -19,6 +19,8 @@ import { HaikusMusicadosComponent } from "./components/haikus-musicados/haikus-m
 })
 export class AppComponent {
   title = 'fiori';
+
+ 
   scrollTop() {
     document.documentElement.scrollTop = 0;
   }
