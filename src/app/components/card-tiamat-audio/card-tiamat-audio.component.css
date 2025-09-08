@@ -4,3 +4,7 @@
 
 }
 
+.btn_reproductor{
+  box-shadow: inset  1px 1px 7px 1px #150617;
+  font-size: 0.6rem;
+}

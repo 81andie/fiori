@@ -1,7 +1,11 @@
-<button
-  class="h-16 w-16  mx-1 rounded-full text-xs flex  flex-col justify-center items-center  bg-gradient-to-b from-[#e3bff5] via-[#b872e6] to-[#9b3cfa] fixed bottom-16 z-40 left-1"
+
+
+
+@if(isVisible){
+  <button
+  class="h-14 w-14 btn_reproductor  mx-1 rounded-full text-xs flex  flex-col justify-center items-center  bg-gradient-to-b from-[#e3bff5] via-[#b872e6] to-[#9b3cfa] fixed bottom-16 z-40 left-1"
   (click)="toggleAudio()">
-  <svg class="ml-1.5" fill="#000000" height="25px" width="25px" version="1.1" id="Layer_1"
+  <svg class="ml-1" fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1"
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
     xml:space="preserve">
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -43,14 +47,14 @@
         </g>
       </g>
     </g>
-  </svg> Click me
+  </svg> Mostrar
 </button>
 
-
-<button
-  class="h-16 w-16  mx-1 rounded-full text-xs flex  flex-col justify-center items-center  bg-gradient-to-b from-[#e3bff5] via-[#b872e6] to-[#9b3cfa] fixed bottom-16 z-40 left-1"
+}@else {
+  <button
+  class="h-14 w-14 mx-1 rounded-full flex btn_reproductor flex-col justify-center items-center  bg-gradient-to-b from-[#e3bff5] via-[#b872e6] to-[#9b3cfa] fixed bottom-16 z-40 btn_reproductor left-1"
   (click)="toggleAudio()">
-  <svg class="ml-1.5" fill="#000000" height="25px" width="25px" version="1.1" id="Layer_1"
+  <svg class="ml-1" fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1"
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
     xml:space="preserve">
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -92,8 +96,13 @@
         </g>
       </g>
     </g>
-  </svg> Click me
+  </svg> Ocultar
 </button>
+}
+
+
+
+
 
 <div
   class="bg-gradient-to-b from-stone-700 to-cyan-200 border-2 border-stone-100 bg-cover  bg-center bg-no-repeat bg-opacity-75 lg:h-[78vh] md:h-[34vh] h-[57vh] w-60 z-40 fixed  mt-12 left-20  rounded-lg "
@@ -108,7 +117,7 @@
       </div>
 
       <label for="default-search" class="mb-1 text-xs font-medium text-gray-900 sr-only dark:text-white">Search</label>
-     
+
     </form>
 
     <hr class="h-1 w-[230px] mt-2 mb-2 bg-slate-600">
