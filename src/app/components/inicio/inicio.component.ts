@@ -18,6 +18,7 @@ import { ImprovisacionesService } from '../../services/Improvisaciones.service';
 import { CommonModule } from '@angular/common';
 import { VersesPageComponent } from "../verses-page/verses-page.component";
 import { CaligramaComponent } from "../caligrama/caligrama.component";
+import { ReproductorReutilizableComponent } from "../reproductor-reutilizable/reproductor-reutilizable.component";
 
 
 
@@ -30,7 +31,7 @@ import { CaligramaComponent } from "../caligrama/caligrama.component";
 
 @Component({
   selector: 'app-inicio',
-  imports: [RouterModule, HeroComponent, HaikusComponent, SobreMiComponent, FooterComponent, HaikusGeishasComponent, CommonModule, VersesPageComponent, MilfullnessPoemsComponent, CaligramaComponent],
+  imports: [RouterModule, HeroComponent, HaikusComponent, SobreMiComponent, FooterComponent, HaikusGeishasComponent, CommonModule, VersesPageComponent, MilfullnessPoemsComponent, CaligramaComponent, ReproductorReutilizableComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
