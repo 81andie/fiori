@@ -1,5 +1,7 @@
 
-<app-card-geishas [audios]="versesGeishas"></app-card-geishas>
+<app-card-geishas [audios]="versesGeishas"
+playlistId="versesGeishas"
+></app-card-geishas>
 
 
 <div data-aos="fade-up" data-aos-easing="linear"
@@ -20,7 +22,7 @@
   @for (item of versesGeishas ; track item.id) {
   <section
     class="brightness-125 transition duration-700 ease-in-out relative  h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
-    [ngStyle]="{'background-image': 'url(' + item.background + ')'}"
+    [ngStyle]="{'background-image': 'url(' + item.image + ')'}"
     data-aos="fade-up" data-aos-easing="linear"
     data-aos-duration="500">
 

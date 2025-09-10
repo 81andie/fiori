@@ -1,4 +1,10 @@
-<app-card-tiamat-audio [audios]="AudioTiamat"></app-card-tiamat-audio>
+
+
+<app-card-geishas
+[audios]="AudioTiamat"
+[playlistId]="AudioTiamat"
+gradient="bg-gradient-to-b from-cyan-800 to-cyan-200"
+></app-card-geishas>
 
 <div>
 
@@ -43,7 +49,7 @@
     @for (item of AudioTiamat; track item.id; let idx = $index) {
     <section data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
       class=" relative  h-screen  flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
-      [ngStyle]="{'background-image': 'url(' + item.img + ')'}">
+      [ngStyle]="{'background-image': 'url(' + item.image + ')'}">
 
       <!-- Capa oscura -->
       <div class="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -68,8 +74,6 @@
           <pre>{{ item.licenciaPain}}</pre>
 
         </div>
-
-
 
       </div>
     </section>

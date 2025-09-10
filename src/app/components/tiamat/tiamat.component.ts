@@ -5,12 +5,13 @@ import { Component, ElementRef, AfterViewInit, inject, ViewChild, OnInit } from 
 import { TiamatAudioPlayerService } from './../../services/Tiamat.service';
 import { tiamatAudioPlayer } from '../../interfaces/tiamat.interface';
 import { CommonModule } from '@angular/common';
+import { CardGeishasComponent } from "../card-geishas/card-geishas.component";
 
 
 
 @Component({
   selector: 'app-tiamat',
-  imports: [CommonModule, CardTiamatAudioComponent],
+  imports: [CommonModule, CardTiamatAudioComponent, CardGeishasComponent],
   templateUrl: './tiamat.component.html',
   styleUrl: './tiamat.component.css'
 })

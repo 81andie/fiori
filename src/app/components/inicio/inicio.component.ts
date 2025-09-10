@@ -7,7 +7,7 @@ import { FooterComponent } from "../footer/footer.component";
 
 import { HaikusComponent } from "../haikus/haikus.component";
 
-import { HaikusGeishasComponent } from "../haikus-geishas/haikus-geishas.component";
+
 import { MilfullnessPoemsComponent } from "../milfullness-poems/milfullness-poems.component";
 
 import { MindFullnessService } from '../../services/MindFullness.service';
@@ -18,20 +18,13 @@ import { ImprovisacionesService } from '../../services/Improvisaciones.service';
 import { CommonModule } from '@angular/common';
 import { VersesPageComponent } from "../verses-page/verses-page.component";
 import { CaligramaComponent } from "../caligrama/caligrama.component";
-import { ReproductorReutilizableComponent } from "../reproductor-reutilizable/reproductor-reutilizable.component";
-
-
-
-
-
-
 
 
 
 
 @Component({
   selector: 'app-inicio',
-  imports: [RouterModule, HeroComponent, HaikusComponent, SobreMiComponent, FooterComponent, HaikusGeishasComponent, CommonModule, VersesPageComponent, MilfullnessPoemsComponent, CaligramaComponent, ReproductorReutilizableComponent],
+  imports: [RouterModule, HeroComponent, HaikusComponent, SobreMiComponent, FooterComponent, CommonModule, VersesPageComponent, MilfullnessPoemsComponent, CaligramaComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })

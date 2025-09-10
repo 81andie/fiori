@@ -102,8 +102,10 @@
 
 
 <div
-  class=" border-2 h-[400px] border-stone-100 bg-cover  bg-center bg-no-repeat bg-opacity-95  w-60 z-40 fixed   right-1 bg-gradient-to-b from-stone-800 to-rose-400 rounded-lg"
-  *ngIf="currentTrack > 0 || isVisible ">
+  class=" border-2 h-[400px] border-stone-100 bg-cover  bg-center bg-no-repeat bg-opacity-95  w-60 z-40 fixed   right-1 rounded-lg"
+  *ngIf="currentTrack > 0 || isVisible "
+[ngClass]="gradient"
+  >
   <div class="mt-1 p-1">
     <form class="max-w-md mx-auto">
       <div class="w-[223px] flex mt-1.5 mb-1 mr-0.5 ml-0.5  rounded-lg">
@@ -115,22 +117,21 @@
 
     </form>
 
-    <hr class="h-1 w-[230px] mt-2 mb-2 bg-red-400">
+    <hr class="h-1 w-[230px] mt-2 mb-2 bg-slate-200">
     <div class="h-20 mt-2 relative mr-1 ">
 
       <!-- Muestra solo el haiku actual -->
-      <div class="relative w-[232px] mt-0.5 h-28 " *ngIf="currentTrack?.background">
-        <img [src]="currentTrack.background" alt="Imagen audio" class="w-[230px] mt-0.5 h-full object-cover" />
+      <div class="relative w-[232px] mt-0.5 h-28 " *ngIf="currentTrack?.image">
+        <img [src]="currentTrack?.image" alt="Imagen audio" class="w-[230px] mt-0.5 h-full object-cover" />
 
         <div class="absolute mb-3 top-2 left-0 text-stone-800 font-bold text-xs bg-opacity-70">
-          <span class="bg-red-700 mt-1 ml-2 p-1 text-md text-rose-50 text-right bg-opacity-55">
+          <span class="bg-slate-400 mt-1 ml-2 p-1 text-md text-rose-50 text-right bg-opacity-55">
             <strong>{{currentTrack?.title}}</strong>
           </span>
 
 
-          <div class="flex p-1 h-auto ml-1 mt-1  w-auto versos flex-col bg-red-700 text-red-50 bg-opacity-50">
-
-            <pre class="verse hidden md:block">>{{currentTrack.verses}}</pre>
+          <div class="flex p-1 h-auto ml-1 mt-1  w-auto versos flex-col bg-slate-400 text-red-50 bg-opacity-50">
+            <pre class="verse hidden md:block">{{currentTrack.verses | slice:0:80}}</pre>
              <span class="text-white mt-1 verse"><strong>Música y versos escritos por <br>{{ currentTrack?.author }}</strong></span>
           </div>
         </div>
@@ -139,7 +140,7 @@
 
 
       <div class="flex flex-col max-w-md mx-auto text-xs mt-0.5">
-        <span class="text-white bg-red-700 w-[230px]  title_reproductor bg-opacity-45 p-1">
+        <span class="text-white bg-slate-400 w-[230px]  title_reproductor bg-opacity-45 p-1">
           <strong>{{ currentTrack?.songTitle }}</strong>, reproduciendo...
         </span>
         <span class="text-white p-1"><strong>{{ currentTrack?.title }}</strong></span>
@@ -230,8 +231,8 @@
         <div class="songs text-gray-800 mt-2 flex w-full justify-center">
           <div class="songs  text-gray-800 mt-10 text-center grid grid-cols-3 gap-1">
 
-            <span *ngFor="let audio of geishasAudios; let i = index" (click)="selectTrack(i)" class="text-stone-700  mx-2 text_narration
-                  font-extrabold cursor-pointer p-1 bg-stone-800 text-xs bg-opacity-35  hover:text-green-200 rounded"
+            <span *ngFor="let audio of geishasAudios; let i = index" (click)="selectTrack(i)" class="text-stone-700   text_narration
+                  font-extrabold cursor-pointer  text-xs bg-opacity-35  hover:text-slate-400 rounded"
               [class.font-bold]="currentTrack?.audio === audio.audio">
               {{ audio.title }}
             </span>

@@ -10,16 +10,15 @@ import { map, Observable, take } from 'rxjs';
 
 
 
-
 @Component({
   selector: 'app-card-tiamat-audio',
   imports: [CommonModule],
   templateUrl: './card-tiamat-audio.component.html',
   styleUrl: './card-tiamat-audio.component.css'
 })
-export class CardTiamatAudioComponent<T extends { audio: string }> implements OnInit, AfterViewInit, OnChanges {
+export class CardTiamatAudioComponent {
 
-
+/*
   @Input() audios: T[] = [];
   @ViewChild('waveform', { static: false }) waveformRef?: ElementRef;
 
@@ -27,8 +26,11 @@ export class CardTiamatAudioComponent<T extends { audio: string }> implements On
   public allAudios: T[] = [];
   public tiamatAudios: T[] = [];
   currentTrack?: T;
-  public currentTrackIndex: number = 0; // Añade esto
-  public playList: T[] = []; // Añade esto
+  public currentTrackIndex: number = 0;
+
+
+  public playList: T[] = [];
+
 
 
   isVisible: boolean = true;
@@ -139,6 +141,6 @@ selectTrack(index: number) {
 }
 
 
-
+*/
 
 }

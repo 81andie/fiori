@@ -17,8 +17,9 @@ import { GeishesVerses } from '../../interfaces/geishas.interface';
 export class CardGeishasComponent <T extends { audio: string }> implements OnInit, AfterViewInit, OnChanges {
 
   @Input() audios: T[] = [];
+  @Input() playlistId: string = 'default';
   @ViewChild('waveform', { static: false }) waveformRef?: ElementRef;
-
+  @Input() gradient: string = "bg-gradient-to-b from-stone-800 to-rose-400";
   public allAudios: T[] = [];
   public geishasAudios: T[] = [];
   currentTrack?: T;
@@ -141,6 +142,6 @@ export class CardGeishasComponent <T extends { audio: string }> implements OnIni
     this.isVisible = !this.isVisible;
   }
 
-  
+
 
 }

@@ -20,6 +20,7 @@ export class CardHaikusMusicadosComponent<T extends { audio: string }> implement
 
   public allAudios: T[] = [];
   public haikusAudios: T[] = [];
+  
   currentTrack?: T;
 
   public currentTrackIndex: number = 0;
