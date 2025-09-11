@@ -26,7 +26,7 @@ export const routes: Routes = [
   { path: 'verses', component: VersesPageComponent },
    { path: 'caligrama', component: CaligramaComponent },
   { path: 'sobremi', component: SobreMiComponent },
-  { path: '**', component: ErrorPageComponent },
+
 
 
 
@@ -34,8 +34,8 @@ export const routes: Routes = [
   // Redirección por defecto
   { path: '', redirectTo: 'inicio', pathMatch: 'full' },
 
+  { path: '**', component: ErrorPageComponent }
 
 
-    { path: '**', component: ErrorPageComponent },
 ];
 
