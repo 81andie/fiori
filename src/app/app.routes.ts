@@ -28,9 +28,6 @@ export const routes: Routes = [
   { path: 'sobremi', component: SobreMiComponent },
 
 
-
-
-
   // Redirección por defecto
   { path: '', redirectTo: 'inicio', pathMatch: 'full' },
 
