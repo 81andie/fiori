@@ -9,23 +9,23 @@ import { GeishesVerses } from '../../interfaces/geishas.interface';
 
 
 @Component({
-  selector: 'app-card-geishas',
+  selector: 'app-card-reproductor',
   imports: [CommonModule],
-  templateUrl: './card-geishas.component.html',
-  styleUrl: './card-geishas.component.css'
+  templateUrl: './card-reproductor.component.html',
+  styleUrl: './card-reproductor.component.css'
 })
-export class CardGeishasComponent <T extends { audio: string }> implements OnInit, AfterViewInit, OnChanges {
+export class CardReproductorComponent implements OnInit, AfterViewInit, OnChanges {
 
-  @Input() audios: T[] = [];
+  @Input() audios: {audio: string}[] = [];
   @Input() playlistId: string = 'default';
   @ViewChild('waveform', { static: false }) waveformRef?: ElementRef;
   @Input() gradient: string = "bg-gradient-to-b from-stone-800 to-rose-400";
-  public allAudios: T[] = [];
-  public geishasAudios: T[] = [];
-  currentTrack?: T;
+  public allAudios: {audio: string}[] = [];
+  public geishasAudios: {audio: string}[] = [];
+  currentTrack?: {audio: string};
 
   public currentTrackIndex: number = 0;
-  public playList: T[] = [];
+  public playList: {audio: string}[] = [];
 
   isVisible: boolean = true;
 
@@ -45,7 +45,7 @@ export class CardGeishasComponent <T extends { audio: string }> implements OnIni
     if (this.audios?.length) {
       this.allAudios= [...this.audios];
       this.geishasAudios = [...this.audios];
-      this.audioService.setPlaylist<T>('geishas', this.geishasAudios);
+      this.audioService.setPlaylist<{audio: string}>('geishas', this.geishasAudios);
       this.updateCurrentTrack();
       this.sacarAudiosHaikus();
 
@@ -66,13 +66,16 @@ export class CardGeishasComponent <T extends { audio: string }> implements OnIni
     if (changes['audios'] && this.audios?.length) {
       this.allAudios = [...this.audios];
       this.geishasAudios = [...this.audios];
-      this.audioService.setPlaylist<T>('geishas', this.geishasAudios);
+      this.audioService.setPlaylist<{audio: string}>('geishas', this.geishasAudios);
 
       if (this.waveformRef?.nativeElement) {
         this.audioService.initWaveSurfer('geishas', this.waveformRef.nativeElement);
       }
       this.updateCurrentTrack();
+
+
     }
+    console.log(this.gradient)
   }
 
 
@@ -83,13 +86,13 @@ export class CardGeishasComponent <T extends { audio: string }> implements OnIni
       .pipe(take(1))
 
       .subscribe((data: GeishesVerses[]) => {
-        const typedData = data as unknown as T[];
+        const typedData = data as unknown as {audio: string}[];
         if (!typedData?.length) return;
 
         this.allAudios = [...typedData];
         this.geishasAudios = [...typedData];
 
-        this.audioService.setPlaylist<T>('geishas', this.geishasAudios);
+        this.audioService.setPlaylist<{audio: string}>('geishas', this.geishasAudios);
         console.log(this.audios)
 
         // 👉 si quieres empezar en aleatorio
@@ -122,13 +125,13 @@ export class CardGeishasComponent <T extends { audio: string }> implements OnIni
 
 
   updateCurrentTrack() {
-    this.currentTrack = this.audioService.getCurrentTrack<T>('geishas');
+    this.currentTrack = this.audioService.getCurrentTrack<{audio: string}>('geishas');
     this.currentTrackIndex = this.geishasAudios.findIndex(track => track === this.currentTrack);
     this.playList = this.geishasAudios; // Actualiza la lista
   }
 
   selectTrack(index: number) {
-    this.audioService.setPlaylist<T>('geishas', this.geishasAudios);
+    this.audioService.setPlaylist<{audio: string}>('geishas', this.geishasAudios);
 
     // Usa el método que ya tienes en el servicio
     this.audioService.playTrack('geishas', index);

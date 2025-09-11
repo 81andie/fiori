@@ -10,6 +10,7 @@ import { TiamatComponent } from './components/tiamat/tiamat.component';
 import { VersesPageComponent } from './components/verses-page/verses-page.component';
 import { MilfullnessPoemsComponent } from './components/milfullness-poems/milfullness-poems.component';
 import { CaligramaComponent } from './components/caligrama/caligrama.component';
+import { ErrorPageComponent } from './components/error-page/error-page.component';
 
 
 
@@ -25,6 +26,7 @@ export const routes: Routes = [
   { path: 'verses', component: VersesPageComponent },
    { path: 'caligrama', component: CaligramaComponent },
   { path: 'sobremi', component: SobreMiComponent },
+  { path: '**', component: ErrorPageComponent },
 
 
 
@@ -33,6 +35,7 @@ export const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch: 'full' },
 
   // Ruta comodín
-  { path: '**', redirectTo: 'inicio' }
+  { path: '**', redirectTo: 'inicio' },
+    { path: '**', component: ErrorPageComponent },
 ];
 

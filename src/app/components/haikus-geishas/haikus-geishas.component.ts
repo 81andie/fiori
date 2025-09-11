@@ -2,7 +2,7 @@ import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild, NgZone, Inj
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { GeishesVerses } from '../../interfaces/geishas.interface';
 import { GeishasVersesService } from '../../services/geishas.service';
-import { CardGeishasComponent } from "../card-geishas/card-geishas.component";
+import { CardReproductorComponent } from "../card-reproductor/card-reproductor.component";
 
 
 
@@ -11,7 +11,7 @@ import { CardGeishasComponent } from "../card-geishas/card-geishas.component";
   selector: 'app-haikus-geishas',
   templateUrl: './haikus-geishas.component.html',
   styleUrls: ['./haikus-geishas.component.css'],
-  imports: [CommonModule, CardGeishasComponent]
+  imports: [CommonModule, CardReproductorComponent]
 })
 export class HaikusGeishasComponent implements  OnInit {
 

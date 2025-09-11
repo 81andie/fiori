@@ -36,9 +36,15 @@ export class AudioService {
     if (!player) return;
 
     // Destruir instancia previa si existe
-    if (player.wavesurfer) {
-      player.wavesurfer?.destroy();
+
+    try {
+      if (player.wavesurfer) {
+        player.wavesurfer?.destroy();
+      }
+    } catch (e) {
+   console.log("no se puede eliminar el wavesurfer")
     }
+
 
     player.wavesurfer = WaveSurfer.create({
       container,
@@ -71,19 +77,19 @@ export class AudioService {
 
   playPause(id: string) {
     const player = this.players.get(id);
-  if (!player?.wavesurfer) return;
+    if (!player?.wavesurfer) return;
 
-  if (player.wavesurfer.isPlaying()) {
-    player.wavesurfer.pause();
-  } else {
-    player.wavesurfer.play().catch(err => {
-      if (err.name === 'NotAllowedError') {
-        console.warn("El navegador bloqueó autoplay: necesita interacción del usuario.");
-      } else {
-        console.error("Error al reproducir:", err);
-      }
-    });
-  }
+    if (player.wavesurfer.isPlaying()) {
+      player.wavesurfer.pause();
+    } else {
+      player.wavesurfer.play().catch(err => {
+        if (err.name === 'NotAllowedError') {
+          console.warn("El navegador bloqueó autoplay: necesita interacción del usuario.");
+        } else {
+          console.error("Error al reproducir:", err);
+        }
+      });
+    }
   }
 
   nextTrack(id: string) {

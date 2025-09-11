@@ -1,17 +1,16 @@
-import { CardTiamatAudioComponent } from './../card-tiamat-audio/card-tiamat-audio.component';
 
 import { Component, ElementRef, AfterViewInit, inject, ViewChild, OnInit } from '@angular/core';
 
 import { TiamatAudioPlayerService } from './../../services/Tiamat.service';
 import { tiamatAudioPlayer } from '../../interfaces/tiamat.interface';
 import { CommonModule } from '@angular/common';
-import { CardGeishasComponent } from "../card-geishas/card-geishas.component";
+import { CardReproductorComponent } from "../card-reproductor/card-reproductor.component";
 
 
 
 @Component({
   selector: 'app-tiamat',
-  imports: [CommonModule, CardTiamatAudioComponent, CardGeishasComponent],
+  imports: [CommonModule, CardReproductorComponent],
   templateUrl: './tiamat.component.html',
   styleUrl: './tiamat.component.css'
 })
