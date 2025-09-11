@@ -34,8 +34,8 @@ export const routes: Routes = [
   // Redirección por defecto
   { path: '', redirectTo: 'inicio', pathMatch: 'full' },
 
-  // Ruta comodín
-  { path: '**', redirectTo: 'inicio' },
+
+
     { path: '**', component: ErrorPageComponent },
 ];
 
