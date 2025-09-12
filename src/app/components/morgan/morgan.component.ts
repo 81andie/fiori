@@ -17,10 +17,10 @@ import { JuegoUkeleleComponent } from "../juego-ukelele/juego-ukelele.component"
 })
 export class MorganComponent {
 
-
   constructor() {
-
   }
+
+
   ngOnInit(): void {
     this.getMorganNarrations();
   }
