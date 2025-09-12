@@ -19,24 +19,22 @@ export interface haikusMusicados{
   id: number,
   title:string,
   date: string,
-  img: string,
+  image: string,
   jp:string,
   jp2:string,
   jp3:string,
   romaji: string,
   romaji1: string,
   romaji2: string,
-  es: string,
-  es1: string,
-  es2: string,
-  audio:string
+  verses:string,
+  audio:string,
   author:string
   fontImage:string
 }
 
 
 export interface poemsVerses {
-transform: any;
+ transform: any;
   id:number;
   title: string;
   author: string;

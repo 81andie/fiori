@@ -73,7 +73,6 @@ export class CardReproductorComponent implements OnInit, AfterViewInit, OnChange
       }
       this.updateCurrentTrack();
 
-
     }
     console.log(this.gradient)
   }
@@ -145,7 +144,5 @@ export class CardReproductorComponent implements OnInit, AfterViewInit, OnChange
     this.isVisible = !this.isVisible;
     console.log("hello")
   }
-
-
 
 }
