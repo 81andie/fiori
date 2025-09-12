@@ -8,12 +8,12 @@ import { CardReproductorComponent } from "../card-reproductor/card-reproductor.c
 
 
 @Component({
-  selector: 'app-haikus-geishas',
-  templateUrl: './haikus-geishas.component.html',
-  styleUrls: ['./haikus-geishas.component.css'],
+  selector: 'app-reproductor-reusable',
+  templateUrl: './reproductor-reusable.component.html',
+  styleUrls: ['./reproductor-reusable.component.css'],
   imports: [CommonModule, CardReproductorComponent]
 })
-export class HaikusGeishasComponent implements  OnInit {
+export class reproductorReusableComponent implements  OnInit {
 
 
   public versesGeishas:GeishesVerses[]=[]

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HaikusGeishasComponent } from './haikus-geishas.component';
+import { HaikusGeishasComponent } from './reproductor-reusable.component';
 
 describe('HaikusGeishasComponent', () => {
   let component: HaikusGeishasComponent;
