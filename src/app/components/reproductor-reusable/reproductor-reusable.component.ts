@@ -28,9 +28,8 @@ export class reproductorReusableComponent implements  OnInit {
 
 
   ngOnInit(): void {
-this.getVersesGeishas()
+  this.getVersesGeishas()
   }
-
 
 
   getVersesGeishas(){

@@ -143,6 +143,7 @@ export class CardReproductorComponent implements OnInit, AfterViewInit, OnChange
 
  toggleAudio() {
     this.isVisible = !this.isVisible;
+    console.log("hello")
   }
 
 
