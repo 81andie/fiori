@@ -5,13 +5,14 @@ import { MorganAudioPlayer } from '../../interfaces/MorganAudioPlayer.interface'
 import { MorganAudioPlayerService } from '../../services/Morgan.service';
 import { CommonModule } from '@angular/common';
 import { JuegoUkeleleComponent } from "../juego-ukelele/juego-ukelele.component";
+import { CardReproductorComponent } from "../card-reproductor/card-reproductor.component";
 
 
 
 
 @Component({
   selector: 'app-morgan',
-  imports: [CommonModule, MorganCardComponent, JuegoUkeleleComponent],
+  imports: [CommonModule, JuegoUkeleleComponent, CardReproductorComponent],
   templateUrl: './morgan.component.html',
   styleUrl: './morgan.component.css'
 })

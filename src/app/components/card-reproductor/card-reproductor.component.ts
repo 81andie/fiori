@@ -28,6 +28,7 @@ export class CardReproductorComponent implements OnInit, AfterViewInit, OnChange
   public playList: {audio: string}[] = [];
 
   isVisible: boolean = true;
+  public visibleCount = 4;
 
 
   constructor(
@@ -143,6 +144,10 @@ export class CardReproductorComponent implements OnInit, AfterViewInit, OnChange
  toggleAudio() {
     this.isVisible = !this.isVisible;
     console.log("hello")
+  }
+
+  showMore(){
+    this.visibleCount +=4
   }
 
 }

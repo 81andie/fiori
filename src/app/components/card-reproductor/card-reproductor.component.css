@@ -1,9 +1,19 @@
 .verse{
-  font-size: 0.5rem;
-  line-height:  9px;
+  font-size: 0.6rem;
+  line-height: 20px;
 }
 
 .btn_reproductor{
   box-shadow: inset  1px 1px 7px 1px #150617;
   font-size: 0.6rem;
+}
+
+/* styles.css o en tu componente con estilos */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;     /* Firefox */
 }

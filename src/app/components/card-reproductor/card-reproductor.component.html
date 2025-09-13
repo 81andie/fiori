@@ -2,7 +2,7 @@
          bg-gradient-to-b from-[#e3bff5] via-[#b872e6] to-[#9b3cfa] fixed bottom-16 z-40 left-1"
   (click)="toggleAudio()">
 
-   <svg class="ml-1" fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1"
+  <svg class="ml-1" fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1"
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
     xml:space="preserve">
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -178,22 +178,20 @@
         </div>
       </div>
 
-      <div class="flex">
-        <div class="songs text-gray-800 mt-2 flex w-full justify-center">
-          <div class="songs  text-gray-800 mt-10 text-center grid grid-cols-3 gap-1">
+      <div class="flex justify-center items-center">
+        <div class="song  text-gray-800 mt-2  w-full justify-center">
+          <div class="songs grid grid-cols-3 justify-center text-gray-800 mt-10 text-center gap-1
+            max-h-24 overflow-y-auto no-scrollbar border-2">
 
-            <span *ngFor="let audio of geishasAudios; let i = index" (click)="selectTrack(i)" class="text-stone-700   text_narration
-                  font-extrabold cursor-pointer  text-xs bg-opacity-35  hover:text-slate-400 rounded"
+            <span *ngFor="let audio of geishasAudios; let i = index" (click)="selectTrack(i)" class="text-stone-700 text_narration font-extrabold cursor-pointer
+               bg-opacity-35 hover:text-slate-400 rounded verse mt-2"
               [class.font-bold]="currentTrack?.audio === audio.audio">
               {{ audio.title }}
             </span>
-
-
           </div>
         </div>
-      </div>
-      <!-- Lista de canciones -->
+        <!-- Lista de canciones -->
 
+      </div>
     </div>
   </div>
-</div>
