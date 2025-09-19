@@ -18,28 +18,41 @@
     class=" bg-[url(/estartitTamariu.png)]   mt-1 bg-no-repeat  bg-center mb-12 w-full flex flex-col lg:flex-row md:flex-row ">
     <!-- Llista de noms -->
 
-    <div class=" w-full h-[90vh] flex justify-center  items-center">
+    <div class="w-full h-[90vh] flex justify-center  items-center">
+      <!--tal como estava
       <div *ngFor="let part of parts"
         class=" md:p-0.5 lg:p-0.5 flex flex-row sm:flex-wrap cursor-grab text-center ">
         <span><strong
           class="verse z-50 bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 to-blue-400  hover:to-yellow-200 hover:font-extrabold  hover:scale-125 border-1 bg-left border-t-orange-400 verso   md:text-xs lg:text-base  mt-1 ">{{
           part.name }}</strong></span>
       </div>
+      -->
+
+      <div *ngFor="let part of parts"
+        class=" md:p-0.5 lg:p-0.5 flex flex-row sm:flex-wrap cursor-grab text-center ">
+        <span><strong
+          class="verse z-50 bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 to-blue-400  hover:to-yellow-200 hover:font-extrabold  hover:scale-125 border-1 bg-left border-t-orange-400 verso   md:text-xs lg:text-base  mt-1 ">{{
+          part.name }}</strong></span>
+      </div>
+
+
     </div>
-
-
-
   </div>
 
 </div>
 
 <span class="m-2">*Poema en vertical</span>
 
-<div class=" bg-[url(/estartitTamariu.png)] h-screen bg-cover bg-no-repeat flex flex-wrap justify-center">
-   <div *ngFor="let part of parts"
+<div class="bg-[url(/estartitTamariu.png)] h-screen bg-cover bg-no-repeat flex flex-wrap justify-center">
+
+  <div *ngFor="let part of parts"
         class=" bg-slate-100 bg-opacity-55 w-full justify-center flex flex-col sm:flex-wrap cursor-grab text-center ">
         <pre><strong
           class=" z-50 bg-clip-text text-transparent bg-gradient-to-b from-stone-900 to-stone-500  hover:to-yellow-200 hover:font-extrabold  hover:scale-125 border-1 bg-left border-t-orange-400 ">{{
           part.name }}</strong></pre>
       </div>
+
+
+
+
 </div>
