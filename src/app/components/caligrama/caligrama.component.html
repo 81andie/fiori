@@ -8,25 +8,15 @@
     <span><strong>Un vent de tarda</strong></span>
 
   </h1>
-  <hr class="h-1 w-full bg-cover bg-bottom bg-[url(/textil.jpg)] grayscale ">
+  <hr class="h-1 w-full bg-cover bg-bottom bg-[url(/textil.jpg)] grayscale">
 </div>
 
-<div class=" w-full bg-cover ">
-
-
+<div class="w-full bg-cover ">
   <div
     class=" bg-[url(/estartitTamariu.png)]   mt-1 bg-no-repeat  bg-center mb-12 w-full flex flex-col lg:flex-row md:flex-row ">
     <!-- Llista de noms -->
 
-    <div class="w-full h-[90vh] flex justify-center  items-center">
-      <!--tal como estava
-      <div *ngFor="let part of parts"
-        class=" md:p-0.5 lg:p-0.5 flex flex-row sm:flex-wrap cursor-grab text-center ">
-        <span><strong
-          class="verse z-50 bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 to-blue-400  hover:to-yellow-200 hover:font-extrabold  hover:scale-125 border-1 bg-left border-t-orange-400 verso   md:text-xs lg:text-base  mt-1 ">{{
-          part.name }}</strong></span>
-      </div>
-      -->
+    <div class="w-full h-[90vh] flex justify-center items-center container_verso ">
 
       <div *ngFor="let part of parts"
         class=" md:p-0.5 lg:p-0.5 flex flex-row sm:flex-wrap cursor-grab text-center ">
@@ -34,11 +24,8 @@
           class="verse z-50 bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 to-blue-400  hover:to-yellow-200 hover:font-extrabold  hover:scale-125 border-1 bg-left border-t-orange-400 verso   md:text-xs lg:text-base  mt-1 ">{{
           part.name }}</strong></span>
       </div>
-
-
     </div>
   </div>
-
 </div>
 
 <span class="m-2">*Poema en vertical</span>
@@ -51,8 +38,5 @@
           class=" z-50 bg-clip-text text-transparent bg-gradient-to-b from-stone-900 to-stone-500  hover:to-yellow-200 hover:font-extrabold  hover:scale-125 border-1 bg-left border-t-orange-400 ">{{
           part.name }}</strong></pre>
       </div>
-
-
-
 
 </div>

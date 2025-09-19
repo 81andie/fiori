@@ -6,18 +6,8 @@
   filter: brightness(100%)
 }
 
-
-
-.verse:hover {
-  font-size: 1.2rem;
-  line-height: 20px;
+.verso:hover{
+  writing-mode: horizontal-tb;
+  border: 2px solid white
 }
 
-
-
-.verse {
-  writing-mode: vertical-rl;
-  transition: ease-in 1s;
-  font-size: 0.8rem;
-  filter: brightness(100%)
-}
