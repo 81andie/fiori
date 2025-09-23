@@ -11,6 +11,7 @@ import { VersesPageComponent } from './components/verses-page/verses-page.compon
 import { MilfullnessPoemsComponent } from './components/milfullness-poems/milfullness-poems.component';
 import { CaligramaComponent } from './components/caligrama/caligrama.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { SakariComponent } from './components/sakari/sakari.component';
 
 
 
@@ -23,8 +24,9 @@ export const routes: Routes = [
   { path: 'morgan', component: MorganComponent },
   {path: 'mindfullness', component:MilfullnessPoemsComponent},
   { path: 'tiamat', component: TiamatComponent },
+  { path: 'sakari', component: SakariComponent},
   { path: 'verses', component: VersesPageComponent },
-   { path: 'caligrama', component: CaligramaComponent },
+  { path: 'caligrama', component: CaligramaComponent },
   { path: 'sobremi', component: SobreMiComponent },
 
 
