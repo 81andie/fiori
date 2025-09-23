@@ -46,5 +46,15 @@
     "background": "textura1.jpg",
     "image": "no.png",
     "ilus": "Andrea Hernández"
+  },
+
+   {
+    "id": 6,
+    "title": "EL KARMA... recuérdalo",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "El karma\n siempre se cobra\ntodas tus deudas\nLa Bondad siempre es el camino",
+    "background": "textura1.jpg",
+    "image": "pexels-pixabay-46231-removebg-preview.png",
+    "ilus": "PEXELS"
   }
 ]
