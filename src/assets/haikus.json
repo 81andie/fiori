@@ -51,7 +51,7 @@
   },
 
    {
-    "id": 3,
+    "id": 4,
     "date": "Verano 2017",
     "img": "FB_IMG_1756133028469.jpg",
     "jp": "火と泉",
@@ -62,7 +62,24 @@
     "romaji2": "Nagaki yoake",
     "es": "Fuegos y fuentes",
     "es1": "Juegos en la noche",
-    "es2": "Madrugada larga",
+    "es2": "Madrugada larga...",
+    "fontImage": "ANDREA HERNÁNDEZ",
+    "author": "ANDREA HERNÁNDEZ"
+  },
+
+     {
+    "id": 5,
+    "date": "Otoño 2025",
+    "img": "FB_IMG_1756132593330.jpg",
+    "jp": "淡き紅花",
+    "jp2": "丁字は天へ舞う",
+    "jp3": "花の塔か",
+    "romaji": "Awaki benibana,",
+    "romaji1": "Chōji wa ten ni mau,",
+    "romaji2": "Hana no tō ka.",
+    "es": "Roselles pàl·lides,",
+    "es1": "clavells s'enlairen volant",
+    "es2": "torre floral al cel",
     "fontImage": "ANDREA HERNÁNDEZ",
     "author": "ANDREA HERNÁNDEZ"
   }
