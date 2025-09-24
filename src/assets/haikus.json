@@ -48,5 +48,24 @@
     "es2": "Los pies siguen volando",
     "fontImage": "Pixabay + Pexels",
     "author": "ANDREA HERNÁNDEZ"
+  },
+
+   {
+    "id": 3,
+    "date": "Verano 2017",
+    "img": "FB_IMG_1756133028469.jpg",
+    "jp": "火と泉",
+    "jp2": "夜の遊び 果てしなく",
+    "jp3": "長き夜明け",
+    "romaji": "Hi to izumi",
+    "romaji1": "Yoru no asobi hateshinaku",
+    "romaji2": "Nagaki yoake",
+    "es": "Fuegos y fuentes",
+    "es1": "Juegos en la noche",
+    "es2": "Madrugada larga",
+    "fontImage": "ANDREA HERNÁNDEZ",
+    "author": "ANDREA HERNÁNDEZ"
   }
+
+
 ]
