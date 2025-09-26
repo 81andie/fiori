@@ -10,12 +10,13 @@
     "romaji": "Hana no kanmuri",
     "romaji1": "Mitsu to daidai",
     "romaji2": "no kaori Inochi michiru",
-    "verses": "Corona de flores\n Miel y azahar en la alcoba\nSe colma la vida",
-    "audio":"/Lunademiel.mp3",
+    "verses1": "Corona de flores",
+    "verses2": "Miel y azahar en la alcoba",
+    "verses3": "Se colma la vida",
+    "audio": "/Lunademiel.mp3",
     "fontImage": "Pixabay + Pexels",
     "author": "ANDREA HERNÁNDEZ"
   },
-
   {
     "id": 2,
     "title": "El templo",
@@ -27,12 +28,14 @@
     "romaji": "Ima shika",
     "romaji1": "nai Tera o",
     "romaji2": "haite Chiri ga mau",
-    "verses": "Ahora o nunca\n Barro mi templo\nEl polvo se agita",
+    "verses1": "Ahora o nunca",
+    "verses2":"Barro mi templo",
+    "verses3": "El polvo se agita",
+     "verses": "Corona de flores\n Miel y azahar en la alcoba\nSe colma la vida",
     "audio": "/naiku2.mp3",
     "fontImage": "Pixabay + Pexels",
     "author": "ANDREA HERNÁNDEZ"
   },
-
   {
     "id": 3,
     "title": "Frío",
@@ -44,10 +47,12 @@
     "romaji": "Kaze ga unaru",
     "romaji1": "Koromo ga",
     "romaji2": "Aoki kuchibiru",
-   "verses": "Ruge el viento\n La túnica se hiela\nLabios Azules",
-    "audio":"/Frio.mp3",
+    "verses1": "Ruge el viento",
+    "verses2": "La túnica se hiela",
+    "verses3": "Labios Azules",
+     "verses": "Ruge el viento\n La túnica se hiela\nLabios Azules",
+    "audio": "/Frio.mp3",
     "fontImage": "Pixabay + Pexels",
     "author": "ANDREA HERNÁNDEZ"
   }
-
 ]
