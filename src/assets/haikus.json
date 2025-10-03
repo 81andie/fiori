@@ -82,7 +82,23 @@
     "es2": "torre floral al cel",
     "fontImage": "ANDREA HERNÁNDEZ",
     "author": "ANDREA HERNÁNDEZ"
-  }
+  },
 
+    {
+    "id": 6,
+    "date": "Otoño 2025",
+    "img": "floresazulesestartit.jpg",
+    "jp": "夜の時",
+    "jp2": "風は咲かせる",
+    "jp3": "潮の花",
+    "romaji": "Yoru no toki,",
+    "romaji1": "kaze wa sakaseru,",
+    "romaji2": "shio no hana...",
+    "es": "Hay horas en la noche,",
+    "es1": "el viento hace renacer",
+    "es2": "flores con aroma a sal",
+    "fontImage": "ANDREA HERNÁNDEZ",
+    "author": "ANDREA HERNÁNDEZ"
+  }
 
 ]
