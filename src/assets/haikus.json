@@ -67,8 +67,25 @@
     "author": "ANDREA HERNÁNDEZ"
   },
 
-     {
+    {
     "id": 5,
+    "date": "Otoño 2025",
+    "img": "antifaz.png",
+    "jp": "止まった時計 ",
+    "jp2": "窓を吹き抜ける風 ",
+    "jp3": "心凍る",
+    "romaji": "Tomatta tokei",
+    "romaji1": "Mado o fukinukeru kaze",
+    "romaji2": "Kokoro kōru",
+    "es": "El reloj muerto",
+    "es1": "el viento silba por la ventana",
+    "es2": "se heló el corazón...",
+    "fontImage": "PEXELS",
+    "author": "ANDREA HERNÁNDEZ"
+  },
+
+     {
+    "id": 6,
     "date": "Otoño 2025",
     "img": "FB_IMG_1756132593330.jpg",
     "jp": "淡き紅花",
@@ -85,7 +102,7 @@
   },
 
     {
-    "id": 6,
+    "id": 7,
     "date": "Otoño 2025",
     "img": "floresazulesestartit.jpg",
     "jp": "夜の時",
