@@ -69,5 +69,39 @@
     "background": "textura1.jpg",
     "image": "libelula.png",
     "ilus": "Andrea Hernández"
+  },
+
+   {
+    "id": 4,
+    "title": "Rosella de Bosc",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Rosella de bosc",
+      "La tardor t'acull el fruit",
+      "i",
+      "l'última de les olors"
+
+
+    ],
+    "background": "textura1.jpg",
+    "image": "roselladebosc.png",
+    "ilus": "Andrea Hernández"
+  },
+
+   {
+    "id": 5,
+    "title": "Violeta de los Alpes",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Entre la grieta",
+      "bajo el Sol",
+      "en el manto de la intemperie",
+      "resiste la Violeta"
+
+
+    ],
+    "background": "textura1.jpg",
+    "image": "violeta.png",
+    "ilus": "Andrea Hernández"
   }
 ]
