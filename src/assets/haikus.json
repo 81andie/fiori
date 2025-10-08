@@ -116,6 +116,22 @@
     "es2": "flores con aroma a sal",
     "fontImage": "ANDREA HERNÁNDEZ",
     "author": "ANDREA HERNÁNDEZ"
-  }
+  },
 
+  {
+    "id": 8,
+    "date": "Otoño 2025",
+    "img": "busto-griego-rodeado-de-pompas-de-jabon.jpg",
+    "jp": "二つ顔の男",
+    "jp2": "昼は天使よ",
+    "jp3": "夜ユダを見る",
+    "romaji": "Futatsu kao no otoko,",
+    "romaji1": "hiru wa tenshi yo,",
+    "romaji2": "yoru Yuda o miru..",
+    "es": "Hombre de dos caras",
+    "es1": "ángel durante el dia",
+    "es2": "veo a Judas al anochecer",
+    "fontImage": "FREEPIK",
+    "author": "ANDREA HERNÁNDEZ"
+  }
 ]
