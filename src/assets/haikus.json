@@ -84,8 +84,25 @@
     "author": "ANDREA HERNÁNDEZ"
   },
 
-     {
+  {
     "id": 6,
+    "date": "Otoño 2025",
+    "img": "pexels-truephotography-6992056.jpg",
+    "jp": "針は凍りつく",
+    "jp2": "答えを待ちながら ",
+    "jp3": "長い一日",
+    "romaji": "Hari wa kōritsu",
+    "romaji1": "Kotae o machi nagara,",
+    "romaji2": "Nagai ichi-nichi.",
+    "es": "La aguja se escarchó,",
+    "es1": "esperando respuestas,",
+    "es2": "el día es muy largo...",
+    "fontImage": "PEXELS",
+    "author": "ANDREA HERNÁNDEZ"
+  },
+
+     {
+    "id": 7,
     "date": "Otoño 2025",
     "img": "FB_IMG_1756132593330.jpg",
     "jp": "淡き紅花",
@@ -102,7 +119,7 @@
   },
 
     {
-    "id": 7,
+    "id": 8,
     "date": "Otoño 2025",
     "img": "floresazulesestartit.jpg",
     "jp": "夜の時",
@@ -119,7 +136,7 @@
   },
 
   {
-    "id": 8,
+    "id": 9,
     "date": "Otoño 2025",
     "img": "busto-griego-rodeado-de-pompas-de-jabon.jpg",
     "jp": "二つ顔の男",
