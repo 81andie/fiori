@@ -101,8 +101,25 @@
     "author": "ANDREA HERNÁNDEZ"
   },
 
-     {
+   {
     "id": 7,
+    "date": "Otoño 2025",
+    "img": "515073086_10233989095601479_5081634320921682982_n.jpg",
+    "jp": "秋の入り、",
+    "jp2": "葉だけでなく散る、",
+    "jp3": "冷き石。",
+    "romaji": "Aki no iri,",
+    "romaji1": "ha dake de naku chiru,",
+    "romaji2": "tsumeki ishi.",
+    "es": "Entrant la tardor,",
+    "es1": "no només cauen fulles,",
+    "es2": "en la freda pedra.",
+    "fontImage": "ANDREA HERNANDEZ",
+    "author": "ANDREA HERNÁNDEZ"
+  },
+
+     {
+    "id": 8,
     "date": "Otoño 2025",
     "img": "FB_IMG_1756132593330.jpg",
     "jp": "淡き紅花",
@@ -119,7 +136,7 @@
   },
 
     {
-    "id": 8,
+    "id": 9,
     "date": "Otoño 2025",
     "img": "floresazulesestartit.jpg",
     "jp": "夜の時",
