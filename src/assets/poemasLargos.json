@@ -103,5 +103,22 @@
     "background": "textura1.jpg",
     "image": "violeta.png",
     "ilus": "Andrea Hernández"
+  },
+
+  {
+    "id": 6,
+    "title": "Un corazón lejano",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Un corazón lejano",
+      "puede calentar más",
+      "más que el Sol brillante",
+      "de la mañana..."
+
+
+    ],
+    "background": "textura1.jpg",
+    "image": "sol.png",
+    "ilus": "Andrea Hernández"
   }
 ]
