@@ -120,5 +120,27 @@
     "background": "textura1.jpg",
     "image": "sol.png",
     "ilus": "Andrea Hernández"
+  },
+  {
+    "id": 7,
+    "title": "Nació un lirio",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+     "Nació un lirio pequeño y recatado",
+    "entre la maleza de mi jardín.",
+
+    "Nació un lirio blanco como la nieve,",
+    "puro, erguido, elegante y señorial,",
+    "que engalana mi jardín.",
+
+    "Nació un lirio en mi jardín,",
+    "y a Dios le pido que repose allí eternamente,",
+    "para que su perfume me embriague todas las noches..."
+
+
+    ],
+    "background": "textura1.jpg",
+    "image": "lirio.png",
+    "ilus": "Andrea Hernández"
   }
 ]
