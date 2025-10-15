@@ -43,5 +43,20 @@
     "font": "Bibliothèque nationale de France.",
     "LicenciaPaint": "Imagen vía Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Perdigon.jpg",
     "audio": "/the-minstrels-lament-medieval-tavern-song-377751.mp3"
+  },
+
+  {
+    "id": 4,
+    "title": "MARCABRU, chanson de Croisade",
+    "subtitle": " Marcabru",
+    "date": "1100-1150",
+    "image": "marcabru.jpg",
+    "author": "Jordi Savall",
+    "artistTale": "Andrea Hernández",
+    "songTitle": "Pax in Nomine Domini",
+    "fontSong": "youtube",
+    "font": "Bibliothèque nationale de France.",
+    "LicenciaPaint": "Imagen vía Wikimedia Commons: https://commons.wikimedia.org/wiki/File:BnF_ms._12473_fol._102_-_Marcabru_(2).jpg",
+    "audio": "/ytmp3free.cc_chanson-de-croisade-pax-in-nomine-domini-marcabru-11001150-youtubemp3free.org.mp3"
   }
 ]
