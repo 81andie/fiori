@@ -6,7 +6,7 @@
     "verses": "El perfume\nmejor pagado\nes aquel\nque nunca\nse olvida",
     "background": "textura1.jpg",
     "image": "chanel.png",
-    "ilus": "Andrea Hernández"
+    "ilus": "Andrea Hernández/verano 2025"
   },
 
 
@@ -17,7 +17,7 @@
     "verses": "En la soledad, dulce niña\nLa noche nos enseña\nÁmate tanto\nQue te deseen hasta las sombras...",
     "background": "textura1.jpg",
     "image": "loveme.png",
-    "ilus": "Andrea Hernández"
+    "ilus": "Andrea Hernández/verano 2025"
   },
     {
     "id": 3,
@@ -26,7 +26,7 @@
     "verses": "Colecciono vivencias pasadas\nvivo los hechos presentes\ny improviso\ntodos mis futuros",
     "background": "pexels-eva-bronzini-7598536.jpg",
     "image": "friends.png",
-    "ilus": "Andrea Hernández"
+    "ilus": "Andrea Hernández/verano 2025"
   },
   {
     "id": 4,
@@ -35,7 +35,7 @@
     "verses": "Poema innacabado,\nLa musa de la inspiración,\nSe fué a la fuga",
     "background": "pexels-artempodrez-7232658.jpg",
     "image": "luna.png",
-    "ilus": "Andrea Hernández"
+    "ilus": "Andrea Hernández/verano 2025"
   },
 
     {
@@ -45,7 +45,7 @@
     "verses": "No vas\na poder conmigo",
     "background": "textura1.jpg",
     "image": "no.png",
-    "ilus": "Andrea Hernández"
+    "ilus": "Andrea Hernández/verano 2025"
   },
 
    {
@@ -65,7 +65,17 @@
     "verses": "Una ventana al mar\nfluye el recuerdo del pasado\nuna sonrisa ligera\n se dibuja en mi cara\n doy media vuelta en mi cama vacía, \n me despierta el murmullo del mar, \n cae la tarde, \n me pierdo en las olas...",
     "background": "textura1.jpg",
     "image": "20251015_193342-removebg-preview.png",
-    "ilus": "2025/versos por Andrea Hernández"
+    "ilus": "Verano 2025/versos por Andrea Hernández"
+  },
+
+   {
+    "id": 8,
+    "title": "Fluir",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "Dejo ir mi mente\nsólo escucho el agua\nfluir por la cascada...\n ",
+    "background": "textura1.jpg",
+    "image": "20251015_211217-removebg-preview.png",
+    "ilus": "Otoño 2025/versos por Andrea Hernández"
   }
 
 ]
