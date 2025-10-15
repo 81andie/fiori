@@ -168,9 +168,11 @@
     "fontImage": "FREEPIK",
     "author": "ANDREA HERNÁNDEZ"
   },
-  {
-    "id": 9,
-    "date": "Otoño 2025",
+
+
+   {
+    "id": 10,
+    "date": "TARDOr 2025",
     "img": "VideoCapture_20251014-211046.jpg",
     "jp": "観察するモザイク、",
     "jp2": "陶器が語る、",
@@ -178,12 +180,14 @@
     "romaji": "Kansatsu suru mozaiku,,",
     "romaji1": "tōki ga kataru,",
     "romaji2": "toki no iseki,",
-    "es": "Observando un mosaico,",
-    "es1": "narra la cerámica,",
-    "es2": "los vestigios del tiempo.",
-    "fontImage": "ANDREA HERNANDEZ",
+    "es": "Observant un mosaic,",
+    "es1": "narra la  tessel·la,",
+    "es2": "els vestigis del temps.",
+    "fontImage": "ANDREA HERNANDEZ. Mosaic al MAC(Museu d'Arqueología de Catalunya)",
     "author": "ANDREA HERNÁNDEZ"
   }
+
+
 
 
 ]
