@@ -84,8 +84,25 @@
     "author": "ANDREA HERNÁNDEZ"
   },
 
-  {
+   {
     "id": 6,
+    "date": "Otoño 2025",
+    "img": "composicióndulce.png",
+    "jp": "甘い酒 ",
+    "jp2": "夜にきらめく",
+    "jp3": "綿の香り",
+    "romaji": "Amái sake",
+    "romaji1": "Yoru ni kirameku",
+    "romaji2": "Wata no kaori",
+    "es": "Sake dulce",
+    "es1": "Destellos en la noche",
+    "es2": "Huele a algodón...",
+    "fontImage": "ANDREA HERNÁNDEZ",
+    "author": "ANDREA HERNÁNDEZ"
+  },
+
+  {
+    "id": 7,
     "date": "Otoño 2025",
     "img": "pexels-truephotography-6992056.jpg",
     "jp": "針は凍りつく",
@@ -102,7 +119,7 @@
   },
 
    {
-    "id": 7,
+    "id": 8,
     "date": "Otoño 2025",
     "img": "515073086_10233989095601479_5081634320921682982_n.jpg",
     "jp": "秋の入り、",
@@ -119,7 +136,7 @@
   },
 
      {
-    "id": 8,
+    "id": 9,
     "date": "Otoño 2025",
     "img": "FB_IMG_1756132593330.jpg",
     "jp": "淡き紅花",
@@ -136,7 +153,7 @@
   },
 
     {
-    "id": 9,
+    "id": 10,
     "date": "Otoño 2025",
     "img": "floresazulesestartit.jpg",
     "jp": "夜の時",
@@ -153,7 +170,7 @@
   },
 
   {
-    "id": 9,
+    "id": 11,
     "date": "Otoño 2025",
     "img": "busto-griego-rodeado-de-pompas-de-jabon.jpg",
     "jp": "二つ顔の男",
@@ -171,7 +188,7 @@
 
 
    {
-    "id": 10,
+    "id": 12,
     "date": "TARDOR 2025",
     "img": "VideoCapture_20251014-211046.jpg",
     "jp": "観察するモザイク、",
