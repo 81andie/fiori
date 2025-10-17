@@ -168,9 +168,26 @@
     "fontImage": "ANDREA HERNÁNDEZ",
     "author": "ANDREA HERNÁNDEZ"
   },
+    {
+    "id": 11,
+    "date": "Otoño 2025",
+    "img": "ella.jpg",
+    "jp": "冷たい守り人",
+    "jp2": "湖にひそやかに",
+    "jp3": "永遠に若し",
+    "romaji": "Tsumetai mamoribito,",
+    "romaji1": "mizūmi ni hisoyaka ni,",
+    "romaji2": "eien ni wakashi.",
+    "es": "Fría guardiana,",
+    "es1": "discreta en el lago...",
+    "es2": "siempre joven será.",
+    "fontImage": "ANDREA HERNÁNDEZ",
+    "author": "ANDREA HERNÁNDEZ"
+  },
+
 
   {
-    "id": 11,
+    "id": 12,
     "date": "Otoño 2025",
     "img": "busto-griego-rodeado-de-pompas-de-jabon.jpg",
     "jp": "二つ顔の男",
@@ -188,7 +205,7 @@
 
 
    {
-    "id": 12,
+    "id": 13,
     "date": "TARDOR 2025",
     "img": "VideoCapture_20251014-211046.jpg",
     "jp": "観察するモザイク、",
