@@ -114,8 +114,6 @@
       "puede calentar más...",
       "más que el Sol brillante",
       "de la mañana..."
-
-
     ],
     "background": "textura1.jpg",
     "image": "sol.png",
@@ -123,7 +121,7 @@
   },
 
    {
-    "id": 8,
+    "id": 7,
     "title": "La Madonnade las flores",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
