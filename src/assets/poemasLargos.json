@@ -121,28 +121,23 @@
     "image": "sol.png",
     "ilus": "Andrea Hernández"
   },
-  {
-    "id": 7,
-    "title": "Nació un lirio",
+
+   {
+    "id": 8,
+    "title": "La Madonnade las flores",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
-     "Nació un lirio pequeño y recatado",
-    "entre la maleza de mi jardín.",
-
-    "Nació un lirio blanco como la nieve,",
-    "puro, erguido, elegante y señorial,",
-    "que engalana mi jardín.",
-
-    "Nació un lirio en mi jardín,",
-    "y a Dios le pido",
-    "que repose allí eternamente,",
-    "para que su perfume",
-    "me embriague todas las noches..."
-
-
+     "La Madonna",
+    " de las flores",
+    "por cada flor",
+    "una incógnita,",
+    "divina malícia",
+    "en su sonrisa."
     ],
     "background": "textura1.jpg",
-    "image": "lirio.png",
+    "image": "madamefiori.png",
     "ilus": "Andrea Hernández"
   }
+
+
 ]
