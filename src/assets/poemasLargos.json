@@ -97,16 +97,30 @@
       "bajo el Sol",
       "en el manto de la intemperie",
       "resiste la Violeta"
-
-
     ],
     "background": "textura1.jpg",
     "image": "violeta.png",
     "ilus": "Andrea Hernández"
   },
 
-  {
+   {
     "id": 6,
+    "title": "Se refleja mi rostro",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Se refleja mi rostro",
+      "en la primera gota del rocío",
+      "la orquídea temblorosa",
+      "baila con el viento"
+    ],
+    "background": "textura1.jpg",
+    "image": "orquidea.png",
+    "ilus": "Andrea Hernández"
+  },
+
+
+  {
+    "id": 7,
     "title": "Un corazón lejano",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
@@ -121,7 +135,7 @@
   },
 
    {
-    "id": 7,
+    "id": 8,
     "title": "La Madonna de las flores",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
