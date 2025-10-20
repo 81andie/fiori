@@ -184,10 +184,26 @@
     "fontImage": "ANDREA HERNÁNDEZ",
     "author": "ANDREA HERNÁNDEZ"
   },
+   {
+    "id": 12,
+    "date": "Otoño 2025",
+    "img": "caballos.jpg",
+    "jp": "うまにそっと言う、",
+    "jp2": "湖にひそやかに",
+    "jp3": "なでるは少し。",
+    "romaji": "Sasayaki ai,,",
+    "romaji1": "uma ni sotto iu,,",
+    "romaji2": "naderu wa sukoshi.",
+    "es": "Entre confidencias,",
+    "es1": "le susurro a mi caballo...",
+    "es2": "solo las caricias justas",
+    "fontImage": "ANDREA HERNÁNDEZ",
+    "author": "ANDREA HERNÁNDEZ"
+  },
 
 
   {
-    "id": 12,
+    "id": 13,
     "date": "Otoño 2025",
     "img": "busto-griego-rodeado-de-pompas-de-jabon.jpg",
     "jp": "二つ顔の男",
@@ -205,7 +221,7 @@
 
 
    {
-    "id": 13,
+    "id": 14,
     "date": "TARDOR 2025",
     "img": "VideoCapture_20251014-211046.jpg",
     "jp": "観察するモザイク、",
