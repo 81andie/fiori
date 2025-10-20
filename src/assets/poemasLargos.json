@@ -149,7 +149,25 @@
     "background": "textura1.jpg",
     "image": "madamefiori.png",
     "ilus": "Andrea Hernández"
+  },
+
+  {
+    "id": 8,
+    "title": "Luces y Sombras",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+    "Siempre hay luces y sombras",
+    "Entre tu ventana y la mía",
+    "Entre mis huellas y silencios",
+    "está escrito en mi piel...",
+    "Y en el libro",
+    "de nuestro destino..."
+    ],
+    "background": "textura1.jpg",
+    "image": "destiny.png",
+    "ilus": "Andrea Hernández"
   }
+
 
 
 ]
