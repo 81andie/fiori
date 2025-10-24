@@ -166,6 +166,36 @@
     "background": "textura1.jpg",
     "image": "destiny.png",
     "ilus": "Andrea Hernández/2015"
+  },
+
+  {
+    "id": 8,
+    "title": "Entre el paisaje",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+   "Entre el paisaje,",
+    "se funde tu presencia.",
+    "",
+    "Entre el paisaje,",
+    "en tu rostro aparece una sombra,",
+    "naciendo unos labios serios",
+    "y postura erguida...",
+    "",
+    "Entre el paisaje,",
+    "confundo tus ojos con dos manantiales",
+    "de aguas dulces y cristalinas,",
+    "perdidos en el infinito",
+    "del momento.",
+    "",
+    "Entre el paisaje,",
+    "cantó un ruiseñor,",
+    "y tu rostro despertó levemente;",
+    "afablemente sonreíste al ruiseñor."
+
+    ],
+    "background": "textura1.jpg",
+    "image": "paisajenevado.jpg",
+    "ilus": "Andrea Hernández/2015"
   }
 
 
