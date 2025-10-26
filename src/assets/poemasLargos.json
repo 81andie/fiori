@@ -136,18 +136,23 @@
 
    {
     "id": 8,
-    "title": "La Madonna de las flores",
+    "title": "Improvisación Davinciana",
     "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-    "La Madonna",
-    "de las flores",
-    "por cada flor",
-    "una incógnita,",
-    "divina malícia",
-    "la de su sonrisa."
-    ],
+  "verses": [
+    "senorram sojo solleB euQ",
+    "adarim ut noc sallac",
+    "asiL amad artseun ,adnocoiG",
+    "...seuQ",
+    "dadinivid adargas ut áiuq ...satlucO",
+    "?dadinimef ut",
+    "ecluc adrisnos",
+    "?sadraug euQ",
+    "...solgis y solgis eca otlucO",
+    "ogitnoc erpmeiS",
+    "adarim ut ne odabarG"
+  ],
     "background": "textura1.jpg",
-    "image": "madamefiori.png",
+    "image": "monalisa.png",
     "ilus": "Andrea Hernández"
   },
 
