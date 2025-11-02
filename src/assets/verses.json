@@ -28,7 +28,6 @@
     ],
     "background": "textura1.jpg",
     "image": "flor5.png",
-
     "ilus": "AHH"
   },
   {
@@ -37,7 +36,7 @@
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
       "La vida no es más que una película",
-       "que dura demasiado poco.",
+      "que dura demasiado poco.",
       "Un fotograma de vivencias,",
       "que pasa más deprisa en cuanto,",
       "por infortunios extraños,",
@@ -45,8 +44,21 @@
     ],
     "background": "textura1.jpg",
     "image": "flor2.png",
-
+    "ilus": "AHH"
+  },
+  {
+    "id": 4,
+    "title": "El poder del amor",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "El poder del amor",
+      "puede llevarte por penurias y espinas,",
+      "pero con constancia, disciplina y amor al prójimo,",
+      "todo lo que amas renace,",
+      "lleno de esperanza."
+    ],
+    "background": "papiro.jpg",
+    "image": "isis.png",
     "ilus": "AHH"
   }
-
 ]
