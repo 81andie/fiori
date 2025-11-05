@@ -86,6 +86,16 @@
     "background": "textura1.jpg",
     "image": "bicicleta.png",
     "ilus": "Otoño 2025/versos por Andrea Hdez"
+  },
+
+    {
+    "id": 10,
+    "title": "Recuerda...",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "Recuerda...,\nsé feliz con lo que tienes...\n",
+    "background": "textura5.jpg",
+    "image": "corazones.png",
+    "ilus": "Otoño 2025/versos por Andrea Hdez"
   }
 
 
