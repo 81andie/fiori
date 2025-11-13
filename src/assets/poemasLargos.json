@@ -200,6 +200,23 @@
     ],
     "background": "textura1.jpg",
     "image": "paisajenevado.jpg",
+    "ilus": "Andrea Hernández/2025"
+  },
+
+   {
+    "id": 9,
+    "title": "Sauvignon Blanc",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+    "Versos de Papasseit",
+    "Canta l'última oreneta",
+    "de la vesprada,",
+    "Un sauvignon blanc...",
+    "L'essència de les roses del jardí",
+    "s'esfuma acollint la lluna."
+    ],
+    "background": "textura1.jpg",
+    "image": "rosesysauvignon.png",
     "ilus": "Andrea Hernández/2015"
   }
 
