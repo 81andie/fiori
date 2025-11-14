@@ -218,6 +218,22 @@
     "background": "textura1.jpg",
     "image": "sauvignon.png",
     "ilus": "Andrea Hernández/2025"
+  },
+
+   {
+    "id": 10,
+    "title": "Peonías",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+    "Peonías blancas",
+    "Escondido el aroma por el balcón",
+    "Rico y delicado,",
+    "Esencia de una belleza pura..."
+
+    ],
+    "background": "textura1.jpg",
+    "image": "peonia.png",
+    "ilus": "Andrea Hernández/2025"
   }
 
 
