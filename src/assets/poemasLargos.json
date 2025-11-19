@@ -234,6 +234,24 @@
     "background": "textura1.jpg",
     "image": "peonia.png",
     "ilus": "Andrea Hernández/2025"
+  },
+   {
+    "id": 11,
+    "title": "Camèlia",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+    "Olor fragrant",
+    "Reposa tranquila",
+    "Delicada bellesa",
+    "Camèlia petita...",
+    "Despertes per la tardor",
+    "florint en les primeres gelades,",
+    "l'hivern s'ensuma pel matí"
+
+    ],
+    "background": "sinfondo.jpg",
+    "image": "cameliassin.png",
+    "ilus": "Andrea Hernández/2025"
   }
 
 
