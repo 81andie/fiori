@@ -235,6 +235,7 @@
     "image": "peonia.png",
     "ilus": "Andrea Hernández/2025"
   },
+
    {
     "id": 11,
     "title": "Camèlia",
@@ -252,8 +253,21 @@
     "background": "sinfondo.jpg",
     "image": "cameliassin.png",
     "ilus": "Andrea Hernández/2025"
+  },
+
+   {
+    "id": 12,
+    "title": "Corazón, Coraza...",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+    "Corazón coraza",
+    "corazón de hielo",
+    "de escarcha el alma"
+    ],
+
+    "background": "hielo.jpg",
+    "image": "hielo.png",
+    "ilus": "Andrea Hernández/2025"
   }
-
-
-
+  
 ]
