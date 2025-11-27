@@ -283,6 +283,32 @@
     "background": "hielo.jpg",
     "image": "ciruelo.png",
     "ilus": "Andrea Hernández/2025"
+  },
+   {
+    "id": 14,
+    "title": "Un gato en Trastevere...",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+    "Un gato en Trastevere",
+    "me mira con indiferencia",
+    "por las calles de Trastevere...",
+    "floflo y gordito...",
+    "me mira con esos ojos naranjas",
+    "pelo atigrado",
+    "se estira y se estira",
+    "se enrosca en mis piernas",
+    "y se va de la misma manera que vino",
+    "sigiloso y cauto.",
+    "fuerte y audaz da un salto",
+    "hacia la ventana",
+    "se queda en la repisa",
+    "vuelve a saltar",
+    "a por más carantoñas..."
+    ],
+
+    "background": "hielo.jpg",
+    "image": "ungato.png",
+    "ilus": "Andrea Hernández/2025"
   }
 
 ]
