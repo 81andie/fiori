@@ -1,5 +1,4 @@
 [
-
   {
     "id": 1,
     "date": "Veranos 2021-2022",
@@ -32,7 +31,6 @@
     "fontImage": "Pixabay + Pexels",
     "author": "ANDREA HERNÁNDEZ"
   },
-
   {
     "id": 3,
     "date": "Veranos 2021-2022",
@@ -49,8 +47,7 @@
     "fontImage": "Pixabay + Pexels",
     "author": "ANDREA HERNÁNDEZ"
   },
-
-   {
+  {
     "id": 4,
     "date": "Verano 2017",
     "img": "FB_IMG_1756133028469.jpg",
@@ -66,8 +63,7 @@
     "fontImage": "ANDREA HERNÁNDEZ",
     "author": "ANDREA HERNÁNDEZ"
   },
-
-    {
+  {
     "id": 5,
     "date": "Otoño 2025",
     "img": "antifaz.jpg",
@@ -83,8 +79,7 @@
     "fontImage": "PEXELS",
     "author": "ANDREA HERNÁNDEZ"
   },
-
-   {
+  {
     "id": 6,
     "date": "Otoño 2025",
     "img": "composicióndulce.png",
@@ -100,7 +95,6 @@
     "fontImage": "ANDREA HERNÁNDEZ",
     "author": "ANDREA HERNÁNDEZ"
   },
-
   {
     "id": 7,
     "date": "Otoño 2025",
@@ -117,8 +111,7 @@
     "fontImage": "PEXELS",
     "author": "ANDREA HERNÁNDEZ"
   },
-
-   {
+  {
     "id": 8,
     "date": "Otoño 2025",
     "img": "pluma.jpg",
@@ -134,8 +127,7 @@
     "fontImage": "ANDREA HERNANDEZ",
     "author": "ANDREA HERNÁNDEZ"
   },
-
-     {
+  {
     "id": 9,
     "date": "Otoño 2025",
     "img": "FB_IMG_1756132593330.jpg",
@@ -151,8 +143,7 @@
     "fontImage": "ANDREA HERNÁNDEZ",
     "author": "ANDREA HERNÁNDEZ"
   },
-
-    {
+  {
     "id": 10,
     "date": "Otoño 2025",
     "img": "floresazulesestartit.jpg",
@@ -168,7 +159,7 @@
     "fontImage": "ANDREA HERNÁNDEZ",
     "author": "ANDREA HERNÁNDEZ"
   },
-    {
+  {
     "id": 11,
     "date": "Otoño 2025",
     "img": "ella.jpg",
@@ -184,7 +175,7 @@
     "fontImage": "ANDREA HERNÁNDEZ",
     "author": "ANDREA HERNÁNDEZ"
   },
-   {
+  {
     "id": 12,
     "date": "Otoño 2025",
     "img": "caballos.jpg",
@@ -200,8 +191,6 @@
     "fontImage": "ANDREA HERNÁNDEZ & PEXELS",
     "author": "ANDREA HERNÁNDEZ"
   },
-
-
   {
     "id": 13,
     "date": "Otoño 2025",
@@ -218,9 +207,7 @@
     "fontImage": "FREEPIK",
     "author": "ANDREA HERNÁNDEZ"
   },
-
-
-   {
+  {
     "id": 14,
     "date": "TARDOR 2025",
     "img": "VideoCapture_20251014-211046.jpg",
@@ -236,9 +223,7 @@
     "fontImage": "A.H.H / Mosaic al (Museu d'Arqueología de Catalunya)",
     "author": "ANDREA HERNÁNDEZ"
   },
-
-
-   {
+  {
     "id": 14,
     "date": "Otoño 2025",
     "img": "piedra.jpg",
@@ -254,8 +239,7 @@
     "fontImage": "A.H.H",
     "author": "ANDREA HERNÁNDEZ"
   },
-
-   {
+  {
     "id": 15,
     "date": "Otoño 2025",
     "img": "mariposa.jpg",
@@ -271,9 +255,7 @@
     "fontImage": "A.H.H ",
     "author": "ANDREA HERNÁNDEZ"
   },
-
-
-   {
+  {
     "id": 16,
     "date": "Otoño 2025",
     "img": "beso.jpg",
@@ -289,9 +271,7 @@
     "fontImage": "bajo licencia CC BY-SA 4.0, vía Wikimedia Commons.",
     "author": "ANDREA HERNÁNDEZ"
   },
-
   {
-
     "id": 17,
     "date": "Otoño 2025",
     "img": "luna.jpg",
@@ -306,15 +286,21 @@
     "es2": "sóc lluny de casa",
     "fontImage": "ANDREA HERNANDEZ",
     "author": "ANDREA HERNÁNDEZ"
+  },
+  {
+    "id": 18,
+    "date": "Otoño 2025",
+    "img": "cactusNavidad.jpg",
+    "jp": "冷たい風",
+    "jp2": "きょう咲くサボテン",
+    "jp3": "雪の山",
+    "romaji": "Tsumetai kaze",
+    "romaji1": "Kyō saku saboten",
+    "romaji2": "Yuki no yama",
+    "es": "Vientos de Frío",
+    "es1": "florece el cactus esta mañana",
+    "es2": "montes nevados",
+    "fontImage": "ANDREA HERNANDEZ",
+    "author": "ANDREA HERNÁNDEZ"
   }
-
-
-
-
-
-
-
-
-
-
 ]
