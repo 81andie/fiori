@@ -61,18 +61,7 @@
     "background": "papiro.jpg",
     "image": "isis.png",
     "ilus": "AHH"
-  },
-
-  {
-    "id": 5,
-    "title": "El pozo",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-      "El corazón de un mujer",
-      "es un pozo de secretos"
-    ],
-    "background": "aguamarina.jpg",
-    "image": "pozo.png",
-    "ilus": "AHH"
   }
+
+
 ]
