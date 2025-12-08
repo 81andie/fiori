@@ -1,0 +1,7 @@
+export interface MindfullnessVerses {
+  id: number;
+  title: string;
+  author: string;
+  verses: string[];
+  background: string;
+}

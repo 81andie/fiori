@@ -284,8 +284,23 @@
     "image": "ciruelo.png",
     "ilus": "Andrea Hernández/2025"
   },
-   {
+
+  {
     "id": 14,
+    "title": "Flor de ciruelo...",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+    "Flor de ciruelo",
+    "roja, madura y tierna",
+    "florece el fruto..."
+    ],
+
+    "background": "hielo.jpg",
+    "image": "ciruelo.png",
+    "ilus": "Andrea Hernández/2025"
+  },
+   {
+    "id": 15,
     "title": "Un gato en Trastevere...",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
@@ -312,7 +327,7 @@
   },
 
    {
-    "id": 15,
+    "id": 16,
     "title": "Vientos de otoño I...",
     "author": "ANDREA HERNÁNDEZ",
     "verses":  [
