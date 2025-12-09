@@ -9,6 +9,8 @@ import { ImprovisacionesService } from '../../services/Improvisaciones.service';
 import { isPlatformBrowser } from '@angular/common';
 import { Improvisaciones } from '../../interfaces/improvisaciones.interface';
 import { ImprovisacionesCardMachadoComponent } from "../improvisaciones-card-machado/improvisaciones-card-machado.component";
+import { versesInviernoService } from '../../services/VersesInvierno.service';
+import { versesInvierno } from '../../interfaces/versesInvierno';
 
 
 @Component({
@@ -28,15 +30,19 @@ export class VersesPageComponent implements OnInit {
   PoemasLargos = inject(PoemasLargosService);
   Improvisaciones = inject(ImprovisacionesService)
   Poemas = inject(PoemasyVersosService);
+  PoemasInvierno = inject(versesInviernoService);
 
 
   public audiosMachado: Improvisaciones[] = []
+  public winter:versesInvierno[]=[]
 
 
 
   ngOnInit(): void {
 
     this.getMachadoImprovisations();
+    this.getVerseWinter()
+
   }
 
 
@@ -47,5 +53,15 @@ export class VersesPageComponent implements OnInit {
     })
 
   }
+
+  getVerseWinter() {
+
+    this.PoemasInvierno.getVersesInvierno().subscribe((data)=>{
+      this.winter=data
+    })
+
+  }
+
+
 
 }

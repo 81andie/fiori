@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Otoño-invierno 2025",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Con el frío helado",
+      "entrando por el balcón",
+      "se hiela mi buganvilla"
+    ],
+    "image": "nevandobalcón.png",
+    "background": "textura5.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Otoño-invierno 2025",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "La escarcha inunda",
+      "mi camino",
+      "siento el frío",
+      "calarme los huesos",
+      "el corazón late por la noche",
+      "helado el día",
+      "nubladas las sombras de tu alma",
+      "me pierdo en tus brazos",
+      "que me acogieron en otra vida"
+    ],
+    "image": "paisajenevado.png",
+    "background": "textura5.jpg",
+    "ilus": "Freepik"
+  },
+  {
+    "id": 3,
+    "title": "Otoño-invierno 2025",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Sueño de noche",
+      "un laberinto de fondo,",
+      "estamos aquí en mundos paralelos,",
+      "juntos pero unidos,",
+      "por un hilo invisible",
+      "de valentía",
+      "de amor y esperanza"
+
+    ],
+    "background": "textura1.jpg",
+    "image": "laberinto.png",
+    "ilus": "AHH"
+  }
+]
