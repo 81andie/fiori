@@ -76,8 +76,23 @@
     "background": "textura1.jpg",
     "image": "laberinto.png",
     "ilus": "AHH"
+  },
+
+  {
+    "id": 6,
+    "title": "La muerte toca las campanas",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Hoy desperté inquieta",
+      "el viento mucho más helado,",
+      "me ha desvelado esta madrugada",
+      "han sonado esta mañana",
+      "las campanas de mi iglesia",
+      "el aullido de un perro lobo",
+      "y una llamada me heló el corazón"
+    ],
+    "background": "textura1.jpg",
+    "image": "campanario.jpg",
+    "ilus": "AHH"
   }
-
-
-
 ]
