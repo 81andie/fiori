@@ -348,5 +348,30 @@
     "background": "hielo.jpg",
     "image": "rocacorba.png",
     "ilus": "Andrea Hernández/2025"
+  },
+    {
+    "id": 16,
+    "title": "Rosa palo",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses":  [
+      "Rosa dulce",
+      "de invierno",
+      "rosa palo,",
+      "delicada figura",
+      "puedes vestirte ",
+      "con tu mejor tu vestido",
+      "tu rosácea piel",
+      "tiñiendo de blanco",
+      "que veo desnudarse",
+      "cada noche en sueños",
+      "porque jamás logré",
+      "alcanzarla..."
+    ],
+
+    "background": "rosassilvestre.png",
+    "image": "rosassilvestre.png",
+    "ilus": "Andrea Hernández/2025"
   }
+
+
 ]

@@ -35,7 +35,7 @@
 
           <!-- versos -->
 
-           <div class="mt-2 md:text-xl lg:text-sm text-stone-950" *ngIf="verses.length">
+           <div class="mt-2 md:text-sm lg:text-sm text-stone-950" *ngIf="verses.length">
 
           @for (verso of item.verses; track verso.id +'-' + $index) {
           <pre>{{ verso }}</pre>
@@ -46,7 +46,7 @@
 
           <!-- imagen -->
           <div class="w-full flex justify-center justify-items-center font-bold text-black">
-            <img [src]="item.image" class="w-36 h-36 object-contain">
+            <img [src]="item.image" class="w-32 h-32 object-contain">
           </div>
 
           <!-- ilustración / autor -->
