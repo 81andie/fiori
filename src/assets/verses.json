@@ -94,6 +94,28 @@
     "background": "textura1.jpg",
     "image": "campanario.jpg",
     "ilus": "AHH"
+  },
+
+  {
+    "id": 6,
+    "title": "Fada, Fadeta",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Riu la fada, fadeta",
+      "sobre una magnòlia gelada.",
+      "Dins el bosc fosc",
+      "dormen els mussols d'ulls grocs.",
+      "Aletegen al niu",
+      "el llop l'ensuma",
+      "Fada fadeta, ens riu",
+      "quan creus haberla vist",
+      "ja s'ha esfumat",
+      "com la primera boira del matí..."
+    ],
+    "background": "magnolia.jpg",
+    "image": "magnolia.jpg",
+    "ilus": "Freepik"
   }
+
 
 ]
