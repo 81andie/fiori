@@ -47,7 +47,34 @@
     "background": "textura1.jpg",
     "image": "laberinto.png",
     "ilus": "AHH"
+  },
+   {
+    "id": 3,
+    "title": "Invierno 2025",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "Contemplo el fons negre",
+      "d'un pou profund,",
+      "d'on trec l'aigua clara",
+      "pura y transparent,",
+      "com la mare terra",
+      "que abrasa el cor",
+      "d'on reposa la nostra Força",
+      "la nostra matriu",
+      "mare infinita",
+      "perfumada de tramuntana...",
+      "aigua dolça de 4 aigües,",
+      "la contemplo",
+      "freda y gelada",
+      "la deixo córrer lliure,",
+      "entre els meus dits.",
+      "serena em calma tots els mals"
+
+    ],
+    "background": "textura1.jpg",
+    "image": "pozocalma.png",
+    "ilus": "AHH"
   }
 
-  
+
 ]
