@@ -74,7 +74,35 @@
     "background": "textura1.jpg",
     "image": "pozocalma.png",
     "ilus": "AHH"
+  },
+   {
+    "id": 3,
+    "title": "Invierno 2025",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+
+      "Retruena de noche la ciudad",
+      "Oigo caer en mi desván",
+      "la lluvia fuerte",
+      "tiembla toda una ciudad",
+      "vuelven los truenos",
+      "se nos cae el cielo",
+      "miro en el infinito",
+      "la figura de un templo...",
+      "perdido entre tanta nube,",
+      "doy los pasos por el desván",
+      "vuelvo a meterme bajo las sábanas,",
+      "me acurruco hecha un ovillo",
+      "es dia y sigue tronando"
+
+
+
+    ],
+    "background": "tormenta.jpg",
+    "image": "tormenta.jpg",
+    "ilus": "FREEPIK"
   }
+
 
 
 ]
