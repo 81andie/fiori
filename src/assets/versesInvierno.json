@@ -94,15 +94,26 @@
       "vuelvo a meterme bajo las sábanas,",
       "me acurruco hecha un ovillo",
       "es dia y sigue tronando"
-
-
-
     ],
     "background": "tormenta.jpg",
     "image": "tormenta.jpg",
     "ilus": "FREEPIK"
+  },
+
+    {
+    "id": 3,
+    "title": "Invierno 2025",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+
+      "Con el tiempo querida/o,",
+      "todo vuelve a su lugar de origen...",
+      "la verdad siempre se pone",
+      "en el lugar que le corresponde.."
+    ],
+    "background": "adelfa.png",
+    "image": "adelfa.png",
+    "ilus": "FREEPIK"
   }
-
-
 
 ]
