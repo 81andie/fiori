@@ -58,9 +58,11 @@ export class VersesPageComponent implements OnInit {
 
     this.PoemasInvierno.getVersesInvierno().subscribe((data)=>{
       this.winter=data
+        console.log("no sé dónde esta el error, pero el código está roto")
     })
 
   }
+
 
 
 

@@ -108,10 +108,16 @@
     "image": "relicario.png",
     "ilus": "Otoño 2025/versos por Andrea Hdez"
   }
+,
 
-
-
-
-
+    {
+    "id": 12,
+    "title": "Tomemos caminos distintos",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "\nAnda hacia lo que deseas,\n no te entretengas,\n ve, apresúrate...\n juega tranquilo con las flores\n plásticas de tu propio jardín",
+    "background": "orquideas.jpg",
+    "image": "orquideaPor.png",
+    "ilus": " Portugal 2019/versos por Andrea Hdez 26'"
+  }
 
 ]
