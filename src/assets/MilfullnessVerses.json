@@ -8,8 +8,6 @@
     "image": "chanel.png",
     "ilus": "Andrea Hernández/verano 2025"
   },
-
-
   {
     "id": 2,
     "title": "EN LA SOLEDAD",
@@ -19,7 +17,7 @@
     "image": "loveme.png",
     "ilus": "Andrea Hernández/verano 2025"
   },
-    {
+  {
     "id": 3,
     "title": "COLECCIONO",
     "author": "ANDREA HERNÁNDEZ",
@@ -37,8 +35,7 @@
     "image": "luna.png",
     "ilus": "Andrea Hernández/verano 2025"
   },
-
-    {
+  {
     "id": 5,
     "title": "No",
     "author": "ANDREA HERNÁNDEZ",
@@ -47,8 +44,7 @@
     "image": "no.png",
     "ilus": "Andrea Hernández/verano 2025"
   },
-
-   {
+  {
     "id": 6,
     "title": "EL KARMA... recuérdalo",
     "author": "ANDREA HERNÁNDEZ",
@@ -57,7 +53,6 @@
     "image": "pexels-pixabay-46231-removebg-preview.png",
     "ilus": "PEXELS Image/ versos por Andrea Hernández"
   },
-
   {
     "id": 7,
     "title": "Una ventana al mar",
@@ -67,8 +62,7 @@
     "image": "20251015_193342-removebg-preview.png",
     "ilus": "Verano 2025/versos por Andrea Hernández"
   },
-
-   {
+  {
     "id": 8,
     "title": "Fluir",
     "author": "ANDREA HERNÁNDEZ",
@@ -77,8 +71,7 @@
     "image": "20251015_211217-removebg-preview.png",
     "ilus": "Otoño 2025/versos por Andrea Hernández"
   },
-
-     {
+  {
     "id": 9,
     "title": "No mendigues amor",
     "author": "ANDREA HERNÁNDEZ",
@@ -87,8 +80,7 @@
     "image": "bicicleta.png",
     "ilus": "Otoño 2025/versos por Andrea Hdez"
   },
-
-    {
+  {
     "id": 10,
     "title": "Recuerda...",
     "author": "ANDREA HERNÁNDEZ",
@@ -97,9 +89,7 @@
     "image": "corazones.png",
     "ilus": "Otoño 2025/versos por Andrea Hdez"
   },
-
-
-    {
+  {
     "id": 11,
     "title": "Corazoncillo pa relicario..",
     "author": "ANDREA HERNÁNDEZ",
@@ -107,10 +97,8 @@
     "background": "textura5.jpg",
     "image": "relicario.png",
     "ilus": "Otoño 2025/versos por Andrea Hdez"
-  }
-,
-
-    {
+  },
+  {
     "id": 12,
     "title": "Tomemos caminos distintos",
     "author": "ANDREA HERNÁNDEZ",
@@ -119,5 +107,4 @@
     "image": "orquideaPor.png",
     "ilus": " Portugal 2019/versos por Andrea Hdez 26'"
   }
-
 ]
