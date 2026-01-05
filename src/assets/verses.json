@@ -112,7 +112,7 @@
     "ilus": "Freepik"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Si has perdido algo...",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
@@ -126,6 +126,26 @@
     ],
     "background": "textura1.jpg",
     "image": "floresinventadas.png",
+    "ilus": "AHH"
+  },
+
+   {
+    "id": 8,
+    "title": "No confies en nadie...",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "No te fies de nadie,",
+      "hasta la amistad más fiel",
+      "Te traicionará sin compasión",
+      "cuanta más gente confíes ciegamente",
+      "más puñales te clavarán",
+      "confía en tu instinto.",
+      "Él es el que mejor",
+      "va poder guiarte,",
+      "para protegerte de ellos"
+    ],
+    "background": "textura1.jpg",
+    "image":"camelia.png",
     "ilus": "AHH"
   }
 ]
