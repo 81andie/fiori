@@ -114,7 +114,23 @@
     "background": "adelfa.png",
     "image": "adelfa.png",
     "ilus": "FREEPIK"
+  },
+    {
+    "id": 4,
+    "title": "Invierno 2025",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+
+      "Vuelve a brillar el Sol",
+      "lo correcto",
+      "la verdad es lo que importa",
+      "es mi destino",
+      "tú eres el camino"
+    ],
+    "background": "textura1.jpg",
+    "image": "cisne.png",
+    "ilus": "AHH"
   }
- 
+
 
 ]
