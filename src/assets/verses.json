@@ -128,8 +128,7 @@
     "image": "floresinventadas.png",
     "ilus": "AHH"
   },
-
-   {
+  {
     "id": 8,
     "title": "No confies en nadie...",
     "author": "ANDREA HERNÁNDEZ",
@@ -145,7 +144,23 @@
       "para protegerte de ellos"
     ],
     "background": "textura1.jpg",
-    "image":"camelia.png",
+    "image": "camelia.png",
+    "ilus": "AHH"
+  },
+  {
+    "id": 9,
+    "title": "De los silencios",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+      "De los silencios no se nutre",
+      "el amor y no me gustan los ladrones",
+      "creéme que si has robado corazones,",
+      "que no te pertenecen",
+      "llegará el dia que te quedarás solo",
+      "sin nadie que te ame"
+    ],
+    "background": "textura1.jpg",
+    "image": "florplateada.png",
     "ilus": "AHH"
   }
 ]
