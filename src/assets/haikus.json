@@ -303,8 +303,7 @@
     "fontImage": "ANDREA HERNANDEZ",
     "author": "ANDREA HERNÁNDEZ"
   },
-
-   {
+  {
     "id": 19,
     "date": "Otoño 2025/Invierno 2025",
     "img": "avellaneros.jpg",
@@ -319,9 +318,8 @@
     "es2": "cascando avellanas",
     "fontImage": "Designed by rawpixel.com/Freepik",
     "author": "ANDREA HERNÁNDEZ"
-   },
-
-   {
+  },
+  {
     "id": 19,
     "date": "Otoño 2025/Invierno 2025",
     "img": "copaVintage.jpg",
@@ -336,5 +334,21 @@
     "es2": "La lluna guarda l’aroma.",
     "fontImage": "Andrea Hernández",
     "author": "ANDREA HERNÁNDEZ"
-   }
+  },
+  {
+    "id": 20,
+    "date": "Otoño 2025/Invierno 2025",
+    "img": "praha.jpg",
+    "jp": "甘き勝利",
+    "jp2": "心は静か",
+    "jp3": "歩み堅し",
+    "romaji": "Amaki shōri",
+    "romaji1": "kokoro wa shizuka",
+    "romaji2": "ayumi katashi",
+    "es": "Dulce victoria,,",
+    "es1": "la mente tranquila,",
+    "es2": "el paso firme.",
+    "fontImage": "Andrea Hernández",
+    "author": "ANDREA HERNÁNDEZ"
+  }
 ]
