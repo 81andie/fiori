@@ -350,5 +350,22 @@
     "es2": "el paso firme.",
     "fontImage": "Andrea Hernández",
     "author": "ANDREA HERNÁNDEZ"
+  },
+
+   {
+    "id": 21,
+    "date": "Invierno 2025",
+    "img": "tela.png",
+    "jp": "指先は繊細  ",
+    "jp2": "紫の冷たい肌  ",
+    "jp3": "炎が燃える",
+    "romaji": "Yubisaki wa sensai  ",
+    "romaji1": "Murasaki no tsumetai hada ",
+    "romaji2": "Honoo ga moeru",
+    "es": "Tacto muy fino,",
+    "es1": "piel morada y fría,",
+    "es2": "arde el fuego.",
+    "fontImage": "Andrea Hernández",
+    "author": "ANDREA HERNÁNDEZ"
   }
 ]
