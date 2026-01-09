@@ -130,6 +130,22 @@
     "background": "textura1.jpg",
     "image": "cisne.png",
     "ilus": "AHH"
+  },
+
+    {
+    "id": 5,
+    "title": "Invierno 2025",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+
+      "No pidas jamás",
+      "aquello que nunca",
+      "te perteneció"
+
+    ],
+    "background": "textura1.jpg",
+    "image": "rosa.png",
+    "ilus": "AHH"
   }
 
 
