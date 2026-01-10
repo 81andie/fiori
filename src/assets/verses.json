@@ -162,5 +162,30 @@
     "background": "textura1.jpg",
     "image": "florplateada.png",
     "ilus": "AHH"
+  },
+  {
+    "id": 10,
+    "title": "La clavecinista",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": [
+
+      "La reverencia de cortesía,",
+      "las velas intoxican el ambiente",
+      "el olor a cera",
+      "ciega mis sentidos",
+      "sentada frente al cémbalo",
+      "alguien carraspea",
+      "el corazón se acelera",
+      "acariciando las teclas",
+      "me sumerjo en el tiempo",
+      "el último segundo,",
+      "dejo inundar los harmónicos",
+      "de la última cadencia",
+      "movimiento de danza en las muñecas",
+      "se acabó el concierto"
+    ],
+    "background": "clave.jpg",
+    "image": "clave.jpg",
+    "ilus": "AHH"
   }
 ]
