@@ -132,21 +132,20 @@
     "ilus": "AHH"
   },
 
-    {
+  {
     "id": 5,
     "title": "Invierno 2025",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
 
-      "No pidas jamás",
-      "aquello que nunca",
-      "te perteneció"
+      "Cada mochuelo",
+      "a su olivo..."
 
     ],
     "background": "textura1.jpg",
-    "image": "rosa.png",
+    "image": "mochuelo.png",
     "ilus": "AHH"
-  }
 
+  }
 
 ]
