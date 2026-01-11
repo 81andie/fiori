@@ -42,13 +42,12 @@
       "por un hilo invisible",
       "de valentía",
       "de amor y esperanza"
-
     ],
     "background": "textura1.jpg",
     "image": "laberinto.png",
     "ilus": "AHH"
   },
-   {
+  {
     "id": 3,
     "title": "Invierno 2025",
     "author": "ANDREA HERNÁNDEZ",
@@ -69,18 +68,16 @@
       "la deixo córrer lliure,",
       "entre els meus dits.",
       "serena em calma tots els mals"
-
     ],
     "background": "textura1.jpg",
     "image": "pozocalma.png",
     "ilus": "AHH"
   },
-   {
+  {
     "id": 3,
     "title": "Invierno 2025",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
-
       "Retruena de noche la ciudad",
       "Oigo caer en mi desván",
       "la lluvia fuerte",
@@ -99,13 +96,11 @@
     "image": "tormenta.jpg",
     "ilus": "FREEPIK"
   },
-
-    {
+  {
     "id": 3,
     "title": "Invierno 2025",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
-
       "Con el tiempo querida/o,",
       "todo vuelve a su lugar de origen...",
       "la verdad siempre se pone",
@@ -115,12 +110,11 @@
     "image": "adelfa.png",
     "ilus": "FREEPIK"
   },
-    {
+  {
     "id": 4,
     "title": "Invierno 2025",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
-
       "Vuelve a brillar el Sol",
       "lo correcto",
       "la verdad es lo que importa",
@@ -131,23 +125,18 @@
     "image": "cisne.png",
     "ilus": "AHH"
   },
-
   {
     "id": 5,
     "title": "Invierno 2025",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
-
       "Cada mochuelo",
       "a su olivo...",
       "el nido pequeño",
       "y bien hecho..."
-
     ],
     "background": "textura1.jpg",
     "image": "mochuelo.png",
     "ilus": "AHH"
-
   }
-
 ]
