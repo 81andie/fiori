@@ -367,5 +367,21 @@
     "es2": "arde el fuego.",
     "fontImage": "Andrea Hernández",
     "author": "ANDREA HERNÁNDEZ"
+  },
+    {
+    "id": 22,
+    "date": "Invierno 2025",
+    "img": "escote.jpg",
+    "jp": "逢瀬の刃",
+    "jp2": "酒と囁き",
+    "jp3": "ぬるい夕餉",
+    "romaji": "Kīta aru firo",
+    "romaji1": "sake to kōhīdensu",
+    "romaji2": "tībina shokuji",
+    "es": "Cita al filo,",
+    "es1":"sake y confidencias,",
+    "es2":"cena tibia.",
+    "fontImage": "Andrea Hernández",
+    "author": "ANDREA HERNÁNDEZ"
   }
 ]
