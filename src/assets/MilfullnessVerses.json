@@ -98,8 +98,18 @@
     "image": "relicario.png",
     "ilus": "Otoño 2025/versos por Andrea Hdez"
   },
-  {
+
+   {
     "id": 12,
+    "title": "Corazoncillo y concha pa relicario..",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "Corazoncillo,\nsin mariposas\nvuela libre\ncomo los temblores\n de los colibríes...\ncorazoncillo y concha,\nnácares perlados pa relicario.",
+    "background": "textura5.jpg",
+    "image": "concharoja.png",
+    "ilus": "Invierno 2025/versos por Andrea Hdez"
+  },
+  {
+    "id": 13,
     "title": "Tomemos caminos distintos",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "\nAnda hacia lo que deseas,\n no te entretengas,\n ve, apresúrate...\n juega tranquilo con las flores\n plásticas de tu propio jardín",
