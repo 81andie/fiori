@@ -236,8 +236,39 @@
     "ilus": "Andrea Hernández/2025"
   },
 
+
    {
     "id": 11,
+    "title": "Mare fragrant de les Roses",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses":  [
+      "Mare fragant de les Roses",
+      "embriagadora d'olors",
+      "joia de puresa",
+      "que et duem ",
+      "dins al pensament",
+      "protegeix-nos de tot mal.",
+
+      "Mare fragant de les Roses",
+      "que en tu el perfum",
+      "esdevé néctar de saviesa",
+      "per nodrir l'abella",
+      "la teva mel",
+      "es dolça",
+      "com el rusc tendre",
+      "Mare fragrant de les Roses",
+      "coronada d'espines",
+      "ens sagna la veritat",
+      "protegeix-nos de tot mal"
+    ],
+
+    "background": "roses.jpg",
+    "image": "creuambroses.png",
+    "ilus": "Andrea Hernández/2026"
+  }
+,
+   {
+    "id": 12,
     "title": "Camèlia",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
@@ -256,7 +287,7 @@
   },
 
    {
-    "id": 12,
+    "id": 13,
     "title": "Corazón, Coraza...",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
@@ -271,7 +302,7 @@
   },
 
   {
-    "id": 13,
+    "id": 14,
     "title": "Flor de ciruelo...",
     "author": "ANDREA HERNÁNDEZ",
     "verses": [
@@ -336,7 +367,7 @@
     "ilus": "Andrea Hernández/2025"
   },
     {
-    "id": 16,
+    "id": 17,
     "title": "Rosa palo",
     "author": "ANDREA HERNÁNDEZ",
     "verses":  [
