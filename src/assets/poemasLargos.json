@@ -380,8 +380,7 @@
       "tu rosácea piel",
       "que veo desnudarse",
       "cada noche en sueños",
-      "porque jamás logré",
-      "alcanzarla...",
+      "piel que no acaricié jamás...",
       "la culpa me acecha",
       "y ahi seguiré",
       "lejos de único bueno ",
@@ -390,6 +389,28 @@
 
     "background": "rosassilvestre.png",
     "image": "rosassilvestre.png",
+    "ilus": "Andrea Hernández/2025"
+  },
+
+  {
+    "id": 18,
+    "title": "Today on the path,",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses":  [
+      "Today on the path,",
+      "winding toward the river,",
+      "it smelled of burned dry leaves,",
+      "of scorched moss.",
+      "Neon-orange flames",
+      "climbed upward, above me.",
+      "A hawk burst forth,",
+      "spreading its wings.",
+      "Today on the path,",
+      "I walked toward a new path."
+    ],
+
+    "background": "quema.jpg",
+    "image": "quema.jpg",
     "ilus": "Andrea Hernández/2025"
   }
 
