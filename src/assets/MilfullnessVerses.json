@@ -109,7 +109,7 @@
     "ilus": "Invierno 2025/versos por Andrea Hdez"
   },
 
-  
+
   {
     "id": 13,
     "title": "Tomemos caminos distintos",
@@ -118,5 +118,15 @@
     "background": "orquideas.jpg",
     "image": "orquideaPor.png",
     "ilus": " Portugal 2019/versos por Andrea Hdez 26'"
+  },
+
+  {
+    "id": 14,
+    "title": "Dónde quedará",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "\nDónde\nquedará,\nla privacidad.\nen este mundo...\nque todo se expone",
+    "background": "textura1.jpg",
+    "image": "candado.png",
+    "ilus": "versos por Andrea Hdez 26'"
   }
 ]
