@@ -128,5 +128,14 @@
     "background": "textura1.jpg",
     "image": "candado.png",
     "ilus": "versos por Andrea Hdez 26'"
+  },
+   {
+    "id": 14,
+    "title": "Prefiero no volverte a ver...",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "\nPrefiero\nno volverte a ver\nmás\nsigue con tu vida\n yo a la mía",
+    "background": "mujerentrenando.jpg",
+    "image": "mujerentrenando.jpg",
+    "ilus": "versos por Andrea Hdez 26'"
   }
 ]
