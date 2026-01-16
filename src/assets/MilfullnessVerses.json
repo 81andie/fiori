@@ -98,8 +98,7 @@
     "image": "relicario.png",
     "ilus": "Otoño 2025/versos por Andrea Hdez"
   },
-
-   {
+  {
     "id": 12,
     "title": "Corazoncillo y concha pa relicario...",
     "author": "ANDREA HERNÁNDEZ",
@@ -108,7 +107,6 @@
     "image": "concharoja.png",
     "ilus": "Invierno 2025/versos por Andrea Hdez"
   },
-
   {
     "id": 13,
     "title": "Tomemos caminos distintos",
@@ -118,7 +116,6 @@
     "image": "orquideaPor.png",
     "ilus": " Portugal 2019/versos por Andrea Hdez 26'"
   },
-
   {
     "id": 14,
     "title": "Dónde quedará",
@@ -128,15 +125,13 @@
     "image": "candado.png",
     "ilus": "versos por Andrea Hdez 26'"
   },
-
-   {
+  {
     "id": 15,
-    "title": "El juego empieza de nuevo",
+    "title": "The game starts again,",
     "author": "ANDREA HERNÁNDEZ",
-    "verses": "\nEl juego empieza de nuevo,\ny siempre el ganador...\nse lo lleva todo...\naunque te duela\n siempre habrá alguien\nque te ganará la partida,\n",
+    "verses": "\nThe game starts again,\nand always the winner...\ntakes it all...\neven if it hurts\n there will always be someone\nwho will beat you at the game,\n",
     "background": "iceSkatin.jpg",
     "image": "iceSkatin.jpg",
     "ilus": "ilus: freepik, versos por Andrea Hdez 26'"
   }
-
 ]
