@@ -35,10 +35,10 @@
 
           <!-- versos -->
 
-           <div class="mt-1 h-auto md:text-xs lg:text-xs text-stone-950" *ngIf="verses.length">
+           <div class=" mt-1 h-auto md:text-xs lg:text-xs text-stone-950" *ngIf="verses.length">
 
           @for (verso of item.verses; track verso.id +'-' + $index) {
-          <pre class="backdrop-blur-md hover:backdrop-blur-none transition-opacity">{{ verso }}</pre>
+          <pre >{{ verso }}</pre>
           }
 
         </div>
