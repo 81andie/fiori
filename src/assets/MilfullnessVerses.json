@@ -130,13 +130,14 @@
     "ilus": "versos por Andrea Hdez 26'"
   },
 
-    {
+   {
     "id": 15,
-    "title": "Una vez susurró el diablo...",
+    "title": "El juego empieza de nuevo",
     "author": "ANDREA HERNÁNDEZ",
-    "verses": "Una vez susurró el diablo...\nNi lo que es bueno\nes tan bueno...\nni lo que es malo\nes tan malo...\n",
-    "background": "angelalado.jpg",
-    "image": "angelalado.jpg",
-    "ilus": "freepik'"
+    "verses": "\nEl juego empieza de nuevo,\ny siempre el ganador...\nse lo lleva todo...\naunque te duela siempre alguien\nque te ganará la partida.",
+    "background": "iceSkatin.jpg",
+    "image": "iceSkatin.jpg",
+    "ilus": "ilus: freepik, versos por Andrea Hdez 26'"
   }
+
 ]
