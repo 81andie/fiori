@@ -24,7 +24,7 @@
       [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
 
       <!-- capa oscura -->
-      <div class="absolute">
+      <div class="absolute ">
         <p class="text-lg mt-12 font-bold  text-black bg-white bg-opacity-0 backdrop-blur-sm">
           {{ item.title }}
         </p>
@@ -38,7 +38,7 @@
            <div class="mt-1 h-auto md:text-xs lg:text-xs text-stone-950" *ngIf="verses.length">
 
           @for (verso of item.verses; track verso.id +'-' + $index) {
-          <pre class="backdrop-blur-sm">{{ verso }}</pre>
+          <pre class="blur-sm">{{ verso }}</pre>
           }
 
         </div>
