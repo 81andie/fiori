@@ -134,14 +134,22 @@
     "image": "iceSkatin.jpg",
     "ilus": "ilus: freepik, verses Andrea Hdez 26'"
   },
-
-    {
+  {
     "id": 16,
     "title": "El cebo.",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "\nNo sé a quién querías engañar,\npero...\ncaiste de lleno...\nen tu propia trampa\n, te descubriste así sin quererlo",
     "background": "elcebo.jpg",
     "image": "elcebo.jpg",
+    "ilus": "ilus: freepik, verses Andrea Hdez 26'"
+  },
+  {
+    "id": 17,
+    "title": "May the pedagogy of verse",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "May the pedagogy of verse\nserve us all.\nThere is nothing more powerful\nthan a verse\nas a therapeutic practice\nfor the soul.",
+    "background": "orchids.jpg",
+    "image": "orchids.jpg",
     "ilus": "ilus: freepik, verses Andrea Hdez 26'"
   }
 ]
