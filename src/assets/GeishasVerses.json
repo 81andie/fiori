@@ -34,5 +34,14 @@
     "songTitle": "Improvisaciones espontáneas,\n'haikus y geishas': SAKURA",
     "image": "geisha4.jpg",
     "audio": "Geisha3.mp3"
+  },
+  {
+    "id": 5,
+    "title": "AYAME",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "Bajo un rostro contento\n se mueve la muchacha;\na aunque está triste,\nAyame baila con gracia.",
+    "songTitle": "Improvisaciones espontáneas,\n'Poesías y geishas': AYAME",
+    "image": "ayameblossom.jpg",
+    "audio": "Ayame1.mp3"
   }
 ]
