@@ -3,6 +3,8 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { GeishesVerses } from '../../interfaces/geishas.interface';
 import { GeishasVersesService } from '../../services/geishas.service';
 import { CardReproductorComponent } from "../card-reproductor/card-reproductor.component";
+import { HaikusMusicadosComponent } from '../haikus-musicados/haikus-musicados.component';
+
 
 
 
@@ -27,6 +29,7 @@ export class reproductorReusableComponent implements  OnInit {
   private geishasVersesService= inject(GeishasVersesService)
 
 
+
   ngOnInit(): void {
   this.getVersesGeishas()
   }
@@ -37,6 +40,10 @@ export class reproductorReusableComponent implements  OnInit {
       this.versesGeishas=data;
     })
   }
+
+
+
+
 
 
 

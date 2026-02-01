@@ -20,7 +20,7 @@ export const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'haikus', component: HaikusComponent },
   { path: 'haikus-musicados', component: HaikusMusicadosComponent },
-  { path: 'haikus-geishas', component: reproductorReusableComponent},
+  { path: 'poemas-colecciones', component: reproductorReusableComponent},
   { path: 'poemas-musicados', component: PoemasMusicadosComponent },
   { path: 'morgan', component: MorganComponent },
   {path: 'mindfullness', component:MilfullnessPoemsComponent},
