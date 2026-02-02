@@ -54,7 +54,27 @@
     "audio": "/Frio.mp3",
     "fontImage": "Pixabay + Pexels",
     "author": "ANDREA HERNÁNDEZ"
-  }
+  },
+
+  {
+  "id": 4,
+  "title": "La niña duerme",
+  "date": "Febrero 2026",
+  "image": "https://img.freepik.com/foto-gratis/lindo-bebe-durmiendo-interior_23-2150921979.jpg?t=st=1769977204~exp=1769980804~hmac=a266b636a635e4291e46eb94272a8ab482b48e595f9ab600fe2a55b5e59bf126",
+  "jp": "少女は眠る",
+  "jp2": "子守唄の夜",
+  "jp3": "疲れた母…",
+  "romaji": "Shōjo wa nemuru",
+  "romaji1": "Komoriuta no yoru",
+  "romaji2": "Tsukareta haha…",
+  "verses1": "La niña duerme",
+  "verses2": "Una noche de nanas",
+  "verses3": "Madre cansada…",
+  "verses": "La niña duerme\nUna noche de nanas\nMadre cansada…",
+  "audio": "/laninaduerme4.mp3",
+  "fontImage": "Freepik",
+  "author": "ANDREA HERNÁNDEZ"
+}
 
 
 ]
