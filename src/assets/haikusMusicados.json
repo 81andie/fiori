@@ -74,5 +74,25 @@
   "audio": "/laninaduerme4.mp3",
   "fontImage": "Freepik",
   "author": "ANDREA HERNÁNDEZ"
+},
+
+  {
+  "id": 5,
+  "title": "Dia de lluvia",
+  "date": "Febrero 2026",
+  "image": "https://image2url.com/r2/default/images/1770156384890-5db33128-7675-4b90-aeb9-655a17dc835d.jpg",
+  "jp": "雨の午後",
+  "jp2": "二つの声が",
+  "jp3": "子をあやす",
+  "romaji": "Ame no gogo",
+  "romaji1": "Futatsu no koe ga",
+  "romaji2": "Ko o ayasu",
+  "verses1": "Tarde de lluvia",
+  "verses2": "dos voces",
+  "verses3": "arrullan al niño",
+  "verses": "Tarde de lluvia\ndos voces\narrullan al niño",
+  "audio": "/diadelluvia.mp3",
+  "fontImage": "Imagen generada por IA",
+  "author": "ANDREA HERNÁNDEZ"
 }
 ]
