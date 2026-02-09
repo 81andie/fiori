@@ -383,5 +383,23 @@
     "es2":"el ronroneo de la gata",
     "fontImage": "Andrea Hernández",
     "author": "ANDREA HERNÁNDEZ"
+  },
+
+     {
+    "id": 24,
+    "date": "Invierno 2025",
+    "img": "enredadera.jpg",
+    "jp": "五月に咲く",
+    "jp2": "やわらかな蔓の花",
+    "jp3": "古い鎧の後ろ",
+    "romaji": "Gogatsu ni saku",
+    "romaji1": "Yawarakana tsuru no hana",
+    "romaji2": "Furui yoroi no ushiro",
+    "es": "En mayo florecen,",
+    "es1":"enredaderas delicadas,",
+    "es2":"tras viejas armaduras...",
+    "fontImage": "Andrea Hernández",
+    "author": "ANDREA HERNÁNDEZ"
   }
+
 ]
