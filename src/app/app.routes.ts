@@ -13,6 +13,7 @@ import { CaligramaComponent } from './components/caligrama/caligrama.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { SakariComponent } from './components/sakari/sakari.component';
 import { MalsonComponent } from './components/malson/malson.component';
+import { EspecialComponent } from './components/especial/especial.component';
 
 
 
@@ -29,6 +30,7 @@ export const routes: Routes = [
    { path: 'malson', component: MalsonComponent},
   { path: 'verses', component: VersesPageComponent },
   { path: 'caligrama', component: CaligramaComponent },
+   { path: 'especial', component: EspecialComponent },
   { path: 'sobremi', component: SobreMiComponent },
 
 
