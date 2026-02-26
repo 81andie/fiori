@@ -400,6 +400,23 @@
     "es2":"tras viejas armaduras...",
     "fontImage": "Andrea Hernández",
     "author": "ANDREA HERNÁNDEZ"
+  },
+
+   {
+    "id": 25,
+    "date": "Invierno 2026",
+    "img": "catedral.jpg",
+    "jp": "路地あいだ",
+    "jp2": "装う聖堂",
+    "jp3": "蘭の香",
+    "romaji": "Roji aida",
+    "romaji1": "yosō seidō",
+    "romaji2": "ran no ka",
+    "es": "Entre callejones,,",
+    "es1":"se viste una catedral,",
+    "es2":"huelo a orquídea...",
+    "fontImage": "Andrea Hernández",
+    "author": "ANDREA HERNÁNDEZ"
   }
 
 ]
