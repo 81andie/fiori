@@ -22,9 +22,14 @@
 -->
   <div class="ml-2 mr-2 flex justify-center mt-10">
     <div class="w-full max-w-4xl aspect-video">
-      <iframe src="https://www.flipbookpdf.net/web/site/a6cc9bd470460d2eb09b1a58b262e5f50c9b7358202509.pdf.html"
-        class="w-full h-full rounded-lg shadow" frameborder="0" scrolling="no">
-      </iframe>
+   <ng2-pdfjs-viewer class="w-full h-screen"
+    pdfSrc="/assets/Tiamat.pdf"
+     [showSpinner]="true"
+     [showSpinner]="true"
+     [theme]="'light'"
+     [showSidebar]="true"
+>
+  </ng2-pdfjs-viewer>
     </div>
   </div>
 

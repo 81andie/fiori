@@ -5,12 +5,12 @@ import { TiamatAudioPlayerService } from './../../services/Tiamat.service';
 import { tiamatAudioPlayer } from '../../interfaces/tiamat.interface';
 import { CommonModule } from '@angular/common';
 import { CardReproductorComponent } from "../card-reproductor/card-reproductor.component";
-
+import { PdfJsViewerModule } from "ng2-pdfjs-viewer";
 
 
 @Component({
   selector: 'app-tiamat',
-  imports: [CommonModule, CardReproductorComponent],
+  imports: [CommonModule, CardReproductorComponent,PdfJsViewerModule],
   templateUrl: './tiamat.component.html',
   styleUrl: './tiamat.component.css'
 })
