@@ -23,7 +23,7 @@
   <div class="ml-2 mr-2 flex justify-center mt-10">
     <div class="w-full max-w-4xl aspect-video">
    <ng2-pdfjs-viewer class="w-full h-screen"
-    pdfSrc="/assets/.pdf"
+    pdfSrc="/assets/tiamat.pdf"
      [showSpinner]="true"
      [showSpinner]="true"
      [theme]="'dark'"
@@ -49,20 +49,14 @@
         <p class="text-xl font-bold">{{item.title}}</p>
         <p class="text-xl font-bold">{{item.date}}</p>
 
-
-
         <div class="text-xs md:text-xl lg:text-xl text-white/80">
           <pre>{{ item.artist }}</pre>
-
-
           <pre>{{ item.song }}</pre>
-
         </div>
 
         <div class="text-xs md:text-xl lg:text-xl text-white/80">
           <pre>{{ item.fontSong}}</pre>
           <pre>{{ item.licenciaPain}}</pre>
-
         </div>
 
       </div>
