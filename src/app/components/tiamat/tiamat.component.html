@@ -17,7 +17,7 @@
 " width="420" height="300" frameborder="0" scrolling="no">
     </iframe>
   </div>
--->   
+-->
   <div class="w-screen h-screen flex">
    <ng2-pdfjs-viewer class="w-full h-full sm:h-screen sm:w-screen"
     pdfSrc="/assets/tiamat.pdf"
@@ -33,7 +33,7 @@
   <div class="space-y-0">
     @for (item of AudioTiamat; track item.id; let idx = $index) {
     <section data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
-      class=" relative  h-screen  flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
+      class="relative h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
       [ngStyle]="{'background-image': 'url(' + item.image + ')'}">
       <!-- Capa oscura -->
       <div class="absolute inset-0 bg-black bg-opacity-40"></div>
