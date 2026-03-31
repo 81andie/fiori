@@ -1,6 +1,7 @@
-<nav class="z-40 top-0 h-12 fixed w-[100vw] dark:border-gray-700 text-sm">
 
-  <div class="ml-2 p-1">
+<nav class="z-40 top-0 h-6 fixed w-[100vw] dark:border-gray-700 text-sm">
+
+  <div class="ml-1 p-0">
        <button data-collapse-toggle="navbar-collapse" type="button"
       class="flex  text-gray-500 rounded-lg w-7 h-7 mt-1 border lg:hidden"
       aria-controls="navbar-collapse" aria-expanded="false">
@@ -11,12 +12,15 @@
     </button>
   </div>
 
-  <div class="flex flex-col justify-center items-center backdrop:mx-auto bg-stone-200">
+  <div class="flex flex-wrap justify-center items-center backdrop:mx-auto bg-stone-200">
     <!-- Logo -->
+
     <a href="/Inicio" class="flex items-center space-x-0 rtl:space-x-reverse">
-      <img src="flor5.png" class="h-8 w-8 p-1 object-cover bg-center rounded-full" alt="Logo" />
+
+
+      <img src="flor5.png" class="h-6 w-6 p-0.5 object-cover bg-center rounded-full" alt="Logo" />
       <span
-        class="p-2 self-center lg:text-xl md:text-sm sm:text-xl font-semibold whitespace-nowrap text-stone-400">
+        class="p-0 self-center lg:text-xs md:text-sm sm:text-xs font-semibold whitespace-nowrap text-stone-400">
         Fiori Poetic Blog
       </span>
     </a>
@@ -25,9 +29,9 @@
 
 
     <!-- Menú principal -->
-    <div class="hidden flex-wrap w-full lg:block lg:w-[67vw] mt-1 gap-1" id="navbar-collapse">
+    <div class="hidden flex-wrap w-full lg:block lg:w-[67vw] mt-0.5 gap-0.5" id="navbar-collapse">
       <ul
-        class="flex flex-col gap-2 font-medium border p-3 px-3 mt-3 rounded-lg lg:flex-row lg:space-x-4 lg:mt-0 lg:border-0 text-stone-500 ">
+        class="flex flex-col gap-0 font-medium border p-2 px-2 mt-2 rounded-lg lg:flex-row lg:space-x-3 lg:mt-0 lg:border-0 text-stone-500 ">
 
         <!-- Inicio -->
         <li>
@@ -47,7 +51,7 @@
             </svg>
           </button>
           <div id="dropdownHaikus"
-            class="z-40 h-24 hidden absolute mt-2 bg-white divide-y divide-gray-100 shadow w-48 dark:bg-stone-900 dark:divide-stone-900">
+            class="z-40 h-24 hidden absolute mt-0 bg-white divide-y divide-gray-100 shadow w-48 dark:bg-stone-900 dark:divide-stone-900">
             <ul class="py-2 text-sm dark:text-stone-50">
               <li><a [routerLink]="['/haikus']"
                   class="block px-3 py-0.5  dark:hover:bg-gray-600">Haikus</a></li>
@@ -79,8 +83,6 @@
                   class="block px-4 py-1  dark:hover:bg-gray-600">Sakari, i el seu amic Bru, l'Ós Bru</a></li>
                   <li><a [routerLink]="['/malson']"
                   class="block px-4 py-1  dark:hover:bg-gray-600">Malson abans la Castanyera</a></li>
-
-
                 </ul>
           </div>
         </li>
