@@ -1,54 +1,96 @@
-  <hr class="h-6 mt-16  bg-cover bg-[url(/textil.jpg)] ">
-  <h1 class="text-xl m-1 bg-clip-text text-transparent bg-gradient-to-b from-stone-400 to-stone-900 hover:to-slate-400"></h1>
-<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
-  class="pt-2 h-full  mt-2 mb-2 font-Poppins bg-[#f95858]  inset-0 overflow-hidden parallax">
-  <div class="flex flex-col items-center relative pt-14 overflow-hidden  bg-center bg-cover bg-fixed bg-no-repeat
-        " style="background-image: url('textura1.jpg');">
-    <!-- Animated Background Text -->
-    <h1 class="absolute text-3xl md:text-[3rem] font-bold mt-0 text-slate-400 opacity-5 animate-pulse">
-      Sobre mi
-    </h1>
+<!-- Sobre Mi - Win2k Dialog Box style -->
+<div id="sobremi" style="margin: 12px 16px;">
 
-    <div class="relative flex flex-col items-center mt-8 md:mt-10 group ">
-      <!-- Main Heading with Gradient Text -->
-      <h1
-        class="text-2xl mt-7 md:text-2xl lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-zinc-700 to-zinc-300 mb-2 transition-all duration-500 group-hover:scale-105 font-thin">
-        Conóceme
-      </h1>
+  <div class="win-haiku-card">
 
-      <!-- Animated Border -->
-      <div class="relative">
-        <div class="w-20 md:w-32 h-0.5  bg-zinc-800 rounded-full overflow-hidden">
-          <div class="h-full mt-3 bg-orange-400 animate-progress-bar origin-left"></div>
-        </div>
-        <div
-          class="absolute -bottom-1 left-1/2 transform -translate-x-2/2 w-2 h-2 bg-orange-400 rounded-full animate-ping">
-        </div>
+    <!-- Title bar -->
+    <div class="win-titlebar">
+      <div style="display:flex; align-items:center; gap:5px;">
+        <span>👤</span>
+        <span>Sobre mí — Propiedades</span>
       </div>
-      <!-- Subtle decorative elements -->
-
-    </div>
-
-    <!-- Optional subtitle -->
-
-
-    <div class="  md:ml-20 mr-12 ml-8 text-justify mb-3 mt-6">
-      <p>
-        Soy una gerundense, licenciada en Pedagogía General de la Música (especialidad en piano) y Programadora Web
-        (Frontend). Me llamo Andrea y, desde hace mucho tiempo, combino la programación con uno de mis pasatiempos
-        preferidos: la escritura poética, junto con la modalidad de cuentos infantiles musicados.
-      </p>
-      <p class="mt-3">
-        Desde siempre he querido lograr la fusión perfecta, ya sea experimentando con diferentes estructuras poéticas
-        (como haikus, haikus tradicionales, haikus musicados o poemas). De esta idea nace este blog: para poder
-        transmitir mis ideas y sentimientos a través del universo del verso, que tantas propiedades curativas posee para
-        el alma. <br>
-        Dicho esto, doy las gracias a quien aterrice en este blog, y expreso mi gratitud por entretenerte con estas
-        líneas.
-      </p>
-
-
-      <div class="flex justify-center mt-12 mb-20">
-        <img src="perfil.jpg" class="w-52 h-52 mb-3 object-cover object-center rounded-full" />
+      <div style="display:flex; gap:2px;">
+        <span class="win-titlebar-btn">_</span>
+        <span class="win-titlebar-btn">&#9633;</span>
+        <span class="win-titlebar-btn" style="font-weight:bold;">✕</span>
       </div>
     </div>
+
+    <!-- Tab strip -->
+    <div style="display:flex; background:#d4d0c8; border-bottom:2px solid #808080; padding:4px 6px 0 6px; gap:2px;">
+      <div style="background:#d4d0c8; border-top:2px solid #fff; border-left:2px solid #fff; border-right:2px solid #808080; padding:3px 10px 4px 10px; font-size:11px; font-family:Arial; margin-bottom:-2px; z-index:1;">
+        General
+      </div>
+      <div style="background:#c0c0c0; border-top:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; padding:3px 10px 4px 10px; font-size:11px; font-family:Arial; color:#666;">
+        Créditos
+      </div>
+    </div>
+
+    <!-- Content area -->
+    <div style="background:#d4d0c8; padding:12px; display:flex; flex-wrap:wrap; gap:12px;">
+
+      <!-- Left: avatar panel -->
+      <div style="display:flex; flex-direction:column; align-items:center; gap:6px; min-width:140px;">
+        <div class="win-inset" style="padding:4px; background:#fff;">
+          <img src="perfil.jpg" alt="Foto de Andrea"
+               style="width:120px; height:120px; object-fit:cover; object-position:center; display:block;" />
+        </div>
+        <div style="font-size:11px; font-family:Arial; font-weight:bold; text-align:center;">Andrea Hernández</div>
+        <div style="font-size:10px; font-family:Arial; color:#444; text-align:center;">Pedagogía Musical · Frontend Dev</div>
+        <span class="win-btn" style="font-size:10px; margin-top:4px;">✉️ Contactar</span>
+      </div>
+
+      <!-- Right: info panel -->
+      <div style="flex:1; min-width:200px; display:flex; flex-direction:column; gap:8px;">
+
+        <div class="win-inset" style="padding:8px; background:#fff;">
+          <div style="font-size:10px; font-weight:bold; color:#0a246a; font-family:Arial; margin-bottom:4px;">ℹ️ Conóceme</div>
+          <p style="margin:0 0 6px 0; font-size:12px; font-family:Arial; line-height:1.6; color:#000;">
+            Soy una gerundense, licenciada en Pedagogía General de la Música (especialidad en piano) y Programadora Web
+            (Frontend). Me llamo Andrea y, desde hace mucho tiempo, combino la programación con uno de mis pasatiempos
+            preferidos: la escritura poética, junto con la modalidad de cuentos infantiles musicados.
+          </p>
+          <p style="margin:0; font-size:12px; font-family:Arial; line-height:1.6; color:#000;">
+            Desde siempre he querido lograr la fusión perfecta, ya sea experimentando con diferentes estructuras poéticas
+            (como haikus, haikus tradicionales, haikus musicados o poemas). De esta idea nace este blog: para poder
+            transmitir mis ideas y sentimientos a través del universo del verso, que tantas propiedades curativas posee
+            para el alma.
+          </p>
+        </div>
+
+        <!-- Properties table -->
+        <div class="win-inset" style="padding:8px; background:#fff;">
+          <div style="font-size:10px; font-weight:bold; color:#0a246a; font-family:Arial; margin-bottom:4px;">📋 Propiedades</div>
+          <table style="width:100%; border-collapse:collapse; font-size:11px; font-family:Arial;">
+            <tr>
+              <td style="border:1px solid #c0c0c0; padding:2px 6px; background:#eef5ff; width:40%; font-weight:bold;">Ubicación</td>
+              <td style="border:1px solid #c0c0c0; padding:2px 6px;">Girona, Cataluña</td>
+            </tr>
+            <tr>
+              <td style="border:1px solid #c0c0c0; padding:2px 6px; background:#eef5ff; font-weight:bold;">Especialidad</td>
+              <td style="border:1px solid #c0c0c0; padding:2px 6px;">Piano · Frontend</td>
+            </tr>
+            <tr>
+              <td style="border:1px solid #c0c0c0; padding:2px 6px; background:#eef5ff; font-weight:bold;">Géneros</td>
+              <td style="border:1px solid #c0c0c0; padding:2px 6px;">Haiku · Poema · Caligrama</td>
+            </tr>
+            <tr>
+              <td style="border:1px solid #c0c0c0; padding:2px 6px; background:#eef5ff; font-weight:bold;">Idiomas</td>
+              <td style="border:1px solid #c0c0c0; padding:2px 6px;">Español · Català · 日本語</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Dialog buttons row -->
+    <div style="background:#d4d0c8; padding:8px 12px; border-top:2px solid #808080; display:flex; justify-content:flex-end; gap:6px;">
+      <span class="win-btn">Aceptar</span>
+      <span class="win-btn">Cancelar</span>
+      <span class="win-btn">Aplicar</span>
+    </div>
+
+  </div>
+
+</div>
