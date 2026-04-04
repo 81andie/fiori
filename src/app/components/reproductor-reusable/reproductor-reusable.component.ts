@@ -29,7 +29,6 @@ export class reproductorReusableComponent implements  OnInit {
   private geishasVersesService= inject(GeishasVersesService)
 
 
-
   ngOnInit(): void {
   this.getVersesGeishas()
   }
@@ -42,9 +41,7 @@ export class reproductorReusableComponent implements  OnInit {
   }
 
 
-
-
-
+  
 
 
 }

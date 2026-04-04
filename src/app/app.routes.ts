@@ -14,6 +14,7 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
 import { SakariComponent } from './components/sakari/sakari.component';
 import { MalsonComponent } from './components/malson/malson.component';
 import { EspecialComponent } from './components/especial/especial.component';
+import { CoversComponent } from './components/covers/covers.component';
 
 
 
@@ -21,17 +22,18 @@ export const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'haikus', component: HaikusComponent },
   { path: 'haikus-musicados', component: HaikusMusicadosComponent },
-  { path: 'poemas-colecciones', component: reproductorReusableComponent},
+  { path: 'poemas-colecciones', component: reproductorReusableComponent },
   { path: 'poemas-musicados', component: PoemasMusicadosComponent },
   { path: 'morgan', component: MorganComponent },
-  {path: 'mindfullness', component:MilfullnessPoemsComponent},
+  { path: 'mindfullness', component: MilfullnessPoemsComponent },
   { path: 'tiamat', component: TiamatComponent },
-  { path: 'sakari', component: SakariComponent},
-   { path: 'malson', component: MalsonComponent},
+  { path: 'sakari', component: SakariComponent },
+  { path: 'malson', component: MalsonComponent },
   { path: 'verses', component: VersesPageComponent },
   { path: 'caligrama', component: CaligramaComponent },
-   { path: 'especial', component: EspecialComponent },
+  { path: 'especial', component: EspecialComponent },
   { path: 'sobremi', component: SobreMiComponent },
+  { path: 'covers', component: CoversComponent},
 
 
   // Redirección por defecto

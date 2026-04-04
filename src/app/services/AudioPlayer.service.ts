@@ -4,10 +4,7 @@ import { Observable} from 'rxjs';
 import { haikusMusicados } from '../interfaces/poem.interface';
 
 
-
 @Injectable({ providedIn: 'root' })
-
-
 
 
 export class AudioPlayerService {

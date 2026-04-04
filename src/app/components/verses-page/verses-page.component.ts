@@ -1,7 +1,5 @@
 import { Component, Inject, inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { MindFullnessService } from '../../services/MindFullness.service';
-
-
 import { ReusableVersesComponent } from '../reusable-verses/reusable-verses.component';
 import { PoemasyVersosService } from '../../services/PoemasyVersos.service';
 import { PoemasLargosService } from '../../services/poemasLargos.service';

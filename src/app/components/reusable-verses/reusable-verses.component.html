@@ -24,7 +24,7 @@
       [ngStyle]="{'background-image': 'url(' + item.background + ')'}">
 
       <!-- capa oscura -->
-      <div class="absolute ">
+      <div class="absolute">
         <p class="text-lg mt-12 font-bold  text-black  bg-opacity-0 backdrop-blur-sm">
           {{ item.title }}
         </p>
@@ -33,7 +33,7 @@
         <!-- contenido -->
         <div class="relative h-auto flex flex-col justify-center justify-items-center  z-10  bg-opacity-0">
 
-          <!-- versos -->
+          <!--versos-->
 
            <div class=" mt-1 h-auto md:text-xs lg:text-xs text-stone-950" *ngIf="verses.length">
 
@@ -50,7 +50,7 @@
           </div>
 
           <!-- ilustración / autor -->
-          <div class=" mt-1 text-center text-xs font-bold text-black mb-5 ilus-word">
+          <div class="mt-1 text-center text-xs font-bold text-black mb-5 ilus-word">
             <p >Ilustraciones<br> + poemas <br>: <br>{{ item.ilus }}</p>
           </div>
 
