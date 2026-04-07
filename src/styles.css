@@ -4,24 +4,220 @@
 @tailwind utilities;
 @import 'flowbite';
 
-/* Luego ya puedes añadir tus reglas */
+/* ===== WINDOWS 2000 GLOBAL THEME ===== */
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
 
-
-html,body{
+html, body {
   margin: 0;
   padding: 0;
-  scroll-behavior:unset;
- 
-
-
+  scroll-behavior: auto;
 }
 
-
-body{
-  font-family: "Special Elite", system-ui;
+body {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 13px;
+  background-color: #008080; /* Win2k teal desktop */
+  color: #000000;
 }
 
+/* --- Win2k Window Chrome utility classes --- */
 
+/* Classic raised/beveled button border */
+.win-btn {
+  background-color: #d4d0c8;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  padding: 3px 10px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  cursor: pointer;
+  color: #000;
+  display: inline-block;
+  user-select: none;
+}
+.win-btn:active {
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Window panel */
+.win-panel {
+  background-color: #d4d0c8;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+  outline: 1px solid #808080;
+}
+
+/* Inset / sunken area */
+.win-inset {
+  background-color: #ffffff;
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding: 4px;
+}
+
+/* Title bar */
+.win-titlebar {
+  background: linear-gradient(90deg, #0a246a 0%, #a6caf0 100%);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.win-titlebar-btn {
+  background-color: #d4d0c8;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  width: 16px;
+  height: 14px;
+  font-size: 9px;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Menu bar */
+.win-menubar {
+  background-color: #d4d0c8;
+  border-bottom: 1px solid #808080;
+  padding: 1px 2px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  gap: 2px;
+}
+
+.win-menubar a, .win-menubar span {
+  padding: 1px 6px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.win-menubar a:hover, .win-menubar span:hover {
+  background-color: #0a246a;
+  color: #fff;
+}
+
+/* Address bar */
+.win-addressbar {
+  background-color: #d4d0c8;
+  border-bottom: 1px solid #808080;
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+}
+
+/* Status bar */
+.win-statusbar {
+  background-color: #d4d0c8;
+  border-top: 2px solid #808080;
+  padding: 1px 4px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Section header band */
+.win-section-header {
+  background: linear-gradient(90deg, #0a246a 0%, #a6caf0 100%);
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid #808080;
+}
+
+/* Haiku card */
+.win-haiku-card {
+  background-color: #d4d0c8;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+  outline: 1px solid #808080;
+  margin: 8px;
+  overflow: hidden;
+}
+
+/* Blink animation (classic "new!" blink) */
+@keyframes win-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.win-blink {
+  animation: win-blink 1s step-start infinite;
+}
+
+/* Marquee-style scroll animation for the status bar */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.win-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.win-marquee-inner {
+  display: inline-block;
+  animation: marquee 18s linear infinite;
+}
+
+/* IE progress bar fill */
+@keyframes ie-progress {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* Desktop icon look */
+.win-icon-label {
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  text-align: center;
+}
+
+/* Footer table style */
+.win-footer-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+.win-footer-table td, .win-footer-table th {
+  border: 1px solid #808080;
+  padding: 4px 8px;
+  vertical-align: top;
+}
+.win-footer-table th {
+  background-color: #0a246a;
+  color: #fff;
+  font-size: 11px;
+}

@@ -1,60 +1,80 @@
-<div data-aos="fade-up" data-aos-easing="linear"
-    data-aos-duration="500" >
-<hr class="h-4 w-full bg-cover bg-center bg-[url(/Pexels-aparaxic.jpg)] ">
-<h1
-  class="text-xl m-1 bg-clip-text text-transparent bg-gradient-to-b from-stone-400 to-stone-900 hover:to-slate-400
-  600"
-  data-aos="zoom-in-right" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
-
-  <strong>Haikus</strong>
-</h1>
-<hr class="h-1 w-full bg-cover bg-bottom bg-[url(/textil.jpg)] grayscale ">
+<!-- Haikus Section Header -->
+<div style="margin: 0 16px 0 16px;">
+  <div class="win-section-header" style="font-size:15px; padding:5px 10px; display:flex; align-items:center; gap:8px;">
+    <span>📜</span>
+    <span>Haikus</span>
+    <span style="font-size:10px; font-weight:normal; margin-left:auto; opacity:.85;">{{ haikus.length }} haikus encontrados</span>
+  </div>
+  <hr style="margin:0; border:none; border-top:1px solid #808080;" />
 </div>
 
-
-
-
-
-<div class="space-y-0">
+<!-- Haiku Cards -->
+<div style="margin: 8px 16px 0 16px;">
   @for (item of haikus; track item.id) {
-  <section data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
-    class="parallax relative h-screen flex flex-col items-center justify-center text-center text-white bg-center bg-cover bg-fixed"
-    [ngStyle]="{'background-image': 'url(' + item.img + ')'}">
 
-    <!-- Capa oscura -->
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+  <!-- Win2k window for each haiku -->
+  <div class="win-haiku-card" style="margin-bottom:12px;">
 
-    <!-- Contenido -->
-    <div class="relative z-10 space-y-3">
-      <p class="text-3xl font-bold">{{item.title}}</p>
-      <p class="text-xs font-bold">{{item.date}}</p>
-
-
-      <div class="sm:text-sm md:text-xl lg:text-xl text-white/80">
-        <pre>{{ item.jp }}</pre>
-        <pre>{{ item.jp2}}</pre>
-        <pre>{{ item.jp3 }}</pre>
-
+    <!-- Title bar for each haiku card -->
+    <div class="win-titlebar" style="padding:3px 6px;">
+      <div style="display:flex; align-items:center; gap:5px;">
+        <span>📜</span>
+        <span>{{ item.title }}</span>
+        <span style="font-size:10px; font-weight:normal; opacity:.8; margin-left:8px;">{{ item.date }}</span>
       </div>
-
-      <div class="sm:text-sm md:text-xl lg:text-xl text-white/80">
-        <pre>{{ item.romaji }}</pre>
-        <pre>{{ item.romaji1}}</pre>
-        <pre>{{ item.romaji2}}</pre>
-
-      </div>
-      <div class="sm:text-sm md:text-xl lg:text-xl text-white/80">
-        <pre>{{ item.es}}</pre>
-        <pre>{{ item.es1}}</pre>
-        <pre>{{ item.es2}}</pre>
-      </div>
-
-      <div class="p-2 text-xs font-bold text-white">
-        <p><strong>Haikus escritos por:<br>{{ item.author }}</strong></p>
-         <p><strong>Fuente Imágenes: <br>{{ item.fontImage}}</strong></p>
+      <div style="display:flex; gap:2px;">
+        <span class="win-titlebar-btn">_</span>
+        <span class="win-titlebar-btn">&#9633;</span>
+        <span class="win-titlebar-btn" style="font-weight:bold;">✕</span>
       </div>
     </div>
-  </section>
+
+    <!-- Card body: two columns like a dialog box -->
+    <div style="display:flex; flex-wrap:wrap; gap:8px; padding:10px; background:#d4d0c8;">
+
+      <!-- Left: background image panel -->
+      <div class="win-inset" style="width:200px; min-height:180px; flex-shrink:0; padding:0; overflow:hidden; background:#000;">
+        <img [src]="item.img" [alt]="item.title"
+             style="width:100%; height:180px; object-fit:cover; display:block; image-rendering:auto;" />
+      </div>
+
+      <!-- Right: poem content -->
+      <div style="flex:1; min-width:200px; display:flex; flex-direction:column; gap:8px;">
+
+        <!-- Japanese text -->
+        <div class="win-inset" style="padding:8px; background:#fff;">
+          <div style="font-size:10px; color:#0a246a; font-weight:bold; margin-bottom:4px; font-family:Arial;">🇯🇵 日本語 (Japonés)</div>
+          <pre style="margin:0; font-size:14px; font-family:'Times New Roman', serif; color:#000; line-height:1.8; white-space:pre-wrap;">{{ item.jp }}
+{{ item.jp2 }}
+{{ item.jp3 }}</pre>
+        </div>
+
+        <!-- Romaji -->
+        <div class="win-inset" style="padding:8px; background:#fff;">
+          <div style="font-size:10px; color:#0a246a; font-weight:bold; margin-bottom:4px; font-family:Arial;">🔤 Romanización</div>
+          <pre style="margin:0; font-size:13px; font-family:'Times New Roman', serif; color:#333; line-height:1.7; white-space:pre-wrap; font-style:italic;">{{ item.romaji }}
+{{ item.romaji1 }}
+{{ item.romaji2 }}</pre>
+        </div>
+
+        <!-- Spanish -->
+        <div class="win-inset" style="padding:8px; background:#ffffee;">
+          <div style="font-size:10px; color:#0a246a; font-weight:bold; margin-bottom:4px; font-family:Arial;">🇪🇸 Español</div>
+          <pre style="margin:0; font-size:13px; font-family:'Times New Roman', serif; color:#000; line-height:1.7; white-space:pre-wrap;">{{ item.es }}
+{{ item.es1 }}
+{{ item.es2 }}</pre>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Card footer / status strip -->
+    <div class="win-statusbar" style="padding:3px 8px; font-size:10px; border-top:1px solid #808080;">
+      <span>✍️ Autor: <strong>{{ item.author }}</strong></span>
+      <span style="margin-left:auto;">🖼️ Imagen: {{ item.fontImage }}</span>
+    </div>
+
+  </div>
+
   }
 </div>
-

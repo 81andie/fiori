@@ -1,70 +1,77 @@
-<div class="mt-2 m-12 w-[88.5vw] lg:w-[88.5vw] md:w-[90.5vw] flex flex-wrap  h-50 parallax">
-<div class="flex justify-center px-1">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
-</div>
+<!-- Win2k Taskbar-style footer -->
+<div style="margin: 0 16px 16px 16px;">
 
-  <div class="w-[85vw] flex m-14 md:flex-row lg:flex-row  text-stone-800">
-
-    <div class="w-full">
-      <h1 class="text-3xl">FIORI POETIC BLOG</h1>
-      <img src="/flor5.png" class="w-22 h-20">
-
+  <!-- Footer window -->
+  <div class="win-haiku-card">
+    <div class="win-titlebar" style="padding:3px 6px;">
+      <span>🌸 FIORI POETIC BLOG — Mapa del Sitio</span>
+      <div style="display:flex; gap:2px;">
+        <span class="win-titlebar-btn">_</span>
+        <span class="win-titlebar-btn">&#9633;</span>
+        <span class="win-titlebar-btn" style="font-weight:bold;">✕</span>
+      </div>
     </div>
 
+    <div style="padding:12px; background:#d4d0c8;">
 
+      <!-- Logo + nav table -->
+      <table style="width:100%; border-collapse:collapse; font-size:12px; font-family:Arial; margin-bottom:10px;">
+        <tr>
+          <td style="width:120px; vertical-align:top; padding:0 12px 0 0; border-right:1px solid #808080;">
+            <div style="text-align:center;">
+              <img src="assets/fiorilogosenefa.png" style="width:60px; height:60px;" alt="Fiori Logo" />
+              <div style="font-size:13px; font-weight:bold; color:#0a246a; margin-top:4px;">FIORI</div>
+              <div style="font-size:10px; color:#444;">Poetic Blog</div>
+            </div>
+          </td>
 
-    <div class="flex flex-col md:flex-row lg:flex-row  w-full gap-2  ">
-      <ul class="underline cursor-pointer" >
-        <li [routerLink]="['/inicio']">Inicio</li>
-        <li [routerLink]="['/sobremi']" >Sobre mi</li>
-        <li [routerLink]="['/verses']" >Verses</li>
-        <li [routerLink]="['/caligrama']" >Caligrama</li>
-        <li [routerLink]="['/morgan']">Morgan</li>
+          <td style="padding:0 12px; vertical-align:top; border-right:1px solid #808080;">
+            <div style="font-size:11px; font-weight:bold; color:#fff; background:#0a246a; padding:2px 6px; margin-bottom:4px;">📌 Principal</div>
+            <ul style="margin:0; padding-left:14px; list-style:disc; line-height:1.8;">
+              <li><a [routerLink]="['/inicio']" style="color:#0000cc; text-decoration:underline; font-size:12px;">Inicio</a></li>
+              <li><a [routerLink]="['/sobremi']" style="color:#0000cc; text-decoration:underline; font-size:12px;">Sobre mi</a></li>
+              <li><a [routerLink]="['/verses']" style="color:#0000cc; text-decoration:underline; font-size:12px;">Verses</a></li>
+              <li><a [routerLink]="['/caligrama']" style="color:#0000cc; text-decoration:underline; font-size:12px;">Caligrama</a></li>
+              <li><a [routerLink]="['/morgan']" style="color:#0000cc; text-decoration:underline; font-size:12px;">Morgan</a></li>
+            </ul>
+          </td>
 
-      </ul>
+          <td style="padding:0 12px; vertical-align:top;">
+            <div style="font-size:11px; font-weight:bold; color:#fff; background:#0a246a; padding:2px 6px; margin-bottom:4px;">🌸 Japonés &amp; Más</div>
+            <ul style="margin:0; padding-left:14px; list-style:disc; line-height:1.8;">
+              <li><a [routerLink]="['/mindfullness']" style="color:#0000cc; text-decoration:underline; font-size:12px;">Mindfulness Poems</a></li>
+              <li><a [routerLink]="['/haikus']" style="color:#0000cc; text-decoration:underline; font-size:12px;">Haikus</a></li>
+              <li><a [routerLink]="['/haikus-musicados']" style="color:#0000cc; text-decoration:underline; font-size:12px;">Haikus Musicados</a></li>
+              <li><a [routerLink]="['/haikus-geishas']" style="color:#0000cc; text-decoration:underline; font-size:12px;">Haikus Geishas</a></li>
+              <li><a [routerLink]="['/tiamat']" style="color:#0000cc; text-decoration:underline; font-size:12px;">Tiamat, la reina dels dragons</a></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
 
-      <ul class="underline">
-        <li [routerLink]="['/mindfullness']">Milfullness poems</li>
-        <li [routerLink]="['/haikus']">Haikus</li>
-        <li [routerLink]="['/haikus-musicados']">Haikus Musicados</li>
-        <li [routerLink]="['/haikus-geishas']">Haikus Geishas</li>
-        <li [routerLink]="['/tiamat']" >Tiamat, la reina dels dragons...</li>
-      </ul>
+      <!-- Copyright strip -->
+      <div class="win-inset" style="padding:4px 8px; background:#fff; font-size:11px; font-family:Arial; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:4px;">
+        <span>Copyright &copy; Todos los derechos reservados</span>
+        <span style="color:#888;">Desarrollada y diseñada por Andrea Hernández</span>
+        <span style="font-size:10px; color:#aaa;">Best viewed in Internet Explorer 6.0 · 800×600</span>
+      </div>
+
     </div>
-
-
-  </div>
-  <div class="flex justify-start flex-col p-2">
-  <h1 class="text-sm text-left">Copyright © <br>Todos los derechos reservados</h1>
-  <h1 class="text-xs text-left">Esta página web<br> ha sido desarrollada y diseñada por Andrea Hernández</h1>
   </div>
 
-  <div class="flex justify-center ">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
- <img src="assets/fiorilogosenefa.png" class="w-20 h-20">
+  <!-- Win2k Taskbar -->
+  <div style="background:#d4d0c8; border-top:3px solid #ffffff; border-bottom:1px solid #808080; display:flex; align-items:center; padding:2px 4px; gap:4px; margin-top:4px;">
+    <span class="win-btn" style="background:linear-gradient(135deg,#3a7bd5,#0a246a); color:#fff; font-weight:bold; border-color:#fff #404040 #404040 #fff; padding:3px 10px; font-size:12px;">
+      ▶ Inicio
+    </span>
+    <div style="width:1px; height:20px; background:#808080; margin:0 2px;"></div>
+    <span class="win-btn" style="font-size:10px;">📜 Haikus</span>
+    <span class="win-btn" style="font-size:10px;">🎵 Musicados</span>
+    <span class="win-btn" style="font-size:10px;">🖋️ Verses</span>
+    <div style="flex:1;"></div>
+    <div class="win-inset" style="padding:2px 6px; font-size:11px; font-family:Arial; background:#d4d0c8;">
+      🕐 &nbsp;fiori.es
+    </div>
+  </div>
+
 </div>
-
-
