@@ -9,6 +9,8 @@ import { Improvisaciones } from '../../interfaces/improvisaciones.interface';
 import { ImprovisacionesCardMachadoComponent } from "../improvisaciones-card-machado/improvisaciones-card-machado.component";
 import { versesInviernoService } from '../../services/VersesInvierno.service';
 import { versesInvierno } from '../../interfaces/versesInvierno';
+import { AudioServiceCover } from '../../services/AudioServiceCovers.service';
+import { coverCardAudios } from '../../interfaces/coverCardAudio.interface';
 
 
 @Component({
@@ -29,10 +31,12 @@ export class VersesPageComponent implements OnInit {
   Improvisaciones = inject(ImprovisacionesService)
   Poemas = inject(PoemasyVersosService);
   PoemasInvierno = inject(versesInviernoService);
+  Covers = inject(AudioServiceCover);
 
 
   public audiosMachado: Improvisaciones[] = []
   public winter:versesInvierno[]=[]
+  public cover:coverCardAudios[]=[]
 
 
 
@@ -40,6 +44,7 @@ export class VersesPageComponent implements OnInit {
 
     this.getMachadoImprovisations();
     this.getVerseWinter()
+    this.getCovers()
 
   }
 
@@ -57,6 +62,15 @@ export class VersesPageComponent implements OnInit {
     this.PoemasInvierno.getVersesInvierno().subscribe((data)=>{
       this.winter=data
         console.log("no sé dónde esta el error, pero el código está roto")
+    })
+
+  }
+
+  getCovers(){
+
+    this.Covers.getAudioPlayerCovers().subscribe((data)=>{
+  
+    this.cover = data
     })
 
   }

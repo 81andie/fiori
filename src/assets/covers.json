@@ -1,19 +1,40 @@
 [
   {
     "id": 1,
-    "title": "Got",
-    "author": "Ramin Djawadi",
-    "arguments": "Serie de televisión\nestaunidense de drama medieval\n y fantasía medieval",
-   
-    "image": "",
-    "audio": ""
+    "title": "YellowStone",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "La serie sigue a John Dutton \nel patriarca de la sexta generación de la familia Dutton \nque controla el rancho contiguo más grande de los Estados Unidos.\nSe enfrenta al desafío de defender su tierra \nde aquellos que tratarían de arrebatárselo,\nflorece la Geisha",
+    "songTitle": "Yellowstone Intro,\n'Covers",
+    "image": "yellowstone.png",
+    "audio": "Yellowstonecover.mp3"
+  },
+  {
+    "id": 2,
+    "title": "El señor de los Anillos",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "Narra la épica aventura de Frodo Bolsón \ny la Comunidad del Anillo para destruir el Anillo Único\n y derrotar al malvado Sauron en la Tierra Media.\n",
+    "songTitle": "The Shire,\n'Covers",
+    "image": "elsenor.jpg",
+    "audio": "covertheshire.mp3"
+  },
+  {
+    "id": 3,
+    "title": "Valar Morghulis",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "Valar Morghulis:\nes un a frase en \nvalyrio... es decir la lengua surgida en la ciudad de \nValyria según la novela\nsignifica:\n´todos los hombres deben morir´\n su respuesta es Valar Dohaeris que significa:\n'todos los hombres deben servir'",
+    "songTitle": "'Valar Morghulis',\nCovers Got",
+    "image": "valarmorghuli.png",
+    "audio": "gotValar.mp3"
   },
 
-   id: number;
-  title: string;
-  author: string;
-  verses: string[];
-  songTitle: string;
-  image: string;
-  audio: string;
+  {
+    "id": 5,
+    "title": "Targaryan theme",
+    "author": "ANDREA HERNÁNDEZ",
+    "verses": "es uno de los últimos miembros supervivientes\n(junto con su hermano mayor, Viserys, el «Rey Mendigo»)\nDaenerys es una adolescente que vive exiliada en Essos, \n y se ve obligada a casarse con el señor de los caballos dothraki Khal Drogo...\na cambio de que el ejército de Viserys recupere el Trono de Hierro en Poniente\n",
+    "songTitle": "Targaryan Theme,\n'covers",
+    "image": "targaryanTheme.png",
+    "audio": "targaryanTheme.mp3"
+  }
+
 ]
