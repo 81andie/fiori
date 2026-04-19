@@ -1,4 +1,9 @@
 
+<app-card-reproductor
+[audios]="audioCovers"
+[playlistId]="audioCovers"
+gradient="bg-gradient-to-b from-cyan-800 to-cyan-200"
+></app-card-reproductor>
 
 <div data-aos="fade-up" data-aos-easing="linear"
     data-aos-duration="500" >
@@ -13,11 +18,6 @@
 <hr class="h-1 w-full bg-cover bg-bottom bg-[url(/textil.jpg)] grayscale ">
 </div>
 
-<app-card-reproductor
-[audios]="audioCovers"
-[playlistId]="audioCovers"
-gradient="bg-gradient-to-b from-cyan-800 to-cyan-200"
-></app-card-reproductor>
 
  <div class="space-y-0">
     @for (item of audioCovers; track item.id; let idx = $index) {
