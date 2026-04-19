@@ -366,53 +366,37 @@
     "image": "rocacorba.png",
     "ilus": "Andrea Hernández/2025"
   },
-    {
+
+   {
     "id": 17,
-    "title": "Rosa palo",
+    "title": "Un rayo",
     "author": "ANDREA HERNÁNDEZ",
     "verses":  [
-      "Rosa dulce",
-      "de invierno",
-      "rosa palo,",
-      "delicada figura",
-      "puedes vestirte ",
-      "con tu mejor tu vestido",
-      "tu rosácea piel",
-      "que veo desnudarse",
-      "cada noche en sueños",
-      "piel que no acaricié jamás...",
-      "la culpa me acecha",
-      "y ahi seguiré",
-      "lejos de único bueno ",
-      "que tuve en mi vida"
+      "Un rayo loco,",
+      "atravesó mi quietud,",
+      "sobre la mesa, ",
+      "un cristal de murano claro,",
+      "lleno de té..., ",
+      "guarda un destello,",
+      "de sentimiento cerrado.",
+      "La tempestad se impone",
+      "reina la noche.",
+      "y bajo el ruido del cielo",
+      "algo en la tierra",
+      "vuelve a germinar."
+
     ],
 
-    "background": "rosassilvestre.png",
-    "image": "rosassilvestre.png",
-    "ilus": "Andrea Hernández/2025"
-  },
-
-  {
-    "id": 18,
-    "title": "Today on the path,",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses":  [
-      "Today on the path,",
-      "winding toward the river,",
-      "it smelled of burned dry leaves,",
-      "of scorched moss.",
-      "Neon-orange flames",
-      "climbed upward, above me.",
-      "A hawk burst forth,",
-      "spreading its wings.",
-      "Today on the path,",
-      "I walked toward a new path."
-    ],
-
-    "background": "quema.jpg",
-    "image": "quema.jpg",
+    "background": "textura1.jpg",
+    "image": "jarrodavinciano.jpg",
     "ilus": "Andrea Hernández/2025"
   }
+
+
+
+
+
+
 
 
 ]

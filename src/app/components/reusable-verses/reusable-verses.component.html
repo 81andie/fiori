@@ -35,7 +35,7 @@
 
           <!--versos-->
 
-           <div class=" mt-1 h-auto md:text-xs lg:text-xs text-stone-950" *ngIf="verses.length">
+           <div class="p-3 h-auto md:text-xs lg:text-xs text-stone-950 " *ngIf="verses.length">
 
           @for (verso of item.verses; track verso.id +'-' + $index) {
           <pre >{{ verso }}</pre>
