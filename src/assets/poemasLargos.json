@@ -237,54 +237,6 @@
   },
 
 
-   {
-    "id": 11,
-    "title": "Mare fragrant de les Roses",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses":  [
-      "Mare fragant de les Roses",
-      "embriagadora d'olors",
-      "joia de puresa",
-      "que et duem ",
-      "dins al pensament",
-      "protegeix-nos de tot mal.",
-
-      "Mare fragant de les Roses",
-      "que en tu el perfum",
-      "esdevé néctar de saviesa",
-      "per nodrir l'abella",
-      "la teva mel",
-      "es dolça",
-      "com el rusc tendre",
-      "Mare fragrant de les Roses",
-      "coronada d'espines",
-      "ens sagna la veritat",
-      "protegeix-nos de tot mal"
-    ],
-
-    "background": "roses.jpg",
-    "image": "roses.jpg",
-    "ilus": "Andrea Hernández/2026"
-  }
-,
-   {
-    "id": 12,
-    "title": "Camèlia",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-    "Olor fragrant",
-    "Reposa tranquila",
-    "Delicada bellesa",
-    "Camèlia petita...",
-    "Despertes per la tardor",
-    "florint en les primeres gelades,",
-    "l'hivern s'ensuma pel matí"
-
-    ],
-    "background": "sinfondo.jpg",
-    "image": "cameliassin.png",
-    "ilus": "Andrea Hernández/2025"
-  },
 
    {
     "id": 13,
@@ -316,32 +268,7 @@
     "ilus": "Andrea Hernández/2025"
   },
 
-   {
-    "id": 15,
-    "title": "Un gato en Trastevere...",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-    "Un gato en Trastevere",
-    "me mira con indiferencia",
-    "por las calles de Trastevere...",
-    "floflo y gordito...",
-    "me mira con esos ojos naranjas",
-    "pelo atigrado",
-    "se estira y se estira",
-    "se enrosca en mis piernas",
-    "y se va de la misma manera que vino",
-    "sigiloso y cauto.",
-    "fuerte y audaz da un salto",
-    "hacia la ventana",
-    "se queda en la repisa",
-    "vuelve a saltar",
-    "a por más carantoñas..."
-    ],
 
-    "background": "hielo.jpg",
-    "image": "ungato.png",
-    "ilus": "Andrea Hernández/2025"
-  },
 
    {
     "id": 16,
@@ -365,38 +292,7 @@
     "background": "hielo.jpg",
     "image": "rocacorba.png",
     "ilus": "Andrea Hernández/2025"
-  },
-
-   {
-    "id": 17,
-    "title": "Un rayo",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses":  [
-      "Un rayo loco,",
-      "atravesó mi quietud,",
-      "sobre la mesa, ",
-      "un cristal de murano claro,",
-      "lleno de té..., ",
-      "guarda un destello,",
-      "de sentimiento cerrado.",
-      "La tempestad se impone",
-      "reina la noche.",
-      "y bajo el ruido del cielo",
-      "algo en la tierra",
-      "vuelve a germinar."
-
-    ],
-
-    "background": "textura1.jpg",
-    "image": "jarrodavinciano.jpg",
-    "ilus": "Andrea Hernández/2025"
   }
-
-
-
-
-
-
 
 
 ]
