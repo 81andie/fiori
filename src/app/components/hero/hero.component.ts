@@ -9,15 +9,15 @@ import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
-export class HeroComponent implements OnInit, OnDestroy {
+export class HeroComponent implements OnInit{
 
   ngOnInit(): void {
 
-    this.typewriter();
-  
+   /* this.typewriter();*/
+
   }
 
-  private sounds: string[] = [
+  /*private sounds: string[] = [
     'assets/typewriterkey1.mp3',
     'assets/typewriter2.mp3',
     'assets/typewriter2.mp3',
@@ -55,7 +55,7 @@ export class HeroComponent implements OnInit, OnDestroy {
       clearTimeout(this.timeoutId);
     }
   }
-
+*/
 
 
 }
