@@ -35,15 +35,7 @@
     "image": "luna.png",
     "ilus": "Andrea Hernández/verano 2025"
   },
-  {
-    "id": 5,
-    "title": "No",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "No vas\na poder conmigo",
-    "background": "textura1.jpg",
-    "image": "no.png",
-    "ilus": "Andrea Hernández/verano 2025"
-  },
+ 
   {
     "id": 6,
     "title": "EL KARMA... recuérdalo",
@@ -106,50 +98,7 @@
     "background": "textura5.jpg",
     "image": "concharoja.png",
     "ilus": "Invierno 2025/versos por Andrea Hdez"
-  },
-  {
-    "id": 13,
-    "title": "Tomemos caminos distintos",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "\nAnda hacia lo que deseas,\n no te entretengas,\n ve, apresúrate...\n juega tranquilo con las flores\n plásticas de tu propio jardín",
-    "background": "orquideas.jpg",
-    "image": "orquideaPor.png",
-    "ilus": " Portugal 2019/versos por Andrea Hdez 26'"
-  },
-  {
-    "id": 14,
-    "title": "Dónde quedará",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "\nDónde\nquedará,\nla privacidad...\nen este mundo...\nque todo se expone?",
-    "background": "textura1.jpg",
-    "image": "candado.png",
-    "ilus": "versos por Andrea Hdez 26'"
-  },
-  {
-    "id": 15,
-    "title": "The game starts again,",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "\nThe game starts again,\nand always the winner...\ntakes it all...\neven if it hurts\n there will always be someone\nwho will beat you at the game,\n",
-    "background": "iceSkatin.jpg",
-    "image": "iceSkatin.jpg",
-    "ilus": "ilus: freepik, verses Andrea Hdez 26'"
-  },
-  {
-    "id": 16,
-    "title": "El cebo.",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "\nNo sé a quién querías engañar,\npero...\ncaiste de lleno...\nen tu propia trampa\n, te descubriste así sin quererlo",
-    "background": "elcebo.jpg",
-    "image": "elcebo.jpg",
-    "ilus": "ilus: freepik, verses Andrea Hdez 26'"
-  },
-  {
-    "id": 17,
-    "title": "May the pedagogy of verse",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "May the pedagogy of verse\nserve us all.\nThere is nothing more powerful\nthan a verse\nas a therapeutic practice\nfor the soul.",
-    "background": "orchids.jpg",
-    "image": "orchids.jpg",
-    "ilus": "ilus: freepik, verses Andrea Hdez 26'"
   }
+
+
 ]
