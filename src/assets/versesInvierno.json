@@ -47,69 +47,9 @@
     "image": "laberinto.png",
     "ilus": "AHH"
   },
-  {
-    "id": 3,
-    "title": "Invierno 2025",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-      "Contemplo el fons negre",
-      "d'un pou profund,",
-      "d'on trec l'aigua clara",
-      "pura y transparent,",
-      "com la mare terra",
-      "que abrasa el cor",
-      "d'on reposa la nostra Força",
-      "la nostra matriu",
-      "mare infinita",
-      "perfumada de tramuntana...",
-      "aigua dolça de 4 aigües,",
-      "la contemplo",
-      "freda y gelada",
-      "la deixo córrer lliure,",
-      "entre els meus dits.",
-      "serena em calma tots els mals"
-    ],
-    "background": "textura1.jpg",
-    "image": "pozocalma.png",
-    "ilus": "AHH"
-  },
-  {
-    "id": 3,
-    "title": "Invierno 2025",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-      "Retruena de noche la ciudad",
-      "Oigo caer en mi desván",
-      "la lluvia fuerte",
-      "tiembla toda una ciudad",
-      "vuelven los truenos",
-      "se nos cae el cielo",
-      "miro en el infinito",
-      "la figura de un templo...",
-      "perdido entre tanta nube,",
-      "doy los pasos por el desván",
-      "vuelvo a meterme bajo las sábanas,",
-      "me acurruco hecha un ovillo",
-      "es de día y sigue tronando"
-    ],
-    "background": "tormenta.jpg",
-    "image": "tormenta.jpg",
-    "ilus": "FREEPIK"
-  },
-  {
-    "id": 3,
-    "title": "Invierno 2025",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-      "Con el tiempo querida/o,",
-      "todo vuelve a su lugar de origen...",
-      "la verdad siempre se pone",
-      "en el lugar que le corresponde.."
-    ],
-    "background": "adelfa.png",
-    "image": "adelfa.png",
-    "ilus": "FREEPIK"
-  },
+
+
+
   {
     "id": 4,
     "title": "Invierno 2025",
@@ -124,21 +64,8 @@
     "background": "textura1.jpg",
     "image": "cisne.png",
     "ilus": "AHH"
-  },
-  {
-    "id": 5,
-    "title": "Invierno 2025",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": [
-      "Cada mochuelo",
-      "a su olivo...",
-      "el nido pequeño",
-      "y bien hecho..."
-    ],
-    "background": "textura1.jpg",
-    "image": "mochuelo.png",
-    "ilus": "AHH"
   }
+
 
 
 ]
