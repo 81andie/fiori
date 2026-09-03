@@ -1,15 +1,7 @@
 [
+
   {
     "id": 1,
-    "title": "EL PERFUME",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "El perfume\nmejor pagado\nes aquel\nque nunca\nse olvida",
-    "background": "textura1.jpg",
-    "image": "chanel.jpg",
-    "ilus": "Andrea Hernández/verano 2025"
-  },
-  {
-    "id": 2,
     "title": "EN LA SOLEDAD",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "En la soledad, dulce niña\nLa noche nos enseña\nÁmate tanto\nQue te deseen hasta las sombras...",
@@ -18,7 +10,7 @@
     "ilus": "Andrea Hernández/verano 2025"
   },
   {
-    "id": 3,
+    "id": 2,
     "title": "COLECCIONO",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "Colecciono vivencias pasadas\nvivo los hechos presentes\ny improviso\ntodos mis futuros",
@@ -27,7 +19,7 @@
     "ilus": "Andrea Hernández/verano 2025"
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "Poema innacabado",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "Poema innacabado,\nLa musa de la inspiración,\nSe fué a la fuga",
