@@ -35,70 +35,17 @@
     "image": "luna.png",
     "ilus": "Andrea Hernández/verano 2025"
   },
- 
+
   {
-    "id": 6,
-    "title": "EL KARMA... recuérdalo",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "El karma\n siempre se cobra\ntodas tus deudas\nLa Bondad siempre es el camino",
-    "background": "textura1.jpg",
-    "image": "pexels-pixabay-46231-removebg-preview.png",
-    "ilus": "PEXELS Image/ versos por Andrea Hernández"
-  },
-  {
-    "id": 7,
+    "id": 5,
     "title": "Una ventana al mar",
     "author": "ANDREA HERNÁNDEZ",
     "verses": "Una ventana al mar\nfluye el recuerdo del pasado\nuna sonrisa ligera\n se dibuja en mi cara\n doy media vuelta en mi cama vacía, \n me despierta el murmullo del mar, \n cae la tarde, \n me pierdo en las olas...",
     "background": "textura1.jpg",
     "image": "ventanal.png",
     "ilus": "Verano 2025/versos por Andrea Hernández"
-  },
-  {
-    "id": 8,
-    "title": "Fluir",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "Dejo ir mi mente,\nsólo escucho la corriente del agua...\nfluir por la cascada...\n cada gota me recuerda,\n que todo pasará,\n todo aquello que hiere... \n se deslizará y se disolverá... \n cómo fluye esta cascada.",
-    "background": "textura1.jpg",
-    "image": "paisaje.jpg",
-    "ilus": "Otoño 2025/versos por Andrea Hernández"
-  },
-  {
-    "id": 9,
-    "title": "No mendigues amor",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "No mendigues amor,\nquién no te valora...\nno te querrá jamás...\npor mucho que le quieras,\ncambia tu suerte,\n y sigue tu camino...",
-    "background": "textura1.jpg",
-    "image": "bicicleta.png",
-    "ilus": "Otoño 2025/versos por Andrea Hdez"
-  },
-  {
-    "id": 10,
-    "title": "Recuerda...",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "Recuerda...,\nsé feliz con lo que tienes...\n",
-    "background": "textura5.jpg",
-    "image": "corazones.png",
-    "ilus": "Otoño 2025/versos por Andrea Hdez"
-  },
-  {
-    "id": 11,
-    "title": "Corazoncillo pa relicario..",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "Un corazón contento,\nda trocitos pa quien lo necesite\nlo demás...\ncorazoncillo pa relicario.",
-    "background": "textura5.jpg",
-    "image": "relicario.png",
-    "ilus": "Otoño 2025/versos por Andrea Hdez"
-  },
-  {
-    "id": 12,
-    "title": "Corazoncillo y concha pa relicario...",
-    "author": "ANDREA HERNÁNDEZ",
-    "verses": "Corazoncillo,\nsin mariposas\nvuela libre\ncomo los temblores\n de los colibríes...\ncorazoncillo y concha,\nnácares perlados pa relicario.",
-    "background": "textura5.jpg",
-    "image": "concharoja.png",
-    "ilus": "Invierno 2025/versos por Andrea Hdez"
   }
+
 
 
 ]
